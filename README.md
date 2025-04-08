@@ -37,7 +37,7 @@ En Simscape, el bloque PS Converter, también conocido como Physical Signal Conv
 
 #### 1.2.1 Función del PS Converter
 
-El`PS Converter sirve como un puente entre ambos mundos:
+El PS Converter sirve como un puente entre ambos mundos:
 
 De Simulink a Simscape: Convierte una señal Simulink (por ejemplo, una señal de control o entrada numérica) en una señal física que puede usarse dentro de un modelo Simscape.
 De Simscape a Simulink: Cuando se usa en conjunto con el bloque PS-Simulink Converter, permite tomar una magnitud física y convertirla en una señal Simulink para graficarla, procesarla o usarla en un controlador.
