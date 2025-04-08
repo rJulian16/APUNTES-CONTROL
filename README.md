@@ -6,7 +6,7 @@ Simscape es una herramienta de MATLAB que se utiliza junto con Simulink para sim
 En Simulink, a través del entorno de Simscape Multibody, es posible construir modelos de sistemas mecánicos de manera gráfica y detallada. Uno de los elementos clave en estos sistemas son los eslabones, que funcionan como piezas rígidas encargadas de transmitir movimiento o fuerza dentro de un mecanismo. Estos eslabones forman la estructura básica de mecanismos
 Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que tiene forma de prisma rectangular y permite personalizar dimensiones, masa, densidad y apariencia visual. Además de este, también se puede emplear el bloque Solid para representar otras formas geométricas. 
 
-💡Ejemplos:
+💡Ejercicio:
 
 ![image](https://github.com/user-attachments/assets/655064ff-0b01-458b-95ab-d37420dcdddb)
 
@@ -19,7 +19,7 @@ Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que 
 
 >🔑Rigid Transform: No es una articulación móvil, sino una conexión rígida que establece una posición y orientación específica entre dos componentes. Sirve para fijar piezas o ajustar la alineación entre bloques en un modelo sin permitir movimiento entre ellos.
 
-💡Ejemplo: Si conectamos los solidos directamente al mundo y generamos la simulacion estos se van a superponerse unos con otros. 
+💡Ejercicios: Si conectamos los solidos directamente al mundo y generamos la simulacion estos se van a superponerse unos con otros. 
 
 ![image](https://github.com/user-attachments/assets/a920c125-b7fa-4968-8601-d74c26678a7a)
 
@@ -55,7 +55,7 @@ El PS Converter generalmente se usa junto con:
 Simulink-PS Converter: Para pasar de Simulink a Simscape.
 PS-Simulink Converter: Para pasar de Simscape a Simulink.
 
-💡Ejemplo: En el siguiente esquematico se ve como las magnitudes fisicas que se generan gracias a los solidos y las distintas uniones que contiene se pueden convertir en una señal simulink, con esto podemos combrobar que nuestro sistema funcione como queremos o que cumpla con los requisitos que se piden. 
+💡Ejercicios: En el siguiente esquematico se ve como las magnitudes fisicas que se generan gracias a los solidos y las distintas uniones que contiene se pueden convertir en una señal simulink, con esto podemos combrobar que nuestro sistema funcione como queremos o que cumpla con los requisitos que se piden. 
 
 ![image](https://github.com/user-attachments/assets/45292b2a-e970-4244-a139-d1f69ad8152f)
 
