@@ -8,8 +8,7 @@ Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que 
 
 💡Ejemplos:
 
-![image](https://github.com/user-attachments/assets/ba202581-f386-4aae-b5cd-e3968c2f31a1)
-
+![image](https://github.com/user-attachments/assets/2a9df948-ca8c-49b1-992f-c7c38c7ea539)
 
 Figura 1. Solidos simscape. 
 
