@@ -31,5 +31,29 @@ Para solucionar esto, vamos a usar una de las uniones mencionadas anteriormente,
 
 Figura 3. Solidos en simulación conectados con rigid transform. 
 
+### 1.2 Bloque PS Converter (Physical Signal Converter)
+
+En Simscape, el bloque PS Converter, también conocido como Physical Signal Converter, es una herramienta fundamental para la interacción entre los dos tipos de señales que se manejan dentro del entorno: las señales físicas y las señales de Simulink tradicionales.
+
+#### 1.2.1 Función del PS Converter
+
+El`PS Converter sirve como un puente entre ambos mundos:
+
+De Simulink a Simscape: Convierte una señal Simulink (por ejemplo, una señal de control o entrada numérica) en una señal física que puede usarse dentro de un modelo Simscape.
+De Simscape a Simulink: Cuando se usa en conjunto con el bloque PS-Simulink Converter, permite tomar una magnitud física y convertirla en una señal Simulink para graficarla, procesarla o usarla en un controlador.
+
+#### 1.2.2 Opciones del bloque
+
+Cuando se utiliza el PS Converter, se debe especificar la unidad de la señal física que se desea trabajar.  
+Por ejemplo: si se convierte una señal numérica en una velocidad, es necesario indicar que esa señal será en "m/s" (metros por segundo).  
+Esto asegura la coherencia de unidades dentro del modelo y evita errores en la simulación.
+
+#### 1.2.3 Relación con otros bloques
+
+El PS Converter generalmente se usa junto con:
+
+Simulink-PS Converter: Para pasar de Simulink a Simscape.
+PS-Simulink Converter: Para pasar de Simscape a Simulink.
+
 
 
