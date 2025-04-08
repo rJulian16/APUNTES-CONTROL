@@ -25,6 +25,11 @@ Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que 
 
 Figura 2. Solidos en simulación. 
 
+Para solucionar esto, vamos a usar una de las uniones mencionadas anteriormente, en este caso se va a usar el rigid transform, pero asi como esta, podemos usar cualquiera de las otras conexiones para poder crear nuestros sistemas.
+
+![image](https://github.com/user-attachments/assets/b9ae9fc4-18a9-428c-8d45-d2ece241c45f)
+
+Figura 3. Solidos en simulación conectados con rigid transform. 
 
 
 
