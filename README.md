@@ -55,5 +55,8 @@ El PS Converter generalmente se usa junto con:
 Simulink-PS Converter: Para pasar de Simulink a Simscape.
 PS-Simulink Converter: Para pasar de Simscape a Simulink.
 
+💡Ejemplo: En el siguiente esquematico se ve como las magnitudes fisicas que se generan gracias a los solidos y las distintas uniones que contiene se pueden convertir en una señal simulink, con esto podemos combrobar que nuestro sistema funcione como queremos o que cumpla con los requisitos que se piden. 
 
+![image](https://github.com/user-attachments/assets/45292b2a-e970-4244-a139-d1f69ad8152f)
 
+Figura 4. Solidos en simulación conectados con rigid transform. 
