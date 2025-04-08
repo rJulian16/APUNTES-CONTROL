@@ -19,6 +19,12 @@ Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que 
 
 >🔑Rigid Transform: No es una articulación móvil, sino una conexión rígida que establece una posición y orientación específica entre dos componentes. Sirve para fijar piezas o ajustar la alineación entre bloques en un modelo sin permitir movimiento entre ellos.
 
+💡Ejemplo: Si conectamos los solidos directamente al mundo y generamos la simulacion estos se van a superponerse unos con otros. 
+
+![image](https://github.com/user-attachments/assets/a920c125-b7fa-4968-8601-d74c26678a7a)
+
+Figura 2. Solidos en simulación. 
+
 
 
 
