@@ -40,7 +40,9 @@ Figura 3. Solidos en simulación conectados con rigid transform.
 
 💡Ejercicio: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
 
+![image](https://github.com/user-attachments/assets/b98253b6-1776-4aef-89f6-a49134cf6363)
 
+Figura 4. Esquematico ejercicio Revolute Join
 
 ### 1.3 Bloque PS Converter (Physical Signal Converter)
 
