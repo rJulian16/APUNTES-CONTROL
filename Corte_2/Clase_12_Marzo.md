@@ -12,7 +12,9 @@ Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que 
 
 Figura 1. Solidos simscape. 
 
-Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que tiene forma de prisma rectangular y permite personalizar dimensiones, masa, densidad y apariencia visual. Además de este, también se puede emplear el bloque Solid para representar otras formas geométricas. Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joints, como la Revolute Joint, la Prismatic Joint y la Rigid Transform. Estas conexiones son fundamentales para definir los grados de libertad del sistema y lograr un comportamiento mecánico realista en la simulación.
+### 1.2 Uniones y Conexiones en Simscape Multibody
+
+Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joints, como la Revolute Joint, la Prismatic Joint y la Rigid Transform. Estas conexiones son fundamentales para definir los grados de libertad del sistema y lograr un comportamiento mecánico realista en la simulación.
 >🔑 Revolute Joint: Es una unión que permite la rotación relativa entre dos cuerpos alrededor de un solo eje. Es útil para simular movimientos como los de una bisagra o el giro de una rueda. Solo tiene un grado de libertad (rotacional).
 
 >🔑 Prismatic Joint: Esta unión permite el deslizamiento lineal entre dos cuerpos a lo largo de un eje fijo. Se usa para modelar mecanismos que requieren movimiento rectilíneo, como un pistón o un actuador lineal. También tiene un solo grado de libertad, pero lineal.
@@ -31,24 +33,24 @@ Para solucionar esto, vamos a usar una de las uniones mencionadas anteriormente,
 
 Figura 3. Solidos en simulación conectados con rigid transform. 
 
-### 1.2 Bloque PS Converter (Physical Signal Converter)
+### 1.3 Bloque PS Converter (Physical Signal Converter)
 
 En Simscape, el bloque PS Converter, también conocido como Physical Signal Converter, es una herramienta fundamental para la interacción entre los dos tipos de señales que se manejan dentro del entorno: las señales físicas y las señales de Simulink tradicionales.
 
-#### 1.2.1 Función del PS Converter
+#### 1.3.1 Función del PS Converter
 
 El PS Converter sirve como un puente entre ambos mundos:
 
 De Simulink a Simscape: Convierte una señal Simulink (por ejemplo, una señal de control o entrada numérica) en una señal física que puede usarse dentro de un modelo Simscape.
 De Simscape a Simulink: Cuando se usa en conjunto con el bloque PS-Simulink Converter, permite tomar una magnitud física y convertirla en una señal Simulink para graficarla, procesarla o usarla en un controlador.
 
-#### 1.2.2 Opciones del bloque
+#### 1.3.2 Opciones del bloque
 
 Cuando se utiliza el PS Converter, se debe especificar la unidad de la señal física que se desea trabajar.  
 Por ejemplo: si se convierte una señal numérica en una velocidad, es necesario indicar que esa señal será en "m/s" (metros por segundo).  
 Esto asegura la coherencia de unidades dentro del modelo y evita errores en la simulación.
 
-#### 1.2.3 Relación con otros bloques
+#### 1.3.3 Relación con otros bloques
 
 El PS Converter generalmente se usa junto con:
 
