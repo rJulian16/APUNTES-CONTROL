@@ -21,17 +21,26 @@ Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joint
 
 >🔑Rigid Transform: No es una articulación móvil, sino una conexión rígida que establece una posición y orientación específica entre dos componentes. Sirve para fijar piezas o ajustar la alineación entre bloques en un modelo sin permitir movimiento entre ellos.
 
-💡Ejercicios: Si conectamos los solidos directamente al mundo y generamos la simulacion estos se van a superponerse unos con otros. 
+#### 1.2.1 Rigid Transform
+
+💡Ejercicio: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
 
 ![image](https://github.com/user-attachments/assets/a920c125-b7fa-4968-8601-d74c26678a7a)
 
 Figura 2. Solidos en simulación. 
 
-Para solucionar esto, vamos a usar una de las uniones mencionadas anteriormente, en este caso se va a usar el rigid transform, pero asi como esta, podemos usar cualquiera de las otras conexiones para poder crear nuestros sistemas.
+Para resolver este ejercicio, se utilizará una de las uniones mencionadas anteriormente: el Rigid Transform. Esta herramienta permite aplicar tanto rotaciones como traslaciones a los cuerpos sólidos. En este caso, se trabajará específicamente con el apartado de traslación, con el fin de mover las figuras a lo largo de los ejes X, Y y Z, posicionándolas en distintos puntos del espacio. De esta forma, se evita que los sólidos queden superpuestos y se logra una distribución ordenada dentro del modelo.
+
 
 ![image](https://github.com/user-attachments/assets/b9ae9fc4-18a9-428c-8d45-d2ece241c45f)
 
 Figura 3. Solidos en simulación conectados con rigid transform. 
+
+#### 1.2.2 Revolute Join
+
+💡Ejercicio: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
+
+
 
 ### 1.3 Bloque PS Converter (Physical Signal Converter)
 
