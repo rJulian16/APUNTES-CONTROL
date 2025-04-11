@@ -36,15 +36,11 @@ La posición puede estar en una dimensión (línea recta), dos (plano) o tres (e
 
 >🔑 Velocidad: La velocidad es la rapidez con la que cambia la posición de un objeto respecto al tiempo.
 Es la derivada de la posición respecto al tiempo:
-$$
-v(t) = \frac{ds(t)}{dt}
-$$
+$$v(t) = \frac{ds(t)}{dt}$$
 Indica qué tan rápido y en qué dirección se mueve el objeto. Puede ser positiva o negativa dependiendo del sentido del movimiento.
 
 >🔑 Aceleracion: La aceleración mide la variación de la velocidad en el tiempo. Es la derivada de la velocidad, o la segunda derivada de la posición:
-$$
-a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}
-$$
+$$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$
 Representa qué tan rápido cambia la velocidad del objeto.
 
 ## 1.1. Aplicacion 
