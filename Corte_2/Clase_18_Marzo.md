@@ -17,6 +17,8 @@ Para lograr un movimiento rápido pero suave, se utiliza un perfil de velocidad 
 
 Figura 1. Ejemplo 1.
 
+💡Ejemplo 2: Brazo Robotico
+
 Situación:
 Un brazo robótico de seis ejes debe tomar un objeto y colocarlo en una caja. El movimiento involucra rotaciones y desplazamientos de varios motores en diferentes ejes, y todos deben llegar a su destino exactamente al mismo tiempo para que el agarre y la liberación sean precisos.
 
