@@ -236,13 +236,13 @@ Los perfiles más comunes son:
 
 ![image](https://github.com/user-attachments/assets/8dff2912-d1b8-4c78-a4c7-2f3d1f4395a3)
 
-Figura 1. Ejemplo Perfil trapezoideal.
+Figura 10. Ejemplo Perfil trapezoideal.
 
 **-S-curve o polinómico:**: transición más suave entre estados (usado en movimientos delicados).
 
 ![image](https://github.com/user-attachments/assets/61773fc7-b84e-483c-8e30-284714517549)
 
-Figura 2. Ejemplo Perfil S.
+Figura 11. Ejemplo Perfil S.
 
 Las gráficas típicas en este caso son:
 
@@ -267,9 +267,9 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1 Perfil Trapezoidal:
 
-**Situación:** Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
+Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
--Ecuaciones fundamentales:
+### Ecuaciones fundamentales:
 
 $$v(t) = \int a(t)dt = a \cdot t + v_0$$
 
@@ -342,7 +342,65 @@ $$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
 
 ![image](https://github.com/user-attachments/assets/a97b90f2-5033-4010-9b59-07393d286de2)
 
-Figura 3. Resultados MATLAB .
+Figura 12. Resultados MATLAB .
+
+📚 Ejercicio 2 Perfil S: 
+
+Se desea mover un actuador lineal desde la posición inicial $s_0 = 0\,m$ hasta $s_f = 2\,m$ en un tiempo total de $T = 3\,s$. A diferencia del perfil trapezoidal, en este caso se utiliza un perfil suavizado tipo "S", donde la aceleración no es constante, sino que cambia suavemente para evitar impactos dinámicos.
+
+
+### Parámetros iniciales
+
+- $s_0 = 0\,m$
+- $s_f = 2\,m$
+- $T = 3\,s$
+- Perfil suavizado con transición progresiva de aceleración
+- Se usará una función sigmoidal tipo seno para suavizar el perfil
+
+### Funciones del perfil tipo S
+
+Utilizamos funciones trigonométricas para suavizar la aceleración y generar curvas suaves de velocidad y posición:
+
+#### Velocidad
+
+$$v(t) = v_{max} \cdot \left( \frac{1 - \cos\left( \frac{\pi t}{T} \right)}{2} \right)$$
+
+#### Posición
+
+$$s(t) = \int v(t) \,dt = \frac{v_{max} T}{2\pi} \left( t - \frac{T}{2\pi} \sin\left( \frac{2\pi t}{T} \right) \right)$$
+
+#### Aceleración
+
+$$a(t) = \frac{dv(t)}{dt} = \frac{\pi v_{max}}{2T} \cdot \sin\left( \frac{\pi t}{T} \right)$$
+
+### Cálculo de $v_{max}$
+
+La posición final $s(T) = 2\,m$ se logra con:
+
+$$s(T) = \int_0^T v(t)\,dt = v_{max} \cdot \left( \frac{T}{2} \right)$$
+
+Entonces:
+
+$$2 = v_{max} \cdot \frac{3}{2}$$
+
+$$v_{max} = \frac{4}{3}\,m/s$$
+
+### Resultados
+
+- Velocidad máxima: $v_{max} = \frac{4}{3}\,m/s$
+- Tiempo total: $T = 3\,s$
+- Desplazamiento total: $s = 2\,m$
+- Movimiento suave y continuo sin saltos en la aceleración
+
+### Ventajas del perfil S
+
+- Evita impactos dinámicos por aceleraciones bruscas
+- Ideal para movimientos de precisión o con restricciones mecánicas
+- Aumenta la vida útil de componentes al reducir vibraciones
+
+![image](https://github.com/user-attachments/assets/ae6c24a0-bfa1-4fef-ab4e-49a34cce9c59)
+
+Figura 13. Resultados Matlab ejercicio 2.
 
 ### 1.1.2. Movimiento multieje
 
