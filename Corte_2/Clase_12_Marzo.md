@@ -7,7 +7,7 @@ Simscape es una herramienta de MATLAB que se utiliza junto con Simulink para sim
 En Simulink, a través del entorno de Simscape Multibody, es posible construir modelos de sistemas mecánicos de manera gráfica y detallada. Uno de los elementos clave en estos sistemas son los eslabones, que funcionan como piezas rígidas encargadas de transmitir movimiento o fuerza dentro de un mecanismo. Estos eslabones forman la estructura básica de mecanismos
 Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que tiene forma de prisma rectangular y permite personalizar dimensiones, masa, densidad y apariencia visual. Además de este, también se puede emplear el bloque Solid para representar otras formas geométricas. 
 
-💡Ejercicio:
+💡Ejemplo:
 
 ![image](https://github.com/user-attachments/assets/655064ff-0b01-458b-95ab-d37420dcdddb)
 
@@ -24,7 +24,7 @@ Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joint
 
 ## 3.1. Rigid Transform
 
-💡Ejercicio: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
+💡Ejemplo: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
 
 ![image](https://github.com/user-attachments/assets/a920c125-b7fa-4968-8601-d74c26678a7a)
 
@@ -39,7 +39,7 @@ Figura 3. Solidos en simulación conectados con rigid transform.
 
 ## 3.2. Revolute Join
 
-💡Ejercicio: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
+💡Ejemplo: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
 
 ![image](https://github.com/user-attachments/assets/b98253b6-1776-4aef-89f6-a49134cf6363)
 
@@ -51,7 +51,7 @@ A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde
 
 ## 3.3. Prismatic Join
 
-💡Ejercicio: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
+💡Ejemplo: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
 
 ![image](https://github.com/user-attachments/assets/103ceb4c-2c40-4797-896b-5b05a6510921)
 
@@ -85,7 +85,7 @@ El PS Converter generalmente se usa junto con:
 Simulink-PS Converter: Para pasar de Simulink a Simscape.
 PS-Simulink Converter: Para pasar de Simscape a Simulink.
 
-💡Ejercicio: En el siguiente esquematico se ve como las magnitudes fisicas que se generan gracias a los solidos y las distintas uniones que contiene se pueden convertir en una señal simulink, con esto podemos combrobar que nuestro sistema funcione como queremos o que cumpla con los requisitos que se piden. 
+📚Ejercicio: En el siguiente esquematico se ve como las magnitudes fisicas que se generan gracias a los solidos y las distintas uniones que contiene se pueden convertir en una señal simulink, con esto podemos combrobar que nuestro sistema funcione como queremos o que cumpla con los requisitos que se piden. 
 
 ![image](https://github.com/user-attachments/assets/45292b2a-e970-4244-a139-d1f69ad8152f)
 
@@ -95,7 +95,7 @@ Figura 6. Solidos en simulación conectados con rigid transform.
 
 Durante la sesión se desarrollaron tres ejercicios básicos en Simulink utilizando Simscape Multibody. Cada uno busca representar un tipo diferente de movimiento mecánico, aplicando uniones y bloques específicos para lograrlo. A continuación, se describe brevemente cada ejercicio junto con su solución implementada.
 
-## 💡5.1. Cubo: 
+## 📚5.1. Cubo: 
 
 Se modela un cubo que se desplaza a lo largo del eje X, simulando un movimiento lineal horizontal.
 
@@ -107,7 +107,7 @@ Para la solución de este ejercicio, se parte de un esquemático similar al util
 
 A continuación, se comparte el enlace al modelo de simulación donde se observa el movimiento del cubo a lo largo del eje X. Gracias a la transformación aplicada y a la señal seno, el cubo oscila horizontalmente, permitiendo visualizar claramente el funcionamiento del sistema y la correcta orientación del desplazamiento: https://youtu.be/f9ET-9DZtIU
 
-## 💡5.2. 3 Eslabones: 
+## 📚5.2. 3 Eslabones: 
 
 Se modela un sistema compuesto por tres eslabones rectangulares conectados entre sí, formando un marco en forma de “U” invertida. Los dos eslabones laterales se mantienen fijos en sus extremos inferiores y deben girar como péndulos sin restricciones. El eslabón superior (horizontal) debe permanecer conectado a los otros dos, acompañando su movimiento, pero sin rotar, únicamente trasladándose.
 
@@ -120,7 +120,7 @@ El eslabón superior se posiciona entre los extremos superiores de los eslabones
 
 A continuación, se presenta el enlace de la simulación donde se puede observar el comportamiento del sistema articulado. Se aprecia cómo los eslabones laterales oscilan libremente y cómo el eslabón superior se traslada en sincronía, manteniendo la estructura conectada en todo momento: https://youtu.be/z-HsZccP6sc
 
-## 💡5.3. Viela, Manibela, Corredera : 
+## 📚5.3. Viela, Manibela, Corredera : 
 
 Se plantea un sistema mecánico compuesto por una biela, una manivela y una corredera. La biela y la manivela están conectadas de forma que pueden rotar entre sí, generando un movimiento continuo. La corredera, por su parte, no rota, sino que se traslada linealmente sobre un eje. El objetivo es representar el funcionamiento típico de este tipo de mecanismo, muy utilizado en sistemas de transmisión mecánica.
 
@@ -133,3 +133,24 @@ Para construir este sistema, se modelan tres sólidos rectangulares que represen
 Para asegurar que todos los componentes estén correctamente alineados en el mismo sistema de coordenadas, se emplean dos bloques Rigid Transform, que ajustan la posición y orientación de los elementos en el espacio. Por último, se utiliza un Prismatic Joint que restringe el movimiento de la corredera únicamente al eje X, permitiendo que esta se desplace linealmente en respuesta a la rotación generada por la manivela. Así, se logra simular con precisión la dinámica del sistema biela-manivela-corredera.
 
 A continuación, se presenta el enlace al modelo del sistema biela-manivela con corredera. En la simulación se observa cómo la rotación de la manivela se transmite a la biela, generando el desplazamiento lineal de la corredera y reproduciendo la dinámica del mecanismo: https://youtu.be/HyWwIMJ60yk
+
+# 6. Conclusiones
+- Simscape Multibody permite una representación clara y precisa de sistemas mecánicos complejos, facilitando la visualización y análisis de su comportamiento dinámico mediante la conexión de bloques físicos.
+  
+- El uso de bloques como Solid, Rigid Transform, Revolute Joint y Prismatic Joint permite diseñar mecanismos articulados y sistemas con grados de libertad específicos, replicando comportamientos reales como rotaciones, traslaciones y restricciones de movimiento.
+  
+- La correcta implementación de Rigid Transform es fundamental para alinear componentes en el espacio tridimensional y evitar errores en la conexión entre eslabones o sólidos, especialmente cuando se busca representar movimientos en ejes distintos a los predeterminados.
+  
+- A través de señales de entrada como la onda seno o la rampa, es posible generar movimientos continuos o controlados en los mecanismos, lo que facilita el análisis de respuestas dinámicas y su posible integración con sistemas de control.
+
+# 7. Referencias
+
+[1] MathWorks. (2024). Simscape Multibody Documentation. MATLAB & Simulink. Disponible en: https://www.mathworks.com/help/physmod/sm/
+
+[2] MathWorks. (2024). Modeling Multibody Systems. MATLAB & Simulink Tutorials. Disponible en: https://www.mathworks.com/learn/tutorials/multibody-modeling.html
+
+[3] Palm, W. J. (2013). Modeling, Analysis, and Control of Dynamic Systems (3rd ed.). John Wiley & Sons.
+
+[4] Ogata, K. (2010). Modern Control Engineering (5th ed.). Prentice Hall.
+
+[5] MathWorks. (2024). Simulink Start Page. Disponible en: https://www.mathworks.com/products/simulink.html
