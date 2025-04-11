@@ -36,16 +36,13 @@ Las gráficas típicas en este caso son:
 - Tiempo de velocidad constante (crucero): $T_{cruise} = 1 \ \text{s}$
 - Tiempo de desaceleración: $T_{dec} = 1 \ \text{s}$
 - Perfil deseado: **Velocidad trapezoidal**
-- 
+- Tiempo de aceleración y desaceleración: $t_1$
+- Tiempo a velocidad constante: $t_2$
+  
 El perfil trapezoidal tiene **3 fases**:
 1. **Aceleración constante**
 2. **Velocidad constante**
 3. **Desaceleración constante**
-
-
-- Tiempo total $T = 3 \ \text{s}$
-- Tiempo de aceleración y desaceleración: $t_1$
-- Tiempo a velocidad constante: $t_2$
 
 La distancia total es el área bajo la curva de velocidad:
 
