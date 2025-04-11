@@ -234,7 +234,7 @@ Los perfiles más comunes son:
 
 **- Trapezoidal:** velocidad constante en el centro del movimiento.
 
-![image](https://github.com/user-attachments/assets/8dff2912-d1b8-4c78-a4c7-2f3d1f4395a3)
+![image](https://github.com/user-attachments/assets/0bfd5ad9-80fa-458f-9004-4fcad3089441)
 
 Figura 10. Ejemplo Perfil trapezoideal.
 
