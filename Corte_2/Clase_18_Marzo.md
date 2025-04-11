@@ -29,32 +29,44 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
+### Datos iniciales
+
 - Posición inicial: $s_0 = 0 \ \text{m}$
 - Posición final: $s_f = 2 \ \text{m}$
 - Velocidad máxima: $v_{max} = 1 \ \text{m/s}$
 - Aceleración máxima: $a_{max} = 2 \ \text{m/s}^2$
 
-### Cálculos previos
+---
 
-Se calcula el tiempo que tarda en alcanzar la velocidad máxima:
+## Paso 1: Determinar tiempos característicos
+
+### Tiempo de aceleración:
 
 $$
 t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \ \text{s}
 $$
 
-Se calcula la distancia recorrida durante la aceleración:
+### Distancia recorrida durante aceleración:
+
+Usando la fórmula de movimiento uniformemente acelerado:
 
 $$
 s_a = \frac{1}{2} a_{max} t_a^2 = \frac{1}{2} \cdot 2 \cdot (0.5)^2 = 0.25 \ \text{m}
 $$
 
-Como el total de desplazamiento es $2 \ \text{m}$, y se recorren $0.25 \ \text{m}$ en la aceleración y $0.25 \ \text{m}$ en la desaceleración, quedan $1.5 \ \text{m}$ para el tramo de velocidad constante:
+### Longitud del tramo a velocidad constante:
 
 $$
-t_c = \frac{1.5}{1} = 1.5 \ \text{s}
+s_c = s_f - 2s_a = 2 - 2 \cdot 0.25 = 1.5 \ \text{m}
 $$
 
-Tiempo total del movimiento:
+### Tiempo a velocidad constante:
+
+$$
+t_c = \frac{s_c}{v_{max}} = \frac{1.5}{1} = 1.5 \ \text{s}
+$$
+
+### Tiempo total:
 
 $$
 T = t_a + t_c + t_a = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
@@ -62,50 +74,105 @@ $$
 
 ---
 
-## Ecuaciones del perfil
+## Paso 2: Definir el perfil por tramos
 
-### Fase 1 – Aceleración constante $(0 \leq t \leq 0.5)$
+### **Fase 1** – Aceleración constante $(0 \leq t \leq 0.5)$
+
+- Aceleración:
 
 $$
 a(t) = 2
 $$
+
+- Integrando $a(t)$ para obtener $v(t)$:
+
+$$
+v(t) = \int a(t) \, dt = \int 2 \, dt = 2t + C_1
+$$
+
+Como $v(0) = 0$, entonces $C_1 = 0$:
+
 $$
 v(t) = 2t
 $$
+
+- Integrando $v(t)$ para obtener $s(t)$:
+
+$$
+s(t) = \int 2t \, dt = t^2 + C_2
+$$
+
+Como $s(0) = 0$, entonces $C_2 = 0$:
+
 $$
 s(t) = t^2
 $$
 
-### Fase 2 – Velocidad constante $(0.5 \leq t \leq 2)$
+---
+
+### **Fase 2** – Velocidad constante $(0.5 \leq t \leq 2)$
+
+- Aceleración:
 
 $$
 a(t) = 0
 $$
+
+- Velocidad constante:
+
 $$
 v(t) = 1
 $$
+
+- Posición:
+
+Como $s(0.5) = (0.5)^2 = 0.25$, entonces:
+
 $$
 s(t) = 0.25 + 1 \cdot (t - 0.5) = t - 0.25
 $$
 
-### Fase 3 – Desaceleración constante $(2 \leq t \leq 2.5)$
+---
 
-Sea $\tau = t - 2$
+### **Fase 3** – Desaceleración constante $(2 \leq t \leq 2.5)$
+
+- Aceleración:
 
 $$
 a(t) = -2
 $$
+
+- Integrando para obtener velocidad:
+
+Sea $\tau = t - 2$:
+
+$$
+v(\tau) = \int -2 \, d\tau = -2\tau + C_3
+$$
+
+Como $v(0) = 1$, entonces $C_3 = 1$:
+
 $$
 v(\tau) = 1 - 2\tau
 $$
+
+- Integrando para obtener posición:
+
+$$
+s(\tau) = \int (1 - 2\tau) \, d\tau = \tau - \tau^2 + C_4
+$$
+
+Como $s(0) = 1.75$ (verificado desde fase 2), entonces $C_4 = 1.75$:
+
 $$
 s(\tau) = 1.75 + \tau - \tau^2
 $$
 
-o expresado en función de $t$:
+Reescribiendo en función de $t$:
 
 $$
-s(t) = 1.75 + (t -
+s(t) = 1.75 + (t - 2) - (t - 2)^2
+$$
 
 
 ![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
