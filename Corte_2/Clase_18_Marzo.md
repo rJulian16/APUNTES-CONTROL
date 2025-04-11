@@ -27,6 +27,9 @@ En este caso, se utilizan perfiles de movimiento multi-eje sincronizados, como l
 
 Figura 2. Ejemplo 2.
 
+# 2. Conceptos Basicos
+
+
 ## 1.1. Aplicacion 
 
 Existen dos contextos principales donde se aplican los perfiles de movimiento:
