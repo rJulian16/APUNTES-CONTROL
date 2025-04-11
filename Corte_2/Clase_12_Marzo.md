@@ -1,5 +1,18 @@
 # Control de Movimiento Clase 12 de marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
+
+- [Introducción](#introducción)
+- [1. Conceptos básicos](#1-conceptos-básicos)
+- [2. Uniones mecánicas](#2-uniones-mecánicas)
+  - [2.1 Rigid Transform](#21-rigid-transform)
+  - [2.2 Revolute Joint](#22-revolute-joint)
+- [3. Ejercicios](#3-ejercicios)
+  - [3.1 Péndulo rotativo](#31-péndulo-rotativo)
+  - [3.2 Eslabones en U](#32-eslabones-en-u)
+  - [3.3 Esfera con Prismatic](#33-esfera-con-prismatic)
+- [Conclusiones](#conclusiones)
+- [Referencias](#referencias)
+- 
 # 1. Simscape
 Simscape es una herramienta de MATLAB que se utiliza junto con Simulink para simular sistemas físicos de una manera visual y sencilla. En lugar de escribir ecuaciones manualmente, se pueden construir los modelos usando bloques que representan componentes reales como motores, resistencias o pistones. Una de sus ventajas es que permite conectar estos bloques como si fueran partes de un sistema real, facilitando así la comprensión del comportamiento del sistema completo.
 
