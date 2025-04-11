@@ -109,6 +109,47 @@ Figura 5. Curva de Posición.
 | Velocidad     | Derivada de la posición / Integral de la aceleración     | Rapidez de cambio de la posición            |
 | Posición      | Integral de la velocidad                                 | Lugar ocupado en el tiempo                  |
 
+📚Ejercicio 1: Se analiza un perfil de movimiento con el objetivo de determinar la posición y la aceleración del sistema en el instante de tiempo t = 5 segundos.
+
+![image](https://github.com/user-attachments/assets/97b5634a-9deb-40dc-a397-2a68ef1d28c3)
+
+Figura 6. Ejercicio 1 planteado en clase.
+
+La clave para encontrar la aceleración está en la gráfica de velocidad, ya que la aceleración es la pendiente de esta curva.
+
+A partir de la gráfica:
+
+- La velocidad varía de 0 in/s a 10 in/s entre t = 0 s y t = 5 s.
+
+La pendiente (aceleración constante) se calcula como:
+
+$$a(t) = \frac{\Delta v}{\Delta t} = \frac{10 - 0}{5 - 0} = 2 \ \text{in/s}^2$$
+
+La posición se obtiene integrando la función de velocidad.  
+Si la velocidad sigue una ley lineal (perfil acelerado constante), entonces:
+
+$$v(t) = a t = 2t$$
+
+Integrando para obtener la posición:
+
+$$s(t) = \int v(t) \, dt = \int 2t \, dt = t^2 + C$$
+
+Asumiendo posición inicial $s(0) = 0$ (es decir, $C = 0$):
+
+$$s(t) = t^2$$
+
+Por lo tanto, en $t = 5$ s:
+
+$$s(5) = 5^2 = 25 \ \text{in}$$
+
+-Resultados Finales
+
+- **Aceleración en t = 5 s:**  
+  $$a = 2 \ \text{in/s}^2$$
+
+- **Posición en t = 5 s:**  
+  $$s = 25 \ \text{in}$$
+
 # 4. Reglas Geometricas
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
