@@ -1,6 +1,8 @@
 # Control de Movimiento Clase 12 de marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
+# INDICE
+
 - [1. Simscape](#1-simscape)
 - [2. Eslabones](#2-eslabones)
 - [3. Uniones y Conexiones en Simscape Multibody](#3-uniones-y-conexiones-en-simscape-multibody)
