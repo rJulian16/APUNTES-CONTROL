@@ -42,6 +42,20 @@ Indica qué tan rápido y en qué dirección se mueve el objeto. Puede ser posit
 >🔑 Aceleracion: La aceleración mide la variación de la velocidad en el tiempo. Es la derivada de la velocidad, o la segunda derivada de la posición:
 $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido cambia la velocidad del objeto. Tambien en su expresion integral: $$v(t) = \int a(t) \, dt$$
 
+# 3- Reglas Geometricas
+
+Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
+
+🔹 Relación entre Posición y Velocidad
+La posición en un instante de tiempo está determinada por el área bajo la curva de velocidad hasta ese instante.
+
+Esto significa que integrar la velocidad en un intervalo de tiempo nos da el desplazamiento total.
+
+🔹 Relación entre Velocidad y Aceleración
+La aceleración corresponde a la pendiente de la curva de velocidad.
+
+Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
+
 ## 1.1. Aplicacion 
 
 Existen dos contextos principales donde se aplican los perfiles de movimiento:
