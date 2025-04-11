@@ -107,44 +107,30 @@ Las gráficas típicas en este caso son:
 
 **Situación:** Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
-### 🔁 Ecuaciones fundamentales:
+-Ecuaciones fundamentales:
 
-$$
-v(t) = \int a(t)\,dt = a \cdot t + v_0
-$$
+$$v(t) = \int a(t)\,dt = a \cdot t + v_0$$
 
-$$
-s(t) = \int v(t)\,dt = \int (a \cdot t + v_0)\,dt = \frac{1}{2} a t^2 + v_0 t + s_0
-$$
+$$s(t) = \int v(t)\,dt = \int (a \cdot t + v_0)\,dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
 
-### 🔹 1. Velocidad máxima alcanzada (fase aceleración)
+-1. Velocidad máxima alcanzada (fase aceleración)
 
-$$
-v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s
-$$
+$$v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s$$
 
-### 🔹 2. Posición total recorrida (área bajo la curva de velocidad)
+-2. Posición total recorrida (área bajo la curva de velocidad)
 
 Fase aceleración:  
-$$
-s_1 = \int_0^1 v(t)\,dt = \int_0^1 t\,dt = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m
-$$
+$$s_1 = \int_0^1 v(t)\,dt = \int_0^1 t\,dt = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
 
 Fase velocidad constante ($v = 1\,m/s$):  
-$$
-s_2 = v \cdot t = 1 \cdot 1 = 1\,m
-$$
+$$s_2 = v \cdot t = 1 \cdot 1 = 1\,m$$
 
 Fase desaceleración (simétrica a la de aceleración):  
-$$
-s_3 = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m
-$$
+$$s_3 = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
 
-### ✅ Resultados:
+-✅ Resultados:
 
-$$
-v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = s_1 + s_2 + s_3 = 2\,m
-$$
+$$v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = s_1 + s_2 + s_3 = 2\,m$$
 
 ### 1.1.2. Movimiento multieje
 
