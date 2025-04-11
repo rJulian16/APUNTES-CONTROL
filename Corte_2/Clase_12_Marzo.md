@@ -27,7 +27,7 @@ Simscape es una herramienta de MATLAB que se utiliza junto con Simulink para sim
 En Simulink, a través del entorno de Simscape Multibody, es posible construir modelos de sistemas mecánicos de manera gráfica y detallada. Uno de los elementos clave en estos sistemas son los eslabones, que funcionan como piezas rígidas encargadas de transmitir movimiento o fuerza dentro de un mecanismo. Estos eslabones forman la estructura básica de mecanismos
 Para representar un eslabón, se utiliza comúnmente el bloque Brick Solid, que tiene forma de prisma rectangular y permite personalizar dimensiones, masa, densidad y apariencia visual. Además de este, también se puede emplear el bloque Solid para representar otras formas geométricas. 
 
-💡Ejemplo:
+💡Ejemplo 1:
 
 ![image](https://github.com/user-attachments/assets/655064ff-0b01-458b-95ab-d37420dcdddb)
 
@@ -44,7 +44,7 @@ Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joint
 
 ## 3.1. Rigid Transform
 
-💡Ejemplo: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
+💡Ejemplo 2: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
 
 ![image](https://github.com/user-attachments/assets/a920c125-b7fa-4968-8601-d74c26678a7a)
 
@@ -59,7 +59,7 @@ Figura 3. Solidos en simulación conectados con rigid transform.
 
 ## 3.2. Revolute Join
 
-💡Ejemplo: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
+💡Ejemplo 3: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
 
 ![image](https://github.com/user-attachments/assets/b98253b6-1776-4aef-89f6-a49134cf6363)
 
@@ -71,7 +71,7 @@ A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde
 
 ## 3.3. Prismatic Join
 
-💡Ejemplo: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
+💡Ejemplo 4: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
 
 ![image](https://github.com/user-attachments/assets/103ceb4c-2c40-4797-896b-5b05a6510921)
 
