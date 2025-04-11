@@ -85,7 +85,7 @@ El área bajo esta curva representa el desplazamiento total (posición final).
 
 Se obtiene integrando la velocidad:
 
-$$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt$$
+$$s(t) = \int v(t)dt$$
 
 # 4. Reglas Geometricas
 
