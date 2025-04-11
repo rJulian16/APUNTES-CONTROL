@@ -95,7 +95,7 @@ Figura 6. Solidos en simulación conectados con rigid transform.
 
 Durante la sesión se desarrollaron tres ejercicios básicos en Simulink utilizando Simscape Multibody. Cada uno busca representar un tipo diferente de movimiento mecánico, aplicando uniones y bloques específicos para lograrlo. A continuación, se describe brevemente cada ejercicio junto con su solución implementada.
 
-## 5.1. Cubo: 
+## 💡5.1. Cubo: 
 
 Se modela un cubo que se desplaza a lo largo del eje X, simulando un movimiento lineal horizontal.
 
@@ -107,7 +107,7 @@ Para la solución de este ejercicio, se parte de un esquemático similar al util
 
 A continuación, se comparte el enlace al modelo de simulación donde se observa el movimiento del cubo a lo largo del eje X. Gracias a la transformación aplicada y a la señal seno, el cubo oscila horizontalmente, permitiendo visualizar claramente el funcionamiento del sistema y la correcta orientación del desplazamiento: https://youtu.be/f9ET-9DZtIU
 
-## 5.2. 3 Eslabones: 
+## 💡5.2. 3 Eslabones: 
 
 Se modela un sistema compuesto por tres eslabones rectangulares conectados entre sí, formando un marco en forma de “U” invertida. Los dos eslabones laterales se mantienen fijos en sus extremos inferiores y deben girar como péndulos sin restricciones. El eslabón superior (horizontal) debe permanecer conectado a los otros dos, acompañando su movimiento, pero sin rotar, únicamente trasladándose.
 
@@ -119,3 +119,17 @@ Para construir este sistema, se utilizan tres sólidos rectangulares. Los eslabo
 El eslabón superior se posiciona entre los extremos superiores de los eslabones laterales y, aunque no rota, acompaña el movimiento mediante una traslación controlada que le permite mantenerse unido a los otros dos. De esta manera, el eslabón horizontal se traslada en sincronía con la oscilación de los laterales, manteniendo la estructura conectada y simulando un marco articulado funcional.
 
 A continuación, se presenta el enlace de la simulación donde se puede observar el comportamiento del sistema articulado. Se aprecia cómo los eslabones laterales oscilan libremente y cómo el eslabón superior se traslada en sincronía, manteniendo la estructura conectada en todo momento: https://youtu.be/z-HsZccP6sc
+
+## 💡5.3. Viela, Manibela, Corredera : 
+
+Se plantea un sistema mecánico compuesto por una biela, una manivela y una corredera. La biela y la manivela están conectadas de forma que pueden rotar entre sí, generando un movimiento continuo. La corredera, por su parte, no rota, sino que se traslada linealmente sobre un eje. El objetivo es representar el funcionamiento típico de este tipo de mecanismo, muy utilizado en sistemas de transmisión mecánica.
+
+![image](https://github.com/user-attachments/assets/f3bad60a-ccca-4c15-9346-a1d68610dc66)
+
+Figura 9. Solucion del tercer ejercicio. 
+
+Para construir este sistema, se modelan tres sólidos rectangulares que representan la manivela, la biela y la corredera. La manivela se conecta a un punto fijo mediante un Revolute Joint, que le permite girar de forma continua. En su otro extremo, se conecta a la biela usando un segundo Revolute Joint, permitiendo que ambas giren de forma sincronizada. Finalmente, la biela se une a la corredera mediante un tercer Revolute Joint, permitiendo que la manivela complete su movimiento rotacional sin afectar la orientación de la corredera.
+
+Para asegurar que todos los componentes estén correctamente alineados en el mismo sistema de coordenadas, se emplean dos bloques Rigid Transform, que ajustan la posición y orientación de los elementos en el espacio. Por último, se utiliza un Prismatic Joint que restringe el movimiento de la corredera únicamente al eje X, permitiendo que esta se desplace linealmente en respuesta a la rotación generada por la manivela. Así, se logra simular con precisión la dinámica del sistema biela-manivela-corredera.
+
+A continuación, se presenta el enlace al modelo del sistema biela-manivela con corredera. En la simulación se observa cómo la rotación de la manivela se transmite a la biela, generando el desplazamiento lineal de la corredera y reproduciendo la dinámica del mecanismo: https://youtu.be/HyWwIMJ60yk
