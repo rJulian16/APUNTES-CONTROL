@@ -31,9 +31,7 @@ Figura 2. Ejemplo 2.
 
 >🔑 Posicion: La posición describe el lugar en el que se encuentra un objeto en el espacio en un instante determinado.
 Se representa comúnmente como una función del tiempo: 
-$$
-s(t)
-$$
+$$s(t)$$
 La posición puede estar en una dimensión (línea recta), dos (plano) o tres (espacio). Es el punto de referencia para determinar el movimiento.
 
 >🔑 Velocidad: La velocidad es la rapidez con la que cambia la posición de un objeto respecto al tiempo.
