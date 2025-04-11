@@ -265,17 +265,17 @@ Las gráficas típicas en este caso son:
 
 
 
-📚Ejercicio 1 Perfil Trapezoidal:
+📚Ejercicio 5 Perfil Trapezoidal:
 
 Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
-### Ecuaciones fundamentales:
+#### Ecuaciones fundamentales:
 
 $$v(t) = \int a(t)dt = a \cdot t + v_0$$
 
 $$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
 
-### Parámetros iniciales
+#### Parámetros iniciales
 
 - $s_0 = 0\,m$
 - $s_f = 2\,m$
@@ -285,7 +285,7 @@ $$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt = \frac{1}{2} a t^2 + v_0 t + s_
 - Tiempo de velocidad constante: $t_c = 1\,s$
 - Tiempo de desaceleración: $t_d = 1\,s$
 
-### Ecuaciones del perfil trapezoidal
+#### Ecuaciones del perfil trapezoidal
 
 Fase de aceleración ($0 \leq t < t_a$):
 
@@ -309,7 +309,7 @@ $$v(t) = v_{max} - a(t - t_a - t_c)$$
 
 $$s(t) = s(t_a + t_c) + v_{max}(t - t_a - t_c) - \frac{1}{2}a(t - t_a - t_c)^2$$
 
-### Cálculo de aceleración
+#### Cálculo de aceleración
 
 Se usa la relación de área bajo la curva de velocidad para igualar al desplazamiento total:
 
@@ -333,7 +333,7 @@ Entonces:
 
 $$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
 
-### Resultados
+#### Resultados
 
 - Aceleración: $a = 1\,m/s^2$
 - Velocidad máxima: $v_{max} = 1\,m/s$
@@ -344,12 +344,12 @@ $$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
 
 Figura 12. Resultados MATLAB ejercicio 1 .
 
-📚 Ejercicio 2 Perfil S: 
+📚 Ejercicio 6 Perfil S: 
 
 Se desea mover un actuador lineal desde la posición inicial $s_0 = 0\,m$ hasta $s_f = 2\,m$ en un tiempo total de $T = 3\,s$. A diferencia del perfil trapezoidal, en este caso se utiliza un perfil suavizado tipo "S", donde la aceleración no es constante, sino que cambia suavemente para evitar impactos dinámicos.
 
 
-### Parámetros iniciales
+#### Parámetros iniciales
 
 - $s_0 = 0\,m$
 - $s_f = 2\,m$
@@ -357,23 +357,23 @@ Se desea mover un actuador lineal desde la posición inicial $s_0 = 0\,m$ hasta 
 - Perfil suavizado con transición progresiva de aceleración
 - Se usará una función sigmoidal tipo seno para suavizar el perfil
 
-### Funciones del perfil tipo S
+#### Funciones del perfil tipo S
 
 Utilizamos funciones trigonométricas para suavizar la aceleración y generar curvas suaves de velocidad y posición:
 
-#### Velocidad
+##### Velocidad
 
 $$v(t) = v_{max} \cdot \left( \frac{1 - \cos\left( \frac{\pi t}{T} \right)}{2} \right)$$
 
-#### Posición
+##### Posición
 
 $$s(t) = \int v(t) \,dt = \frac{v_{max} T}{2\pi} \left( t - \frac{T}{2\pi} \sin\left( \frac{2\pi t}{T} \right) \right)$$
 
-#### Aceleración
+##### Aceleración
 
 $$a(t) = \frac{dv(t)}{dt} = \frac{\pi v_{max}}{2T} \cdot \sin\left( \frac{\pi t}{T} \right)$$
 
-### Cálculo de $v_{max}$
+#### Cálculo de $v_{max}$
 
 La posición final $s(T) = 2\,m$ se logra con:
 
@@ -385,14 +385,14 @@ $$2 = v_{max} \cdot \frac{3}{2}$$
 
 $$v_{max} = \frac{4}{3}\,m/s$$
 
-### Resultados
+#### Resultados
 
 - Velocidad máxima: $v_{max} = \frac{4}{3}\,m/s$
 - Tiempo total: $T = 3\,s$
 - Desplazamiento total: $s = 2\,m$
 - Movimiento suave y continuo sin saltos en la aceleración
 
-### Ventajas del perfil S
+#### Ventajas del perfil S
 
 - Evita impactos dinámicos por aceleraciones bruscas
 - Ideal para movimientos de precisión o con restricciones mecánicas
@@ -402,10 +402,58 @@ $$v_{max} = \frac{4}{3}\,m/s$$
 
 Figura 13. Resultados Matlab ejercicio 2.
 
-### 1.1.2. Movimiento multieje
+### 5.2 Movimiento multieje
 
 Cuando el sistema debe moverse en más de una dirección al mismo tiempo (por ejemplo, un brazo robótico o un dron), se generan perfiles sincronizados en todos los ejes (X, Y, Z, etc.) para que el movimiento sea coordinado y continuo.
 
 Aquí, los puntos clave del recorrido definen el camino deseado, y los perfiles aseguran que todos los ejes se muevan al ritmo necesario para llegar a cada punto al mismo tiempo, respetando velocidades y aceleraciones máximas.
 
 Las gráficas en cada eje son similares a las del caso de un solo eje, pero se analizan por separado en cada dimensión.
+
+📚 Ejercicio 7: Movimiento multieje simple (2 ejes)
+
+#### Enunciado:
+Un sistema de 2 ejes (X y Y) debe mover una herramienta desde el punto **(0,0)** hasta el punto **(2,3)** metros, en un tiempo total de **4 segundos**, partiendo desde el reposo y usando perfiles **trapezoidales** independientes en cada eje.
+
+##### Supuestos:
+- Movimiento independiente en cada eje.
+- Aceleración y desaceleración simétrica.
+- Perfil trapezoidal para cada eje.
+- Aceleración constante durante cada fase.
+- Tiempo total: $T = 4\,s$
+- Tiempo de aceleración: $t_a = 1\,s$
+- Tiempo de velocidad constante: $t_c = 2\,s$
+- Tiempo de desaceleración: $t_d = 1\,s$
+
+
+#### Ecuaciones usadas:
+
+$$s_f = \frac{1}{2}a\,t_a^2 + v_{max}\,t_c + \frac{1}{2}a\,t_d^2$$
+
+Como $v_{max} = a \cdot t_a$, entonces:
+
+$$s_f = a \left(\frac{1}{2}t_a^2 + t_a t_c + \frac{1}{2}t_d^2\right)$$
+
+#### Cálculos:
+
+##### Eje X:
+- Desplazamiento total: $s_{fx} = 2\,m$
+
+$$2 = a_x \cdot \left(0.5 + 2 + 0.5\right) = a_x \cdot 3 \Rightarrow a_x = \frac{2}{3}\,m/s^2$$
+
+$$v_{max\_x} = a_x \cdot t_a = \frac{2}{3} \cdot 1 = 0.667\,m/s$$
+
+##### Eje Y:
+- Desplazamiento total: $s_{fy} = 3\,m$
+
+$$3 = a_y \cdot 3 \Rightarrow a_y = 1\,m/s^2$$
+
+$$v_{max\_y} = a_y \cdot t_a = 1 \cdot 1 = 1\,m/s$$
+
+
+#### Resultados finales:
+
+| Eje | $a$ (m/s²) | $v_{max}$ (m/s) | $s_f$ (m) |
+|-----|------------|------------------|-----------|
+| X   | 0.667      | 0.667            | 2         |
+| Y   | 1          | 1                | 3         |
