@@ -180,7 +180,7 @@ Figura 8. Ejercicio 3 planteado en clase.
 
 En la gráfica se representa el comportamiento de la velocidad del eje en función del tiempo, partiendo desde el reposo y aumentando de manera lineal debido a una aceleración constante. Esto se evidencia por la forma recta de la curva, cuya pendiente representa la aceleración aplicada al sistema. Este tipo de análisis permite visualizar de forma clara cómo la aceleración influye directamente en el cambio de velocidad y, por lo tanto, en el desplazamiento total del eje a lo largo del tiempo.
 
-📚Ejercicio 4: Un eje lineal parte también desde el reposo y desde la posición \(0\), pero con una aceleración menor de \(1.5 \, \frac{m}{s^2}\). ¿Cuál es la posición alcanzada luego de \(5 \, s\) de movimiento?
+📚Ejercicio 4: Un eje lineal parte desde el reposo y desde la posición $s_0 = 0$ con una aceleración constante de $$a = 1.5\ \text{m/s}^2$$ ¿Cuál será su velocidad después de transcurridos $$t = 5\ \text{s}$$?
 
 - Aceleración: $a = 1.5\ \text{m/s}^2$
 - Tiempo: $t = 5\ \text{s}$
