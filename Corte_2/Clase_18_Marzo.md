@@ -457,3 +457,7 @@ $$v_{max\_y} = a_y \cdot t_a = 1 \cdot 1 = 1\,m/s$$
 |-----|------------|------------------|-----------|
 | X   | 0.667      | 0.667            | 2         |
 | Y   | 1          | 1                | 3         |
+
+![image](https://github.com/user-attachments/assets/c121d561-ae3c-440d-ad99-c587ddd5aecc)
+
+Figura 14. Matlab ejercicio multieje.
