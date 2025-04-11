@@ -120,17 +120,21 @@ $$v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s$$
 -2. Posición total recorrida (área bajo la curva de velocidad)
 
 Fase aceleración:  
+
 $$s_1 = \int_0^1 v(t)\,dt = \int_0^1 t\,dt = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
 
 Fase velocidad constante ($v = 1\,m/s$):  
+
 $$s_2 = v \cdot t = 1 \cdot 1 = 1\,m$$
 
 Fase desaceleración (simétrica a la de aceleración):  
+
 $$s_3 = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
 
--✅ Resultados:
+-✅ **Resultados:**
 
 $$v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = s_1 + s_2 + s_3 = 2\,m$$
+
 
 ![image](https://github.com/user-attachments/assets/a97b90f2-5033-4010-9b59-07393d286de2)
 
