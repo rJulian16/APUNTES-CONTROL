@@ -1,7 +1,7 @@
 # Control de Movimiento Clase 12 de Marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
-# INDICE
+## Indice
 
 - [1. Simscape](#1-simscape)
 - [2. Eslabones](#2-eslabones)
