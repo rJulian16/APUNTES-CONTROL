@@ -29,37 +29,10 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
-**Enunciado:**  
-Se quiere mover un actuador lineal desde la posición $0 \ \text{m}$ hasta $2 \ \text{m}$ en un tiempo total de $3 \ \text{s}$. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
-
-### Fases del perfil de velocidad trapezoidal
-
 El perfil trapezoidal tiene **3 fases**:
 1. **Aceleración constante**
 2. **Velocidad constante**
 3. **Desaceleración constante**
-
-Asumimos que el perfil es **simétrico**, por lo tanto:
-
-- Tiempo total $T = 3 \ \text{s}$
-- Tiempo de aceleración y desaceleración: $t_1$
-- Tiempo a velocidad constante: $t_2$
-  
-Se cumple:  
-$$
-T = 2t_1 + t_2
-$$
-
-La velocidad máxima será:  
-$$
-v_{\text{max}} = a \cdot t_1
-$$
-
-Donde $a$ es la aceleración constante.
-
----
-
-### Cálculo por integrales
 
 La distancia total es el área bajo la curva de velocidad:
 
@@ -69,7 +42,7 @@ $$
 
 Separando por fases:
 
-#### 1. Aceleración ($0 \leq t < t_1$)
+-1. Aceleración ($0 \leq t < t_1$)
 
 $$
 v(t) = a \cdot t
@@ -79,7 +52,7 @@ $$
 s_1(t) = \int_0^{t_1} a \cdot t \, dt = a \cdot \frac{t_1^2}{2}
 $$
 
-#### 2. Velocidad constante ($t_1 \leq t < t_1 + t_2$)
+-2. Velocidad constante ($t_1 \leq t < t_1 + t_2$)
 
 $$
 v(t) = v_{\text{max}} = a \cdot t_1
@@ -89,7 +62,7 @@ $$
 s_2(t) = \int_{t_1}^{t_1 + t_2} a \cdot t_1 \, dt = a \cdot t_1 \cdot t_2
 $$
 
-#### 3. Desaceleración ($t_1 + t_2 \leq t \leq T$)
+-3. Desaceleración ($t_1 + t_2 \leq t \leq T$)
 
 $$
 v(t) = -a(t - T) \quad \text{(bajando desde } v_{\text{max}} \text{ hasta 0)}
@@ -99,7 +72,7 @@ $$
 s_3(t) = \int_{t_1 + t_2}^{T} -a(t - T) \, dt = a \cdot \frac{t_1^2}{2}
 $$
 
-#### Distancia total:
+-Distancia total:
 
 $$
 s = s_1 + s_2 + s_3 = a \cdot \frac{t_1^2}{2} + a \cdot t_1 \cdot t_2 + a \cdot \frac{t_1^2}{2}
@@ -127,7 +100,7 @@ $$
 
 ---
 
-### Sustituimos los valores del enunciado
+-Sustituimos los valores del enunciado
 
 - $s = 2 \ \text{m}$
 - $T = 3 \ \text{s}$
@@ -140,7 +113,7 @@ $$
 
 ---
 
-### Elegimos $t_1 = 0.75 \ \text{s}$
+-Elegimos $t_1 = 0.75 \ \text{s}$
 
 Entonces:
 
@@ -160,7 +133,7 @@ $$
 
 ---
 
-### Resumen del perfil
+-Resumen del perfil
 
 - Aceleración: $a = 1.185 \ \text{m/s}^2$
 - Velocidad máxima: $v_{\text{max}} = 0.889 \ \text{m/s}$
@@ -168,7 +141,7 @@ $$
 
 ---
 
-### Posición por tramos
+-Posición por tramos
 
 #### 1. $0 \leq t < 0.75$
 
@@ -176,13 +149,13 @@ $$
 s(t) = \frac{1}{2} a t^2 = 0.5925 \cdot t^2
 $$
 
-#### 2. $0.75 \leq t < 2.25$
+-2. $0.75 \leq t < 2.25$
 
 $$
 s(t) = v_{\text{max}} (t - 0.75) + s(0.75) = 0.889 (t - 0.75) + 0.333
 $$
 
-#### 3. $2.25 \leq t \leq 3$
+-3. $2.25 \leq t \leq 3$
 
 Usamos $\tau = t - 2.25$:
 
