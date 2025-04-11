@@ -36,17 +36,15 @@ Las gráficas típicas en este caso son:
 - Velocidad máxima: $v_{max} = 1 \ \text{m/s}$
 - Aceleración máxima: $a_{max} = 2 \ \text{m/s}^2$
 
----
+Paso 1: Determinar tiempos característicos
 
-## Paso 1: Determinar tiempos característicos
-
-### Tiempo de aceleración:
+-Tiempo de aceleración:
 
 $$
 t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \ \text{s}
 $$
 
-### Distancia recorrida durante aceleración:
+-Distancia recorrida durante aceleración:
 
 Usando la fórmula de movimiento uniformemente acelerado:
 
@@ -54,19 +52,19 @@ $$
 s_a = \frac{1}{2} a_{max} t_a^2 = \frac{1}{2} \cdot 2 \cdot (0.5)^2 = 0.25 \ \text{m}
 $$
 
-### Longitud del tramo a velocidad constante:
+-Longitud del tramo a velocidad constante:
 
 $$
 s_c = s_f - 2s_a = 2 - 2 \cdot 0.25 = 1.5 \ \text{m}
 $$
 
-### Tiempo a velocidad constante:
+-Tiempo a velocidad constante:
 
 $$
 t_c = \frac{s_c}{v_{max}} = \frac{1.5}{1} = 1.5 \ \text{s}
 $$
 
-### Tiempo total:
+-Tiempo total:
 
 $$
 T = t_a + t_c + t_a = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
