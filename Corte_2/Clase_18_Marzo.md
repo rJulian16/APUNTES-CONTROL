@@ -112,7 +112,7 @@ $$v(t) = \int a(t)\,dt$$
 
 $$s(t) = \int v(t)\,dt$$
 
-- 1. Velocidad máxima alcanzada
+-1. Velocidad máxima alcanzada
 
 Durante la fase de aceleración:
 $$v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s$$
