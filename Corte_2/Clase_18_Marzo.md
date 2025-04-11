@@ -103,7 +103,7 @@ Las gráficas típicas en este caso son:
 | **Precisión de control**      | Menor precisión dinámica en aplicaciones sensibles | Mayor precisión y confort de movimiento           |
 | **Derivadas continuas**       | Velocidad continua pero aceleración discontinua    | Derivadas suaves hasta la aceleración             |
 
-📚Ejercicio Perfil Trapezoidal – Cálculo de `v` y `s`:
+📚Ejercicio 1 Perfil Trapezoidal:
 
 **Situación:** Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
@@ -131,6 +131,10 @@ $$s_3 = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
 -✅ Resultados:
 
 $$v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = s_1 + s_2 + s_3 = 2\,m$$
+
+![image](https://github.com/user-attachments/assets/a97b90f2-5033-4010-9b59-07393d286de2)
+
+Figura 3. Resultados MATLAB .
 
 ### 1.1.2. Movimiento multieje
 
