@@ -81,11 +81,25 @@ Si la aceleración varía suavemente, la curva de velocidad toma forma de una �
 
 El área bajo esta curva representa el desplazamiento total (posición final).
 
+![image](https://github.com/user-attachments/assets/c949a54f-daaf-49be-8008-207c37e50d07)
+
+Figura 4. Curva de velocidad.
+
 -**Curva de Posición** $s(t)$
 
 Se obtiene integrando la velocidad:
 
 $$s(t) = \int v(t)dt$$
+
+La posición representa cómo cambia el lugar ocupado por el sistema con respecto al tiempo.
+
+Si la velocidad tiene forma de triángulo, la posición tendrá una curva suave de tipo parábola.
+
+En un perfil trapezoidal o en S, la posición muestra un crecimiento continuo con diferentes pendientes (más suave o más rápida).
+
+![image](https://github.com/user-attachments/assets/f6546be5-84b9-45b1-84eb-a43d4d0d1181)
+
+Figura 5. Curva de Posición.
 
 # 4. Reglas Geometricas
 
