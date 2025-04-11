@@ -29,6 +29,14 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
+- Posición inicial: $s_0 = 0 \ \text{m}$
+- Posición final: $s_f = 2 \ \text{m}$
+- Tiempo total: $T = 3 \ \text{s}$
+- Tiempo de aceleración: $T_{acc} = 1 \ \text{s}$
+- Tiempo de velocidad constante (crucero): $T_{cruise} = 1 \ \text{s}$
+- Tiempo de desaceleración: $T_{dec} = 1 \ \text{s}$
+- Perfil deseado: **Velocidad trapezoidal**
+- 
 El perfil trapezoidal tiene **3 fases**:
 1. **Aceleración constante**
 2. **Velocidad constante**
