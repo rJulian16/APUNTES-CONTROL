@@ -31,87 +31,96 @@ Las gráficas típicas en este caso son:
 
 ### Datos iniciales
 
-- Recorrido total: $s_{\text{total}} = 1 \ \text{m}$
-- Velocidad máxima: $v_{\text{max}} = 0.5 \ \text{m/s}$
-- Aceleración: $a = 1 \ \text{m/s}^2$
+- $s_{\text{total}} = 2 \ \text{m}$  
+- $T = 3 \ \text{s}$ (tiempo total)  
+- Sea $t_1$ el tiempo de aceleración y desaceleración  
+- Sea $t_2$ el tiempo de velocidad constante  
+- Entonces: $T = 2t_1 + t_2$
 
-### Fases del perfil
+La distancia total se reparte así:
 
-#### 1. **Fase de aceleración**
+- Área bajo la aceleración (triángulo): $s_1 = \frac{1}{2} a t_1^2$
+- Área bajo velocidad constante: $s_2 = v_{\text{max}} t_2$
+- Pero $v_{\text{max}} = a t_1$
 
-Partimos desde velocidad cero, aplicando aceleración constante.
-
-- Tiempo de aceleración:
-
-$$
-t_1 = \frac{v_{\text{max}}}{a} = \frac{0.5}{1} = 0.5 \ \text{s}
-$$
-
-- Posición durante esta fase (integrando la velocidad):
+Entonces:
 
 $$
-s_1(t) = \frac{1}{2} a t^2 = \frac{1}{2}(1)t^2 = 0.5t^2
+s = 2 \cdot \left( \frac{1}{2} a t_1^2 \right) + a t_1 t_2 = a t_1^2 + a t_1 t_2
 $$
 
-#### 2. **Fase de velocidad constante**
-
-La velocidad se mantiene constante a $v_{\text{max}}$.
-
-- Posición al final de aceleración:
+Como $t_2 = T - 2t_1$, sustituimos:
 
 $$
-s(t_1) = s_1(t_1) = 0.5(0.5)^2 = 0.125 \ \text{m}
+2 = a t_1^2 + a t_1 (3 - 2t_1)
 $$
 
-- Posición durante esta fase (lineal):
+Simplificando:
 
 $$
-s_2(t) = v_{\text{max}} (t - t_1) + s_1(t_1)
+2 = a t_1^2 + 3a t_1 - 2a t_1^2 = -a t_1^2 + 3a t_1
 $$
 
-Duración de esta fase:
-
-Sabemos que la aceleración y la desaceleración cubren el mismo recorrido, por lo tanto:
+Dividimos ambos lados entre $a$:
 
 $$
-s_{\text{constante}} = s_{\text{total}} - 2 \cdot s_1(t_1) = 1 - 2 \cdot 0.125 = 0.75 \ \text{m}
+\frac{2}{a} = -t_1^2 + 3t_1
 $$
 
-Entonces, la duración de la fase constante es:
+Ordenamos:
 
 $$
-t_2 = \frac{0.75}{v_{\text{max}}} = \frac{0.75}{0.5} = 1.5 \ \text{s}
+t_1^2 - 3t_1 + \frac{2}{a} = 0
 $$
 
-#### 3. **Fase de desaceleración**
+Ahora elegimos un valor para $t_1$ que haga que la velocidad máxima no sea muy alta y el perfil se vea razonable.
 
-Aceleración negativa igual en magnitud a la inicial. Como el movimiento es simétrico:
-
-- Tiempo total:
+Supongamos que $t_1 = 0.75$ s:
 
 $$
-T = t_1 + t_2 + t_1 = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
+t_2 = 3 - 2 \cdot 0.75 = 1.5 \ \text{s}
 $$
 
-- Posición durante esta fase (aceleración negativa):
-
-Definimos $\tau = t - (t_1 + t_2)$, que es el tiempo local dentro de esta fase.
+Calculamos la aceleración:
 
 $$
-s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(t_1 + t_2)
+s = a \cdot t_1^2 + a \cdot t_1 \cdot t_2 = a (0.75^2 + 0.75 \cdot 1.5) = a (0.5625 + 1.125) = a \cdot 1.6875
+$$
+
+Entonces:
+
+$$
+2 = a \cdot 1.6875 \Rightarrow a = \frac{2}{1.6875} \approx 1.185 \ \text{m/s}^2
+$$
+
+Velocidad máxima:
+
+$$
+v_{\text{max}} = a t_1 = 1.185 \cdot 0.75 \approx 0.889 \ \text{m/s}
 $$
 
 ---
 
-### Perfil completo de posición $s(t)$
+### Perfil de posición $s(t)$
+
+- **Fase 1 (aceleración)**: $0 \leq t < 0.75$
 
 $$
-s(t) =
-\begin{cases}
-0.5 t^2, & \text{si } 0 \leq t < t_1 \\\\
-0.5 (t - t_1) + s_1(t_1), & \text{si } t_1 \leq t < t_1 + t_2 \\\\
--\frac{1}{2} (t - T)^2 + v_{\text{max}} (t - T + t_1) + s(t_1 + t_2), & \text{si } t_1 + t_2 \leq t \leq T
-\end{cases}
+s_1(t) = \frac{1}{2} a t^2 = 0.5925 \cdot t^2
+$$
+
+- **Fase 2 (velocidad constante)**: $0.75 \leq t < 2.25$
+
+$$
+s_2(t) = v_{\text{max}} (t - 0.75) + s_1(0.75) = 0.889 (t - 0.75) + 0.333
+$$
+
+- **Fase 3 (desaceleración)**: $2.25 \leq t \leq 3$
+
+Definimos $\tau = t - 2.25$
+
+$$
+s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(2.25)
 $$
 
 
