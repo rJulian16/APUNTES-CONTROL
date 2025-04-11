@@ -56,6 +56,12 @@ La aceleración corresponde a la pendiente de la curva de velocidad.
 
 Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
 
+De este analisis salen las siguiente ecuaciones: 
+
+  $$v = v_0 + a(t - t_0)$$
+
+  $$s = s_0 + \frac{1}{2}(t - t_0)(v_0 + a(t - t_0))$$
+  
 ## 1.1. Aplicacion 
 
 Existen dos contextos principales donde se aplican los perfiles de movimiento:
