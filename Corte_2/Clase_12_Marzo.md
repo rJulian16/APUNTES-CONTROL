@@ -1,14 +1,23 @@
 # Control de Movimiento Clase 12 de marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
-- [1. Simscape](#Simscape)
-- [2. Eslabones](#Eslabones)
-- [3. Uniones y Conexiones en Simscape Multibody](#Uniones-y-Conexiones-en-Simscape-Multibody)
-- [2. Eslabones](#Eslabones)
-- [2. Eslabones](#Eslabones)
-- [2. Eslabones](#Eslabones)
-- [2. Eslabones](#Eslabones)
-
+- [1. Simscape](#1-simscape)
+- [2. Eslabones](#2-eslabones)
+- [3. Uniones y Conexiones en Simscape Multibody](#3-uniones-y-conexiones-en-simscape-multibody)
+  - [3.1. Rigid Transform](#31-rigid-transform)
+  - [3.2. Revolute Join](#32-revolute-join)
+  - [3.3. Prismatic Join](#33-prismatic-join)
+- [4. Bloque PS Converter (Physical Signal Converter)](#4-bloque-ps-converter-physical-signal-converter)
+  - [4.1. Función del PS Converter](#41-función-del-ps-converter)
+  - [4.2. Opciones del bloque](#42-opciones-del-bloque)
+  - [4.3. Relación con otros bloques](#43-relación-con-otros-bloques)
+- [5. Ejercicios propuestos en clase:](#5-ejercicios-propuestos-en-clase)
+  - [5.1. Cubo](#📚51-cubo)
+  - [5.2. 3 Eslabones](#📚52-3-eslabones)
+  - [5.3. Viela, Manibela, Corredera](#📚53-viela-manibela-corredera)
+- [6. Conclusiones](#6-conclusiones)
+- [7. Referencias](#7-referencias)
+  
 # 1. Simscape
 Simscape es una herramienta de MATLAB que se utiliza junto con Simulink para simular sistemas físicos de una manera visual y sencilla. En lugar de escribir ecuaciones manualmente, se pueden construir los modelos usando bloques que representan componentes reales como motores, resistencias o pistones. Una de sus ventajas es que permite conectar estos bloques como si fueran partes de un sistema real, facilitando así la comprensión del comportamiento del sistema completo.
 
