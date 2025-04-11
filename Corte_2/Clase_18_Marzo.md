@@ -31,9 +31,9 @@ Las gráficas típicas en este caso son:
 
 ### Datos iniciales
 
-- Recorrido total: $s_{\text{total}} = 1$ m  
-- Velocidad máxima: $v_{\text{max}} = 0.5$ m/s  
-- Aceleración: $a = 1$ m/s²
+- Recorrido total: $s_{\text{total}} = 1 \ \text{m}$
+- Velocidad máxima: $v_{\text{max}} = 0.5 \ \text{m/s}$
+- Aceleración: $a = 1 \ \text{m/s}^2$
 
 ### Fases del perfil
 
@@ -42,65 +42,78 @@ Las gráficas típicas en este caso son:
 Partimos desde velocidad cero, aplicando aceleración constante.
 
 - Tiempo de aceleración:
-  $$
-  t_1 = \frac{v_{\text{max}}}{a} = \frac{0.5}{1} = 0.5 \ \text{s}
-  $$
+
+$$
+t_1 = \frac{v_{\text{max}}}{a} = \frac{0.5}{1} = 0.5 \ \text{s}
+$$
 
 - Posición durante esta fase (integrando la velocidad):
-  $$
-  s_1(t) = \frac{1}{2} a t^2 = \frac{1}{2}(1)t^2 = 0.5t^2
-  $$
+
+$$
+s_1(t) = \frac{1}{2} a t^2 = \frac{1}{2}(1)t^2 = 0.5t^2
+$$
 
 #### 2. **Fase de velocidad constante**
 
 La velocidad se mantiene constante a $v_{\text{max}}$.
 
 - Posición al final de aceleración:
-  $$
-  s(t_1) = s_1(t_1) = 0.5(0.5)^2 = 0.125 \ \text{m}
-  $$
+
+$$
+s(t_1) = s_1(t_1) = 0.5(0.5)^2 = 0.125 \ \text{m}
+$$
 
 - Posición durante esta fase (lineal):
-  $$
-  s_2(t) = v_{\text{max}} (t - t_1) + s_1(t_1)
-  $$
+
+$$
+s_2(t) = v_{\text{max}} (t - t_1) + s_1(t_1)
+$$
 
 Duración de esta fase:
-- Se busca cuánto dura esta fase sabiendo que el recorrido total es 1 m, y la desaceleración tendrá el mismo recorrido que la aceleración:
-  $$
-  s_{\text{constante}} = s_{\text{total}} - 2 \cdot s_1(t_1) = 1 - 2 \cdot 0.125 = 0.75 \ \text{m}
-  $$
-  $$
-  t_2 = \frac{0.75}{v_{\text{max}}} = \frac{0.75}{0.5} = 1.5 \ \text{s}
-  $$
+
+Sabemos que la aceleración y la desaceleración cubren el mismo recorrido, por lo tanto:
+
+$$
+s_{\text{constante}} = s_{\text{total}} - 2 \cdot s_1(t_1) = 1 - 2 \cdot 0.125 = 0.75 \ \text{m}
+$$
+
+Entonces, la duración de la fase constante es:
+
+$$
+t_2 = \frac{0.75}{v_{\text{max}}} = \frac{0.75}{0.5} = 1.5 \ \text{s}
+$$
 
 #### 3. **Fase de desaceleración**
 
-Aceleración negativa igual en magnitud a la inicial. El movimiento simétrico implica:
+Aceleración negativa igual en magnitud a la inicial. Como el movimiento es simétrico:
 
 - Tiempo total:
-  $$
-  T = t_1 + t_2 + t_1 = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
-  $$
+
+$$
+T = t_1 + t_2 + t_1 = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
+$$
 
 - Posición durante esta fase (aceleración negativa):
-  - Tiempo local dentro de esta fase: $\tau = t - (t_1 + t_2)$
-  $$
-  s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(t_1 + t_2)
-  $$
+
+Definimos $\tau = t - (t_1 + t_2)$, que es el tiempo local dentro de esta fase.
+
+$$
+s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(t_1 + t_2)
+$$
 
 ---
 
 ### Perfil completo de posición $s(t)$
 
 $$
-s(t) = 
+s(t) =
 \begin{cases}
-0.5 t^2, & \text{si } 0 \leq t < t_1 \\
-0.5 (t - t_1) + s_1(t_1), & \text{si } t_1 \leq t < t_1 + t_2 \\
+0.5 t^2, & \text{si } 0 \leq t < t_1 \\\\
+0.5 (t - t_1) + s_1(t_1), & \text{si } t_1 \leq t < t_1 + t_2 \\\\
 -\frac{1}{2} (t - T)^2 + v_{\text{max}} (t - T + t_1) + s(t_1 + t_2), & \text{si } t_1 + t_2 \leq t \leq T
 \end{cases}
 $$
+
 
 
 
