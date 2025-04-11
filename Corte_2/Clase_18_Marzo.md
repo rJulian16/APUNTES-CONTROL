@@ -115,28 +115,70 @@ $$v(t) = \int a(t)\,dt = a \cdot t + v_0$$
 
 $$s(t) = \int v(t)\,dt = \int (a \cdot t + v_0)\,dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
 
--1. Velocidad máxima alcanzada (fase aceleración)
+### Parámetros iniciales
 
-$$v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s$$
+- $s_0 = 0\,m$
+- $s_f = 2\,m$
+- $T = 3\,s$
+- Aceleración y desaceleración simétricas
+- Tiempo de aceleración: $t_a = 1\,s$
+- Tiempo de velocidad constante: $t_c = 1\,s$
+- Tiempo de desaceleración: $t_d = 1\,s$
 
--2. Posición total recorrida (área bajo la curva de velocidad)
+### Ecuaciones del perfil trapezoidal
 
-Fase aceleración:  
+Fase de aceleración ($0 \leq t < t_a$):
 
-$$s_1 = \int_0^1 v(t)\,dt = \int_0^1 t\,dt = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
+$$a(t) = a = \text{cte}$$
 
-Fase velocidad constante ($v = 1\,m/s$):  
+$$v(t) = \int a\,dt = a\,t$$
 
-$$s_2 = v \cdot t = 1 \cdot 1 = 1\,m$$
+$$s(t) = \int v(t)\,dt = \int a\,t\,dt = \frac{1}{2}a\,t^2$$
 
-Fase desaceleración (simétrica a la de aceleración):  
+Fase de velocidad constante ($t_a \leq t < t_a + t_c$):
 
-$$s_3 = \frac{1}{2} \cdot 1 \cdot 1 = 0.5\,m$$
+$$v(t) = v_{max} = a\,t_a$$
 
--✅ **Resultados:**
+$$s(t) = s(t_a) + v_{max}(t - t_a)$$
 
-$$v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = s_1 + s_2 + s_3 = 2\,m$$
+Fase de desaceleración ($t_a + t_c \leq t \leq T$):
 
+$$a(t) = -a$$
+
+$$v(t) = v_{max} - a(t - t_a - t_c)$$
+
+$$s(t) = s(t_a + t_c) + v_{max}(t - t_a - t_c) - \frac{1}{2}a(t - t_a - t_c)^2$$
+
+### Cálculo de aceleración
+
+Se usa la relación de área bajo la curva de velocidad para igualar al desplazamiento total:
+
+$$\text{Área total} = \frac{1}{2}v_{max}t_a + v_{max}t_c + \frac{1}{2}v_{max}t_d = s_f$$
+
+Sabemos que:
+
+$$v_{max} = a\,t_a$$
+
+Entonces:
+
+$$s_f = \frac{1}{2}(a\,t_a)t_a + (a\,t_a)t_c + \frac{1}{2}(a\,t_a)t_d$$
+
+Sustituyendo $t_a = t_c = t_d = 1\,s$, y $s_f = 2\,m$:
+
+$$2 = \frac{1}{2}a + a + \frac{1}{2}a = 2a$$
+
+$$a = 1\,\frac{m}{s^2}$$
+
+Entonces:
+
+$$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
+
+### Resultados
+
+- Aceleración: $a = 1\,m/s^2$
+- Velocidad máxima: $v_{max} = 1\,m/s$
+- Desplazamiento total: $2\,m$
+- Tiempo total: $3\,s$
 
 ![image](https://github.com/user-attachments/assets/a97b90f2-5033-4010-9b59-07393d286de2)
 
