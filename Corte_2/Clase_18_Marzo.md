@@ -44,7 +44,12 @@ Indica qué tan rápido y en qué dirección se mueve el objeto. Puede ser posit
 >🔑 Aceleracion: La aceleración mide la variación de la velocidad en el tiempo. Es la derivada de la velocidad, o la segunda derivada de la posición:
 $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido cambia la velocidad del objeto. Tambien en su expresion integral: $$v(t) = \int a(t) \, dt$$
 
-# 3. Reglas Geometricas
+# 3. Curvas de Posición, Velocidad y Aceleración
+
+
+
+
+# 4. Reglas Geometricas
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
 
@@ -64,11 +69,11 @@ De este analisis salen las siguiente ecuaciones:
 
   $$s = s_0 + \frac{1}{2}(t - t_0)(v_0 + a(t - t_0))$$
   
-# 4. Aplicacion 
+# 5. Aplicacion 
 
 Existen dos contextos principales donde se aplican los perfiles de movimiento:
 
-## 4.1. Movimiento en un solo eje
+## 5.1. Movimiento en un solo eje
 
 Este perfil implica que el sistema solo se mueve en una dirección (por ejemplo, un actuador lineal que se extiende o retrae). Se definen los valores iniciales y finales de posición, y se genera una trayectoria suave que cumpla con condiciones de aceleración y velocidad máximas deseadas.
 
@@ -104,6 +109,8 @@ Las gráficas típicas en este caso son:
 | **Fácil de implementar**      | Sí, requiere menos cálculos                        | Requiere más cálculos matemáticos o funciones especiales |
 | **Precisión de control**      | Menor precisión dinámica en aplicaciones sensibles | Mayor precisión y confort de movimiento           |
 | **Derivadas continuas**       | Velocidad continua pero aceleración discontinua    | Derivadas suaves hasta la aceleración             |
+
+
 
 📚Ejercicio 1 Perfil Trapezoidal:
 
