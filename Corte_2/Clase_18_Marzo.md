@@ -92,6 +92,17 @@ Las gráficas típicas en este caso son:
 
 -Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
 
+| Característica                  | Perfil Trapezoidal                                 | Perfil en S (Sigmoidal)                           |
+|-------------------------------|----------------------------------------------------|---------------------------------------------------|
+| **Forma de la curva**         | Lineal con tres segmentos: aceleración constante, velocidad constante, y desaceleración constante | Curva suave en forma de "S"                        |
+| **Transiciones**              | Bruscas entre segmentos                            | Suaves y continuas                                |
+| **Continuidad de la aceleración** | Discontinua                                        | Continua                                           |
+| **Uso común**                 | Movimientos simples donde la suavidad no es prioritaria | Sistemas que requieren movimientos suaves (robots, CNC, etc.) |
+| **Vibraciones**               | Más propenso a generar vibraciones mecánicas       | Minimiza vibraciones y choques                    |
+| **Fácil de implementar**      | Sí, requiere menos cálculos                        | Requiere más cálculos matemáticos o funciones especiales |
+| **Precisión de control**      | Menor precisión dinámica en aplicaciones sensibles | Mayor precisión y confort de movimiento           |
+| **Derivadas continuas**       | Velocidad continua pero aceleración discontinua    | Derivadas suaves hasta la aceleración             |
+
 
 ### 1.1.2. Movimiento multieje
 
