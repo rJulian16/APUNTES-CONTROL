@@ -27,5 +27,20 @@ Las gráficas típicas en este caso son:
 
 -Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
 
+📚Ejercicio: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
+
+Parámetros:
+
+-Posición inicial: 0 m
+
+-Posición final: 2 m
+
+-Tiempo total: 3 s
+
+-Aceleración máxima estimada: 2 m/s²
+
+-Velocidad máxima estimada: 1 m/s
+
 
 ### 1.1.2. Movimiento multieje
+
