@@ -150,6 +150,8 @@ $$s(5) = 5^2 = 25 \ \text{in}$$
 - **Posición en t = 5 s:**  
   $$s = 25 \ \text{in}$$
 
+📚Ejercicio 2 planteado en clase: Un eje esta viajando a una velocidad de 10cm/s. En t=5s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posicion del eje cuando se detiene? Asuma que empieza a desacelerar a 25 cm
+
 # 4. Reglas Geometricas
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
