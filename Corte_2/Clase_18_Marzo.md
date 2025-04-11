@@ -73,7 +73,8 @@ Figura 3. Curva de aceleracion.
 
 Se obtiene integrando la aceleración:
 
-  $$v = v_0 + a(t - t_0)$$
+$$v(t) = \int a(t)\,dt$$
+ 
 
 
 # 4. Reglas Geometricas
