@@ -150,7 +150,27 @@ $$s(5) = 5^2 = 25 \ \text{in}$$
 - **Posición en t = 5 s:**  
   $$s = 25 \ \text{in}$$
 
-📚Ejercicio 2 planteado en clase: Un eje esta viajando a una velocidad de 10cm/s. En t=5s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posicion del eje cuando se detiene? Asuma que empieza a desacelerar a 25 cm
+📚Ejercicio 2 planteado en clase: Un eje esta viajando a una velocidad de 10cm/s. En t=5s empieza a disminuir la velocidad como se ve en el perfil. Cual es la posicion del eje cuando se detiene? Asuma que empieza a desacelerar a 25 cm.
+
+![image](https://github.com/user-attachments/assets/be76edb4-1120-4307-b665-84ce6e163dd7)
+
+Figura 7. Ejercicio 2 planteado en clase.
+
+La pendiente de la velocidad es la aceleración:
+
+$$a = \frac{-10 \ \frac{cm}{s} \cdot \frac{1 \ m}{100 \ cm}}{10s - 5s} = \frac{-0.1 \ \frac{m}{s}}{5s} = -0.01 \ \frac{m}{s^2}$$
+
+El área del perfil de velocidad triangular es la posición alcanzada en t = 15 s:
+
+$$S_0 = \frac{1}{2} \cdot (15s - 5s) \cdot 0.1 \ \frac{m}{s} = 0.5 \ m$$
+
+-Resultado
+
+- **Aceleración:**  
+  $$a = -0.01 \ \frac{m}{s^2}$$
+
+- **Posición en t = 15 s:**  
+  $$S = 0.5 \ m$$
 
 # 4. Reglas Geometricas
 
