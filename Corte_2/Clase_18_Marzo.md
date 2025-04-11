@@ -27,4 +27,5 @@ Las gráficas típicas en este caso son:
 
 -Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
 
+
 ### 1.1.2. Movimiento multieje
