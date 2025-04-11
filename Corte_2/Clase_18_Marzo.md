@@ -31,146 +31,77 @@ Las gráficas típicas en este caso son:
 
 ### Datos iniciales
 
-- Posición inicial: $s_0 = 0 \ \text{m}$
-- Posición final: $s_f = 2 \ \text{m}$
-- Velocidad máxima: $v_{max} = 1 \ \text{m/s}$
-- Aceleración máxima: $a_{max} = 2 \ \text{m/s}^2$
+- Recorrido total: $s_{\text{total}} = 1$ m  
+- Velocidad máxima: $v_{\text{max}} = 0.5$ m/s  
+- Aceleración: $a = 1$ m/s²
 
-Paso 1: Determinar tiempos característicos
+### Fases del perfil
 
--Tiempo de aceleración:
+#### 1. **Fase de aceleración**
 
-$$
-t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \ \text{s}
-$$
+Partimos desde velocidad cero, aplicando aceleración constante.
 
--Distancia recorrida durante aceleración:
+- Tiempo de aceleración:
+  $$
+  t_1 = \frac{v_{\text{max}}}{a} = \frac{0.5}{1} = 0.5 \ \text{s}
+  $$
 
-Usando la fórmula de movimiento uniformemente acelerado:
+- Posición durante esta fase (integrando la velocidad):
+  $$
+  s_1(t) = \frac{1}{2} a t^2 = \frac{1}{2}(1)t^2 = 0.5t^2
+  $$
 
-$$
-s_a = \frac{1}{2} a_{max} t_a^2 = \frac{1}{2} \cdot 2 \cdot (0.5)^2 = 0.25 \ \text{m}
-$$
+#### 2. **Fase de velocidad constante**
 
--Longitud del tramo a velocidad constante:
+La velocidad se mantiene constante a $v_{\text{max}}$.
 
-$$
-s_c = s_f - 2s_a = 2 - 2 \cdot 0.25 = 1.5 \ \text{m}
-$$
+- Posición al final de aceleración:
+  $$
+  s(t_1) = s_1(t_1) = 0.5(0.5)^2 = 0.125 \ \text{m}
+  $$
 
--Tiempo a velocidad constante:
+- Posición durante esta fase (lineal):
+  $$
+  s_2(t) = v_{\text{max}} (t - t_1) + s_1(t_1)
+  $$
 
-$$
-t_c = \frac{s_c}{v_{max}} = \frac{1.5}{1} = 1.5 \ \text{s}
-$$
+Duración de esta fase:
+- Se busca cuánto dura esta fase sabiendo que el recorrido total es 1 m, y la desaceleración tendrá el mismo recorrido que la aceleración:
+  $$
+  s_{\text{constante}} = s_{\text{total}} - 2 \cdot s_1(t_1) = 1 - 2 \cdot 0.125 = 0.75 \ \text{m}
+  $$
+  $$
+  t_2 = \frac{0.75}{v_{\text{max}}} = \frac{0.75}{0.5} = 1.5 \ \text{s}
+  $$
 
--Tiempo total:
+#### 3. **Fase de desaceleración**
 
-$$
-T = t_a + t_c + t_a = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
-$$
+Aceleración negativa igual en magnitud a la inicial. El movimiento simétrico implica:
 
----
+- Tiempo total:
+  $$
+  T = t_1 + t_2 + t_1 = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
+  $$
 
-## Paso 2: Definir el perfil por tramos
-
-### **Fase 1** – Aceleración constante $(0 \leq t \leq 0.5)$
-
-- Aceleración:
-
-$$
-a(t) = 2
-$$
-
-- Integrando $a(t)$ para obtener $v(t)$:
-
-$$
-v(t) = \int a(t) \, dt = \int 2 \, dt = 2t + C_1
-$$
-
-Como $v(0) = 0$, entonces $C_1 = 0$:
-
-$$
-v(t) = 2t
-$$
-
-- Integrando $v(t)$ para obtener $s(t)$:
-
-$$
-s(t) = \int 2t \, dt = t^2 + C_2
-$$
-
-Como $s(0) = 0$, entonces $C_2 = 0$:
-
-$$
-s(t) = t^2
-$$
+- Posición durante esta fase (aceleración negativa):
+  - Tiempo local dentro de esta fase: $\tau = t - (t_1 + t_2)$
+  $$
+  s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(t_1 + t_2)
+  $$
 
 ---
 
-### **Fase 2** – Velocidad constante $(0.5 \leq t \leq 2)$
-
-- Aceleración:
+### Perfil completo de posición $s(t)$
 
 $$
-a(t) = 0
+s(t) = 
+\begin{cases}
+0.5 t^2, & \text{si } 0 \leq t < t_1 \\
+0.5 (t - t_1) + s_1(t_1), & \text{si } t_1 \leq t < t_1 + t_2 \\
+-\frac{1}{2} (t - T)^2 + v_{\text{max}} (t - T + t_1) + s(t_1 + t_2), & \text{si } t_1 + t_2 \leq t \leq T
+\end{cases}
 $$
 
-- Velocidad constante:
-
-$$
-v(t) = 1
-$$
-
-- Posición:
-
-Como $s(0.5) = (0.5)^2 = 0.25$, entonces:
-
-$$
-s(t) = 0.25 + 1 \cdot (t - 0.5) = t - 0.25
-$$
-
----
-
-### **Fase 3** – Desaceleración constante $(2 \leq t \leq 2.5)$
-
-- Aceleración:
-
-$$
-a(t) = -2
-$$
-
-- Integrando para obtener velocidad:
-
-Sea $\tau = t - 2$:
-
-$$
-v(\tau) = \int -2 \, d\tau = -2\tau + C_3
-$$
-
-Como $v(0) = 1$, entonces $C_3 = 1$:
-
-$$
-v(\tau) = 1 - 2\tau
-$$
-
-- Integrando para obtener posición:
-
-$$
-s(\tau) = \int (1 - 2\tau) \, d\tau = \tau - \tau^2 + C_4
-$$
-
-Como $s(0) = 1.75$ (verificado desde fase 2), entonces $C_4 = 1.75$:
-
-$$
-s(\tau) = 1.75 + \tau - \tau^2
-$$
-
-Reescribiendo en función de $t$:
-
-$$
-s(t) = 1.75 + (t - 2) - (t - 2)^2
-$$
 
 
 ![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
@@ -179,3 +110,8 @@ Figura 1.Graficas Ejercicio1
 
 ### 1.1.2. Movimiento multieje
 
+Cuando el sistema debe moverse en más de una dirección al mismo tiempo (por ejemplo, un brazo robótico o un dron), se generan perfiles sincronizados en todos los ejes (X, Y, Z, etc.) para que el movimiento sea coordinado y continuo.
+
+Aquí, los puntos clave del recorrido definen el camino deseado, y los perfiles aseguran que todos los ejes se muevan al ritmo necesario para llegar a cada punto al mismo tiempo, respetando velocidades y aceleraciones máximas.
+
+Las gráficas en cada eje son similares a las del caso de un solo eje, pero se analizan por separado en cada dimensión.
