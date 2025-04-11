@@ -17,7 +17,15 @@ Los perfiles más comunes son:
 
 -Trapezoidal: velocidad constante en el centro del movimiento.
 
+![image](https://github.com/user-attachments/assets/c2830681-f136-4e85-a3b3-4a2812059857)
+
+Figura 1. Ejemplo Perfil trapezoideal.
+
 -S-curve o polinómico: transición más suave entre estados (usado en movimientos delicados).
+
+![image](https://github.com/user-attachments/assets/37514598-c13d-43cf-a613-1892e4248d40)
+
+Figura 2. Ejemplo Perfil S.
 
 Las gráficas típicas en este caso son:
 
@@ -27,11 +35,6 @@ Las gráficas típicas en este caso son:
 
 -Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
 
-📚Ejercicio 1: 
-
-![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
-
-Figura 1.Graficas Ejercicio1
 
 ### 1.1.2. Movimiento multieje
 
