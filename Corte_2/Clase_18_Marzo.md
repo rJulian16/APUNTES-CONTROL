@@ -5,7 +5,27 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 Los perfiles de movimiento son trayectorias planificadas que definen cómo deben variar las variables de posición, velocidad y aceleración de un sistema mecánico en el tiempo. Estos perfiles son fundamentales en el diseño de sistemas de control de movimiento, ya que permiten que un mecanismo realice desplazamientos suaves, precisos y eficientes, evitando cambios bruscos que podrían causar vibraciones, desgaste prematuro o incluso fallas mecánicas. En el contexto de la simulación con Simulink y Simscape, los perfiles de movimiento se implementan mediante funciones matemáticas o bloques de señal, y se utilizan para alimentar actuadores, servomecanismos u otros componentes dinámicos.
 
-Ejemplo 1
+💡Ejemplo 1: Movimiento de un actuador lineal en una línea de ensamblaje
+
+Situación:
+En una fábrica de ensamblaje de dispositivos electrónicos, un actuador lineal debe mover una pieza desde una estación de trabajo hasta otra ubicada a 2 metros de distancia. El movimiento debe ser rápido pero sin generar vibraciones que puedan dañar componentes delicados.
+
+Solución:
+Para lograr un movimiento rápido pero suave, se utiliza un perfil de velocidad trapezoidal. Este perfil permite acelerar progresivamente, mantener una velocidad constante durante la mayor parte del trayecto, y desacelerar suavemente antes de llegar. Así se evita una aceleración o frenado brusco que podría afectar el producto.
+
+![image](https://github.com/user-attachments/assets/d921f6a0-6080-485e-94d9-b19c7d069d16)
+
+Figura 1. Ejemplo 1.
+
+Situación:
+Un brazo robótico de seis ejes debe tomar un objeto y colocarlo en una caja. El movimiento involucra rotaciones y desplazamientos de varios motores en diferentes ejes, y todos deben llegar a su destino exactamente al mismo tiempo para que el agarre y la liberación sean precisos.
+
+Solución:
+En este caso, se utilizan perfiles de movimiento multi-eje sincronizados, como los perfiles tipo S. Estos aseguran que todos los ejes aceleren y desaceleren suavemente, y lo hagan de forma coordinada, manteniendo la trayectoria y evitando esfuerzos desiguales entre motores.
+
+![image](https://github.com/user-attachments/assets/d947daf6-8a0e-4348-942b-77614af6ab2a)
+
+Figura 2. Ejemplo 2.
 
 ## 1.1. Aplicacion 
 
