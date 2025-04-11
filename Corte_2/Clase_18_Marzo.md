@@ -15,13 +15,13 @@ Este perfil implica que el sistema solo se mueve en una dirección (por ejemplo,
 
 Los perfiles más comunes son:
 
--Trapezoidal: velocidad constante en el centro del movimiento.
+**- Trapezoidal:** velocidad constante en el centro del movimiento.
 
 ![image](https://github.com/user-attachments/assets/c2830681-f136-4e85-a3b3-4a2812059857)
 
 Figura 1. Ejemplo Perfil trapezoideal.
 
--S-curve o polinómico: transición más suave entre estados (usado en movimientos delicados).
+**-S-curve o polinómico:**: transición más suave entre estados (usado en movimientos delicados).
 
 ![image](https://github.com/user-attachments/assets/37514598-c13d-43cf-a613-1892e4248d40)
 
