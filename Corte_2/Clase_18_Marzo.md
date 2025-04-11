@@ -105,19 +105,25 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio Perfil Trapezoidal – Cálculo de `v` y `s`:
 
-**Situación:** Se desea mover un actuador desde `s₀ = 0 m` en `T = 3 s` con un perfil trapezoidal: `1 s` de aceleración (`a = 1 m/s²`), `1 s` a velocidad constante y `1 s` de frenado.
+**Situación:** Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
--1. Cálculo de velocidad máxima:**
+-Ecuaciones fundamentales:
+$$v(t) = \int a(t)\,dt$$
 
-`v = v₀ + a(t - t₀) = 0 + 1·1 = 1 m/s`
+$$s(t) = \int v(t)\,dt$$
 
--2. Cálculo de posición total:**
+- 1. Velocidad máxima alcanzada
 
-`Área total = Área aceleración + Área constante + Área frenado`
+Durante la fase de aceleración:
+$$v = v_0 + a \cdot t = 0 + 1 \cdot 1 = 1\,m/s$$
 
-`= (1/2)·1·1 + 1·1 + (1/2)·1·1 = 0.5 + 1 + 0.5 = 2 m`
+-2. Posición total recorrida
 
--✅ Resultados: `v_max = 1 m/s`, `s_total = 2 m`
+Área bajo la curva de velocidad:
+$$s = \frac{1}{2} \cdot 1 \cdot 1 + 1 \cdot 1 + \frac{1}{2} \cdot 1 \cdot 1 = 0.5 + 1 + 0.5 = 2\,m$$
+
+-Resultados:
+$$v_{\text{max}} = 1\,m/s \quad;\quad s_{\text{total}} = 2\,m$$
 
 ### 1.1.2. Movimiento multieje
 
