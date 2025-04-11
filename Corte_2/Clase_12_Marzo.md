@@ -22,7 +22,7 @@ Los eslabones se conectan entre sí mediante diferentes tipos de uniones o joint
 
 >🔑Rigid Transform: No es una articulación móvil, sino una conexión rígida que establece una posición y orientación específica entre dos componentes. Sirve para fijar piezas o ajustar la alineación entre bloques en un modelo sin permitir movimiento entre ellos.
 
-## 3.1 Rigid Transform
+## 3.1. Rigid Transform
 
 💡Ejercicio: Se crearán varios cuerpos sólidos con diferentes formas y tamaños. A partir de ellos, se aplicarán transformaciones espaciales para ubicarlos en posiciones distintas dentro del modelo, evitando que se sobrepongan entre sí. El objetivo es organizar la distribución de los sólidos utilizando desplazamientos y rotaciones que simulen una estructura mecánica más compleja.
 
@@ -37,7 +37,7 @@ Para resolver este ejercicio, se utilizará una de las uniones mencionadas anter
 
 Figura 3. Solidos en simulación conectados con rigid transform. 
 
-## 3.2 Revolute Join
+## 3.2. Revolute Join
 
 💡Ejercicio: Se va a simular un péndulo con forma de barra rectangular, conectado de forma que pueda girar libremente alrededor de un eje fijo. El objetivo es que el sistema permita una rotación completa, similar al movimiento de un péndulo que da vueltas completas sin restricciones.
 
@@ -49,7 +49,7 @@ El esquemático muestra la presencia de dos sólidos que conforman el sistema. P
 
 A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde se puede observar el comportamiento del sistema completo en funcionamiento. Este permite visualizar cómo interactúan los sólidos, la rotación generada y el efecto de la entrada aplicada: https://youtu.be/Iz6ljM35qfo
 
-## 3.3 Prismatic Join
+## 3.3. Prismatic Join
 
 💡Ejercicio: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
 
@@ -61,24 +61,24 @@ Para lograr el movimiento de la esfera en el eje Z, se utiliza una Prismatic Joi
 
 A continuación, se comparte el enlace del modelo de simulación, donde se puede visualizar el desplazamiento de la esfera a lo largo del eje Z. En este se observa cómo la señal seno controla el movimiento ascendente y descendente del sistema en tiempo real.: https://youtu.be/vIKYzzYyOhg
 
-# 4 Bloque PS Converter (Physical Signal Converter)
+# 4. Bloque PS Converter (Physical Signal Converter)
 
 En Simscape, el bloque PS Converter, también conocido como Physical Signal Converter, es una herramienta fundamental para la interacción entre los dos tipos de señales que se manejan dentro del entorno: las señales físicas y las señales de Simulink tradicionales.
 
-## 4.1 Función del PS Converter
+## 4.1. Función del PS Converter
 
 El PS Converter sirve como un puente entre ambos mundos:
 
 De Simulink a Simscape: Convierte una señal Simulink (por ejemplo, una señal de control o entrada numérica) en una señal física que puede usarse dentro de un modelo Simscape.
 De Simscape a Simulink: Cuando se usa en conjunto con el bloque PS-Simulink Converter, permite tomar una magnitud física y convertirla en una señal Simulink para graficarla, procesarla o usarla en un controlador.
 
-## 4.2 Opciones del bloque
+## 4.2. Opciones del bloque
 
 Cuando se utiliza el PS Converter, se debe especificar la unidad de la señal física que se desea trabajar.  
 Por ejemplo: si se convierte una señal numérica en una velocidad, es necesario indicar que esa señal será en "m/s" (metros por segundo).  
 Esto asegura la coherencia de unidades dentro del modelo y evita errores en la simulación.
 
-## 4.3 Relación con otros bloques
+## 4.3. Relación con otros bloques
 
 El PS Converter generalmente se usa junto con:
 
@@ -90,3 +90,17 @@ PS-Simulink Converter: Para pasar de Simscape a Simulink.
 ![image](https://github.com/user-attachments/assets/45292b2a-e970-4244-a139-d1f69ad8152f)
 
 Figura 6. Solidos en simulación conectados con rigid transform. 
+
+# 5. Ejercicios propuestos en clase:
+
+Durante la sesión se desarrollaron tres ejercicios básicos en Simulink utilizando Simscape Multibody. Cada uno busca representar un tipo diferente de movimiento mecánico, aplicando uniones y bloques específicos para lograrlo. A continuación, se describe brevemente cada ejercicio junto con su solución implementada.
+
+## 5.1. Cubo: 
+
+Se modela un cubo que se desplaza a lo largo del eje X, simulando un movimiento lineal horizontal.
+
+![image](https://github.com/user-attachments/assets/e0fce06e-7beb-4cc7-8f03-d2617e17ad83)
+
+Figura 7. Solucion del primer ejercicio. 
+
+Para la solución de este ejercicio, se parte de un esquemático similar al utilizado en el ejercicio del prismatico descrito en el punto 3.3. En este caso, se reemplaza la esfera por un cubo, manteniendo la lógica del movimiento lineal. Dado que el Prismatic Joint está configurado por defecto para operar en el eje Z, se requiere realizar un ajuste para lograr el desplazamiento sobre el eje X. Para ello, se utiliza un bloque Rigid Transform, el cual permite cambiar el sistema de referencia. Se reorienta el sistema de forma que el eje Z se alinee con el eje X, y para asegurar una correcta transformación, también se emparejan los ejes Y con Y, ya que este eje permanece sin cambios. Por último, se conserva la entrada tipo seno, ya que su comportamiento oscilatorio permite visualizar claramente el movimiento del cubo de un lado a otro en el eje deseado.
