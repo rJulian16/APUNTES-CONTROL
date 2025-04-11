@@ -104,3 +104,18 @@ Se modela un cubo que se desplaza a lo largo del eje X, simulando un movimiento 
 Figura 7. Solucion del primer ejercicio. 
 
 Para la solución de este ejercicio, se parte de un esquemático similar al utilizado en el ejercicio del prismatico descrito en el punto 3.3. En este caso, se reemplaza la esfera por un cubo, manteniendo la lógica del movimiento lineal. Dado que el Prismatic Joint está configurado por defecto para operar en el eje Z, se requiere realizar un ajuste para lograr el desplazamiento sobre el eje X. Para ello, se utiliza un bloque Rigid Transform, el cual permite cambiar el sistema de referencia. Se reorienta el sistema de forma que el eje Z se alinee con el eje X, y para asegurar una correcta transformación, también se emparejan los ejes Y con Y, ya que este eje permanece sin cambios. Por último, se conserva la entrada tipo seno, ya que su comportamiento oscilatorio permite visualizar claramente el movimiento del cubo de un lado a otro en el eje deseado.
+
+A continuación, se comparte el enlace al modelo de simulación donde se observa el movimiento del cubo a lo largo del eje X. Gracias a la transformación aplicada y a la señal seno, el cubo oscila horizontalmente, permitiendo visualizar claramente el funcionamiento del sistema y la correcta orientación del desplazamiento: https://youtu.be/f9ET-9DZtIU
+
+## 5.2. 3 Eslabones: 
+
+Se modela un sistema compuesto por tres eslabones rectangulares conectados entre sí, formando un marco en forma de “U” invertida. Los dos eslabones laterales se mantienen fijos en sus extremos inferiores y deben girar como péndulos sin restricciones. El eslabón superior (horizontal) debe permanecer conectado a los otros dos, acompañando su movimiento, pero sin rotar, únicamente trasladándose.
+
+![image](https://github.com/user-attachments/assets/7b4a04c7-d034-4146-89db-14a0e780f1e6)
+
+Figura 8. Solucion del segundo ejercicio. 
+
+Para construir este sistema, se utilizan tres sólidos rectangulares. Los eslabones laterales se conectan a la base mediante Revolute Joints, lo que les permite girar libremente como péndulos sin límites angulares. A uno de estos eslabones se le aplica un Rigid Transform para desplazarlo hacia la derecha, evitando que ambos queden alineados en el mismo punto de origen y permitiendo así formar correctamente la estructura en forma de “U”.
+El eslabón superior se posiciona entre los extremos superiores de los eslabones laterales y, aunque no rota, acompaña el movimiento mediante una traslación controlada que le permite mantenerse unido a los otros dos. De esta manera, el eslabón horizontal se traslada en sincronía con la oscilación de los laterales, manteniendo la estructura conectada y simulando un marco articulado funcional.
+
+A continuación, se presenta el enlace de la simulación donde se puede observar el comportamiento del sistema articulado. Se aprecia cómo los eslabones laterales oscilan libremente y cómo el eslabón superior se traslada en sincronía, manteniendo la estructura conectada en todo momento: https://youtu.be/z-HsZccP6sc
