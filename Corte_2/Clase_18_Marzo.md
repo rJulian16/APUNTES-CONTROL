@@ -56,6 +56,25 @@ Aceleración $a(t)$
 
 Estas curvas no solo nos dan información visual del comportamiento del sistema, sino que también nos ayudan a derivar o integrar para obtener los parámetros clave del movimiento.
 
+-**Curva de Aceleración** $a(t)$
+Es el punto de partida en un perfil de movimiento.
+
+Una aceleración constante se ve como una línea recta horizontal.
+
+Si la aceleración cambia de forma suave, la curva será más compleja (como en un perfil en S).
+
+La pendiente de la velocidad depende directamente de la forma de esta curva.
+
+![image](https://github.com/user-attachments/assets/df78c7ff-38b7-4dfe-b571-cb65743c22e5)
+
+Figura 3. Curva de aceleracion.
+
+-**Curva de Velocidad** $v(t)$
+
+Se obtiene integrando la aceleración:
+
+  $$v = v_0 + a(t - t_0)$$
+
 
 # 4. Reglas Geometricas
 
