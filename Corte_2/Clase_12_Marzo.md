@@ -1,7 +1,7 @@
 # Control de Movimiento Clase 12 de marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
-- [Introducción](#introducción)
+- [Introducción](#introducció)
 - [1. Conceptos básicos](#1-conceptos-básicos)
 - [2. Uniones mecánicas](#2-uniones-mecánicas)
   - [2.1 Rigid Transform](#21-rigid-transform)
