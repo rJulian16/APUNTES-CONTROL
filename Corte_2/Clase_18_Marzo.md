@@ -42,7 +42,7 @@ Indica qué tan rápido y en qué dirección se mueve el objeto. Puede ser posit
 >🔑 Aceleracion: La aceleración mide la variación de la velocidad en el tiempo. Es la derivada de la velocidad, o la segunda derivada de la posición:
 $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido cambia la velocidad del objeto. Tambien en su expresion integral: $$v(t) = \int a(t) \, dt$$
 
-# 3- Reglas Geometricas
+# 3. Reglas Geometricas
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
 
@@ -62,11 +62,11 @@ De este analisis salen las siguiente ecuaciones:
 
   $$s = s_0 + \frac{1}{2}(t - t_0)(v_0 + a(t - t_0))$$
   
-## 1.1. Aplicacion 
+# 4. Aplicacion 
 
 Existen dos contextos principales donde se aplican los perfiles de movimiento:
 
-### 1.1.1. Movimiento en un solo eje
+## 4.1. Movimiento en un solo eje
 
 Este perfil implica que el sistema solo se mueve en una dirección (por ejemplo, un actuador lineal que se extiende o retrae). Se definen los valores iniciales y finales de posición, y se genera una trayectoria suave que cumpla con condiciones de aceleración y velocidad máximas deseadas.
 
@@ -74,13 +74,13 @@ Los perfiles más comunes son:
 
 **- Trapezoidal:** velocidad constante en el centro del movimiento.
 
-![image](https://github.com/user-attachments/assets/c2830681-f136-4e85-a3b3-4a2812059857)
+![image](https://github.com/user-attachments/assets/8dff2912-d1b8-4c78-a4c7-2f3d1f4395a3)
 
 Figura 1. Ejemplo Perfil trapezoideal.
 
 **-S-curve o polinómico:**: transición más suave entre estados (usado en movimientos delicados).
 
-![image](https://github.com/user-attachments/assets/37514598-c13d-43cf-a613-1892e4248d40)
+![image](https://github.com/user-attachments/assets/61773fc7-b84e-483c-8e30-284714517549)
 
 Figura 2. Ejemplo Perfil S.
 
