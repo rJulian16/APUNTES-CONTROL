@@ -172,6 +172,15 @@ $$S_0 = \frac{1}{2} \cdot (15s - 5s) \cdot 0.1 \ \frac{m}{s} = 0.5 \ m$$
 - **Posición en t = 15 s:**  
   $$S = 0.5 \ m$$
 
+📚Ejercicio 3 planteado en clase: Un eje(axis) lineal comienza su movimiento desde el reposo en la posicion 0, con una aceleracion de 2m/s. Despues de moverse durante 5 s, cual es la posicion del eje (axis) 
+
+![image](https://github.com/user-attachments/assets/95ee6970-40f9-4483-a75b-7bfa67169128)
+
+Figura 8. Ejercicio 3 planteado en clase.
+
+
+En la gráfica se representa el comportamiento de la velocidad del eje en función del tiempo, partiendo desde el reposo y aumentando de manera lineal debido a una aceleración constante. Esto se evidencia por la forma recta de la curva, cuya pendiente representa la aceleración aplicada al sistema. Este tipo de análisis permite visualizar de forma clara cómo la aceleración influye directamente en el cambio de velocidad y, por lo tanto, en el desplazamiento total del eje a lo largo del tiempo.
+
 # 4. Reglas Geometricas
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
