@@ -340,7 +340,7 @@ $$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
 - Desplazamiento total: $2\,m$
 - Tiempo total: $3\,s$
 
-![image](https://github.com/user-attachments/assets/a97b90f2-5033-4010-9b59-07393d286de2)
+![image](https://github.com/user-attachments/assets/0a61f677-4799-4107-ada3-ffa27670458b)
 
 Figura 12. Resultados MATLAB .
 
