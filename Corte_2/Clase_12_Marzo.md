@@ -44,6 +44,11 @@ Figura 3. Solidos en simulación conectados con rigid transform.
 
 Figura 4. Esquematico ejercicio Revolute Join
 
+El esquemático muestra la presencia de dos sólidos que conforman el sistema. Para organizarlos y definir su comportamiento, se añaden tres bloques adicionales. Primero, se utiliza un Rigid Transform, como en el ejercicio anterior, para posicionar los sólidos de forma que no queden superpuestos, permitiendo una mejor visualización. Luego, se incorpora una Revolute Joint, que será la encargada de permitir el giro del sólido gris. Esta unión se conecta a un costado de la cara trasera del rectángulo, actuando como base del mundo y punto de apoyo para la rotación. Finalmente, se añade una entrada tipo rampa al sistema, con el objetivo de generar un movimiento rotacional continuo, ya que se desea que el sólido gire sin restricciones angulares.
+
+A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde se puede observar el comportamiento del sistema completo en funcionamiento. Este permite visualizar cómo interactúan los sólidos, la rotación generada y el efecto de la entrada aplicada.
+https://youtu.be/Iz6ljM35qfo
+
 ### 1.3 Bloque PS Converter (Physical Signal Converter)
 
 En Simscape, el bloque PS Converter, también conocido como Physical Signal Converter, es una herramienta fundamental para la interacción entre los dos tipos de señales que se manejan dentro del entorno: las señales físicas y las señales de Simulink tradicionales.
