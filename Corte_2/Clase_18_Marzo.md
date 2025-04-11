@@ -29,49 +29,44 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
-\textbf{Datos iniciales:}
-\begin{itemize}
-    \item Posición inicial: $s_0 = 0$ m
-    \item Posición final: $s_f = 2$ m
-    \item Velocidad máxima: $v_{\text{max}} = 1$ m/s
-    \item Aceleración máxima: $a_{\text{max}} = 2$ m/s$^2$
-\end{itemize}
+- Posición inicial: $s_0 = 0$ m  
+- Posición final: $s_f = 2$ m  
+- Velocidad máxima: $v_{max} = 1$ m/s  
+- Aceleración máxima: $a_{max} = 2$ m/s²  
 
-\textbf{Cálculos previos:}
+### Cálculos previos:
 
-\begin{align*}
-t_a &= \frac{v_{\text{max}}}{a_{\text{max}}} = \frac{1}{2} = 0.5 \text{ s} \\
-T &= t_a + t_c + t_a = 0.5 + 1.5 + 1 = 3 \text{ s}
-\end{align*}
+\[
+t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \text{ s}
+\]  
+\[
+T = t_a + t_c + t_a = 0.5 + 1.5 + 1 = 3 \text{ s}
+\]
 
-\vspace{1em}
-\noindent\textbf{Fase 1 – Aceleración constante $(0 \leq t \leq 0.5)$:}
+---
 
-\begin{align*}
-a(t) &= 2 \text{ m/s}^2 \\
-v(t) &= \int a(t)\, dt = 2t \\
-s(t) &= \int v(t)\, dt = t^2
-\end{align*}
+## Fases del perfil
 
-\vspace{1em}
-\noindent\textbf{Fase 2 – Velocidad constante $(0.5 \leq t \leq 2)$:}
+### Fase 1 – Aceleración constante $(0 \leq t \leq 0.5)$:
 
-\begin{align*}
-a(t) &= 0 \\
-v(t) &= 1 \text{ m/s} \\
-s(t) &= 0.25 + 1 \cdot (t - 0.5) = t - 0.25
-\end{align*}
+\[
+a(t) = 2 \quad v(t) = \int a(t)\, dt = 2t \quad s(t) = \int v(t)\, dt = t^2
+\]
 
-\vspace{1em}
-\noindent\textbf{Fase 3 – Desaceleración constante $(2 \leq t \leq 3)$:}
+### Fase 2 – Velocidad constante $(0.5 \leq t \leq 2)$:
 
-\begin{align*}
-a(t) &= -2 \text{ m/s}^2 \\
-\tau &= t - 2 \\
-v(\tau) &= 1 - 2\tau \\
-s(\tau) &= 1.75 + \tau - \tau^2 \\
-\Rightarrow s(t) &= 1.75 + (t - 2) - (t - 2)^2
-\end{align*}
+\[
+a(t) = 0 \quad v(t) = 1 \quad s(t) = 0.25 + 1 \cdot (t - 0.5) = t - 0.25
+\]
+
+### Fase 3 – Desaceleración constante $(2 \leq t \leq 3)$:
+
+\[
+a(t) = -2 \\
+\tau = t - 2 \\
+v(\tau) = 1 - 2\tau \\
+s(\tau) = 1.75 + \tau - \tau^2 \Rightarrow s(t) = 1.75 + (t - 2) - (t - 2)^2
+\]
 
 
 ![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
