@@ -73,7 +73,7 @@ Figura 3. Curva de aceleracion.
 
 Se obtiene integrando la aceleración:
 
-$$v(t) = \int a(t)\dt$$
+$$v(t) = \int a(t)dt$$
 
 Si la aceleración es constante, la velocidad será una línea recta inclinada (como en un triángulo).
 
@@ -85,7 +85,7 @@ El área bajo esta curva representa el desplazamiento total (posición final).
 
 Se obtiene integrando la velocidad:
 
-$$s(t) = \int v(t)\dt = \int (a \cdot t + v_0)\dt$$
+$$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt$$
 
 # 4. Reglas Geometricas
 
@@ -156,9 +156,9 @@ Las gráficas típicas en este caso son:
 
 -Ecuaciones fundamentales:
 
-$$v(t) = \int a(t)\dt = a \cdot t + v_0$$
+$$v(t) = \int a(t)dt = a \cdot t + v_0$$
 
-$$s(t) = \int v(t)\dt = \int (a \cdot t + v_0)\dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
+$$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
 
 ### Parámetros iniciales
 
