@@ -56,7 +56,7 @@ Aceleración $a(t)$
 
 Estas curvas no solo nos dan información visual del comportamiento del sistema, sino que también nos ayudan a derivar o integrar para obtener los parámetros clave del movimiento.
 
--**Curva de Aceleración** $a(t)$
+3.1. **Curva de Aceleración** $a(t)$
 Es el punto de partida en un perfil de movimiento.
 
 Una aceleración constante se ve como una línea recta horizontal.
@@ -69,7 +69,7 @@ La pendiente de la velocidad depende directamente de la forma de esta curva.
 
 Figura 3. Curva de aceleracion.
 
--**Curva de Velocidad** $v(t)$
+3.2. **Curva de Velocidad** $v(t)$
 
 Se obtiene integrando la aceleración:
 
@@ -85,7 +85,7 @@ El área bajo esta curva representa el desplazamiento total (posición final).
 
 Figura 4. Curva de velocidad.
 
--**Curva de Posición** $s(t)$
+3.3. **Curva de Posición** $s(t)$
 
 Se obtiene integrando la velocidad:
 
@@ -100,6 +100,14 @@ En un perfil trapezoidal o en S, la posición muestra un crecimiento continuo co
 ![image](https://github.com/user-attachments/assets/f6546be5-84b9-45b1-84eb-a43d4d0d1181)
 
 Figura 5. Curva de Posición.
+
+3.4. **Relación entre las curvas**
+
+| **Curva**     | **Se obtiene desde...**                                  | **Qué representa**                          |
+|---------------|----------------------------------------------------------|---------------------------------------------|
+| Aceleración   | Derivada de la velocidad                                 | Cambio instantáneo de la velocidad          |
+| Velocidad     | Derivada de la posición / Integral de la aceleración     | Rapidez de cambio de la posición            |
+| Posición      | Integral de la velocidad                                 | Lugar ocupado en el tiempo                  |
 
 # 4. Reglas Geometricas
 
