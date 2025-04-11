@@ -182,6 +182,25 @@ En la gráfica se representa el comportamiento de la velocidad del eje en funci�
 
 📚Ejercicio 4: Un eje lineal parte también desde el reposo y desde la posición \(0\), pero con una aceleración menor de \(1.5 \, \frac{m}{s^2}\). ¿Cuál es la posición alcanzada luego de \(5 \, s\) de movimiento?
 
+- Aceleración: $a = 1.5\ \text{m/s}^2$
+- Tiempo: $t = 5\ \text{s}$
+- Velocidad inicial: $v_0 = 0\ \text{m/s}$
+
+-**Formulas y Cálculos**
+
+-Velocidad
+
+$$v(t) = a \cdot t$$
+
+Sustituyendo valores:
+
+$$v(5) = 1.5 \cdot 5 = 7.5\ \text{m/s}$$
+
+![image](https://github.com/user-attachments/assets/fbed9178-0705-4a50-a42e-bf10b5bdf0bb)
+
+Figura 9. Ejercicio 4.
+
+En este ejercicio, se observa una gráfica de velocidad que aumenta de manera lineal hasta cierto punto y luego se mantiene constante, lo cual representa un perfil de velocidad tipo trapezoidal. Esta forma indica que el sistema primero acelera, luego mantiene una velocidad constante y eventualmente desacelera (si se continuara la gráfica). Este tipo de perfiles son comunes en sistemas industriales que requieren movimientos suaves pero eficientes. A partir de esta gráfica, se puede determinar tanto la aceleración (analizando la pendiente en la primera fase) como la posición total (calculando el área bajo la curva de velocidad).
 
 # 4. Reglas Geometricas
 
