@@ -15,16 +15,16 @@ Este perfil implica que el sistema solo se mueve en una dirección (por ejemplo,
 
 Los perfiles más comunes son:
 
-Trapezoidal: velocidad constante en el centro del movimiento.
+-Trapezoidal: velocidad constante en el centro del movimiento.
 
-S-curve o polinómico: transición más suave entre estados (usado en movimientos delicados).
+-S-curve o polinómico: transición más suave entre estados (usado en movimientos delicados).
 
 Las gráficas típicas en este caso son:
 
-Posición vs. Tiempo: progresión suave de inicio a fin.
+-Posición vs. Tiempo: progresión suave de inicio a fin.
 
-Velocidad vs. Tiempo: forma trapezoidal o en campana.
+-Velocidad vs. Tiempo: forma trapezoidal o en campana.
 
-Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
+-Aceleración vs. Tiempo: picos al inicio y final (acelera y frena).
 
 ### 1.1.2. Movimiento multieje
