@@ -46,7 +46,15 @@ $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido 
 
 # 3. Curvas de Posición, Velocidad y Aceleración
 
+En el análisis del movimiento de un sistema (como un actuador lineal), es fundamental comprender cómo se relacionan las curvas de:
 
+Posición $s(t)$
+
+Velocidad $v(t)$
+
+Aceleración $a(t)$
+
+Estas curvas no solo nos dan información visual del comportamiento del sistema, sino que también nos ayudan a derivar o integrar para obtener los parámetros clave del movimiento.
 
 
 # 4. Reglas Geometricas
