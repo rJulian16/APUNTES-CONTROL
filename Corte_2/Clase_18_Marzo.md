@@ -29,101 +29,166 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
-### Datos iniciales
+**Enunciado:**  
+Se quiere mover un actuador lineal desde la posición $0 \ \text{m}$ hasta $2 \ \text{m}$ en un tiempo total de $3 \ \text{s}$. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
-- $s_{\text{total}} = 2 \ \text{m}$  
-- $T = 3 \ \text{s}$ (tiempo total)  
-- Sea $t_1$ el tiempo de aceleración y desaceleración  
-- Sea $t_2$ el tiempo de velocidad constante  
-- Entonces: $T = 2t_1 + t_2$
+### Fases del perfil de velocidad trapezoidal
 
-La distancia total se reparte así:
+El perfil trapezoidal tiene **3 fases**:
+1. **Aceleración constante**
+2. **Velocidad constante**
+3. **Desaceleración constante**
 
-- Área bajo la aceleración (triángulo): $s_1 = \frac{1}{2} a t_1^2$
-- Área bajo velocidad constante: $s_2 = v_{\text{max}} t_2$
-- Pero $v_{\text{max}} = a t_1$
+Asumimos que el perfil es **simétrico**, por lo tanto:
 
-Entonces:
-
+- Tiempo total $T = 3 \ \text{s}$
+- Tiempo de aceleración y desaceleración: $t_1$
+- Tiempo a velocidad constante: $t_2$
+  
+Se cumple:  
 $$
-s = 2 \cdot \left( \frac{1}{2} a t_1^2 \right) + a t_1 t_2 = a t_1^2 + a t_1 t_2
-$$
-
-Como $t_2 = T - 2t_1$, sustituimos:
-
-$$
-2 = a t_1^2 + a t_1 (3 - 2t_1)
+T = 2t_1 + t_2
 $$
 
-Simplificando:
-
+La velocidad máxima será:  
 $$
-2 = a t_1^2 + 3a t_1 - 2a t_1^2 = -a t_1^2 + 3a t_1
-$$
-
-Dividimos ambos lados entre $a$:
-
-$$
-\frac{2}{a} = -t_1^2 + 3t_1
+v_{\text{max}} = a \cdot t_1
 $$
 
-Ordenamos:
+Donde $a$ es la aceleración constante.
+
+---
+
+### Cálculo por integrales
+
+La distancia total es el área bajo la curva de velocidad:
 
 $$
-t_1^2 - 3t_1 + \frac{2}{a} = 0
+s = \int_0^T v(t) \, dt
 $$
 
-Ahora elegimos un valor para $t_1$ que haga que la velocidad máxima no sea muy alta y el perfil se vea razonable.
+Separando por fases:
 
-Supongamos que $t_1 = 0.75$ s:
-
-$$
-t_2 = 3 - 2 \cdot 0.75 = 1.5 \ \text{s}
-$$
-
-Calculamos la aceleración:
+#### 1. Aceleración ($0 \leq t < t_1$)
 
 $$
-s = a \cdot t_1^2 + a \cdot t_1 \cdot t_2 = a (0.75^2 + 0.75 \cdot 1.5) = a (0.5625 + 1.125) = a \cdot 1.6875
+v(t) = a \cdot t
 $$
 
-Entonces:
-
 $$
-2 = a \cdot 1.6875 \Rightarrow a = \frac{2}{1.6875} \approx 1.185 \ \text{m/s}^2
+s_1(t) = \int_0^{t_1} a \cdot t \, dt = a \cdot \frac{t_1^2}{2}
 $$
 
-Velocidad máxima:
+#### 2. Velocidad constante ($t_1 \leq t < t_1 + t_2$)
 
 $$
-v_{\text{max}} = a t_1 = 1.185 \cdot 0.75 \approx 0.889 \ \text{m/s}
+v(t) = v_{\text{max}} = a \cdot t_1
+$$
+
+$$
+s_2(t) = \int_{t_1}^{t_1 + t_2} a \cdot t_1 \, dt = a \cdot t_1 \cdot t_2
+$$
+
+#### 3. Desaceleración ($t_1 + t_2 \leq t \leq T$)
+
+$$
+v(t) = -a(t - T) \quad \text{(bajando desde } v_{\text{max}} \text{ hasta 0)}
+$$
+
+$$
+s_3(t) = \int_{t_1 + t_2}^{T} -a(t - T) \, dt = a \cdot \frac{t_1^2}{2}
+$$
+
+#### Distancia total:
+
+$$
+s = s_1 + s_2 + s_3 = a \cdot \frac{t_1^2}{2} + a \cdot t_1 \cdot t_2 + a \cdot \frac{t_1^2}{2}
+$$
+
+$$
+s = a \cdot t_1^2 + a \cdot t_1 \cdot t_2
+$$
+
+Reemplazamos $t_2 = T - 2t_1$:
+
+$$
+s = a \cdot t_1^2 + a \cdot t_1 (T - 2t_1)
+$$
+
+$$
+s = a \cdot t_1^2 + a \cdot T \cdot t_1 - 2a \cdot t_1^2 = -a \cdot t_1^2 + a \cdot T \cdot t_1
+$$
+
+Factorizamos:
+
+$$
+s = a \cdot t_1 (T - t_1)
 $$
 
 ---
 
-### Perfil de posición $s(t)$
+### Sustituimos los valores del enunciado
 
-- **Fase 1 (aceleración)**: $0 \leq t < 0.75$
+- $s = 2 \ \text{m}$
+- $T = 3 \ \text{s}$
 
-$$
-s_1(t) = \frac{1}{2} a t^2 = 0.5925 \cdot t^2
-$$
-
-- **Fase 2 (velocidad constante)**: $0.75 \leq t < 2.25$
+Entonces:
 
 $$
-s_2(t) = v_{\text{max}} (t - 0.75) + s_1(0.75) = 0.889 (t - 0.75) + 0.333
+2 = a \cdot t_1 (3 - t_1)
 $$
 
-- **Fase 3 (desaceleración)**: $2.25 \leq t \leq 3$
+---
 
-Definimos $\tau = t - 2.25$
+### Elegimos $t_1 = 0.75 \ \text{s}$
+
+Entonces:
 
 $$
-s_3(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \tau + s_2(2.25)
+2 = a \cdot 0.75 (3 - 0.75) = a \cdot 0.75 \cdot 2.25 = a \cdot 1.6875
 $$
 
+$$
+a = \frac{2}{1.6875} \approx 1.185 \ \text{m/s}^2
+$$
 
+Y la velocidad máxima:
+
+$$
+v_{\text{max}} = a \cdot t_1 = 1.185 \cdot 0.75 \approx 0.889 \ \text{m/s}
+$$
+
+---
+
+### Resumen del perfil
+
+- Aceleración: $a = 1.185 \ \text{m/s}^2$
+- Velocidad máxima: $v_{\text{max}} = 0.889 \ \text{m/s}$
+- $t_1 = 0.75 \ \text{s}$, $t_2 = 1.5 \ \text{s}$
+
+---
+
+### Posición por tramos
+
+#### 1. $0 \leq t < 0.75$
+
+$$
+s(t) = \frac{1}{2} a t^2 = 0.5925 \cdot t^2
+$$
+
+#### 2. $0.75 \leq t < 2.25$
+
+$$
+s(t) = v_{\text{max}} (t - 0.75) + s(0.75) = 0.889 (t - 0.75) + 0.333
+$$
+
+#### 3. $2.25 \leq t \leq 3$
+
+Usamos $\tau = t - 2.25$:
+
+$$
+s(t) = -\frac{1}{2} a \tau^2 + v_{\text{max}} \cdot \tau + s(2.25) = -0.5925 \cdot \tau^2 + 0.889 \cdot \tau + 1.667
+$$
 
 
 ![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
