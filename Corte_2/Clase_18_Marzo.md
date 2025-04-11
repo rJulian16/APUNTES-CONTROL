@@ -34,6 +34,11 @@ El perfil trapezoidal tiene **3 fases**:
 2. **Velocidad constante**
 3. **Desaceleración constante**
 
+
+- Tiempo total $T = 3 \ \text{s}$
+- Tiempo de aceleración y desaceleración: $t_1$
+- Tiempo a velocidad constante: $t_2$
+
 La distancia total es el área bajo la curva de velocidad:
 
 $$
