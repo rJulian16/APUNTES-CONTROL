@@ -56,6 +56,8 @@ A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde
 
 Figura 5. Esquematico ejercicio Prismatic Join
 
+Para lograr el movimiento de la esfera en el eje Z, se utiliza una Prismatic Joint, la cual permite el desplazamiento lineal en una sola dirección. En este caso, la unión está alineada con el eje Z para simular un movimiento vertical. A la entrada de esta unión se le conecta una señal tipo seno, lo que provoca que la esfera suba y baje de forma continua y suave, siguiendo el patrón oscilatorio de la onda. Esta configuración permite observar cómo un cuerpo se mueve de manera controlada utilizando señales periódicas como estímulo.
+
 ### 1.3 Bloque PS Converter (Physical Signal Converter)
 
 En Simscape, el bloque PS Converter, también conocido como Physical Signal Converter, es una herramienta fundamental para la interacción entre los dos tipos de señales que se manejan dentro del entorno: las señales físicas y las señales de Simulink tradicionales.
