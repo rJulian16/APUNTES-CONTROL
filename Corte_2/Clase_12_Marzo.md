@@ -46,8 +46,15 @@ Figura 4. Esquematico ejercicio Revolute Join
 
 El esquemático muestra la presencia de dos sólidos que conforman el sistema. Para organizarlos y definir su comportamiento, se añaden tres bloques adicionales. Primero, se utiliza un Rigid Transform, como en el ejercicio anterior, para posicionar los sólidos de forma que no queden superpuestos, permitiendo una mejor visualización. Luego, se incorpora una Revolute Joint, que será la encargada de permitir el giro del sólido gris. Esta unión se conecta a un costado de la cara trasera del rectángulo, actuando como base del mundo y punto de apoyo para la rotación. Finalmente, se añade una entrada tipo rampa al sistema, con el objetivo de generar un movimiento rotacional continuo, ya que se desea que el sólido gire sin restricciones angulares.
 
-A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde se puede observar el comportamiento del sistema completo en funcionamiento. Este permite visualizar cómo interactúan los sólidos, la rotación generada y el efecto de la entrada aplicada.
-https://youtu.be/Iz6ljM35qfo
+A continuación, se presenta el enlace al modelo desarrollado en Simulink, donde se puede observar el comportamiento del sistema completo en funcionamiento. Este permite visualizar cómo interactúan los sólidos, la rotación generada y el efecto de la entrada aplicada: https://youtu.be/Iz6ljM35qfo
+
+#### 1.2.3 Prismatic Join
+
+💡Ejercicio: En este ejercicio se modelará una esfera que se desplazará a lo largo del eje Z mediante una unión Prismatic Joint. Esta configuración permitirá simular un movimiento lineal vertical controlado, representando así un sistema que puede subir o bajar de forma guiada.
+
+![image](https://github.com/user-attachments/assets/103ceb4c-2c40-4797-896b-5b05a6510921)
+
+Figura 5. Esquematico ejercicio Prismatic Join
 
 ### 1.3 Bloque PS Converter (Physical Signal Converter)
 
@@ -77,4 +84,4 @@ PS-Simulink Converter: Para pasar de Simscape a Simulink.
 
 ![image](https://github.com/user-attachments/assets/45292b2a-e970-4244-a139-d1f69ad8152f)
 
-Figura 4. Solidos en simulación conectados con rigid transform. 
+Figura 6. Solidos en simulación conectados con rigid transform. 
