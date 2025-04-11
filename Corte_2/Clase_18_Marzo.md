@@ -29,44 +29,83 @@ Las gráficas típicas en este caso son:
 
 📚Ejercicio 1: Se quiere mover un actuador lineal desde la posición 0 m hasta 2 m en un tiempo total de 3 s. Se desea que el movimiento sea suave, siguiendo un perfil de velocidad tipo trapezoidal.
 
-- Posición inicial: $s_0 = 0$ m  
-- Posición final: $s_f = 2$ m  
-- Velocidad máxima: $v_{max} = 1$ m/s  
-- Aceleración máxima: $a_{max} = 2$ m/s²  
+- Posición inicial: $s_0 = 0 \ \text{m}$
+- Posición final: $s_f = 2 \ \text{m}$
+- Velocidad máxima: $v_{max} = 1 \ \text{m/s}$
+- Aceleración máxima: $a_{max} = 2 \ \text{m/s}^2$
 
-### Cálculos previos:
+### Cálculos previos
 
-\[
-t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \text{ s}
-\]  
-\[
-T = t_a + t_c + t_a = 0.5 + 1.5 + 1 = 3 \text{ s}
-\]
+Se calcula el tiempo que tarda en alcanzar la velocidad máxima:
+
+$$
+t_a = \frac{v_{max}}{a_{max}} = \frac{1}{2} = 0.5 \ \text{s}
+$$
+
+Se calcula la distancia recorrida durante la aceleración:
+
+$$
+s_a = \frac{1}{2} a_{max} t_a^2 = \frac{1}{2} \cdot 2 \cdot (0.5)^2 = 0.25 \ \text{m}
+$$
+
+Como el total de desplazamiento es $2 \ \text{m}$, y se recorren $0.25 \ \text{m}$ en la aceleración y $0.25 \ \text{m}$ en la desaceleración, quedan $1.5 \ \text{m}$ para el tramo de velocidad constante:
+
+$$
+t_c = \frac{1.5}{1} = 1.5 \ \text{s}
+$$
+
+Tiempo total del movimiento:
+
+$$
+T = t_a + t_c + t_a = 0.5 + 1.5 + 0.5 = 2.5 \ \text{s}
+$$
 
 ---
 
-## Fases del perfil
+## Ecuaciones del perfil
 
-### Fase 1 – Aceleración constante $(0 \leq t \leq 0.5)$:
+### Fase 1 – Aceleración constante $(0 \leq t \leq 0.5)$
 
-\[
-a(t) = 2 \quad v(t) = \int a(t)\, dt = 2t \quad s(t) = \int v(t)\, dt = t^2
-\]
+$$
+a(t) = 2
+$$
+$$
+v(t) = 2t
+$$
+$$
+s(t) = t^2
+$$
 
-### Fase 2 – Velocidad constante $(0.5 \leq t \leq 2)$:
+### Fase 2 – Velocidad constante $(0.5 \leq t \leq 2)$
 
-\[
-a(t) = 0 \quad v(t) = 1 \quad s(t) = 0.25 + 1 \cdot (t - 0.5) = t - 0.25
-\]
+$$
+a(t) = 0
+$$
+$$
+v(t) = 1
+$$
+$$
+s(t) = 0.25 + 1 \cdot (t - 0.5) = t - 0.25
+$$
 
-### Fase 3 – Desaceleración constante $(2 \leq t \leq 3)$:
+### Fase 3 – Desaceleración constante $(2 \leq t \leq 2.5)$
 
-\[
-a(t) = -2 \\
-\tau = t - 2 \\
-v(\tau) = 1 - 2\tau \\
-s(\tau) = 1.75 + \tau - \tau^2 \Rightarrow s(t) = 1.75 + (t - 2) - (t - 2)^2
-\]
+Sea $\tau = t - 2$
+
+$$
+a(t) = -2
+$$
+$$
+v(\tau) = 1 - 2\tau
+$$
+$$
+s(\tau) = 1.75 + \tau - \tau^2
+$$
+
+o expresado en función de $t$:
+
+$$
+s(t) = 1.75 + (t -
 
 
 ![image](https://github.com/user-attachments/assets/c5f0342e-8946-44be-8381-3f1607e26a25)
