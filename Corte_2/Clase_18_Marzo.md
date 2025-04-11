@@ -240,7 +240,7 @@ Figura 10. Ejemplo Perfil trapezoideal.
 
 **-S-curve o polinómico:**: transición más suave entre estados (usado en movimientos delicados).
 
-![image](https://github.com/user-attachments/assets/61773fc7-b84e-483c-8e30-284714517549)
+![image](https://github.com/user-attachments/assets/8da0c3ce-b69e-4655-890e-eabc3ababf5b)
 
 Figura 11. Ejemplo Perfil S.
 
