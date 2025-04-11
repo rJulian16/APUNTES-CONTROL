@@ -1,4 +1,4 @@
-# Control de Movimiento Clase 12 de marzo
+# Control de Movimiento Clase 12 de Marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
 # INDICE
