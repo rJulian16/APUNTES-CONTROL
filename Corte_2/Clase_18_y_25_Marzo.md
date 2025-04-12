@@ -695,3 +695,77 @@ Este tipo de perfiles se utiliza ampliamente en aplicaciones como:
 - Servomecanismos.
 - Control de ejes en máquinas CNC.
 - Sistemas mecatrónicos donde se requiere precisión y suavidad en el movimiento.
+
+## Cálculo de los Coeficientes del Perfil en S (Curva A)
+
+Para definir el perfil de velocidad tipo **S**, se parte de una función cuadrática de la forma:
+
+$$
+v(t) = C_1 t^2 + C_2 t + C_3
+$$
+
+Este perfil se aplica a la **primera mitad** de la fase de aceleración:  
+**Curva A:** $0 < t < \frac{t_a}{2}$
+
+---
+
+### Condiciones iniciales
+
+Se imponen las siguientes condiciones para asegurar que la curva sea suave y continua:
+
+-**Velocidad inicial:**
+
+$$
+v(0) = 0
+$$
+
+-**Aceleración inicial:**
+
+$$
+a(0) = \frac{dv}{dt} = 0
+$$
+
+-**Velocidad a la mitad del tiempo de aceleración:**
+
+$$
+v\left(\frac{t_a}{2}\right) = \frac{v_m}{2}
+$$
+
+4. **Aceleración a la mitad del tiempo de aceleración:**
+
+$$
+a\left(\frac{t_a}{2}\right) = a
+$$
+
+### Sustitución en la función
+
+#### Velocidad inicial:
+
+$$v(0) = C_1(0)^2 + C_2(0) + C_3 = 0 \Rightarrow C_3 = 0$$
+
+#### Aceleración inicial:
+
+La aceleración es la derivada de la velocidad:
+
+$$a(t) = \frac{dv}{dt} = 2C_1 t + C_2$$
+
+Entonces:
+
+$$a(0) = 2C_1(0) + C_2 = 0 \Rightarrow C_2 = 0$$
+
+#### Velocidad en \( \frac{t_a}{2} \):
+
+$$v\left(\frac{t_a}{2}\right) = C_1 \left(\frac{t_a}{2}\right)^2 = \frac{v_m}{2}$$
+
+Despejando \( C_1 \):
+
+$$C_1 = \frac{2v_m}{t_a^2}$$
+
+
+### Resultado final
+
+Sustituyendo los coeficientes obtenidos, la función de velocidad para la **Curva A** es:
+
+$$v(t) = \frac{2v_m}{t_a^2} t^2$$
+
+Esta función modela un incremento suave de la velocidad desde el reposo hasta \( \frac{v_m}{2} \), garantizando continuidad y suavidad en la transición hacia la siguiente fase del perfil en S.
