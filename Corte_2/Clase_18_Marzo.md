@@ -613,3 +613,7 @@ $$S_C = \int_{5.5}^{6} (-4t + 24)\,dt = \left[-2t^2 + 24t\right]_{5.5}^{6} = 0.5
 $$S_A = 0.5 \text{ cm}$$
 $$S_B = 10 \text{ cm}$$
 $$S_C = 0.5 \text{ cm}$$
+
+![image](https://github.com/user-attachments/assets/3e247d13-b955-4600-8e20-f65c9ebfe393)
+
+Figura 16. Matlab ejercicio 10.
