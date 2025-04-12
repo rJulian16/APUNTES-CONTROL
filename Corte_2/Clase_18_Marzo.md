@@ -682,6 +682,9 @@ $$j(t) = \frac{da(t)}{dt} = 2c_1$$
 
 En este caso, el jerk es constante, lo cual ayuda a reducir vibraciones o impactos en los sistemas mecánicos.
 
+
+## Usos y Aplicaciones
+
 Este modelo permite diseñar trayectorias donde la aceleración cambia suavemente, lo cual es esencial para:
 
 - Proteger componentes mecánicos del desgaste.
