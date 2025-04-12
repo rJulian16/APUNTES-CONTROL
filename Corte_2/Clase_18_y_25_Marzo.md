@@ -835,3 +835,9 @@ $$\left( 32t + 0.071 \left(900t - 60t^2/2 + t^3/3\right) \right) \Big|_{30}^{100
 Sumando los tres tramos:
 
 $$s(100\, \text{ms}) = 77.62 + 480 + 2175.87 = \boxed{2733.49 \, \text{cts}}$$
+
+📚 Ejercicio 11: Suponiendo que para un perfil de curva s pura se tiene una velocidad máxima de 10 in/s y un tiempo de aceleración de 4 s, grafique el periodo de aceleración en Matlab
+
+![image](https://github.com/user-attachments/assets/ce524030-41db-4c84-9cd2-3217d0090d49)
+
+Figura 20. Ejemplo 11 grafica de perfil S. 
