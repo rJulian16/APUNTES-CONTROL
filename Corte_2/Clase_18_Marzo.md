@@ -622,6 +622,12 @@ Figura 16. Matlab ejercicio 10.
 
 ![image](https://github.com/user-attachments/assets/4c507b64-41ca-4ffe-8eb5-eddbf8bf0c6a)
 
+Figura 17. Perfil S puro.
+
+![image](https://github.com/user-attachments/assets/56865f83-1765-47e9-bfad-9ee8a7e94a3c)
+
+Figura 18. Perfil S mixto
+
 Figura 16. Comparacion entre perfiles S.
 
 | Característica                  | Perfil S Puro                                           | Perfil S Mixto                                          |
@@ -635,4 +641,4 @@ Figura 16. Comparacion entre perfiles S.
 | **Tiempo total de movimiento** | Puede ser más largo si se busca suavidad extrema       | Generalmente más corto que el S puro                  |
 | **Uso típico**                 | Robótica de precisión, sistemas con mínima vibración   | Aplicaciones industriales estándar                    |
 
-Tabla5.Comparacion entre perfiles S.
+Tabla5. Comparacion entre perfiles S.
