@@ -11,7 +11,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
    - [3.3. Curva de Posición](#33-curva-de-posicion-st)
    - [3.4. Relación entre las Curvas](#34-relacion-entre-las-curvas)
 4. [Reglas Geométricas](#4-reglas-geometricas)
-5. [**Aplicación**](#aplicacion)
+5. [Aplicación](#aplicacion)
    - [5.1. Movimiento en un solo eje](#51-movimiento-en-un-solo-eje)
      - [5.1.1. Perfil Trapezoidal](#511-perfil-trapezoidal)
      - [5.1.2. Perfil S (Sigmoidal)](#512-perfil-s-sigmoidal)
