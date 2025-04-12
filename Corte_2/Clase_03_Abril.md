@@ -104,9 +104,9 @@ Tabla 1. Problemas a solucionar.
 
 Cuando se tiene un sistema de transmisión, la inercia de la carga o de un componente en el lado de salida se "refleja" al lado de entrada (por ejemplo, al eje del motor) modificada por la relación de transmisión. Esto es importante para analizar la respuesta dinámica del sistema.
 
-La inercia reflejada ($J_{ref}$) de una carga con inercia $J_{carga}$ a través de una transmisión con relación de transmisión $i$ (donde $i = \frac{\omega_{entrada}}{\omega_{salida}}$) se calcula como:
+La inercia reflejada ($J_{ref}$) de una carga con inercia $J_{L}$ a través de una relacion de transmisión (N) se calcula como:
 
-$$J_{ref} = \frac{J_{carga}}{i^2}$$
+$$J_{ref} = J_{L} * eta
 
 Esto significa que si la velocidad se reduce (i > 1), la inercia reflejada en el lado de alta velocidad es menor.
 
