@@ -28,7 +28,7 @@ Cuando se diseña un sistema que tiene que mover algo (una herramienta, una carg
 - Hay vibraciones o resonancia
 - Se gasta energía de más
 
-Ejemplo Práctico:
+💡Ejercicio 1:
 
 Imaginemos que necesitamos diseñar un sistema de transmisión para reducir la velocidad de un motor eléctrico desde 1750 RPM hasta una velocidad de salida de 350 RPM. El motor tiene una potencia de 5 kW y el sistema debe ser lo más compacto y eficiente posible.
 
