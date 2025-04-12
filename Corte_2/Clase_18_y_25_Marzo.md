@@ -769,3 +769,65 @@ Sustituyendo los coeficientes obtenidos, la función de velocidad para la **Curv
 $$v(t) = \frac{2v_m}{t_a^2} t^2$$
 
 Esta función modela un incremento suave de la velocidad desde el reposo hasta \( \frac{v_m}{2} \), garantizando continuidad y suavidad en la transición hacia la siguiente fase del perfil en S.
+
+💡Ejemplo: Cálculo de la posición a partir del perfil de velocidad en S
+
+A partir del perfil de velocidad, obtenga la posición del eje (axis) transcurridos 100 ms.
+
+-Parámetros del perfil
+
+- Velocidad máxima: \( v_m = 32 \, \text{cts/ms} \)
+- Tiempo de aceleración: \( t_a = 30 \, \text{ms} \)
+
+-Funciones del perfil de velocidad en S
+
+Se divide el perfil en tres tramos: aceleración (A), velocidad constante (B) y desaceleración (C).
+
+- **Curva A (aceleración):**
+
+$$v_A(t) = \frac{2v_m}{t_a^2} t^2$$
+
+- **Curva B (velocidad constante):**
+
+$$v_B(t) = v_m$$
+
+- **Curva C (desaceleración):**
+
+$$v_C(t) = v_m - \frac{2v_m}{t_a^2} (t_a - t)^2$$
+
+
+-Cálculo de la posición total en 100 ms
+
+La posición se obtiene integrando cada tramo del perfil de velocidad:
+
+$$s(t) = \int_0^{15} \frac{2 \cdot 32}{30^2} t^2 \, dt + \int_{15}^{30} 32 \, dt + \int_{30}^{100} \left(32 - \frac{2 \cdot 32}{30^2} (30 - t)^2\right) \, dt$$
+
+Simplificando los coeficientes:
+
+$$s(t) = \int_0^{15} \frac{64}{900} t^2 \, dt + \int_{15}^{30} 32 \, dt + \int_{30}^{100} \left(32 - \frac{64}{900} (30 - t)^2\right) \, dt$$
+
+-Integración por tramos
+
+-Tramo A: \( t = 0 \) a \( t = 15 \)
+
+$$\int_0^{15} \frac{64}{900} t^2 \, dt = \left. \frac{64}{900} \cdot \frac{t^3}{3} \right|_0^{15} = 0.023 t^3 \Big|_0^{15} = 0.023 \cdot 3375 = 77.62 \, \text{cts}$$
+
+-Tramo B: \( t = 15 \) a \( t = 30 \)
+
+$$\int_{15}^{30} 32 \, dt = 32 \cdot (30 - 15) = 32 \cdot 15 = 480 \, \text{cts}$$
+
+-Tramo C: \( t = 30 \) a \( t = 100 \)
+
+La integración desarrollada es:
+
+$$\int_{30}^{100} \left(32 - \frac{64}{900} (30 - t)^2 \right) dt$$
+
+Esto se resuelve con un cambio de variable o expansión algebraica y da como resultado:
+
+$$\left( 32t + 0.071 \left(900t - 60t^2/2 + t^3/3\right) \right) \Big|_{30}^{100} = 2185.87 \, \text{cts}$$
+
+-Resultado final
+
+Sumando los tres tramos:
+
+$$s(100\, \text{ms}) = 77.62 + 480 + 2175.87 = \boxed{2733.49 \, \text{cts}}$$
