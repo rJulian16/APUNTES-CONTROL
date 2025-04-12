@@ -570,46 +570,46 @@ El movimiento tomará **7 segundos**.
 
 Figura 15. Matlab ejercicio 9.
 
-Claro, aquí tienes el ejercicio formateado en Markdown para GitHub:
+## 📚 Ejercicio 10: Cálculo de desplazamientos a partir del perfil de velocidad
 
-Markdown
+Dado el perfil de velocidad de un eje, se desea calcular el desplazamiento en tres intervalos ($S_A$, $S_B$, $S_C$) utilizando reglas geométricas y el método analítico.
 
-**Ejercicio:**
+### ✏️ 1. Reglas Geométricas
 
-Dado el perfil de velocidad de la figura, calcule $S_A$, $S_B$, $S_C$ usando las reglas geométricas y el método analítico del perfil de movimiento.
+**$S_A$ (de 0 a 0.5 s):**  
+Área de un triángulo:
 
-**Solución:**
+$$S_A = \frac{1}{2} \cdot \text{base} \cdot \text{altura} = \frac{1}{2} \cdot 0.5\,\text{s} \cdot 2\,\text{cm/s} = 0.5\,\text{cm}$$
 
-**1. Cálculos de Desplazamiento (Reglas Geométricas):**
+**$S_B$ (de 0.5 a 5.5 s):**  
+Área de un rectángulo:
 
-* **$S_A$ (0 a 0.5 segundos):**
-    * El área bajo la curva es un triángulo.
-    * $$S_A = \frac{1}{2} \times \text{base} \times \text{altura} = \frac{1}{2} \times 0.5 \text{ s} \times 2 \text{ cm/s} = 0.5 \text{ cm}$$
+$$S_B = \text{base} \cdot \text{altura} = (5.5 - 0.5)\,\text{s} \cdot 2\,\text{cm/s} = 10\,\text{cm}$$
 
-* **$S_B$ (0.5 a 5.5 segundos):**
-    * El área bajo la curva es un rectángulo.
-    * $$S_B = \text{base} \times \text{altura} = (5.5 \text{ s} - 0.5 \text{ s}) \times 2 \text{ cm/s} = 5 \text{ s} \times 2 \text{ cm/s} = 10 \text{ cm}$$
+**$S_C$ (de 5.5 a 6 s):**  
+Área de un triángulo:
 
-* **$S_C$ (5.5 a 6 segundos):**
-    * El área bajo la curva es un triángulo.
-    * $$S_C = \frac{1}{2} \times \text{base} \times \text{altura} = \frac{1}{2} \times (6 \text{ s} - 5.5 \text{ s}) \times 2 \text{ cm/s} = 0.5 \text{ s} \times 1 \text{ cm/s} = 0.5 \text{ cm}$$
+$$S_C = \frac{1}{2} \cdot (6 - 5.5)\,\text{s} \cdot 2\,\text{cm/s} = 0.5\,\text{cm}$$
 
-**2. Cálculos de Desplazamiento (Método Analítico):**
+### 2. Método Analítico
 
-* **$S_A$ (0 a 0.5 segundos):**
-    * La velocidad es una función lineal del tiempo: $v(t) = 4t$
-    * $$S_A = \int_0^{0.5} 4t \, dt = \left[ 2t^2 \right]_0^{0.5} = 2(0.5)^2 - 2(0)^2 = 0.5 \text{ cm}$$
+**$S_A$ (de 0 a 0.5 s):**  
+La velocidad varía linealmente: \( v(t) = 4t \)
 
-* **$S_B$ (0.5 a 5.5 segundos):**
-    * La velocidad es constante: $v(t) = 2$
-    * $$S_B = \int_{0.5}^{5.5} 2 \, dt = \left[ 2t \right]_{0.5}^{5.5} = 2(5.5) - 2(0.5) = 10 \text{ cm}$$
+$$S_A = \int_0^{0.5} 4t\,dt = \left[2t^2\right]_0^{0.5} = 0.5\,\text{cm}$$
 
-* **$S_C$ (5.5 a 6 segundos):**
-    * La velocidad es una función lineal del tiempo: $v(t) = -4t + 24$
-    * $$S_C = \int_{5.5}^{6} (-4t + 24) \, dt = \left[ -2t^2 + 24t \right]_{5.5}^{6} = (-2(6)^2 + 24(6)) - (-2(5.5)^2 + 24(5.5)) = 0.5 \text{ cm}$$
+**$S_B$ (de 0.5 a 5.5 s):**  
+Velocidad constante: \( v(t) = 2 \)
 
-**Resultados:**
+$$S_B = \int_{0.5}^{5.5} 2\,dt = \left[2t\right]_{0.5}^{5.5} = 10\,\text{cm}$$
 
-* $$S_A = 0.5 \text{ cm}$$
-* $$S_B = 10 \text{ cm}$$
-* $$S_C = 0.5 \text{ cm}$$
+**$S_C$ (de 5.5 a 6 s):**  
+Velocidad decreciente: \( v(t) = -4t + 24 \)
+
+$$S_C = \int_{5.5}^{6} (-4t + 24)\,dt = \left[-2t^2 + 24t\right]_{5.5}^{6} = 0.5\,\text{cm}$$
+
+### Resultados
+
+- \( S_A = 0.5\,\text{cm} \)
+- \( S_B = 10\,\text{cm} \)
+- \( S_C = 0.5\,\text{cm} \)
