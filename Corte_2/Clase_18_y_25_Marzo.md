@@ -32,7 +32,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
    - [8.4 Jerk](#84-jerk)
    - [8.5 Usos y Aplicaciones](#85-usos-y-aplicaciones)
    - [8.6 Cálculo de los Coeficientes del Perfil en S (Curva A)](#86-cálculo-de-los-coeficientes-del-perfil-en-s-curva-a)
-
+9. [Conclusiones](#conclusiones)
 # 1. Perfiles de Movimiento
 
 Los perfiles de movimiento son trayectorias planificadas que definen cómo deben variar las variables de posición, velocidad y aceleración de un sistema mecánico en el tiempo. Estos perfiles son fundamentales en el diseño de sistemas de control de movimiento, ya que permiten que un mecanismo realice desplazamientos suaves, precisos y eficientes, evitando cambios bruscos que podrían causar vibraciones, desgaste prematuro o incluso fallas mecánicas. En el contexto de la simulación con Simulink y Simscape, los perfiles de movimiento se implementan mediante funciones matemáticas o bloques de señal, y se utilizan para alimentar actuadores, servomecanismos u otros componentes dinámicos.
@@ -913,5 +913,28 @@ $$s(100\, \text{ms}) = 77.62 + 480 + 2175.87 = \boxed{2733.49 \, \text{cts}}$$
 
 Figura 20. Ejemplo 11 grafica de perfil S. 
 
+# 9 Conclusiones
+
+## Conclusiones
+
+-**La planificación adecuada del perfil de movimiento es esencial para la eficiencia de sistemas mecánicos**. Utilizar perfiles trapezoidales o en S ayuda a controlar las aceleraciones y desaceleraciones, reduciendo esfuerzos mecánicos innecesarios y mejorando la durabilidad de los componentes.
+
+-**La comprensión de la relación entre aceleración, velocidad y posición es fundamental** para modelar y controlar sistemas dinámicos. La integración sucesiva de la aceleración permite obtener con precisión la velocidad y la posición, lo que facilita el análisis del comportamiento temporal de los sistemas.
+
+-**Las gráficas de posición, velocidad y aceleración ofrecen una representación visual invaluable** del comportamiento dinámico de los sistemas. Detectar discontinuidades o valores extremos es clave para evitar fallos y para la correcta simulación y análisis de los movimientos.
+
+-**El uso de reglas geométricas simplifica el cálculo de desplazamientos y aceleraciones** en perfiles básicos. El área bajo la curva de velocidad corresponde al desplazamiento, mientras que la pendiente de esta curva determina la aceleración, proporcionando una herramienta poderosa para ingenieros.
+
+-**El control coordinado de múltiples ejes es crucial en aplicaciones de robots y máquinas CNC**. La interpolación de trayectorias asegura que todos los ejes lleguen a su destino simultáneamente, evitando descoordinaciones y mejorando la precisión en sistemas complejos.
+
+-**Las herramientas de simulación, como Simulink y Simscape, son cruciales para validar perfiles de movimiento** antes de su implementación física, lo que ayuda a reducir errores y a optimizar el diseño de sistemas mecánicos.
+
+-**El perfil trapezoidal es ideal para movimientos rápidos y simples**, pero puede generar transiciones bruscas, lo cual puede inducir esfuerzos mecánicos y vibraciones. En contraste, el perfil en S ofrece transiciones más suaves y es preferido cuando se busca precisión y suavidad en el movimiento.
+
+-**El perfil en S mejora la vida útil de los componentes al suavizar las transiciones dinámicas**. Las funciones trigonométricas aplicadas permiten una aceleración continua, reduciendo impactos y vibraciones que podrían causar daños en los sistemas.
+
+-**La interpolación de velocidades en sistemas multieje garantiza un funcionamiento sincronizado**, permitiendo que los ejes de movimiento con distancias diferentes ajusten sus velocidades para llegar a su destino al mismo tiempo, lo cual es esencial para trayectorias de alta precisión.
+
+-**La correcta formulación matemática de un perfil de movimiento es fundamental para optimizar el rendimiento de un sistema mecánico**. Los ejercicios realizados demuestran cómo aplicar los principios del cálculo diferencial e integral para obtener resultados precisos que mejoren la eficiencia, reduciendo fallas por vibración o choque.
 
 
