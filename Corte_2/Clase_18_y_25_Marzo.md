@@ -770,7 +770,11 @@ $$v(t) = \frac{2v_m}{t_a^2} t^2$$
 
 Esta función modela un incremento suave de la velocidad desde el reposo hasta \( \frac{v_m}{2} \), garantizando continuidad y suavidad en la transición hacia la siguiente fase del perfil en S.
 
-💡Ejemplo: Cálculo de la posición a partir del perfil de velocidad en S
+💡Ejemplo 3: Cálculo de la posición a partir del perfil de velocidad en S
+
+![image](https://github.com/user-attachments/assets/16d80e7d-1508-431b-bc9e-271684aca3df)
+
+Figura 19. Ejemplo 3 perfil S. 
 
 A partir del perfil de velocidad, obtenga la posición del eje (axis) transcurridos 100 ms.
 
