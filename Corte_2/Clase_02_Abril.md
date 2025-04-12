@@ -73,8 +73,6 @@ Fuente: Docente
 
 ## 4. Tipos de Transmisión Mecánica
 
----
-
 ### 4.1. Engranajes
 
 Sistema más común cuando se necesita precisión y rigidez.
