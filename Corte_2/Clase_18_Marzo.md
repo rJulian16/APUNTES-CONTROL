@@ -480,7 +480,7 @@ Figura 14. Matlab ejercicio multieje.
 
 # 6. Ejercicios planteados en clase:
 
-## 📚 Ejercicio 8: Análisis de trayectoria de un eje con tornillo sin fin
+📚 Ejercicio 8: Análisis de trayectoria de un eje con tornillo sin fin
 
 Se desea calcular el tiempo total de movimiento \( t_m \) de un eje accionado por un motor con tornillo sin fin. El movimiento sigue un perfil trapezoidal: aceleración constante, velocidad constante, y luego desaceleración simétrica.
 
@@ -544,7 +544,7 @@ Resolviendo:
 
 $$s(t) = s(t_a + t_m) + \left[ v_m t - \frac{1}{2} a (t - (t_a + t_m))^2 \right]_{t_a + t_m}^{t}$$
 
-## 📚 Ejercicio 9 planteado en clase: Movimiento de un eje en un robot Gantry
+📚 Ejercicio 9 planteado en clase: Movimiento de un eje en un robot Gantry
 
 El eje \( x \) de un robot Gantry debe moverse \( 10\,\text{cm} \). La máxima aceleración permitida en este eje es de \( 1\,\text{cm/s}^2 \). Si se desea mover el eje a una velocidad máxima de \( 2\,\text{cm/s} \), ¿cuánto tiempo tomará hacer este movimiento?
 
@@ -570,11 +570,11 @@ El movimiento tomará **7 segundos**.
 
 Figura 15. Matlab ejercicio 9.
 
-## 📚 Ejercicio 10: Cálculo de desplazamientos a partir del perfil de velocidad
+📚 Ejercicio 10: Cálculo de desplazamientos a partir del perfil de velocidad
 
 Dado el perfil de velocidad de un eje, se desea calcular el desplazamiento en tres intervalos ($S_A$, $S_B$, $S_C$) utilizando reglas geométricas y el método analítico.
 
-### ✏️ 1. Reglas Geométricas
+### 1. Reglas Geométricas
 
 **$S_A$ (de 0 a 0.5 s):**  
 Área de un triángulo:
@@ -617,3 +617,22 @@ $$S_C = 0.5 \text{ cm}$$
 ![image](https://github.com/user-attachments/assets/3e247d13-b955-4600-8e20-f65c9ebfe393)
 
 Figura 16. Matlab ejercicio 10.
+
+# 7. Comparacion entre perfil S y perfil S puro
+
+![image](https://github.com/user-attachments/assets/4c507b64-41ca-4ffe-8eb5-eddbf8bf0c6a)
+
+Figura 16. Comparacion entre perfiles S.
+
+| Característica                  | Perfil S Puro                                           | Perfil S Mixto                                          |
+|-------------------------------|---------------------------------------------------------|--------------------------------------------------------|
+| **Forma de aceleración**       | Continua y suave (jerk constante)                       | Combinación de jerk y aceleración constante            |
+| **Discontinuidades**           | Ninguna (jerk es constante en transición)              | Presenta transiciones entre fases con jerk y sin jerk |
+| **Aceleración máxima ($a_{max}$)** | Alcanzada de forma suave                                | Alcanzada rápidamente y mantenida en fase constante    |
+| **Jerk ($j$)**                 | Constante durante transiciones                          | Discontinuo: fases con y sin jerk                     |
+| **Suavidad del movimiento**    | Alta                                                    | Media                                                  |
+| **Complejidad matemática**     | Alta (requiere integración continua)                    | Media (mezcla de integración simple y jerk constante) |
+| **Tiempo total de movimiento** | Puede ser más largo si se busca suavidad extrema       | Generalmente más corto que el S puro                  |
+| **Uso típico**                 | Robótica de precisión, sistemas con mínima vibración   | Aplicaciones industriales estándar                    |
+
+Tabla5.Comparacion entre perfiles S.
