@@ -11,6 +11,15 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
    - [3.3. Curva de Posición](#33-curva-de-posicion-st)
    - [3.4. Relación entre las Curvas](#34-relacion-entre-las-curvas)
 4. [Reglas Geométricas](#4-reglas-geometricas)
+5. [**Aplicación**](#aplicacion)
+   - [5.1. Movimiento en un solo eje](#51-movimiento-en-un-solo-eje)
+     - [5.1.1. Perfil Trapezoidal](#511-perfil-trapezoidal)
+     - [5.1.2. Perfil S (Sigmoidal)](#512-perfil-s-sigmoidal)
+     - [5.1.3. Ejercicio 5: Perfil Trapezoidal](#513-ejercicio-5-perfil-trapezoidal)
+     - [5.1.4. Ejercicio 6: Perfil S](#514-ejercicio-6-perfil-s)
+   - [5.2. Movimiento multieje](#52-movimiento-multieje)
+     - [5.2.1. Ejercicio 7: Movimiento multieje simple (2 ejes)](#521-ejercicio-7-movimiento-multieje-simple-2-ejes)
+     - [5.2.2. Ejemplo 3: Movimiento Coordinado en dos Ejes (Slew Motion)](#522-ejemplo-3-movimiento-coordinado-en-dos-ejes-slew-motion)
 
    
 # 1. Perfiles de Movimiento
