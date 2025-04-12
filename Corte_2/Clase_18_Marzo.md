@@ -46,13 +46,13 @@ $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido 
 
 | Variable | Significado |
 |----------|-------------|
-| `tm`     | **Tiempo total de movimiento**: tiempo total desde el inicio hasta el final del desplazamiento. |
-| `ta`     | **Tiempo de aceleración**: duración de la fase en la que el sistema acelera desde reposo hasta la velocidad máxima. |
-| `vm`     | **Velocidad máxima**: velocidad constante máxima alcanzada durante el perfil de movimiento. |
-| `td`     | **Tiempo de desaceleración**: duración de la fase donde el sistema frena hasta detenerse. |
-| `tc`     | **Tiempo de velocidad constante**: intervalo en el que el sistema mantiene su velocidad máxima sin acelerar ni frenar. |
-| `a`      | **Aceleración**: cambio de la velocidad respecto al tiempo (positiva o negativa según la fase). |
-| `s`      | **Desplazamiento total**: distancia recorrida durante todo el perfil de movimiento. |
+| tm    | **Tiempo total de movimiento**: tiempo total desde el inicio hasta el final del desplazamiento. |
+| ta    | **Tiempo de aceleración**: duración de la fase en la que el sistema acelera desde reposo hasta la velocidad máxima. |
+| vm    | **Velocidad máxima**: velocidad constante máxima alcanzada durante el perfil de movimiento. |
+| td    | **Tiempo de desaceleración**: duración de la fase donde el sistema frena hasta detenerse. |
+| tc    | **Tiempo de velocidad constante**: intervalo en el que el sistema mantiene su velocidad máxima sin acelerar ni frenar. |
+| a     | **Aceleración**: cambio de la velocidad respecto al tiempo (positiva o negativa según la fase). |
+| s     | **Desplazamiento total**: distancia recorrida durante todo el perfil de movimiento. |
 
 Tabla1. Conceptos de variables basicas.
 
