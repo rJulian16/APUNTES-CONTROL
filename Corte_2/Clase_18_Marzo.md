@@ -658,7 +658,7 @@ $$v(t) = c_1 t^2 + c_2 t + c_3$$
 
 Donde:
 
-- \( c_1 \), \( c_2 \) y \( c_3 \) son constantes que definen la forma del perfil.
+- \( c1 \), \( c2 \) y \( c3 \) son constantes que definen la forma del perfil.
 - \( t \) es el tiempo.
 - Esta es una parábola (función cuadrática), lo cual garantiza una transición suave entre fases del movimiento.
 
