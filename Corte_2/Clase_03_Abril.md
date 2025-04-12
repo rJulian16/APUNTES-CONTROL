@@ -87,6 +87,17 @@ El diseño de un sistema de transmisión debe cumplir con una serie de requerimi
 * **Mantenimiento:** El sistema debe ser fácil de mantener y reparar.
 * **Seguridad:** El diseño debe garantizar la seguridad de los operarios y del entorno.
 
+Tambien existen diferentes situaciones las cuales pueden surgir en el diseño:
+
+| Tipo | Datos Conocidos                       | Objetivo / Tamaño a Encontrar |
+|------|---------------------------------------|------------------------------|
+| 1    | Movimiento de carga deseado          | Transmisión y motor          |
+| 2    | Motor y transmisión existentes       | Movimiento de carga resultante |
+| 3    | Motor existente, movimiento de carga deseado | Transmisión                  |
+| 4    | Movimiento de carga deseado, transmisión | Motor                      |
+
+Tabla 1. Problemas a solucionar.
+
 ## 4. Inercia y Torque en Sistemas de Transmisión
 
 ### 4.1 Inercia Reflejada
