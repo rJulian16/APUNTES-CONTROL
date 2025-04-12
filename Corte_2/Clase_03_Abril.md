@@ -106,7 +106,7 @@ Cuando se tiene un sistema de transmisión, la inercia de la carga o de un compo
 
 La inercia reflejada ($J_{ref}$) de una carga con inercia $J_{L}$ a través de una relacion de transmisión (N) se calcula como:
 
-$$J_{ref} = J_{L} * eta
+$$J_{r} = J_{L} \cdot N^2$$
 
 Esto significa que si la velocidad se reduce (i > 1), la inercia reflejada en el lado de alta velocidad es menor.
 
