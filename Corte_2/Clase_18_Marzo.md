@@ -620,15 +620,18 @@ Figura 16. Matlab ejercicio 10.
 
 # 7. Comparacion entre perfil S y perfil S puro
 
+-**Pefil S puro**
+
 ![image](https://github.com/user-attachments/assets/4c507b64-41ca-4ffe-8eb5-eddbf8bf0c6a)
 
 Figura 17. Perfil S puro.
+
+-**Perfil S mixto**
 
 ![image](https://github.com/user-attachments/assets/56865f83-1765-47e9-bfad-9ee8a7e94a3c)
 
 Figura 18. Perfil S mixto
 
-Figura 16. Comparacion entre perfiles S.
 
 | Característica                  | Perfil S Puro                                           | Perfil S Mixto                                          |
 |-------------------------------|---------------------------------------------------------|--------------------------------------------------------|
