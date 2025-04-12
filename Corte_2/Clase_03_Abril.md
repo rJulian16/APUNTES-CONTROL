@@ -58,14 +58,19 @@ Para problemas de diseño más complejos, se pueden utilizar herramientas de sof
 
 Antes de profundizar en los detalles del diseño y los sistemas de transmisión, es importante tener claros algunos conceptos fundamentales:
 
->**Torque (T):** Es una medida de la fuerza que puede hacer que un objeto gire alrededor de un eje. Se mide en Newton-metro (Nm).
->**Velocidad Angular (ω):** Es la tasa de cambio del ángulo de un objeto en rotación. Se mide en radianes por segundo (rad/s) o revoluciones por minuto (RPM).
->**Potencia (P):** Es la tasa a la que se realiza el trabajo o se transfiere energía. En sistemas rotacionales, se relaciona con el torque y la velocidad angular mediante la fórmula:
+🔑>**Torque (T):** Es una medida de la fuerza que puede hacer que un objeto gire alrededor de un eje. Se mide en Newton-metro (Nm).
+
+🔑>**Velocidad Angular (ω):** Es la tasa de cambio del ángulo de un objeto en rotación. Se mide en radianes por segundo (rad/s) o revoluciones por minuto (RPM).
+
+🔑>**Potencia (P):** Es la tasa a la que se realiza el trabajo o se transfiere energía. En sistemas rotacionales, se relaciona con el torque y la velocidad angular mediante la fórmula:
     $$P = T \cdot \omega$$
->**Inercia (J):** Es la resistencia de un objeto a cambiar su estado de movimiento de rotación. Depende de la masa y la distribución de la masa con respecto al eje de rotación. Se mide en kilogramo-metro cuadrado (kg·m²).
->**Relación de Transmisión (i):** Es la relación entre la velocidad angular de entrada y la velocidad angular de salida de un sistema de transmisión. Puede ser una relación de reducción (velocidad de salida menor que la de entrada) o de aumento (velocidad de salida mayor que la de entrada).
+
+🔑>**Inercia (J):** Es la resistencia de un objeto a cambiar su estado de movimiento de rotación. Depende de la masa y la distribución de la masa con respecto al eje de rotación. Se mide en kilogramo-metro cuadrado (kg·m²).
+
+🔑>**Relación de Transmisión (i):** Es la relación entre la velocidad angular de entrada y la velocidad angular de salida de un sistema de transmisión. Puede ser una relación de reducción (velocidad de salida menor que la de entrada) o de aumento (velocidad de salida mayor que la de entrada).
     $$i = \frac{\omega_{entrada}}{\omega_{salida}}$$
->**Eficiencia (η):** Es la relación entre la potencia de salida y la potencia de entrada de un sistema. Siempre es menor o igual a 1 (o 100%) debido a las pérdidas por fricción y otros factores.
+
+🔑>**Eficiencia (η):** Es la relación entre la potencia de salida y la potencia de entrada de un sistema. Siempre es menor o igual a 1 (o 100%) debido a las pérdidas por fricción y otros factores.
     $$\eta = \frac{P_{salida}}{P_{entrada}}$$
 
 ## 3. Requerimientos de Diseño
