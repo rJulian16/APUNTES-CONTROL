@@ -1,10 +1,5 @@
-markdown
-# Diseño de Transmisiones en Control de Movimiento
-
-> 🧑‍🔧 *Apuntes de clase - 9° semestre*
-
-
----
+# Control de Movimiento Clase 12 de Marzo
+Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
 ## 1. Introducción: ¿Por qué es importante el diseño de la transmisión?
 
