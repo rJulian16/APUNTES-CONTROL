@@ -913,9 +913,7 @@ $$s(100\, \text{ms}) = 77.62 + 480 + 2175.87 = \boxed{2733.49 \, \text{cts}}$$
 
 Figura 20. Ejemplo 11 grafica de perfil S. 
 
-# 9 Conclusiones
-
-## Conclusiones
+# 9. Conclusiones
 
 -**La planificación adecuada del perfil de movimiento es esencial para la eficiencia de sistemas mecánicos**. Utilizar perfiles trapezoidales o en S ayuda a controlar las aceleraciones y desaceleraciones, reduciendo esfuerzos mecánicos innecesarios y mejorando la durabilidad de los componentes.
 
