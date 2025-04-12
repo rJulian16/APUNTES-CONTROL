@@ -1,15 +1,16 @@
-
-# Apuntes sobre Diseño y Sistemas de Transmisión
+# Control de Movimiento Clase 12 de Marzo
+Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
 ## 1. Introducción a la Temática
 
-### 1.1 Diseño de Transmisión
+### 1.1 Sistemas de Transmisión
+
+Los sistemas de transmisión son el conjunto de componentes interconectados que permiten la transferencia y modificación del movimiento y la potencia mecánica. Estos sistemas pueden incluir elementos como engranajes, poleas y correas, cadenas, ejes, embragues, frenos y convertidores de torque. La elección del sistema de transmisión adecuado depende de factores como la potencia a transmitir, la relación de velocidad requerida, la distancia entre la fuente y la carga, las condiciones ambientales y los costos. Un sistema de transmisión bien diseñado asegura que la potencia se entregue de manera eficiente y controlada a la carga.
+
+### 1.2 Diseño de Transmisión
 
 El diseño de transmisión es una disciplina fundamental en la ingeniería mecánica que se encarga de la concepción, cálculo y optimización de los elementos encargados de transferir potencia mecánica desde una fuente (como un motor) hacia un actuador o carga. Un buen diseño de transmisión busca maximizar la eficiencia, durabilidad y rendimiento del sistema, cumpliendo con los requerimientos específicos de la aplicación en términos de velocidad, torque y potencia. La correcta selección de los componentes y su configuración es crucial para el funcionamiento óptimo de cualquier máquina o sistema mecánico.
 
-### 1.2 Sistemas de Transmisión
-
-Los sistemas de transmisión son el conjunto de componentes interconectados que permiten la transferencia y modificación del movimiento y la potencia mecánica. Estos sistemas pueden incluir elementos como engranajes, poleas y correas, cadenas, ejes, embragues, frenos y convertidores de torque. La elección del sistema de transmisión adecuado depende de factores como la potencia a transmitir, la relación de velocidad requerida, la distancia entre la fuente y la carga, las condiciones ambientales y los costos. Un sistema de transmisión bien diseñado asegura que la potencia se entregue de manera eficiente y controlada a la carga.
 
 ## 2. Conceptos Básicos
 
