@@ -126,7 +126,7 @@ Los engranajes son componentes fundamentales en muchos sistemas de transmisión 
 
 La relación de transmisión ($N$) en un par de engranajes es un parámetro fundamental que determina cómo se modifica la velocidad y el torque entre el engranaje conductor (el que recibe la potencia) y el engranaje conducido (el que entrega la potencia). Matemáticamente, esta relación se define como el cociente entre el número de dientes ($Z$) del engranaje conducido y el número de dientes del engranaje conductor, que también es igual a la relación entre sus diámetros ($D$):
 
-$$N = \frac{Z_{conducido}}{Z_{conductor}} = \frac{W_{conducido}}W_{conductor}}$$
+$$N = \frac{Z_{conducido}}{Z_{conductor}} = \frac{D_{conducido}}D_{conductor}}$$
 
 Esta relación de transmisión tiene un impacto directo en el comportamiento del sistema. Como se resume en la siguiente tabla:
 
