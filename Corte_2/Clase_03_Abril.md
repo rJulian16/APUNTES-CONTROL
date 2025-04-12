@@ -158,7 +158,7 @@ Un motor eléctrico gira a una velocidad de 1200 RPM y está conectado a un sist
 
 -**Solución:**
 
--**Cálculo de la relación de transmisión ($N$):**
+- **Cálculo de la relación de transmisión ($N$):**
 
     La relación de transmisión se calcula utilizando la fórmula:
 
@@ -170,7 +170,7 @@ Un motor eléctrico gira a una velocidad de 1200 RPM y está conectado a un sist
 
     Por lo tanto, la relación de transmisión del sistema es 3.
 
--**Cálculo de la velocidad de rotación del engranaje conducido ($\omega_{conducido}$):**
+- **Cálculo de la velocidad de rotación del engranaje conducido ($\omega_{conducido}$):**
 
     Sabemos que la relación de transmisión también se puede expresar en términos de las velocidades angulares:
 
@@ -186,7 +186,7 @@ Un motor eléctrico gira a una velocidad de 1200 RPM y está conectado a un sist
 
     La velocidad de rotación del engranaje conducido es de 400 RPM.
 
--**Cálculo del torque en el engranaje conducido ($T_{conducido}$):**
+- **Cálculo del torque en el engranaje conducido ($T_{conducido}$):**
 
     En un sistema ideal sin pérdidas (eficiencia del 100%), la potencia de entrada es igual a la potencia de salida ($P_{entrada} = P_{salida}$). Como la potencia se relaciona con el torque y la velocidad angular ($P = T \cdot \omega$), podemos escribir:
 
