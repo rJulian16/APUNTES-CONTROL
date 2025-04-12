@@ -937,4 +937,20 @@ Figura 20. Ejemplo 11 grafica de perfil S.
 
 -**La correcta formulación matemática de un perfil de movimiento es fundamental para optimizar el rendimiento de un sistema mecánico**. Los ejercicios realizados demuestran cómo aplicar los principios del cálculo diferencial e integral para obtener resultados precisos que mejoren la eficiencia, reduciendo fallas por vibración o choque.
 
+# 10. Referencias
 
+[1] MathWorks. (2024). *MATLAB, Simulink y Simscape Documentation*. Disponible en: https://www.mathworks.com/help/
+
+[2] Groover, M. P. (2016). *Automation, Production Systems, and Computer-Integrated Manufacturing* (4th ed.). Pearson Education.
+
+[3] Craig, J. J. (2005). *Introduction to Robotics: Mechanics and Control* (3rd ed.). Pearson Prentice Hall.
+
+[4] Norton, R. L. (2011). *Design of Machinery* (5th ed.). McGraw-Hill.
+
+[5] Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2006). *Robot Modeling and Control*. Wiley.
+
+[6] Franklin, G. F., Powell, J. D., & Emami-Naeini, A. (2014). *Feedback Control of Dynamic Systems* (7th ed.). Pearson.
+
+[7] Ogata, K. (2010). *Modern Control Engineering* (5th ed.). Prentice Hall.
+
+[8] Jazar, R. N. (2010). *Theory of Applied Robotics: Kinematics, Dynamics, and Control* (2nd ed.). Springer.
