@@ -610,6 +610,6 @@ $$S_C = \int_{5.5}^{6} (-4t + 24)\,dt = \left[-2t^2 + 24t\right]_{5.5}^{6} = 0.5
 
 ### Resultados
 
-- \( S_A = 0.5\,\text{cm} \)
-- \( S_B = 10\,\text{cm} \)
-- \( S_C = 0.5\,\text{cm} \)
+$$S_A = 0.5 \text{ cm}$$
+$$S_B = 10 \text{ cm}$$
+$$S_C = 0.5 \text{ cm}$$
