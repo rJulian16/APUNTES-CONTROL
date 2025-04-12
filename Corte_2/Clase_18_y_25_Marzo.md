@@ -54,7 +54,7 @@ $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido 
 | a     | **Aceleración**: cambio de la velocidad respecto al tiempo (positiva o negativa según la fase). |
 | s     | **Desplazamiento total**: distancia recorrida durante todo el perfil de movimiento. |
 
-Tabla1. Conceptos de variables basicas.
+Tabla 1. Conceptos de variables basicas.
 
 # 3. Curvas de Posición, Velocidad y Aceleración
 
@@ -68,7 +68,7 @@ Aceleración $a(t)$
 
 Estas curvas no solo nos dan información visual del comportamiento del sistema, sino que también nos ayudan a derivar o integrar para obtener los parámetros clave del movimiento.
 
-### 3.1. Curva de Aceleración $a(t)$
+## 3.1. Curva de Aceleración $a(t)$
 Es el punto de partida en un perfil de movimiento.
 
 Una aceleración constante se ve como una línea recta horizontal.
@@ -81,7 +81,7 @@ La pendiente de la velocidad depende directamente de la forma de esta curva.
 
 Figura 3. Curva de aceleracion.
 
-### 3.2. Curva de Velocidad $v(t)$
+## 3.2. Curva de Velocidad $v(t)$
 
 Se obtiene integrando la aceleración:
 
@@ -97,7 +97,7 @@ El área bajo esta curva representa el desplazamiento total (posición final).
 
 Figura 4. Curva de velocidad.
 
-### 3.3. Curva de Posición $s(t)$
+## 3.3. Curva de Posición $s(t)$
 
 Se obtiene integrando la velocidad:
 
@@ -113,7 +113,7 @@ En un perfil trapezoidal o en S, la posición muestra un crecimiento continuo co
 
 Figura 5. Curva de Posición.
 
-### 3.4. Relación entre las curvas
+## 3.4. Relación entre las curvas
 
 | **Curva**     | **Se obtiene desde...**                                  | **Qué representa**                          |
 |---------------|----------------------------------------------------------|---------------------------------------------|
@@ -121,7 +121,7 @@ Figura 5. Curva de Posición.
 | Velocidad     | Derivada de la posición / Integral de la aceleración     | Rapidez de cambio de la posición            |
 | Posición      | Integral de la velocidad                                 | Lugar ocupado en el tiempo                  |
 
-Tabla2.Relacion entre las curvas
+Tabla 2.Relacion entre las curvas
 
 📚Ejercicio 1: Se analiza un perfil de movimiento con el objetivo de determinar la posición y la aceleración del sistema en el instante de tiempo t = 5 segundos.
 
@@ -133,7 +133,7 @@ La clave para encontrar la aceleración está en la gráfica de velocidad, ya qu
 
 A partir de la gráfica:
 
-- La velocidad varía de 0 in/s a 10 in/s entre t = 0 s y t = 5 s.
+La velocidad varía de 0 in/s a 10 in/s entre t = 0 s y t = 5 s.
 
 La pendiente (aceleración constante) se calcula como:
 
@@ -144,7 +144,7 @@ Si la velocidad sigue una ley lineal (perfil acelerado constante), entonces:
 
 $$v(t) = a t = 2t$$
 
-Integrando para obtener la posición:
+-**Integrando para obtener la posición**:
 
 $$s(t) = \int v(t) \, dt = \int 2t \, dt = t^2 + C$$
 
@@ -156,7 +156,7 @@ Por lo tanto, en $t = 5$ s:
 
 $$s(5) = 5^2 = 25 \ \text{in}$$
 
--Resultados Finales
+-**Resultados Finales**
 
 - **Aceleración en t = 5 s:**  
   $$a = 2 \ \text{in/s}^2$$
@@ -178,7 +178,7 @@ El área del perfil de velocidad triangular es la posición alcanzada en t = 15 
 
 $$S_0 = \frac{1}{2} \cdot (15s - 5s) \cdot 0.1 \ \frac{m}{s} = 0.5 \ m$$
 
--Resultado
+-**Resultado**
 
 - **Aceleración:**  
   $$a = -0.01 \ \frac{m}{s^2}$$
@@ -202,7 +202,7 @@ En la gráfica se representa el comportamiento de la velocidad del eje en funci�
 
 -**Formulas y Cálculos**
 
--Velocidad
+-**Velocidad**
 
 $$v(t) = a \cdot t$$
 
@@ -220,12 +220,12 @@ En este ejercicio, se observa una gráfica de velocidad que aumenta de manera li
 
 Para el desarrollo y análisis de perfiles de movimiento, es fundamental tener en cuenta ciertos principios que rigen la dinámica de los sistemas. Estas reglas aseguran transiciones suaves, físicas y controlables entre los distintos estados del perfil:
 
-🔹 Relación entre Posición y Velocidad
+- **Relación entre Posición y Velocidad**
 La posición en un instante de tiempo está determinada por el área bajo la curva de velocidad hasta ese instante.
 
 Esto significa que integrar la velocidad en un intervalo de tiempo nos da el desplazamiento total.
 
-🔹 Relación entre Velocidad y Aceleración
+- **Relación entre Velocidad y Aceleración**
 La aceleración corresponde a la pendiente de la curva de velocidad.
 
 Es decir, la derivada de la velocidad con respecto al tiempo nos da la aceleración en cada instante.
@@ -277,19 +277,19 @@ Las gráficas típicas en este caso son:
 | **Precisión de control**      | Menor precisión dinámica en aplicaciones sensibles | Mayor precisión y confort de movimiento           |
 | **Derivadas continuas**       | Velocidad continua pero aceleración discontinua    | Derivadas suaves hasta la aceleración             |
 
-Tabla3.Comparacion de perfiles trapezoidal y S
+Tabla 3.Comparacion de perfiles trapezoidal y S
 
 📚Ejercicio 5 Perfil Trapezoidal:
 
 Se desea mover un actuador desde la posición $s_0 = 0\,m$ hasta $s = 2\,m$ en $T = 3\,s$, usando un perfil trapezoidal con aceleración constante de $a = 1\,m/s^2$ durante $1\,s$, seguido de velocidad constante y luego frenado.
 
-#### Ecuaciones fundamentales:
+-**Ecuaciones fundamentales**:
 
 $$v(t) = \int a(t)dt = a \cdot t + v_0$$
 
 $$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt = \frac{1}{2} a t^2 + v_0 t + s_0$$
 
-#### Parámetros iniciales
+-**Parámetros iniciales**
 
 - $s_0 = 0\,m$
 - $s_f = 2\,m$
@@ -299,7 +299,7 @@ $$s(t) = \int v(t)dt = \int (a \cdot t + v_0)dt = \frac{1}{2} a t^2 + v_0 t + s_
 - Tiempo de velocidad constante: $t_c = 1\,s$
 - Tiempo de desaceleración: $t_d = 1\,s$
 
-#### Ecuaciones del perfil trapezoidal
+-**Ecuaciones del perfil trapezoidal**
 
 Fase de aceleración ($0 \leq t < t_a$):
 
@@ -309,13 +309,13 @@ $$v(t) = \int a\,dt = a\,t$$
 
 $$s(t) = \int v(t)\,dt = \int a\,t\,dt = \frac{1}{2}a\,t^2$$
 
-Fase de velocidad constante ($t_a \leq t < t_a + t_c$):
+**Fase de velocidad constante ($t_a \leq t < t_a + t_c$)**:
 
 $$v(t) = v_{max} = a\,t_a$$
 
 $$s(t) = s(t_a) + v_{max}(t - t_a)$$
 
-Fase de desaceleración ($t_a + t_c \leq t \leq T$):
+**Fase de desaceleración ($t_a + t_c \leq t \leq T$)**:
 
 $$a(t) = -a$$
 
@@ -323,7 +323,7 @@ $$v(t) = v_{max} - a(t - t_a - t_c)$$
 
 $$s(t) = s(t_a + t_c) + v_{max}(t - t_a - t_c) - \frac{1}{2}a(t - t_a - t_c)^2$$
 
-#### Cálculo de aceleración
+-**Cálculo de aceleración**
 
 Se usa la relación de área bajo la curva de velocidad para igualar al desplazamiento total:
 
@@ -347,7 +347,7 @@ Entonces:
 
 $$v_{max} = a\,t_a = 1\,\frac{m}{s}$$
 
-#### Resultados
+-**Resultados**
 
 - Aceleración: $a = 1\,m/s^2$
 - Velocidad máxima: $v_{max} = 1\,m/s$
@@ -363,7 +363,7 @@ Figura 12. Resultados MATLAB ejercicio 1 .
 Se desea mover un actuador lineal desde la posición inicial $s_0 = 0\,m$ hasta $s_f = 2\,m$ en un tiempo total de $T = 3\,s$. A diferencia del perfil trapezoidal, en este caso se utiliza un perfil suavizado tipo "S", donde la aceleración no es constante, sino que cambia suavemente para evitar impactos dinámicos.
 
 
-#### Parámetros iniciales
+-**Parámetros iniciales**:
 
 - $s_0 = 0\,m$
 - $s_f = 2\,m$
@@ -371,23 +371,23 @@ Se desea mover un actuador lineal desde la posición inicial $s_0 = 0\,m$ hasta 
 - Perfil suavizado con transición progresiva de aceleración
 - Se usará una función sigmoidal tipo seno para suavizar el perfil
 
-#### Funciones del perfil tipo S
+-**Funciones del perfil tipo S**
 
 Utilizamos funciones trigonométricas para suavizar la aceleración y generar curvas suaves de velocidad y posición:
 
-##### Velocidad
+-**Velocidad**
 
 $$v(t) = v_{max} \cdot \left( \frac{1 - \cos\left( \frac{\pi t}{T} \right)}{2} \right)$$
 
-##### Posición
+-**Posición**
 
 $$s(t) = \int v(t) \,dt = \frac{v_{max} T}{2\pi} \left( t - \frac{T}{2\pi} \sin\left( \frac{2\pi t}{T} \right) \right)$$
 
-##### Aceleración
+-**Aceleración**
 
 $$a(t) = \frac{dv(t)}{dt} = \frac{\pi v_{max}}{2T} \cdot \sin\left( \frac{\pi t}{T} \right)$$
 
-#### Cálculo de $v_{max}$
+-**Cálculo de $v_{max}$**
 
 La posición final $s(T) = 2\,m$ se logra con:
 
@@ -399,14 +399,14 @@ $$2 = v_{max} \cdot \frac{3}{2}$$
 
 $$v_{max} = \frac{4}{3}\,m/s$$
 
-#### Resultados
+-**Resultados**
 
 - Velocidad máxima: $v_{max} = \frac{4}{3}\,m/s$
 - Tiempo total: $T = 3\,s$
 - Desplazamiento total: $s = 2\,m$
 - Movimiento suave y continuo sin saltos en la aceleración
 
-#### Ventajas del perfil S
+-**Ventajas del perfil S**
 
 - Evita impactos dinámicos por aceleraciones bruscas
 - Ideal para movimientos de precisión o con restricciones mecánicas
@@ -426,10 +426,10 @@ Las gráficas en cada eje son similares a las del caso de un solo eje, pero se a
 
 📚 Ejercicio 7: Movimiento multieje simple (2 ejes)
 
-#### Enunciado:
+-**Enunciado**:
 Un sistema de 2 ejes (X y Y) debe mover una herramienta desde el punto **(0,0)** hasta el punto **(2,3)** metros, en un tiempo total de **4 segundos**, partiendo desde el reposo y usando perfiles **trapezoidales** independientes en cada eje.
 
-##### Supuestos:
+**Parametros**:
 - Movimiento independiente en cada eje.
 - Aceleración y desaceleración simétrica.
 - Perfil trapezoidal para cada eje.
@@ -440,7 +440,7 @@ Un sistema de 2 ejes (X y Y) debe mover una herramienta desde el punto **(0,0)**
 - Tiempo de desaceleración: $t_d = 1\,s$
 
 
-#### Ecuaciones usadas:
+-**Ecuaciones usadas**:
 
 $$s_f = \frac{1}{2}a\,t_a^2 + v_{max}\,t_c + \frac{1}{2}a\,t_d^2$$
 
@@ -448,16 +448,16 @@ Como $v_{max} = a \cdot t_a$, entonces:
 
 $$s_f = a \left(\frac{1}{2}t_a^2 + t_a t_c + \frac{1}{2}t_d^2\right)$$
 
-#### Cálculos:
+-**Cálculos**:
 
-##### Eje X:
+-**Eje X**:
 - Desplazamiento total: $s_{fx} = 2\,m$
 
 $$2 = a_x \cdot \left(0.5 + 2 + 0.5\right) = a_x \cdot 3 \Rightarrow a_x = \frac{2}{3}\,m/s^2$$
 
 $$v_{max\_x} = a_x \cdot t_a = \frac{2}{3} \cdot 1 = 0.667\,m/s$$
 
-##### Eje Y:
+-**Eje Y**:
 - Desplazamiento total: $s_{fy} = 3\,m$
 
 $$3 = a_y \cdot 3 \Rightarrow a_y = 1\,m/s^2$$
@@ -465,18 +465,69 @@ $$3 = a_y \cdot 3 \Rightarrow a_y = 1\,m/s^2$$
 $$v_{max\_y} = a_y \cdot t_a = 1 \cdot 1 = 1\,m/s$$
 
 
-#### Resultados finales:
+-**Resultados finales**:
 
 | Eje | $a$ (m/s²) | $v_{max}$ (m/s) | $s_f$ (m) |
 |-----|------------|------------------|-----------|
 | X   | 0.667      | 0.667            | 2         |
 | Y   | 1          | 1                | 3         |
 
-Tabla4.Resultados Ejercicio 7.
+Tabla 4.Resultados Ejercicio 7.
 
 ![image](https://github.com/user-attachments/assets/c121d561-ae3c-440d-ad99-c587ddd5aecc)
 
 Figura 14. Matlab ejercicio multieje.
+
+💡Ejemplo 3: Movimiento Coordinado en dos Ejes (Slew Motion)
+
+-Enunciado:
+
+Considere una máquina que se mueve en dos ejes (X e Y). Ambos ejes usan un perfil de velocidad trapezoidal con una aceleración constante de $t_a = 0.2$ s. Si ambos se desean mover a una velocidad máxima de $4$ cm/s, ¿cuánto tiempo tomará a cada eje completar su movimiento?
+
+-**Cálculo del tiempo de movimiento por eje**
+
+-**Para el eje X**:
+
+$$t_m^x = \frac{L_x}{v_m} - t_a$$
+
+$$t_m^x = \frac{16 \text{ cm}}{4 \text{ cm/s}} - 0.2 \text{ s} = 3.8 \text{ s}$$
+
+$$t_{\text{total}}^x = t_m^x + 2t_a = 3.8 \text{ s} + 0.4 \text{ s} = 4.2 \text{ s}$$
+
+-**Para el eje Y**:
+
+$$t_m^y = \frac{L_y}{v_m} - t_a$$
+
+$$t_m^y = \frac{12 \text{ cm}}{4 \text{ cm/s}} - 0.2 \text{ s} = 2.8 \text{ s}$$
+
+$$t_{\text{total}}^y = t_m^y + 2t_a = 2.8 \text{ s} + 0.4 \text{ s} = 3.2 \text{ s}$$
+
+
+-**Interpolación del segundo eje**
+
+Para que ambos ejes lleguen al mismo tiempo, se toma como referencia el eje **X**, que tiene mayor duración.
+
+Queremos ajustar la velocidad del eje **Y** tal que:
+
+$$t_m^y = \frac{L_y}{v_y} - t_a = 3.8 \text{ s}$$
+
+Despejando la velocidad:
+
+$$v_y = \frac{L_y}{t_m + t_a}$$
+
+$$v_y = \frac{12 \text{ cm}}{3.8 \text{ s} + 0.2 \text{ s}} = 3 \text{ cm/s}$$
+
+
+-**Resultados**:
+
+Ambos ejes llegarán al mismo tiempo (4.2 s) si el eje Y reduce su velocidad máxima de 4 cm/s a 3 cm/s.
+
+| Eje | Longitud (cm) | Velocidad original (cm/s) | Tiempo total (s) | Velocidad ajustada (cm/s) |
+|-----|----------------|----------------------------|--------------------|-----------------------------|
+| X   | 16             | 4                          | 4.2                | 4                           |
+| Y   | 12             | 4                          | 3.2                | **3** (ajustada)           |
+
+Tabla 5. Resultados ejemplo dos ejes.
 
 # 6. Ejercicios planteados en clase:
 
@@ -484,13 +535,13 @@ Figura 14. Matlab ejercicio multieje.
 
 Se desea calcular el tiempo total de movimiento \( t_m \) de un eje accionado por un motor con tornillo sin fin. El movimiento sigue un perfil trapezoidal: aceleración constante, velocidad constante, y luego desaceleración simétrica.
 
-### Parámetros y relaciones iniciales
+-**Parámetros y relaciones iniciales**:
 
 Las aceleraciones de inicio y frenado son iguales, por lo tanto:
 
 $$t_a = t_d = \frac{v_m}{a}$$
 
-Condiciones iniciales:
+-**Condiciones iniciales**:
 
 $$t_0 = 0, \quad v_0 = 0, \quad s_0 = 0$$
 
@@ -498,7 +549,7 @@ Durante la fase de aceleración (\( 0 < t < t_a \)):
 
 $$s(t) = \int_0^{t_a} a\,dt = \left. \frac{1}{2} a t^2 \right|_0^{t_a} = \frac{1}{2} a t_a^2$$
 
-### Cálculo del recorrido total \( L \)
+-**Cálculo del recorrido total \( L \)**
 
 El desplazamiento total se puede calcular sumando las áreas bajo la curva de velocidad en el perfil trapezoidal:
 
@@ -512,35 +563,35 @@ De ahí, despejamos el tiempo de velocidad constante:
 
 $$t_m = \frac{L}{v_m} - t_a$$
 
-### Fases del movimiento
+-**Fases del movimiento**
 
-#### Fase 1: Aceleración \( (0 < t < t_a) \)
+-**Fase 1: Aceleración \( (0 < t < t_a) \)**
 
-Condiciones iniciales:
+-**Condiciones iniciales:**
 
 $$t_0 = 0, \quad v_0 = 0, \quad s_0 = 0$$
 
-Posición:
+**Posición**:
 
 $$s(t) = \int_0^{t} at \, dt = \frac{1}{2} at^2$$
 
-#### Fase 2: Velocidad constante \( (t_a \leq t < t_a + t_m) \)
+-**Fase 2: Velocidad constante \( (t_a \leq t < t_a + t_m) \)**
 
 $$v(t) = v_m$$
 
 $$s(t) = s(t_a) + v_m (t - t_a)$$
 
-#### Fase 3: Desaceleración \( (t_a + t_m < t < t_{total}) \)
+-**Fase 3: Desaceleración \( (t_a + t_m < t < t_{total}) \)**
 
-Condiciones iniciales:
+**Condiciones iniciales**:
 
 $$t_0 = t_a + t_m, \quad v_0 = v_m, \quad s_0 = s(t_a + t_m)$$
 
-Posición:
+-**Posición**:
 
 $$s(t) = s(t_a + t_m) + \int_{t_a + t_m}^{t} \left[ -a(t - (t_a + t_m)) + v_m \right] dt$$
 
-Resolviendo:
+-**Resolviendo**:
 
 $$s(t) = s(t_a + t_m) + \left[ v_m t - \frac{1}{2} a (t - (t_a + t_m))^2 \right]_{t_a + t_m}^{t}$$
 
@@ -548,21 +599,21 @@ $$s(t) = s(t_a + t_m) + \left[ v_m t - \frac{1}{2} a (t - (t_a + t_m))^2 \right]
 
 El eje \( x \) de un robot Gantry debe moverse \( 10\,\text{cm} \). La máxima aceleración permitida en este eje es de \( 1\,\text{cm/s}^2 \). Si se desea mover el eje a una velocidad máxima de \( 2\,\text{cm/s} \), ¿cuánto tiempo tomará hacer este movimiento?
 
-### Cálculos
+-**Cálculos**
 
-Tiempo de aceleración y desaceleración:
+**Tiempo de aceleración y desaceleración:**
 
 $$t_a = t_d = \frac{v_m}{a} = \frac{2\,\text{cm/s}}{1\,\text{cm/s}^2} = 2\,\text{s}$$
 
-Tiempo de velocidad constante:
+**Tiempo de velocidad constante:**
 
 $$t_m = \frac{L}{v_m} - t_a = \frac{10\,\text{cm}}{2\,\text{cm/s}} - 2\,\text{s} = 3\,\text{s}$$
 
-Tiempo total de movimiento:
+**Tiempo total de movimiento:**
 
 $$t_{total} = t_a + t_m + t_d = 2\,\text{s} + 3\,\text{s} + 2\,\text{s} = 7\,\text{s}$$
 
-### Resultado
+-**Resultado**
 
 El movimiento tomará **7 segundos**.
 
@@ -574,7 +625,7 @@ Figura 15. Matlab ejercicio 9.
 
 Dado el perfil de velocidad de un eje, se desea calcular el desplazamiento en tres intervalos ($S_A$, $S_B$, $S_C$) utilizando reglas geométricas y el método analítico.
 
-### 1. Reglas Geométricas
+-**Reglas Geométricas**
 
 **$S_A$ (de 0 a 0.5 s):**  
 Área de un triángulo:
@@ -591,7 +642,7 @@ $$S_B = \text{base} \cdot \text{altura} = (5.5 - 0.5)\,\text{s} \cdot 2\,\text{c
 
 $$S_C = \frac{1}{2} \cdot (6 - 5.5)\,\text{s} \cdot 2\,\text{cm/s} = 0.5\,\text{cm}$$
 
-### 2. Método Analítico
+-**Método Analítico**
 
 **$S_A$ (de 0 a 0.5 s):**  
 La velocidad varía linealmente: \( v(t) = 4t \)
@@ -608,7 +659,7 @@ Velocidad decreciente: \( v(t) = -4t + 24 \)
 
 $$S_C = \int_{5.5}^{6} (-4t + 24)\,dt = \left[-2t^2 + 24t\right]_{5.5}^{6} = 0.5\,\text{cm}$$
 
-### Resultados
+-**Resultados**
 
 $$S_A = 0.5 \text{ cm}$$
 $$S_B = 10 \text{ cm}$$
@@ -644,13 +695,13 @@ Figura 18. Perfil S mixto
 | **Tiempo total de movimiento** | Puede ser más largo si se busca suavidad extrema       | Generalmente más corto que el S puro                  |
 | **Uso típico**                 | Robótica de precisión, sistemas con mínima vibración   | Aplicaciones industriales estándar                    |
 
-Tabla5. Comparacion entre perfiles S.
+Tabla 6. Comparacion entre perfiles S.
 
 # 8. Modelo Matemático del Perfil en S (Velocidad)
 
 En los perfiles de movimiento tipo "S", se busca suavizar los cambios bruscos de aceleración, lo cual se logra modelando la **velocidad** como una función cuadrática del tiempo. Este enfoque permite generar trayectorias suaves y continuas para sistemas mecánicos como motores, actuadores o ejes en CNC.
 
-## Función general de la velocidad
+## 8.1 Función general de la velocidad
 
 La función de velocidad se define como:
 
@@ -662,11 +713,11 @@ Donde:
 - \( t \) es el tiempo.
 - Esta es una parábola (función cuadrática), lo cual garantiza una transición suave entre fases del movimiento.
 
-## Derivadas de la velocidad
+## 8.2 Derivadas de la velocidad
 
 A partir de la función de velocidad, se pueden obtener otras magnitudes importantes como la **aceleración** y el **jerk** (variación de la aceleración).
 
-### Aceleración:
+### 8.3 Aceleración:
 
 La aceleración es la derivada de la velocidad respecto al tiempo:
 
@@ -674,7 +725,7 @@ $$a(t) = \frac{dv(t)}{dt} = 2c_1 t + c_2$$
 
 Esto implica que la aceleración cambia linealmente con el tiempo, lo cual es característico de los perfiles en S.
 
-### Jerk:
+### 8.4 Jerk:
 
 El jerk (sacudida) es la derivada de la aceleración respecto al tiempo:
 
@@ -683,7 +734,7 @@ $$j(t) = \frac{da(t)}{dt} = 2c_1$$
 En este caso, el jerk es constante, lo cual ayuda a reducir vibraciones o impactos en los sistemas mecánicos.
 
 
-## Usos y Aplicaciones
+## 8.5 Usos y Aplicaciones
 
 Este modelo permite diseñar trayectorias donde la aceleración cambia suavemente, lo cual es esencial para:
 
@@ -696,54 +747,42 @@ Este tipo de perfiles se utiliza ampliamente en aplicaciones como:
 - Control de ejes en máquinas CNC.
 - Sistemas mecatrónicos donde se requiere precisión y suavidad en el movimiento.
 
-## Cálculo de los Coeficientes del Perfil en S (Curva A)
+## 8.6 Cálculo de los Coeficientes del Perfil en S (Curva A)
 
 Para definir el perfil de velocidad tipo **S**, se parte de una función cuadrática de la forma:
 
-$$
-v(t) = C_1 t^2 + C_2 t + C_3
-$$
+$$v(t) = C_1 t^2 + C_2 t + C_3$$
 
 Este perfil se aplica a la **primera mitad** de la fase de aceleración:  
 **Curva A:** $0 < t < \frac{t_a}{2}$
 
----
-
-### Condiciones iniciales
+-**Condiciones iniciales**
 
 Se imponen las siguientes condiciones para asegurar que la curva sea suave y continua:
 
 -**Velocidad inicial:**
 
-$$
-v(0) = 0
-$$
+$$v(0) = 0$$
 
 -**Aceleración inicial:**
 
-$$
-a(0) = \frac{dv}{dt} = 0
-$$
+$$a(0) = \frac{dv}{dt} = 0$$
 
 -**Velocidad a la mitad del tiempo de aceleración:**
 
-$$
-v\left(\frac{t_a}{2}\right) = \frac{v_m}{2}
-$$
+$$v\left(\frac{t_a}{2}\right) = \frac{v_m}{2}$$
 
-4. **Aceleración a la mitad del tiempo de aceleración:**
+-**Aceleración a la mitad del tiempo de aceleración:**
 
-$$
-a\left(\frac{t_a}{2}\right) = a
-$$
+$$a\left(\frac{t_a}{2}\right) = a$$
 
-### Sustitución en la función
+-**Sustitución en la función**
 
-#### Velocidad inicial:
+-**Velocidad inicial:**
 
 $$v(0) = C_1(0)^2 + C_2(0) + C_3 = 0 \Rightarrow C_3 = 0$$
 
-#### Aceleración inicial:
+-**Aceleración inicial:**
 
 La aceleración es la derivada de la velocidad:
 
@@ -753,7 +792,7 @@ Entonces:
 
 $$a(0) = 2C_1(0) + C_2 = 0 \Rightarrow C_2 = 0$$
 
-#### Velocidad en \( \frac{t_a}{2} \):
+-**Velocidad en \( \frac{t_a}{2} \):**
 
 $$v\left(\frac{t_a}{2}\right) = C_1 \left(\frac{t_a}{2}\right)^2 = \frac{v_m}{2}$$
 
@@ -762,7 +801,7 @@ Despejando \( C_1 \):
 $$C_1 = \frac{2v_m}{t_a^2}$$
 
 
-### Resultado final
+-**Resultado final**
 
 Sustituyendo los coeficientes obtenidos, la función de velocidad para la **Curva A** es:
 
@@ -770,7 +809,7 @@ $$v(t) = \frac{2v_m}{t_a^2} t^2$$
 
 Esta función modela un incremento suave de la velocidad desde el reposo hasta \( \frac{v_m}{2} \), garantizando continuidad y suavidad en la transición hacia la siguiente fase del perfil en S.
 
-💡Ejemplo 3: Cálculo de la posición a partir del perfil de velocidad en S
+💡Ejemplo 4: Cálculo de la posición a partir del perfil de velocidad en S
 
 ![image](https://github.com/user-attachments/assets/16d80e7d-1508-431b-bc9e-271684aca3df)
 
@@ -778,12 +817,12 @@ Figura 19. Ejemplo 3 perfil S.
 
 A partir del perfil de velocidad, obtenga la posición del eje (axis) transcurridos 100 ms.
 
--Parámetros del perfil
+-**Parámetros del perfil**
 
 - Velocidad máxima: \( v_m = 32 \, \text{cts/ms} \)
 - Tiempo de aceleración: \( t_a = 30 \, \text{ms} \)
 
--Funciones del perfil de velocidad en S
+-**Funciones del perfil de velocidad en S**
 
 Se divide el perfil en tres tramos: aceleración (A), velocidad constante (B) y desaceleración (C).
 
@@ -830,7 +869,7 @@ Esto se resuelve con un cambio de variable o expansión algebraica y da como res
 
 $$\left( 32t + 0.071 \left(900t - 60t^2/2 + t^3/3\right) \right) \Big|_{30}^{100} = 2185.87 \, \text{cts}$$
 
--Resultado final
+-**Resultado final**:
 
 Sumando los tres tramos:
 
@@ -841,3 +880,6 @@ $$s(100\, \text{ms}) = 77.62 + 480 + 2175.87 = \boxed{2733.49 \, \text{cts}}$$
 ![image](https://github.com/user-attachments/assets/ce524030-41db-4c84-9cd2-3217d0090d49)
 
 Figura 20. Ejemplo 11 grafica de perfil S. 
+
+
+
