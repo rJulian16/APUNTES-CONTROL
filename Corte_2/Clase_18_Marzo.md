@@ -478,18 +478,68 @@ Tabla4.Resultados Ejercicio 7.
 
 Figura 14. Matlab ejercicio multieje.
 
-# Ejercicios planteados en clase:
+# 6. Ejercicios planteados en clase:
 
-📚 Ejercicio 8: Para el eje (axis) de la figura se desea clacular tm
+## 📚 Ejercicio 8: Análisis de trayectoria de un eje con tornillo sin fin
 
-![image](https://github.com/user-attachments/assets/7156e364-e63d-4c8a-a1f9-b7cbf7d0e444)
+Se desea calcular el tiempo total de movimiento \( t_m \) de un eje accionado por un motor con tornillo sin fin. El movimiento sigue un perfil trapezoidal: aceleración constante, velocidad constante, y luego desaceleración simétrica.
 
-Figura 15. Motor con tornillo sin fin.
+### Parámetros y relaciones iniciales
+
+Las aceleraciones de inicio y frenado son iguales, por lo tanto:
 
 $$t_a = t_d = \frac{v_m}{a}$$
 
-$$t_0 = 0,\quad v_0 = 0,\quad s_0 = 0$$
+Condiciones iniciales:
+
+$$t_0 = 0, \quad v_0 = 0, \quad s_0 = 0$$
+
+Durante la fase de aceleración (\( 0 < t < t_a \)):
 
 $$s(t) = \int_0^{t_a} a\,dt = \left. \frac{1}{2} a t^2 \right|_0^{t_a} = \frac{1}{2} a t_a^2$$
 
+### Cálculo del recorrido total \( L \)
 
+El desplazamiento total se puede calcular sumando las áreas bajo la curva de velocidad en el perfil trapezoidal:
+
+$$L = \frac{t_a v_m}{2} + t_m v_m + \frac{t_d v_m}{2}$$
+
+Sabiendo que \( t_a = t_d \), simplificamos:
+
+$$L = v_m (t_a + t_m)$$
+
+De ahí, despejamos el tiempo de velocidad constante:
+
+$$t_m = \frac{L}{v_m} - t_a$$
+
+### Fases del movimiento
+
+#### Fase 1: Aceleración \( (0 < t < t_a) \)
+
+Condiciones iniciales:
+
+$$t_0 = 0, \quad v_0 = 0, \quad s_0 = 0$$
+
+Posición:
+
+$$s(t) = \int_0^{t} at \, dt = \frac{1}{2} at^2$$
+
+#### Fase 2: Velocidad constante \( (t_a \leq t < t_a + t_m) \)
+
+$$v(t) = v_m$$
+
+$$s(t) = s(t_a) + v_m (t - t_a)$$
+
+#### Fase 3: Desaceleración \( (t_a + t_m < t < t_{total}) \)
+
+Condiciones iniciales:
+
+$$t_0 = t_a + t_m, \quad v_0 = v_m, \quad s_0 = s(t_a + t_m)$$
+
+Posición:
+
+$$s(t) = s(t_a + t_m) + \int_{t_a + t_m}^{t} \left[ -a(t - (t_a + t_m)) + v_m \right] dt$$
+
+Resolviendo:
+
+$$s(t) = s(t_a + t_m) + \left[ v_m t - \frac{1}{2} a (t - (t_a + t_m))^2 \right]_{t_a + t_m}^{t}$$
