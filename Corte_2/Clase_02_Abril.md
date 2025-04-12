@@ -19,7 +19,8 @@ Cuando se diseña un sistema que tiene que mover algo (una herramienta, una carg
 - Se gasta energía de más
 
 ![image](https://github.com/user-attachments/assets/c4171fce-6565-4243-bb62-b24bb3239d40)
-Fuente: Docente
+
+Fig: Engranajes Simulink
 
 ---
 
@@ -40,7 +41,13 @@ Es el conjunto de elementos que transfiere energía mecánica desde un actuador 
 3. **Criterios adicionales**: costo, precisión, tiempos de ciclo
 
 ![image](https://github.com/user-attachments/assets/66847fde-a993-4257-818e-0835c4edaba5)
-Fuente: Findtop
+Fig.2. Ilustracion findtop
+| Escenario                                                    | Estrategia de Diseño                                 |
+|--------------------------------------------------------------|------------------------------------------------------|
+| Se tiene una transmisión establecida y se busca un movimiento concreto | Selección del motor más adecuado                     |
+| Se dispone de un motor y se desea alcanzar un movimiento específico | Cálculo y diseño de la transmisión necesaria         |
+| Se cuenta con un motor y transmisión ya definidos            | Análisis del movimiento resultante                   |
+| Se conoce el perfil de movimiento deseado                    | Dimensionamiento del motor y selección de transmisión|
 
 ---
 
@@ -63,7 +70,7 @@ $$ T_m = \frac{T_l}{\eta N} $$
 
 ![image](https://github.com/user-attachments/assets/a4d3a72b-de89-46a0-b3f4-329e14cacb1a)
 
-Fuente: Docente
+Fig.3. Engranajes
 ---
 
 ## 4. Tipos de Transmisión Mecánica
@@ -71,6 +78,22 @@ Fuente: Docente
 ### 4.1. Engranajes
 
 Sistema más común cuando se necesita precisión y rigidez.
+## Engranajes: Modificación de Torque y Velocidad
+
+Los **engranajes** son componentes fundamentales en sistemas mecánicos, utilizados para **modificar el torque** y la **velocidad** de rotación.
+
+### Relación de Transmisión
+
+La relación de transmisión \( N \) se define como:
+
+```math
+N = \frac{Z_{conducido}}{Z_{conductor}} = \frac{D_{conducido}}{D_{conductor}}
+```
+| Condición de la Relación \( N \) | Comportamiento del Sistema                 |
+|----------------------------------|--------------------------------------------|
+| \( N > 1 \)                      | Disminuye la velocidad, aumenta el torque  |
+| \( N < 1 \)                      | Aumenta la velocidad, disminuye el torque  |
+| \( N = 1 \)                      | No hay cambios en velocidad ni torque      |
 
 
 📘 **Ejemplo:**
@@ -85,6 +108,13 @@ v_lineal = 0.025 * 100 = 2.5 m/s
 v_banda = 0.04 * 200 = 8 m/s
 
 ---
+## 5. Eficiencia
+
+Un sistema mecánico eficiente es aquel que logra el movimiento deseado utilizando la menor cantidad de energía posible. La eficiencia está directamente relacionada con la capacidad del sistema para transformar energía de entrada en trabajo útil, y se puede expresar mediante la siguiente fórmula:
+
+```math
+\eta = \frac{E_{\text{útil}}}{E_{\text{entrada}}} \times 100\%
+```
 
 ## 6. Simulación en Simscape Multibody
 
@@ -99,7 +129,7 @@ Simscape Multibody es una herramienta de MATLAB/Simulink que permite modelar sis
 5. **Ejecutar la simulación** y observar la respuesta (posición, velocidad, torque).
 
 ![image](https://github.com/user-attachments/assets/aad58276-3ee6-40ec-93c4-8bb3ab4ef0b9)
-Fuente: Docente
+Fig.4. Motor, Tranmisión, carga
 
 ### 6.2. Consejos para modelar
 
@@ -109,8 +139,36 @@ Fuente: Docente
 - Las bandas pueden modelarse con `Pulley Constraint` y una masa rotacional
 
 ---
+## 7. Relación de Inercia
 
-## 7. Ejemplos Resueltos
+La **relación de inercia** entre la carga reflejada y el motor es un parámetro fundamental para lograr un buen rendimiento dinámico en sistemas de control de movimiento. Esta relación se expresa como:
+
+```math
+Ri = \frac{J_{\text{carga reflejada}}}{J_{\text{motor}}}
+```
+## 8. Poleas y Correas
+
+El sistema de **poleas y correas** es ampliamente utilizado debido a su **simplicidad**, **bajo costo** y capacidad para transmitir movimiento entre **ejes distantes**.
+
+![image](https://github.com/user-attachments/assets/0b94ae07-0a55-47b1-bb19-c3cc69dd6b91)
+
+Fig.5. Polea
+
+### Relación de Transmisión
+
+La relación de transmisión entre dos poleas se calcula mediante:
+
+```math
+N = \frac{D_{\text{conducida}}}{D_{\text{conductor}}}
+```
+
+| Condición         | Características del sistema                      |
+|------------------|--------------------------------------------------|
+| Ventajas         | Bajo nivel de ruido, tolera desalineaciones, amortigua vibraciones |
+| Desventajas      | Pérdidas por deslizamiento, requiere mantenimiento, menor eficiencia que engranajes |
+
+
+## 9. Ejemplos Resueltos
 
 ### 📘 Ejemplo 1: Engranaje con carga
 
