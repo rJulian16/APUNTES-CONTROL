@@ -44,6 +44,18 @@ Indica qué tan rápido y en qué dirección se mueve el objeto. Puede ser posit
 >🔑 Aceleracion: La aceleración mide la variación de la velocidad en el tiempo. Es la derivada de la velocidad, o la segunda derivada de la posición:
 $$a(t) = \frac{dv(t)}{dt} = \frac{d^2s(t)}{dt^2}$$. Representa qué tan rápido cambia la velocidad del objeto. Tambien en su expresion integral: $$v(t) = \int a(t) \, dt$$
 
+| Variable | Significado |
+|----------|-------------|
+| `tm`     | **Tiempo total de movimiento**: tiempo total desde el inicio hasta el final del desplazamiento. |
+| `ta`     | **Tiempo de aceleración**: duración de la fase en la que el sistema acelera desde reposo hasta la velocidad máxima. |
+| `vm`     | **Velocidad máxima**: velocidad constante máxima alcanzada durante el perfil de movimiento. |
+| `td`     | **Tiempo de desaceleración**: duración de la fase donde el sistema frena hasta detenerse. |
+| `tc`     | **Tiempo de velocidad constante**: intervalo en el que el sistema mantiene su velocidad máxima sin acelerar ni frenar. |
+| `a`      | **Aceleración**: cambio de la velocidad respecto al tiempo (positiva o negativa según la fase). |
+| `s`      | **Desplazamiento total**: distancia recorrida durante todo el perfil de movimiento. |
+
+Tabla1. Conceptos de variables basicas.
+
 # 3. Curvas de Posición, Velocidad y Aceleración
 
 En el análisis del movimiento de un sistema (como un actuador lineal), es fundamental comprender cómo se relacionan las curvas de:
@@ -108,6 +120,8 @@ Figura 5. Curva de Posición.
 | Aceleración   | Derivada de la velocidad                                 | Cambio instantáneo de la velocidad          |
 | Velocidad     | Derivada de la posición / Integral de la aceleración     | Rapidez de cambio de la posición            |
 | Posición      | Integral de la velocidad                                 | Lugar ocupado en el tiempo                  |
+
+Tabla2.Relacion entre las curvas
 
 📚Ejercicio 1: Se analiza un perfil de movimiento con el objetivo de determinar la posición y la aceleración del sistema en el instante de tiempo t = 5 segundos.
 
@@ -263,7 +277,7 @@ Las gráficas típicas en este caso son:
 | **Precisión de control**      | Menor precisión dinámica en aplicaciones sensibles | Mayor precisión y confort de movimiento           |
 | **Derivadas continuas**       | Velocidad continua pero aceleración discontinua    | Derivadas suaves hasta la aceleración             |
 
-
+Tabla3.Comparacion de perfiles trapezoidal y S
 
 📚Ejercicio 5 Perfil Trapezoidal:
 
@@ -458,6 +472,19 @@ $$v_{max\_y} = a_y \cdot t_a = 1 \cdot 1 = 1\,m/s$$
 | X   | 0.667      | 0.667            | 2         |
 | Y   | 1          | 1                | 3         |
 
+Tabla4.Resultados Ejercicio 7.
+
 ![image](https://github.com/user-attachments/assets/c121d561-ae3c-440d-ad99-c587ddd5aecc)
 
 Figura 14. Matlab ejercicio multieje.
+
+# Ejercicios planteados en clase:
+
+📚 Ejercicio 8: Para el eje (axis) de la figura se desea clacular tm
+
+![image](https://github.com/user-attachments/assets/7156e364-e63d-4c8a-a1f9-b7cbf7d0e444)
+
+Figura 15. Motor con tornillo sin fin.
+
+
+
