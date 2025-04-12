@@ -645,3 +645,50 @@ Figura 18. Perfil S mixto
 | **Uso típico**                 | Robótica de precisión, sistemas con mínima vibración   | Aplicaciones industriales estándar                    |
 
 Tabla5. Comparacion entre perfiles S.
+
+# 8. Modelo Matemático del Perfil en S (Velocidad)
+
+En los perfiles de movimiento tipo "S", se busca suavizar los cambios bruscos de aceleración, lo cual se logra modelando la **velocidad** como una función cuadrática del tiempo. Este enfoque permite generar trayectorias suaves y continuas para sistemas mecánicos como motores, actuadores o ejes en CNC.
+
+## Función general de la velocidad
+
+La función de velocidad se define como:
+
+$$v(t) = c_1 t^2 + c_2 t + c_3$$
+
+Donde:
+
+- \( c_1 \), \( c_2 \) y \( c_3 \) son constantes que definen la forma del perfil.
+- \( t \) es el tiempo.
+- Esta es una parábola (función cuadrática), lo cual garantiza una transición suave entre fases del movimiento.
+
+## Derivadas de la velocidad
+
+A partir de la función de velocidad, se pueden obtener otras magnitudes importantes como la **aceleración** y el **jerk** (variación de la aceleración).
+
+### Aceleración:
+
+La aceleración es la derivada de la velocidad respecto al tiempo:
+
+$$a(t) = \frac{dv(t)}{dt} = 2c_1 t + c_2$$
+
+Esto implica que la aceleración cambia linealmente con el tiempo, lo cual es característico de los perfiles en S.
+
+### Jerk:
+
+El jerk (sacudida) es la derivada de la aceleración respecto al tiempo:
+
+$$j(t) = \frac{da(t)}{dt} = 2c_1$$
+
+En este caso, el jerk es constante, lo cual ayuda a reducir vibraciones o impactos en los sistemas mecánicos.
+
+Este modelo permite diseñar trayectorias donde la aceleración cambia suavemente, lo cual es esencial para:
+
+- Proteger componentes mecánicos del desgaste.
+- Mejorar el confort en aplicaciones como robótica o automatización.
+- Optimizar el rendimiento dinámico del sistema.
+
+Este tipo de perfiles se utiliza ampliamente en aplicaciones como:
+- Servomecanismos.
+- Control de ejes en máquinas CNC.
+- Sistemas mecatrónicos donde se requiere precisión y suavidad en el movimiento.
