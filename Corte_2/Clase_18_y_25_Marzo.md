@@ -32,7 +32,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
    - [8.4 Jerk](#84-jerk)
    - [8.5 Usos y Aplicaciones](#85-usos-y-aplicaciones)
    - [8.6 Cálculo de los Coeficientes del Perfil en S (Curva A)](#86-cálculo-de-los-coeficientes-del-perfil-en-s-curva-a)
-9. [Conclusiones](#conclusiones)
+9. [Conclusiones](#9-conclusiones)
 # 1. Perfiles de Movimiento
 
 Los perfiles de movimiento son trayectorias planificadas que definen cómo deben variar las variables de posición, velocidad y aceleración de un sistema mecánico en el tiempo. Estos perfiles son fundamentales en el diseño de sistemas de control de movimiento, ya que permiten que un mecanismo realice desplazamientos suaves, precisos y eficientes, evitando cambios bruscos que podrían causar vibraciones, desgaste prematuro o incluso fallas mecánicas. En el contexto de la simulación con Simulink y Simscape, los perfiles de movimiento se implementan mediante funciones matemáticas o bloques de señal, y se utilizan para alimentar actuadores, servomecanismos u otros componentes dinámicos.
