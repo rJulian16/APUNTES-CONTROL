@@ -28,6 +28,34 @@ Cuando se diseña un sistema que tiene que mover algo (una herramienta, una carg
 - Hay vibraciones o resonancia
 - Se gasta energía de más
 
+Ejemplo Práctico:
+
+Imaginemos que necesitamos diseñar un sistema de transmisión para reducir la velocidad de un motor eléctrico desde 1750 RPM hasta una velocidad de salida de 350 RPM. El motor tiene una potencia de 5 kW y el sistema debe ser lo más compacto y eficiente posible.
+
+En este caso, uno de los primeros pasos en el diseño sería determinar la **relación de transmisión** requerida:
+
+$$i = \frac{\omega_{entrada}}{\omega_{salida}} = \frac{1750 \ RPM}{350 \ RPM} = 5$$
+
+Esto significa que necesitamos un sistema de transmisión que reduzca la velocidad en un factor de 5. Podríamos lograr esto utilizando diferentes tipos de transmisiones, como:
+
+* **Engranajes:** Un par de engranajes con una relación de número de dientes de 5:1 (por ejemplo, un engranaje conductor con 20 dientes y un engranaje conducido con 100 dientes).
+* **Poleas y Correas:** Un sistema de poleas donde el diámetro de la polea conducida sea 5 veces mayor que el diámetro de la polea motriz.
+* **Reductores de Velocidad:** Un dispositivo compacto que internamente utiliza engranajes para lograr la reducción de velocidad deseada.
+
+La elección del tipo de transmisión dependerá de otros factores como el espacio disponible, el costo, la eficiencia requerida y la carga a la que se va a conectar el sistema.
+
+**Uso de MATLAB en el Diseño de Transmisión:**
+
+Para problemas de diseño más complejos, se pueden utilizar herramientas de software como MATLAB. MATLAB permite:
+
+* **Modelado y Simulación:** Crear modelos matemáticos del sistema de transmisión y simular su comportamiento bajo diferentes condiciones de carga y velocidad.
+* **Análisis de Fuerzas y Torques:** Calcular las fuerzas y torques que actúan sobre los diferentes componentes del sistema.
+* **Optimización:** Optimizar los parámetros de diseño (como el número de dientes de los engranajes, los diámetros de las poleas, etc.) para cumplir con los requerimientos de rendimiento y eficiencia.
+* **Análisis Dinámico:** Estudiar la respuesta dinámica del sistema, incluyendo la inercia reflejada y las vibraciones.
+
+Por ejemplo, en MATLAB se podrían definir las propiedades del motor, la carga y los componentes de la transmisión, y luego utilizar funciones para calcular la relación de transmisión, las velocidades angulares, los torques y la potencia en diferentes puntos del sistema. También se podrían realizar análisis de eficiencia considerando las pérdidas en cada componente.
+
+
 
 ## 2. Conceptos Básicos
 
