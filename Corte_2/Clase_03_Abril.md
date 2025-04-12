@@ -11,6 +11,23 @@ Los sistemas de transmisión son el conjunto de componentes interconectados que 
 
 El diseño de transmisión es una disciplina fundamental en la ingeniería mecánica que se encarga de la concepción, cálculo y optimización de los elementos encargados de transferir potencia mecánica desde una fuente (como un motor) hacia un actuador o carga. Un buen diseño de transmisión busca maximizar la eficiencia, durabilidad y rendimiento del sistema, cumpliendo con los requerimientos específicos de la aplicación en términos de velocidad, torque y potencia. La correcta selección de los componentes y su configuración es crucial para el funcionamiento óptimo de cualquier máquina o sistema mecánico.
 
+### 1.3 ¿Por qué es importante el diseño de la transmisión?
+
+Cuando se diseña un sistema que tiene que mover algo (una herramienta, una carga, un brazo robótico, etc.), no basta con elegir un motor. Es necesario seleccionar una transmisión adecuada que:
+
+- **Aumente o reduzca velocidad**
+- **Multiplique el torque** si se necesita más fuerza
+- **Transforme el tipo de movimiento** (rotacional → lineal)
+- **Asegure estabilidad y precisión**
+
+> 📌 En resumen: la transmisión conecta el "músculo" (motor) con el "movimiento real" (la carga).
+
+**Problemas comunes si no se diseña bien:**
+- El motor no da suficiente torque
+- El sistema es lento o impreciso
+- Hay vibraciones o resonancia
+- Se gasta energía de más
+
 
 ## 2. Conceptos Básicos
 
