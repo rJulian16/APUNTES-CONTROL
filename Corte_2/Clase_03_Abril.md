@@ -114,9 +114,9 @@ Esto significa que si la velocidad se reduce (i > 1), la inercia reflejada en el
 
 De manera similar, el torque de carga ($T_{L}$) que actúa en el lado de salida se refleja al lado de entrada como un torque requerido adicional para mover la carga. El torque de carga reflejado ($T_{ref}$) se calcula como:
 
-$$T_{ref} = \frac{T_{L}}{i \cdot \eta}$$
+$$T_{ref} = \frac{T_{L}}{\cdot \eta}$$
 
-Donde $\eta$ es la eficiencia de la transmisión. La eficiencia se incluye porque la potencia debe ser conservada (idealmente $P_{entrada} = P_{salida}$). Como $P = T \cdot \omega$, entonces $T_{entrada} \cdot \omega_{entrada} \cdot \eta = T_{salida} \cdot \omega_{salida}$, lo que lleva a la fórmula anterior.
+Esto permite adaptar el sistema para reducir el esfuerzo del motor o ajustar el comportamiento dinámico.
 
 ## 5. Engranajes
 
