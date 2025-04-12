@@ -1,7 +1,7 @@
 markdown
 # Diseño de Transmisiones en Control de Movimiento
 
-> 🧑‍🔧 *Trabajo de clase - 9° semestre*
+> 🧑‍🔧 *Apuntes de clase - 9° semestre*
 
 
 ---
@@ -65,6 +65,7 @@ Es el torque que debe entregar el motor, ajustado por la eficiencia y relación 
 
 $$ T_m = \frac{T_l}{\eta N} $$
 
+
 ![image](https://github.com/user-attachments/assets/a4d3a72b-de89-46a0-b3f4-329e14cacb1a)
 
 Fuente: Docente
@@ -76,13 +77,8 @@ Fuente: Docente
 
 ### 4.1. Engranajes
 
-> Sistema más común cuando se necesita precisión y rigidez.
+Sistema más común cuando se necesita precisión y rigidez.
 
-**Relación de transmisión:**
-$$ N = \frac{\omega_{\text{motor}}}{\omega_{\text{carga}}} = \frac{Z_{\text{carga}}}{Z_{\text{motor}}} $$
-
-**Torque reflejado:**
-$$ T_m = \frac{T_l}{\eta N} $$
 
 📘 **Ejemplo:**
 Sistema con engranaje de 5:1 y eficiencia del 97%. Carga requiere 2 Nm.
