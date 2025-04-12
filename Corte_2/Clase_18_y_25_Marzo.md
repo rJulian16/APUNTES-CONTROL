@@ -20,8 +20,19 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
    - [5.2. Movimiento multieje](#52-movimiento-multieje)
      - [5.2.1. Ejercicio 7: Movimiento multieje simple (2 ejes)](#521-ejercicio-7-movimiento-multieje-simple-2-ejes)
      - [5.2.2. Ejemplo 3: Movimiento Coordinado en dos Ejes (Slew Motion)](#522-ejemplo-3-movimiento-coordinado-en-dos-ejes-slew-motion)
+6. [Ejercicios planteados en clase](#6-ejercicios-planteados-en-clase)
+   - [Ejercicio 8: Análisis de trayectoria de un eje con tornillo sin fin](#ejercicio-8-análisis-de-trayectoria-de-un-eje-con-tornillo-sin-fin)
+   - [Ejercicio 9: Movimiento de un eje en un robot Gantry](#ejercicio-9-movimiento-de-un-eje-en-un-robot-gantry)
+   - [Ejercicio 10: Cálculo de desplazamientos a partir del perfil de velocidad](#ejercicio-10-cálculo-de-desplazamientos-a-partir-del-perfil-de-velocidad)
+7. [Comparación entre perfil S y perfil S puro](#7-comparación-entre-perfil-s-y-perfil-s-puro)
+8. [Modelo Matemático del Perfil en S (Velocidad)](#8-modelo-matemático-del-perfil-en-s-velocidad)
+   - [8.1 Función general de la velocidad](#81-función-general-de-la-velocidad)
+   - [8.2 Derivadas de la velocidad](#82-derivadas-de-la-velocidad)
+   - [8.3 Aceleración](#83-aceleración)
+   - [8.4 Jerk](#84-jerk)
+   - [8.5 Usos y Aplicaciones](#85-usos-y-aplicaciones)
+   - [8.6 Cálculo de los Coeficientes del Perfil en S (Curva A)](#86-cálculo-de-los-coeficientes-del-perfil-en-s-curva-a)
 
-   
 # 1. Perfiles de Movimiento
 
 Los perfiles de movimiento son trayectorias planificadas que definen cómo deben variar las variables de posición, velocidad y aceleración de un sistema mecánico en el tiempo. Estos perfiles son fundamentales en el diseño de sistemas de control de movimiento, ya que permiten que un mecanismo realice desplazamientos suaves, precisos y eficientes, evitando cambios bruscos que podrían causar vibraciones, desgaste prematuro o incluso fallas mecánicas. En el contexto de la simulación con Simulink y Simscape, los perfiles de movimiento se implementan mediante funciones matemáticas o bloques de señal, y se utilizan para alimentar actuadores, servomecanismos u otros componentes dinámicos.
