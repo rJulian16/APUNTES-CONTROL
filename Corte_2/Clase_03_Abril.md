@@ -118,28 +118,6 @@ $$T_{ref} = \frac{T_{carga}}{i \cdot \eta}$$
 
 Donde $\eta$ es la eficiencia de la transmisión. La eficiencia se incluye porque la potencia debe ser conservada (idealmente $P_{entrada} = P_{salida}$). Como $P = T \cdot \omega$, entonces $T_{entrada} \cdot \omega_{entrada} \cdot \eta = T_{salida} \cdot \omega_{salida}$, lo que lleva a la fórmula anterior.
 
-### 4.3 Inercia Total
-
-La inercia total ($J_{total}$) vista por la fuente de potencia (por ejemplo, el motor) es la suma de la inercia del propio motor ($J_{motor}$) y la inercia reflejada de todos los demás componentes conectados a través de la transmisión:
-
-$$J_{total} = J_{motor} + \sum \frac{J_{carga_n}}{i_n^2}$$
-
-Donde $i_n$ es la relación de transmisión total desde el motor hasta la carga $n$.
-
-### 4.4 Eficiencia en la Transmisión
-
-La eficiencia ($\eta$) de un sistema de transmisión es crucial para determinar la potencia real que se entrega a la carga. Cada componente de la transmisión (engranajes, rodamientos, correas, etc.) introduce pérdidas, por lo que la eficiencia total del sistema es el producto de las eficiencias de cada componente:
-
-$$\eta_{total} = \eta_1 \cdot \eta_2 \cdot \eta_3 \cdot \dots$$
-
-### 4.5 Relación de Inercia
-
-La relación de inercia es un factor importante a considerar al seleccionar un motor para una aplicación. Se define como la relación entre la inercia de la carga reflejada al motor y la inercia del rotor del motor:
-
-$$Relación \ de \ Inercia = \frac{J_{carga\_reflejada}}{J_{motor}}$$
-
-Una relación de inercia demasiado alta puede dificultar el control preciso del movimiento y puede llevar a problemas de estabilidad y rendimiento. Generalmente, se busca mantener esta relación dentro de un rango recomendado por el fabricante del motor.
-
 ## 5. Engranajes
 
 Los engranajes son componentes fundamentales en muchos sistemas de transmisión debido a su capacidad para transmitir potencia con una relación de velocidad precisa y alta eficiencia.
