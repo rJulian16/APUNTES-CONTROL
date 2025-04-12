@@ -486,5 +486,10 @@ Figura 14. Matlab ejercicio multieje.
 
 Figura 15. Motor con tornillo sin fin.
 
+$$t_a = t_d = \frac{v_m}{a}$$
+
+$$t_0 = 0,\quad v_0 = 0,\quad s_0 = 0$$
+
+$$s(t) = \int_0^{t_a} a\,dt = \left. \frac{1}{2} a t^2 \right|_0^{t_a} = \frac{1}{2} a t_a^2$$
 
 
