@@ -1,6 +1,18 @@
 # Control de Movimiento Clase 18 de Marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
+# Indice
+
+1. [Perfiles de Movimiento](#1-perfiles-de-movimiento)
+2. [Conceptos Básicos](#2-conceptos-basicos)
+3. [Curvas de Posición, Velocidad y Aceleración](#3-curvas-de-posicion-velocidad-y-aceleracion)
+   - [3.1. Curva de Aceleración](#31-curva-de-aceleracion-at)
+   - [3.2. Curva de Velocidad](#32-curva-de-velocidad-vt)
+   - [3.3. Curva de Posición](#33-curva-de-posicion-st)
+   - [3.4. Relación entre las Curvas](#34-relacion-entre-las-curvas)
+4. [Reglas Geométricas](#4-reglas-geometricas)
+
+   
 # 1. Perfiles de Movimiento
 
 Los perfiles de movimiento son trayectorias planificadas que definen cómo deben variar las variables de posición, velocidad y aceleración de un sistema mecánico en el tiempo. Estos perfiles son fundamentales en el diseño de sistemas de control de movimiento, ya que permiten que un mecanismo realice desplazamientos suaves, precisos y eficientes, evitando cambios bruscos que podrían causar vibraciones, desgaste prematuro o incluso fallas mecánicas. En el contexto de la simulación con Simulink y Simscape, los perfiles de movimiento se implementan mediante funciones matemáticas o bloques de señal, y se utilizan para alimentar actuadores, servomecanismos u otros componentes dinámicos.
