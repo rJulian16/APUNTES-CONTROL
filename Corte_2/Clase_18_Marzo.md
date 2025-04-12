@@ -543,3 +543,73 @@ $$s(t) = s(t_a + t_m) + \int_{t_a + t_m}^{t} \left[ -a(t - (t_a + t_m)) + v_m \r
 Resolviendo:
 
 $$s(t) = s(t_a + t_m) + \left[ v_m t - \frac{1}{2} a (t - (t_a + t_m))^2 \right]_{t_a + t_m}^{t}$$
+
+## 📚 Ejercicio 9 planteado en clase: Movimiento de un eje en un robot Gantry
+
+El eje \( x \) de un robot Gantry debe moverse \( 10\,\text{cm} \). La máxima aceleración permitida en este eje es de \( 1\,\text{cm/s}^2 \). Si se desea mover el eje a una velocidad máxima de \( 2\,\text{cm/s} \), ¿cuánto tiempo tomará hacer este movimiento?
+
+### Cálculos
+
+Tiempo de aceleración y desaceleración:
+
+$$t_a = t_d = \frac{v_m}{a} = \frac{2\,\text{cm/s}}{1\,\text{cm/s}^2} = 2\,\text{s}$$
+
+Tiempo de velocidad constante:
+
+$$t_m = \frac{L}{v_m} - t_a = \frac{10\,\text{cm}}{2\,\text{cm/s}} - 2\,\text{s} = 3\,\text{s}$$
+
+Tiempo total de movimiento:
+
+$$t_{total} = t_a + t_m + t_d = 2\,\text{s} + 3\,\text{s} + 2\,\text{s} = 7\,\text{s}$$
+
+### Resultado
+
+El movimiento tomará **7 segundos**.
+
+![image](https://github.com/user-attachments/assets/4aa5d379-cd3a-4aab-a68f-67785494b3d7)
+
+Figura 15. Matlab ejercicio 9.
+
+Claro, aquí tienes el ejercicio formateado en Markdown para GitHub:
+
+Markdown
+
+**Ejercicio:**
+
+Dado el perfil de velocidad de la figura, calcule $S_A$, $S_B$, $S_C$ usando las reglas geométricas y el método analítico del perfil de movimiento.
+
+**Solución:**
+
+**1. Cálculos de Desplazamiento (Reglas Geométricas):**
+
+* **$S_A$ (0 a 0.5 segundos):**
+    * El área bajo la curva es un triángulo.
+    * $$S_A = \frac{1}{2} \times \text{base} \times \text{altura} = \frac{1}{2} \times 0.5 \text{ s} \times 2 \text{ cm/s} = 0.5 \text{ cm}$$
+
+* **$S_B$ (0.5 a 5.5 segundos):**
+    * El área bajo la curva es un rectángulo.
+    * $$S_B = \text{base} \times \text{altura} = (5.5 \text{ s} - 0.5 \text{ s}) \times 2 \text{ cm/s} = 5 \text{ s} \times 2 \text{ cm/s} = 10 \text{ cm}$$
+
+* **$S_C$ (5.5 a 6 segundos):**
+    * El área bajo la curva es un triángulo.
+    * $$S_C = \frac{1}{2} \times \text{base} \times \text{altura} = \frac{1}{2} \times (6 \text{ s} - 5.5 \text{ s}) \times 2 \text{ cm/s} = 0.5 \text{ s} \times 1 \text{ cm/s} = 0.5 \text{ cm}$$
+
+**2. Cálculos de Desplazamiento (Método Analítico):**
+
+* **$S_A$ (0 a 0.5 segundos):**
+    * La velocidad es una función lineal del tiempo: $v(t) = 4t$
+    * $$S_A = \int_0^{0.5} 4t \, dt = \left[ 2t^2 \right]_0^{0.5} = 2(0.5)^2 - 2(0)^2 = 0.5 \text{ cm}$$
+
+* **$S_B$ (0.5 a 5.5 segundos):**
+    * La velocidad es constante: $v(t) = 2$
+    * $$S_B = \int_{0.5}^{5.5} 2 \, dt = \left[ 2t \right]_{0.5}^{5.5} = 2(5.5) - 2(0.5) = 10 \text{ cm}$$
+
+* **$S_C$ (5.5 a 6 segundos):**
+    * La velocidad es una función lineal del tiempo: $v(t) = -4t + 24$
+    * $$S_C = \int_{5.5}^{6} (-4t + 24) \, dt = \left[ -2t^2 + 24t \right]_{5.5}^{6} = (-2(6)^2 + 24(6)) - (-2(5.5)^2 + 24(5.5)) = 0.5 \text{ cm}$$
+
+**Resultados:**
+
+* $$S_A = 0.5 \text{ cm}$$
+* $$S_B = 10 \text{ cm}$$
+* $$S_C = 0.5 \text{ cm}$$
