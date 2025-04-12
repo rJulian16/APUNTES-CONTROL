@@ -124,14 +124,87 @@ Los engranajes son componentes fundamentales en muchos sistemas de transmisión 
 
 ### 5.1 Relación de Engranajes
 
-La relación de engranajes ($i_{engranajes}$) entre dos engranajes que engranan se define como la relación entre el número de dientes del engranaje conducido ($N_{d}$) y el número de dientes del engranaje conductor ($N_{c}$), o inversamente, como la relación entre la velocidad angular del engranaje conductor ($\omega_{c}$) y la velocidad angular del engranaje conducido ($\omega_{d}$):
+La relación de transmisión ($N$) en un par de engranajes es un parámetro fundamental que determina cómo se modifica la velocidad y el torque entre el engranaje conductor (el que recibe la potencia) y el engranaje conducido (el que entrega la potencia). Matemáticamente, esta relación se define como el cociente entre el número de dientes ($Z$) del engranaje conducido y el número de dientes del engranaje conductor, que también es igual a la relación entre sus diámetros ($D$):
 
-$$i_{engranajes} = \frac{N_{d}}{N_{c}} = \frac{\omega_{c}}{\omega_{d}}$$
+$$N = \frac{Z_{conducido}}{Z_{conductor}} = \frac{D_{conducido}}{D_{conductor}}$$
 
-* Si $N_{d} > N_{c}$ (engranaje conducido más grande), la velocidad se reduce ($i > 1$).
-* Si $N_{d} < N_{c}$ (engranaje conducido más pequeño), la velocidad aumenta ($i < 1$).
+Esta relación de transmisión tiene un impacto directo en el comportamiento del sistema. Como se resume en la siguiente tabla:
 
-En un tren de engranajes con múltiples etapas, la relación de transmisión total es el producto de las relaciones de transmisión de cada etapa.
+| Condición de la Relación \( N \) | Comportamiento del Sistema                 |
+|----------------------------------|--------------------------------------------|
+| \( N > 1 \)                      | Disminuye la velocidad, aumenta el torque  |
+| \( N < 1 \)                      | Aumenta la velocidad, disminuye el torque  |
+| \( N = 1 \)                      | No hay cambios en velocidad ni torque      |
+
+Tabla 2. Relacion de engranajes. 
+
+En esencia, una relación de transmisión mayor que 1 implica una reducción de velocidad y un aumento proporcional del torque (idealmente, sin pérdidas). Por el contrario, una relación menor que 1 resulta en un aumento de la velocidad y una disminución del torque. Cuando la relación es igual a 1, la velocidad y el torque se transmiten sin modificación entre los engranajes.
+
+📚 Ejercicio 2:
+
+Un motor eléctrico gira a una velocidad de 1200 RPM y está conectado a un sistema de dos engranajes. El engranaje conectado directamente al motor (engranaje conductor) tiene 30 dientes. Este engranaje engrana con un segundo engranaje (engranaje conducido) que tiene 90 dientes.
+
+-**Parámetros Iniciales:**
+
+* Velocidad del motor ($\omega_{motor}$) = 1200 RPM
+* Número de dientes del engranaje conductor ($Z_{conductor}$) = 30
+* Número de dientes del engranaje conducido ($Z_{conducido}$) = 90
+
+-**Preguntas:**
+
+1.  ¿Cuál es la relación de transmisión del sistema de engranajes?
+2.  ¿Cuál es la velocidad de rotación del engranaje conducido?
+3.  Si el motor produce un torque de 10 Nm, ¿cuál sería el torque en el engranaje conducido (asumiendo una eficiencia del 100%)?
+
+-**Solución:**
+
+-**Cálculo de la relación de transmisión ($N$):**
+
+    La relación de transmisión se calcula utilizando la fórmula:
+
+    $$N = \frac{Z_{conducido}}{Z_{conductor}}$$
+
+    Sustituyendo los valores:
+
+    $$N = \frac{90 \ dientes}{30 \ dientes} = 3$$
+
+    Por lo tanto, la relación de transmisión del sistema es 3.
+
+-**Cálculo de la velocidad de rotación del engranaje conducido ($\omega_{conducido}$):**
+
+    Sabemos que la relación de transmisión también se puede expresar en términos de las velocidades angulares:
+
+    $$N = \frac{\omega_{conductor}}{\omega_{conducido}}$$
+
+    Donde $\omega_{conductor}$ es la velocidad del motor. Despejando la velocidad del engranaje conducido:
+
+    $$\omega_{conducido} = \frac{\omega_{conductor}}{N}$$
+
+    Sustituyendo los valores:
+
+    $$\omega_{conducido} = \frac{1200 \ RPM}{3} = 400 \ RPM$$
+
+    La velocidad de rotación del engranaje conducido es de 400 RPM.
+
+-**Cálculo del torque en el engranaje conducido ($T_{conducido}$):**
+
+    En un sistema ideal sin pérdidas (eficiencia del 100%), la potencia de entrada es igual a la potencia de salida ($P_{entrada} = P_{salida}$). Como la potencia se relaciona con el torque y la velocidad angular ($P = T \cdot \omega$), podemos escribir:
+
+    $$T_{conductor} \cdot \omega_{conductor} = T_{conducido} \cdot \omega_{conducido}$$
+
+    También sabemos que $\frac{\omega_{conductor}}{\omega_{conducido}} = N$, por lo que $\omega_{conducido} = \frac{\omega_{conductor}}{N}$. Sustituyendo esto en la ecuación de potencia:
+
+    $$T_{conductor} \cdot \omega_{conductor} = T_{conducido} \cdot \frac{\omega_{conductor}}{N}$$
+
+    Despejando el torque en el engranaje conducido:
+
+    $$T_{conducido} = T_{conductor} \cdot N$$
+
+    Sustituyendo los valores:
+
+    $$T_{conducido} = 10 \ Nm \cdot 3 = 30 \ Nm$$
+
+    El torque en el engranaje conducido sería de 30 Nm.
 
 ### 5.2 Otros Aspectos Importantes de los Engranajes
 
@@ -140,6 +213,9 @@ En un tren de engranajes con múltiples etapas, la relación de transmisión tot
 * **Paso Diametral:** Otra medida del tamaño de los dientes, inversamente proporcional al módulo.
 * **Fuerzas en los Engranajes:** La transmisión de potencia a través de los engranajes genera fuerzas de contacto entre los dientes, las cuales deben ser consideradas en el diseño para asegurar la resistencia y durabilidad de los engranajes.
 * **Eficiencia de los Engranajes:** Los engranajes bien lubricados tienen una alta eficiencia, generalmente entre el 95% y el 99% por etapa.
+
+
+
 
 ## 6. Transmisión Polea-Correa
 
