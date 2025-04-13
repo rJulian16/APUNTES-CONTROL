@@ -390,11 +390,11 @@ $$i_{polea-correa} = \frac{D_{d}}{D_{m}} = \frac{\omega_{m}}{\omega_{d}}$$
 
 La inercia de la carga ($J_{carga}$) conectada a la polea conducida se refleja a la polea motriz con una relación similar a la de los engranajes:
 
-$$J_{ref\_polea} = J_{carga} \cdot \left( \frac{D_{m}}{D_{d}} \right)^2 = \frac{J_{carga}}{i_{polea-correa}^2}$$
+$$J_{ref\_polea} = J_{carga} \cdot \left( \frac{D_{m}}{D_{d}} \right)^2 = \frac{J_{carga}}{i^2}$$
 
 ### 10.6 Torque de Carga Reflejado
 
-El torque de carga ($T_{carga}$) en la polea conducida se refleja a la polea motriz de la siguiente manera, considerando la eficiencia ($\eta_{polea-correa}$) de la transmisión:
+El torque de carga ($T_{carga}$) en la polea conducida se refleja a la polea motriz de la siguiente manera, considerando la eficiencia ($\eta$) de la transmisión:
 
-$$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta_{polea-correa}} = \frac{T_{carga}}{i_{polea-correa} \cdot \eta_{polea-correa}}$$
+$$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta} = \frac{T_{carga}}{i\cdot \eta}$$
 
