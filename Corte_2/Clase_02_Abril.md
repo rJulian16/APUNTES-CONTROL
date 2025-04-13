@@ -6,32 +6,58 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 1.  [Introducción a la Temática](#introduccion-a-la-tematica)
    
     1.1  [Sistemas de Transmisión](#sistemas-de-transmision)
+    
     1.2  [Diseño de Transmisión](#diseño-de-transmision)
+    
     1.3  [¿Por qué es importante el diseño de la transmisión?](#por-que-es-importante-el-diseno-de-la-transmision)
+    
     1.4  [Uso de MATLAB en el Diseño de Transmisión](#uso-de-matlab-en-el-diseno-de-transmision)
-3.  [Conceptos Básicos](#conceptos-basicos)
-4.  [Requerimientos de Diseño](#requerimientos-de-diseno)
-5.  [Inercia y Torque en Sistemas de Transmisión](#inercia-y-torque-en-sistemas-de-transmision)
+    
+2.  [Conceptos Básicos](#conceptos-basicos)
+
+3.  [Requerimientos de Diseño](#requerimientos-de-diseno)
+   
+4.  [Inercia y Torque en Sistemas de Transmisión](#inercia-y-torque-en-sistemas-de-transmision)
+   
     4.1  [Inercia Reflejada](#inercia-reflejada)
+    
     4.2  [Torque Reflejado (Torque de Carga Reflejado)](#torque-reflejado-torque-de-carga-reflejado)
-6.  [Engranajes](#engranajes)
+    
+5.  [Engranajes](#engranajes)
+    
     5.1  [Relación de Engranajes](#relacion-de-engranajes)
+    
     5.2  [Otros Aspectos Importantes de los Engranajes](#otros-aspectos-importantes-de-los-engranajes)
-7.  [Matlab](#matlab)
+    
+6.  [Matlab](#matlab)
+
     6.1  [Common Gear Constraint](#common-gear-constraint)
+    
     6.2  [Funcionamiento y Conexión del Bloque Common Gear Constraint](#funcionamiento-y-conexion-del-bloque-common-gear-constraint)
-8.  [Eficiencia en Sistemas de Transmisión](#eficiencia-en-sistemas-de-transmisión)
-9.  [Inercia Total en Sistemas de Transmisión](#inercia-total-en-sistemas-de-transmisión)
-10.  [Relación de Inercia en Sistemas de Transmisión](#relación-de-inercia-en-sistemas-de-transmisión)
-11. [Transmisión Polea-Correa](#transmision-polea-correa)
+    
+7.  [Eficiencia en Sistemas de Transmisión](#eficiencia-en-sistemas-de-transmisión)
+   
+8.  [Inercia Total en Sistemas de Transmisión](#inercia-total-en-sistemas-de-transmisión)
+    
+9.  [Relación de Inercia en Sistemas de Transmisión](#relación-de-inercia-en-sistemas-de-transmisión)
+    
+10. [Transmisión Polea-Correa](#transmision-polea-correa)
+    
     10.1  [Introducción](#introduccion-1)
+    
     10.2  [Puntos Clave](#puntos-clave)
+    
     10.3  [Ventajas y Desventajas](#ventajas-y-desventajas)
+    
     10.4  [Relación de Transmisión](#relacion-de-transmision-1)
+    
     10.5  [Inercia Reflejada](#inercia-reflejada-1)
+    
     10.6  [Torque de Carga Reflejado](#torque-de-carga-reflejado-1)
-12. [Conclusiones](#conclusiones)
-13. [Referencias](#referencias)
+    
+11. [Conclusiones](#conclusiones)
+    
+12. [Referencias](#referencias)
 
 ## 1. Introducción a la Temática <a id="introduccion-a-la-tematica"></a>
 
