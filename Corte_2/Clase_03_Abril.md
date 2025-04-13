@@ -1,17 +1,48 @@
 # Control de Movimiento Clase 12 de Marzo
 Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
-## 1. Introducción a la Temática
+## Índice
 
-### 1.1 Sistemas de Transmisión
+1.  [Introducción a la Temática](#introduccion-a-la-tematica)
+    1.  [Sistemas de Transmisión](#sistemas-de-transmision)
+    2.  [Diseño de Transmisión](#diseño-de-transmision)
+    3.  [¿Por qué es importante el diseño de la transmisión?](#por-que-es-importante-el-diseno-de-la-transmision)
+    4.  [Uso de MATLAB en el Diseño de Transmisión](#uso-de-matlab-en-el-diseno-de-transmision)
+2.  [Conceptos Básicos](#conceptos-basicos)
+3.  [Requerimientos de Diseño](#requerimientos-de-diseno)
+4.  [Inercia y Torque en Sistemas de Transmisión](#inercia-y-torque-en-sistemas-de-transmision)
+    1.  [Inercia Reflejada](#inercia-reflejada)
+    2.  [Torque Reflejado (Torque de Carga Reflejado)](#torque-reflejado-torque-de-carga-reflejado)
+5.  [Engranajes](#engranajes)
+    1.  [Relación de Engranajes](#relacion-de-engranajes)
+    2.  [Otros Aspectos Importantes de los Engranajes](#otros-aspectos-importantes-de-los-engranajes)
+6.  [Matlab](#matlab)
+    1.  [Common Gear Constraint](#common-gear-constraint)
+    2.  [Funcionamiento y Conexión del Bloque Common Gear Constraint](#funcionamiento-y-conexion-del-bloque-common-gear-constraint)
+7.  [Eficiencia en Sistemas de Transmisión](#eficiencia-en-sistemas-de-transmisión)
+8.  [Inercia Total en Sistemas de Transmisión](#inercia-total-en-sistemas-de-transmisión)
+9.  [Relación de Inercia en Sistemas de Transmisión](#relación-de-inercia-en-sistemas-de-transmisión)
+10. [Transmisión Polea-Correa](#transmision-polea-correa)
+    1.  [Introducción](#introduccion-1)
+    2.  [Puntos Clave](#puntos-clave)
+    3.  [Ventajas y Desventajas](#ventajas-y-desventajas)
+    4.  [Relación de Transmisión](#relacion-de-transmision-1)
+    5.  [Inercia Reflejada](#inercia-reflejada-1)
+    6.  [Torque de Carga Reflejado](#torque-de-carga-reflejado-1)
+11. [Conclusiones](#conclusiones)
+12. [Referencias](#referencias)
+
+## 1. Introducción a la Temática <a id="introduccion-a-la-tematica"></a>
+
+### 1.1 Sistemas de Transmisión <a id="sistemas-de-transmision"></a>
 
 Los sistemas de transmisión son el conjunto de componentes interconectados que permiten la transferencia y modificación del movimiento y la potencia mecánica. Estos sistemas pueden incluir elementos como engranajes, poleas y correas, cadenas, ejes, embragues, frenos y convertidores de torque. La elección del sistema de transmisión adecuado depende de factores como la potencia a transmitir, la relación de velocidad requerida, la distancia entre la fuente y la carga, las condiciones ambientales y los costos. Un sistema de transmisión bien diseñado asegura que la potencia se entregue de manera eficiente y controlada a la carga.
 
-### 1.2 Diseño de Transmisión
+### 1.2 Diseño de Transmisión <a id="diseno-de-transmision"></a>
 
 El diseño de transmisión es una disciplina fundamental en la ingeniería mecánica que se encarga de la concepción, cálculo y optimización de los elementos encargados de transferir potencia mecánica desde una fuente (como un motor) hacia un actuador o carga. Un buen diseño de transmisión busca maximizar la eficiencia, durabilidad y rendimiento del sistema, cumpliendo con los requerimientos específicos de la aplicación en términos de velocidad, torque y potencia. La correcta selección de los componentes y su configuración es crucial para el funcionamiento óptimo de cualquier máquina o sistema mecánico.
 
-### 1.3 ¿Por qué es importante el diseño de la transmisión?
+### 1.3 ¿Por qué es importante el diseño de la transmisión? <a id="por-que-es-importante-el-diseno-de-la-transmision"></a>
 
 Cuando se diseña un sistema que tiene que mover algo (una herramienta, una carga, un brazo robótico, etc.), no basta con elegir un motor. Es necesario seleccionar una transmisión adecuada que:
 
@@ -44,7 +75,7 @@ Esto significa que necesitamos un sistema de transmisión que reduzca la velocid
 
 La elección del tipo de transmisión dependerá de otros factores como el espacio disponible, el costo, la eficiencia requerida y la carga a la que se va a conectar el sistema.
 
-### 1.4 Uso de MATLAB en el Diseño de Transmisión:
+### 1.4 Uso de MATLAB en el Diseño de Transmisión: <a id="uso-de-matlab-en-el-diseno-de-transmision"></a>
 
 Para problemas de diseño más complejos, se pueden utilizar herramientas de software como MATLAB. MATLAB permite:
 
@@ -54,7 +85,7 @@ Para problemas de diseño más complejos, se pueden utilizar herramientas de sof
 * **Análisis Dinámico:** Estudiar la respuesta dinámica del sistema, incluyendo la inercia reflejada y las vibraciones.
 
 
-## 2. Conceptos Básicos
+## 2. Conceptos Básicos <a id="conceptos-basicos"></a>
 
 Antes de profundizar en los detalles del diseño y los sistemas de transmisión, es importante tener claros algunos conceptos fundamentales:
 
@@ -73,7 +104,7 @@ Antes de profundizar en los detalles del diseño y los sistemas de transmisión,
 >🔑**Eficiencia (η):** Es la relación entre la potencia de salida y la potencia de entrada de un sistema. Siempre es menor o igual a 1 (o 100%) debido a las pérdidas por fricción y otros factores.
     $$\eta = \frac{P_{salida}}{P_{entrada}}$$
 
-## 3. Requerimientos de Diseño
+## 3. Requerimientos de Diseño <a id="requerimientos-de-diseno"></a>
 
 El diseño de un sistema de transmisión debe cumplir con una serie de requerimientos específicos de la aplicación. Algunos de los requerimientos más comunes incluyen:
 
@@ -98,9 +129,9 @@ Tambien existen diferentes situaciones las cuales pueden surgir en el diseño:
 
 Tabla 1. Problemas a solucionar.
 
-## 4. Inercia y Torque en Sistemas de Transmisión
+## 4. Inercia y Torque en Sistemas de Transmisión <a id="inercia-y-torque-en-sistemas-de-transmision"></a>
 
-### 4.1 Inercia Reflejada
+### 4.1 Inercia Reflejada <a id="inercia-reflejada"></a>
 
 Cuando se tiene un sistema de transmisión, la inercia de la carga o de un componente en el lado de salida se "refleja" al lado de entrada (por ejemplo, al eje del motor) modificada por la relación de transmisión. Esto es importante para analizar la respuesta dinámica del sistema.
 
@@ -110,7 +141,7 @@ $$J_{r} = J_{L} \cdot N^2$$
 
 Esto significa que si la velocidad se reduce (i > 1), la inercia reflejada en el lado de alta velocidad es menor.
 
-### 4.2 Torque Reflejado (Torque de Carga Reflejado)
+### 4.2 Torque Reflejado (Torque de Carga Reflejado) <a id="torque-reflejado-torque-de-carga-reflejado"></a>
 
 De manera similar, el torque de carga ($T_{L}$) que actúa en el lado de salida se refleja al lado de entrada como un torque requerido adicional para mover la carga. El torque de carga reflejado ($T_{ref}$) se calcula como:
 
@@ -118,11 +149,11 @@ $$T_{ref} = \frac{T_{L}}{\eta}$$
 
 Esto permite adaptar el sistema para reducir el esfuerzo del motor o ajustar el comportamiento dinámico.
 
-## 5. Engranajes
+## 5. Engranajes <a id="engranajes"></a>
 
 Los engranajes son componentes fundamentales en muchos sistemas de transmisión debido a su capacidad para transmitir potencia con una relación de velocidad precisa y alta eficiencia.
 
-### 5.1 Relación de Engranajes
+### 5.1 Relación de Engranajes <a id="relacion-de-engranajes"></a>
 
 La relación de transmisión ($N$) en un par de engranajes es un parámetro fundamental que determina cómo se modifica la velocidad y el torque entre el engranaje conductor (el que recibe la potencia) y el engranaje conducido (el que entrega la potencia). Matemáticamente, esta relación se define como el cociente entre el número de dientes ($Z$) del engranaje conducido y el número de dientes del engranaje conductor, que también es igual a la relación entre sus diámetros ($D$):
 
@@ -397,4 +428,28 @@ $$J_{ref\_polea} = J_{carga} \cdot \left( \frac{D_{m}}{D_{d}} \right)^2 = \frac{
 El torque de carga ($T_{carga}$) en la polea conducida se refleja a la polea motriz de la siguiente manera, considerando la eficiencia ($\eta$) de la transmisión:
 
 $$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta} = \frac{T_{carga}}{i\cdot \eta}$$
+
+# 11. Conclusiones Técnicas
+
+* El diseño de sistemas de transmisión es crucial para adaptar la salida de un motor a los requerimientos específicos de una carga, modificando velocidad y torque.
+* Conceptos fundamentales como torque, velocidad angular, potencia e inercia son esenciales para el análisis y diseño de estos sistemas.
+* La relación de transmisión es un parámetro clave que determina el cambio en velocidad y torque a través del sistema.
+* La inercia reflejada de la carga al eje del motor afecta la dinámica del sistema y es fundamental para la selección adecuada del motor.
+* Los engranajes son eficientes para transmitir potencia con relaciones de velocidad precisas, mientras que las poleas y correas ofrecen soluciones más flexibles y silenciosas, aunque con menor eficiencia general.
+* Herramientas de software como MATLAB y su entorno Simscape Multibody son valiosas para modelar, simular y analizar sistemas de transmisión complejos, incluyendo la imposición de restricciones de movimiento como en el caso de los engranajes.
+* La eficiencia de un sistema de transmisión depende de factores como la lubricación, la calidad de los componentes y la correcta alineación.
+* La inercia total que experimenta el motor es la suma de su propia inercia y la inercia de los componentes de la transmisión y la carga reflejada.
+* La relación de inercia entre la carga reflejada y el motor es un factor importante para lograr un rendimiento óptimo en términos de respuesta y eficiencia.
+
+# 12. Referencias
+
+* Shigley, J. E., Mischke, C. R., & Budynas, R. G. (2014). *Diseño en Ingeniería Mecánica* (9ª ed.). McGraw-Hill.
+* Norton, R. L. (2011). *Diseño de Maquinaria* (4ª ed.). McGraw-Hill.
+* Beer, F. P., & Johnston, E. R. (2010). *Mecánica de Materiales* (6ª ed.). McGraw-Hill.
+* Meriam, J. L., & Kraige, L. G. (2012). *Dinámica* (7ª ed.). Reverté.
+* Palm, W. J. (2014). *System Dynamics*. McGraw-Hill Education.
+* Documentación oficial de MATLAB y Simulink por MathWorks.
+* Manuales de usuario y documentación de Simscape Multibody.
+* Recursos en línea y tutoriales sobre diseño de sistemas de transmisión, engranajes y poleas-correas.
+* Especificaciones de fabricantes de motores y reductores (como Apex Dynamics y Allied Motion Technologies).
 
