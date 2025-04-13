@@ -448,8 +448,7 @@ $$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta} = \frac{T_{car
 [3] Beer, F. P., & Johnston, E. R. (2010). *Mecánica de Materiales* (6ª ed.). McGraw-Hill.
 [4] Meriam, J. L., & Kraige, L. G. (2012). *Dinámica* (7ª ed.). Reverté.
 [5] Palm, W. J. (2014). *System Dynamics*. McGraw-Hill Education.
-[6] Documentación oficial de MATLAB y Simulink por MathWorks.
-[7] Manuales de usuario y documentación de Simscape Multibody.
-[8] Recursos en línea y tutoriales sobre diseño de sistemas de transmisión, engranajes y poleas-correas.
-[9] Especificaciones de fabricantes de motores y reductores (como Apex Dynamics y Allied Motion Technologies).
-
+[6] Recursos en línea y tutoriales sobre diseño de sistemas de transmisión, engranajes y poleas-correas.
+[7] Especificaciones de fabricantes de motores y reductores (como Apex Dynamics y Allied Motion Technologies).
+[8] MathWorks. (2024). Simscape Multibody Documentation. MATLAB & Simulink. Disponible en: https://www.mathworks.com/help/physmod/sm/
+[9] MathWorks. (2024). Modeling Multibody Systems. MATLAB & Simulink Tutorials. Disponible en: https://www.mathworks.com/learn/tutorials/multibody-modeling.html
