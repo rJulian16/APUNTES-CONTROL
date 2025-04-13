@@ -233,24 +233,34 @@ El bloque Common Gear Constraint actúa como una unión virtual entre dos cuerpo
 
 Configuración de Parámetros: Al hacer doble clic en el bloque Common Gear Constraint, se abre un diálogo donde puedes configurar sus parámetros. Los más importantes son:
 
--Constraint Type (Tipo de Restricción): Puedes definir la relación de transmisión de varias maneras:
+-**Constraint Type** (Tipo de Restricción): Puedes definir la relación de transmisión de varias maneras:
 
--By base radii (Por radios base): Especificas el radio base de cada engranaje. La relación de transmisión es la relación inversa de estos radios.
+-**By base radii** (Por radios base): Especificas el radio base de cada engranaje. La relación de transmisión es la relación inversa de estos radios.
 
--By number of teeth (Por número de dientes): Especificas el número de dientes de cada engranaje. La relación de transmisión es la relación del número de dientes del seguidor (follower) entre el número de dientes de la base (base).
+-**By number of teeth** (Por número de dientes): Especificas el número de dientes de cada engranaje. La relación de transmisión es la relación del número de dientes del seguidor (follower) entre el número de dientes de la base (base).
 
--By gear ratio (Por relación de engranajes): Especificas directamente la relación de transmisión entre el seguidor y la base.
+-**By gear ratio** (Por relación de engranajes): Especificas directamente la relación de transmisión entre el seguidor y la base.
 
--Base Radius (Radio Base) / Number of Teeth (Número de Dientes): Dependiendo del tipo de restricción seleccionado, deberás proporcionar los valores 
+-**Base Radius** (Radio Base) / Number of Teeth (Número de Dientes): Dependiendo del tipo de restricción seleccionado, deberás proporcionar los valores 
 correspondientes para cada puerto (Base y Follower).
 
--Follower to Base Ratio (Relación Seguidor a Base): Si eliges "By gear ratio", introduces directamente este valor. Un valor mayor que 1 significa que el seguidor gira más rápido que la base.
+-**Follower to Base Ratio** (Relación Seguidor a Base): Si eliges "By gear ratio", introduces directamente este valor. Un valor mayor que 1 significa que el seguidor gira más rápido que la base.
 
--Direction of Rotation (Dirección de Rotación): Puedes invertir la dirección de rotación relativa entre los engranajes si es necesario, utilizando las opciones "Follower rotates opposite to base" o ajustando los signos en la relación de transmisión.
+-**Direction of Rotation** (Dirección de Rotación): Puedes invertir la dirección de rotación relativa entre los engranajes si es necesario, utilizando las opciones "Follower rotates opposite to base" o ajustando los signos en la relación de transmisión.
 
 -**Mecánica Interna:** Internamente, el bloque Common Gear Constraint aplica fuerzas y torques a los cuerpos conectados para asegurar que sus velocidades angulares cumplan con la relación definida por los parámetros. Esto se logra mediante la formulación de ecuaciones de restricción que el solver de Simscape Multibody resuelve durante la simulación.
 
+📚Ejercicio 3 planteado en clase:
 
+Crea un modelo en Simscape Multibody que represente dos engranajes cilíndricos (Engranaje A y Engranaje B) conectados mediante una restricción de engranaje común. Cada engranaje debe poder rotar libremente alrededor de un eje fijo con respecto al marco mundial. Impulsa el Engranaje A con una velocidad angular constante. Observa y analiza la rotación del Engranaje B en relación con el Engranaje A, verificando la relación de transmisión impuesta por la restricción.
+
+![image](https://github.com/user-attachments/assets/4f493900-ee82-4f15-9f7b-99ce291f1cab)
+
+Figura 2. Ejercicio 3 Matlab
+
+Creamos los Bricks Solid que representan físicamente cada engranaje, dándoles forma y masa. Para que puedan girar de manera realista, usamos Revolute Joint, que son como los ejes sobre los que cada engranaje puede dar vueltas; los bloques Rigid Transform nos ayudan a colocar estos ejes donde queremos. La magia de la conexión entre los engranajes la hace el bloque Common Gear Constraint: este bloque es como una "ley física" que le dice al simulador que las rotaciones de los dos engranajes deben estar sincronizadas según sus tamaños, igual que en un mecanismo real. Para poner el sistema en movimiento, usamos una fuente Constant Angular Velocity conectada a uno de los engranajes, actuando como un motor que lo hace girar. Finalmente, para ver cómo se mueve el otro engranaje, colocamos un Angular Velocity Sensor en él y conectamos ese sensor a un Scope, que nos mostrará gráficamente su velocidad a lo largo del tiempo. E
+
+Puedes ver el funcionamiento de este modelo en el siguiente video: https://youtu.be/SZpUC3Usogc
 
 ## 7. Transmisión Polea-Correa
 
