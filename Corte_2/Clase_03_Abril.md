@@ -350,22 +350,27 @@ $$R_i = \frac{4.124 \times 10^{-5} + 1.0 \times 10^{-5}}{1.5 \times 10^{-5}} = \
 
 El ejemplo calcula la relación de inercia de un sistema compuesto por un motor, un reductor de engranajes y una carga. Primero, se calcula la inercia de la carga reflejada al eje del motor, teniendo en cuenta la relación de transmisión y la eficiencia del reductor. Luego, se suma la inercia reflejada del reductor (ya dada) a la inercia reflejada de la carga para obtener la inercia total vista por el motor (sin incluir la inercia del rotor del motor en el numerador de la relación de inercia como se muestra en la segunda fórmula de la imagen). Finalmente, se divide esta inercia total reflejada por la inercia del rotor del motor para obtener la relación de inercia, que en este caso es aproximadamente 3.416.
 
-## 7. Transmisión Polea-Correa
+
+## 10. Transmisión Polea-Correa
+
+![image](https://github.com/user-attachments/assets/4e5a5c96-1d3d-49c7-b638-d1819aff9b56)
+
+Figura 3. Polea-correa.
 
 Los sistemas de transmisión por polea y correa son una alternativa común a los engranajes, especialmente cuando se requiere transmitir potencia entre ejes que están relativamente lejos o cuando se busca una transmisión más silenciosa y con cierta capacidad de absorción de choques.
 
-### 7.1 Introducción
+### 10.1 Introducción
 
 Un sistema de transmisión por polea y correa consiste en dos o más poleas montadas en ejes rotatorios y una correa que las conecta. La rotación de la polea motriz se transmite a la polea conducida a través de la fricción entre la correa y las poleas.
 
-### 7.2 Puntos Clave
+### 10.2 Puntos Clave
 
 * **Tipos de Correas:** Existen varios tipos de correas (planas, trapezoidales o en V, dentadas, etc.), cada una adecuada para diferentes aplicaciones en términos de potencia, velocidad y eficiencia.
 * **Material de las Poleas y Correas:** Los materiales utilizados deben ser capaces de soportar las cargas y la fricción generada durante la operación.
 * **Tensión de la Correa:** Una tensión adecuada en la correa es crucial para asegurar una transmisión eficiente y evitar el deslizamiento.
 * **Deslizamiento:** Siempre existe un cierto grado de deslizamiento entre la correa y la polea, lo que puede afectar la precisión de la relación de transmisión y la eficiencia.
 
-### 6.3 Ventajas y Desventajas
+### 10.3 Ventajas y Desventajas
 
 | Ventajas                                      | Desventajas                                           |
 | :-------------------------------------------- | :---------------------------------------------------- |
@@ -375,24 +380,21 @@ Un sistema de transmisión por polea y correa consiste en dos o más poleas mont
 | Fácil instalación y mantenimiento             | Sensibilidad a la tensión de la correa                 |
 | Puede transmitir potencia a largas distancias | Posibilidad de deslizamiento                          |
 
-### 6.4 Relación de Transmisión
+### 10.4 Relación de Transmisión
 
 La relación de transmisión ($i_{polea-correa}$) en un sistema de polea y correa se define por la relación entre el diámetro de la polea conducida ($D_{d}$) y el diámetro de la polea motriz ($D_{m}$), o inversamente, por la relación entre la velocidad angular de la polea motriz ($\omega_{m}$) y la velocidad angular de la polea conducida ($\omega_{d}$):
 
 $$i_{polea-correa} = \frac{D_{d}}{D_{m}} = \frac{\omega_{m}}{\omega_{d}}$$
 
-### 6.5 Inercia Reflejada
+### 10.5 Inercia Reflejada
 
 La inercia de la carga ($J_{carga}$) conectada a la polea conducida se refleja a la polea motriz con una relación similar a la de los engranajes:
 
 $$J_{ref\_polea} = J_{carga} \cdot \left( \frac{D_{m}}{D_{d}} \right)^2 = \frac{J_{carga}}{i_{polea-correa}^2}$$
 
-### 6.6 Torque de Carga Reflejado
+### 10.6 Torque de Carga Reflejado
 
 El torque de carga ($T_{carga}$) en la polea conducida se refleja a la polea motriz de la siguiente manera, considerando la eficiencia ($\eta_{polea-correa}$) de la transmisión:
 
 $$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta_{polea-correa}} = \frac{T_{carga}}{i_{polea-correa} \cdot \eta_{polea-correa}}$$
 
----
-
-Espero que estos apuntes te sean de gran utilidad para tu clase. Recuerda que puedes expandir cada sección con más detalles, ejemplos e imágenes según sea necesario. ¡Mucho éxito con tu estudio!
