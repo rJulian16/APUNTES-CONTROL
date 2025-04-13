@@ -215,17 +215,52 @@ Un motor eléctrico gira a una velocidad de 1200 RPM y está conectado a un sist
 * **Eficiencia de los Engranajes:** Los engranajes bien lubricados tienen una alta eficiencia, generalmente entre el 95% y el 99% por etapa.
 
 
+# 6. Matlab
+
+## 6.1 Common Gear Constraint
+
+🔑>El bloque Common Gear Constraint en Simscape Multibody simula la conexión de dos engranajes rotatorios. Asegura que sus velocidades de giro estén relacionadas por sus tamaños (radios o dientes), sin necesidad de dibujar los dientes. Para usarlo, debes indicar el tamaño de cada engranaje.
+
+![image](https://github.com/user-attachments/assets/242d3cf4-9ba7-4a34-890c-bd83f3773d5a)
+
+Figura 1. Bloque Gear Matlab.
+
+### 6.2 Funcionamiento y Conexión del Bloque Common Gear Constraint:
+
+El bloque Common Gear Constraint actúa como una unión virtual entre dos cuerpos rígidos rotatorios, representando la interacción de un par de engranajes. Para utilizarlo correctamente, debes seguir estos puntos clave:
+
+-**Conexión a Cuerpos Rígidos:** El bloque tiene dos puertos de conexión, típicamente etiquetados como "Base" y "Follower". Cada uno de estos puertos debe conectarse a un sistema de coordenadas (Coordinate System) que esté fijado a uno de los cuerpos rígidos que representan los engranajes. Estos cuerpos rígidos deben tener al menos un grado de libertad rotacional alrededor del eje de giro de los engranajes.
+
+Configuración de Parámetros: Al hacer doble clic en el bloque Common Gear Constraint, se abre un diálogo donde puedes configurar sus parámetros. Los más importantes son:
+
+-Constraint Type (Tipo de Restricción): Puedes definir la relación de transmisión de varias maneras:
+
+-By base radii (Por radios base): Especificas el radio base de cada engranaje. La relación de transmisión es la relación inversa de estos radios.
+
+-By number of teeth (Por número de dientes): Especificas el número de dientes de cada engranaje. La relación de transmisión es la relación del número de dientes del seguidor (follower) entre el número de dientes de la base (base).
+
+-By gear ratio (Por relación de engranajes): Especificas directamente la relación de transmisión entre el seguidor y la base.
+
+-Base Radius (Radio Base) / Number of Teeth (Número de Dientes): Dependiendo del tipo de restricción seleccionado, deberás proporcionar los valores 
+correspondientes para cada puerto (Base y Follower).
+
+-Follower to Base Ratio (Relación Seguidor a Base): Si eliges "By gear ratio", introduces directamente este valor. Un valor mayor que 1 significa que el seguidor gira más rápido que la base.
+
+-Direction of Rotation (Dirección de Rotación): Puedes invertir la dirección de rotación relativa entre los engranajes si es necesario, utilizando las opciones "Follower rotates opposite to base" o ajustando los signos en la relación de transmisión.
+
+-**Mecánica Interna:** Internamente, el bloque Common Gear Constraint aplica fuerzas y torques a los cuerpos conectados para asegurar que sus velocidades angulares cumplan con la relación definida por los parámetros. Esto se logra mediante la formulación de ecuaciones de restricción que el solver de Simscape Multibody resuelve durante la simulación.
 
 
-## 6. Transmisión Polea-Correa
+
+## 7. Transmisión Polea-Correa
 
 Los sistemas de transmisión por polea y correa son una alternativa común a los engranajes, especialmente cuando se requiere transmitir potencia entre ejes que están relativamente lejos o cuando se busca una transmisión más silenciosa y con cierta capacidad de absorción de choques.
 
-### 6.1 Introducción
+### 7.1 Introducción
 
 Un sistema de transmisión por polea y correa consiste en dos o más poleas montadas en ejes rotatorios y una correa que las conecta. La rotación de la polea motriz se transmite a la polea conducida a través de la fricción entre la correa y las poleas.
 
-### 6.2 Puntos Clave
+### 7.2 Puntos Clave
 
 * **Tipos de Correas:** Existen varios tipos de correas (planas, trapezoidales o en V, dentadas, etc.), cada una adecuada para diferentes aplicaciones en términos de potencia, velocidad y eficiencia.
 * **Material de las Poleas y Correas:** Los materiales utilizados deben ser capaces de soportar las cargas y la fricción generada durante la operación.
