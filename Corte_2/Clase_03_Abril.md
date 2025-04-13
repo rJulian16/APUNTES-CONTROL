@@ -307,7 +307,48 @@ $$R_i = \frac{J_{carga\_reflejada}}{J_{motor}}$$
 
 Se busca mantener esta relación dentro de un rango adecuado para lograr un equilibrio entre respuesta y consumo. Generalmente, los fabricantes de motores proporcionan recomendaciones para la relación de inercia óptima según la aplicación.
 
+📚Ejercicio 4 propuesto en clase: Cálculo de la Relación de Inercia
 
+El sistema en la figura usa un engranaje PN023 de Apex Dynamics. Este tiene una relación de 5:1, una inercia reflejada a la entrada de 0.1 Kg - cm² y una eficiencia del 97%. El motor es un Quantum QB02301 NEMA tamaño 23 de Allied Motion Technologies, con una inercia en el rotor de $1.5 \times 10^{-5} \text{ Kg - m}^2$. La inercia de la carga es $10 \times 10^{-4} \text{ Kg - m}^2$. Encuentre la relación de inercia.
+
+-**Solución:**
+
+Primero, necesitamos calcular la inercia de la carga reflejada al eje del motor. La fórmula para la inercia de la carga reflejada ($J_{load \rightarrow M}$) es:
+
+$$J_{load \rightarrow M} = \frac{J_{load}}{\eta N_{GB}^2}$$
+
+Donde:
+* $J_{load}$ es la inercia de la carga.
+* $\eta$ es la eficiencia del reductor (Gearbox).
+* $N_{GB}$ es la relación de transmisión del reductor.
+
+Sustituyendo los valores dados:
+* $J_{load} = 10 \times 10^{-4} \text{ Kg - m}^2$
+* $\eta = 0.97$
+* $N_{GB} = 5$
+
+$$J_{load \rightarrow M} = \frac{10 \times 10^{-4} \text{ Kg - m}^2}{0.97 \cdot 5^2} = \frac{10 \times 10^{-4}}{0.97 \cdot 25} = \frac{10 \times 10^{-4}}{24.25} \approx 4.124 \times 10^{-5} \text{ Kg - m}^2$$
+
+> 📌Nota: La inercia reflejada del reductor a la entrada ($0.1 \text{ Kg - cm}^2$) ya está dada. Necesitamos convertirla a Kg - m²:
+
+$$0.1 \text{ Kg - cm}^2 \times \left( \frac{1 \ m}{100 \ cm} \right)^2 = 0.1 \times 10^{-4} \text{ Kg - m}^2 = 1.0 \times 10^{-5} \text{ Kg - m}^2$$
+
+Ahora, calculamos la inercia total reflejada al motor ($J_R$). La fórmula proporcionada en la imagen parece tener una pequeña variación, sumando la inercia del reductor reflejada a la entrada directamente:
+
+$$J_R = \frac{J_{on \ motor \ shaft} + J_{load \rightarrow M} + J_{GB \rightarrow M}}{J_m}$$
+
+Sin embargo, la inercia reflejada del reductor ya está dada a la entrada, por lo que la fórmula más directa para la relación de inercia sería:
+
+$$R_i = \frac{J_{load \rightarrow M} + J_{GB\_reflejada\_entrada}}{J_{motor}}$$
+
+Usando los valores convertidos y dados:
+* $J_{load \rightarrow M} = 4.124 \times 10^{-5} \text{ Kg - m}^2$
+* $J_{GB\_reflejada\_entrada} = 1.0 \times 10^{-5} \text{ Kg - m}^2$
+* $J_{motor} = 1.5 \times 10^{-5} \text{ Kg - m}^2$
+
+$$R_i = \frac{4.124 \times 10^{-5} + 1.0 \times 10^{-5}}{1.5 \times 10^{-5}} = \frac{5.124 \times 10^{-5}}{1.5 \times 10^{-5}} \approx 3.416$$
+
+El ejemplo calcula la relación de inercia de un sistema compuesto por un motor, un reductor de engranajes y una carga. Primero, se calcula la inercia de la carga reflejada al eje del motor, teniendo en cuenta la relación de transmisión y la eficiencia del reductor. Luego, se suma la inercia reflejada del reductor (ya dada) a la inercia reflejada de la carga para obtener la inercia total vista por el motor (sin incluir la inercia del rotor del motor en el numerador de la relación de inercia como se muestra en la segunda fórmula de la imagen). Finalmente, se divide esta inercia total reflejada por la inercia del rotor del motor para obtener la relación de inercia, que en este caso es aproximadamente 3.416.
 
 ## 7. Transmisión Polea-Correa
 
