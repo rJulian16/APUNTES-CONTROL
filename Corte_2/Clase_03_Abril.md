@@ -382,7 +382,7 @@ Un sistema de transmisión por polea y correa consiste en dos o más poleas mont
 
 ### 10.4 Relación de Transmisión
 
-La relación de transmisión ($i_{polea-correa}$) en un sistema de polea y correa se define por la relación entre el diámetro de la polea conducida ($D_{d}$) y el diámetro de la polea motriz ($D_{m}$), o inversamente, por la relación entre la velocidad angular de la polea motriz ($\omega_{m}$) y la velocidad angular de la polea conducida ($\omega_{d}$):
+La relación de transmisión ($i$) en un sistema de polea y correa se define por la relación entre el diámetro de la polea conducida ($D_{d}$) y el diámetro de la polea motriz ($D_{m}$), o inversamente, por la relación entre la velocidad angular de la polea motriz ($\omega_{m}$) y la velocidad angular de la polea conducida ($\omega_{d}$):
 
 $$i_{polea-correa} = \frac{D_{d}}{D_{m}} = \frac{\omega_{m}}{\omega_{d}}$$
 
