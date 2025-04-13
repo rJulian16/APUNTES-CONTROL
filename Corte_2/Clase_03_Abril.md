@@ -4,31 +4,31 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 ## Índice
 
 1.  [Introducción a la Temática](#introduccion-a-la-tematica)
-    1.  [Sistemas de Transmisión](#sistemas-de-transmision)
-    2.  [Diseño de Transmisión](#diseño-de-transmision)
-    3.  [¿Por qué es importante el diseño de la transmisión?](#por-que-es-importante-el-diseno-de-la-transmision)
-    4.  [Uso de MATLAB en el Diseño de Transmisión](#uso-de-matlab-en-el-diseno-de-transmision)
+    1.1  [Sistemas de Transmisión](#sistemas-de-transmision)
+    1.2  [Diseño de Transmisión](#diseño-de-transmision)
+    1.3  [¿Por qué es importante el diseño de la transmisión?](#por-que-es-importante-el-diseno-de-la-transmision)
+    1.4  [Uso de MATLAB en el Diseño de Transmisión](#uso-de-matlab-en-el-diseno-de-transmision)
 2.  [Conceptos Básicos](#conceptos-basicos)
 3.  [Requerimientos de Diseño](#requerimientos-de-diseno)
 4.  [Inercia y Torque en Sistemas de Transmisión](#inercia-y-torque-en-sistemas-de-transmision)
-    1.  [Inercia Reflejada](#inercia-reflejada)
-    2.  [Torque Reflejado (Torque de Carga Reflejado)](#torque-reflejado-torque-de-carga-reflejado)
+    4.1  [Inercia Reflejada](#inercia-reflejada)
+    4.2  [Torque Reflejado (Torque de Carga Reflejado)](#torque-reflejado-torque-de-carga-reflejado)
 5.  [Engranajes](#engranajes)
-    1.  [Relación de Engranajes](#relacion-de-engranajes)
-    2.  [Otros Aspectos Importantes de los Engranajes](#otros-aspectos-importantes-de-los-engranajes)
+    5.1  [Relación de Engranajes](#relacion-de-engranajes)
+    5.2  [Otros Aspectos Importantes de los Engranajes](#otros-aspectos-importantes-de-los-engranajes)
 6.  [Matlab](#matlab)
-    1.  [Common Gear Constraint](#common-gear-constraint)
-    2.  [Funcionamiento y Conexión del Bloque Common Gear Constraint](#funcionamiento-y-conexion-del-bloque-common-gear-constraint)
+    6.1  [Common Gear Constraint](#common-gear-constraint)
+    6.2  [Funcionamiento y Conexión del Bloque Common Gear Constraint](#funcionamiento-y-conexion-del-bloque-common-gear-constraint)
 7.  [Eficiencia en Sistemas de Transmisión](#eficiencia-en-sistemas-de-transmisión)
 8.  [Inercia Total en Sistemas de Transmisión](#inercia-total-en-sistemas-de-transmisión)
 9.  [Relación de Inercia en Sistemas de Transmisión](#relación-de-inercia-en-sistemas-de-transmisión)
 10. [Transmisión Polea-Correa](#transmision-polea-correa)
-    1.  [Introducción](#introduccion-1)
-    2.  [Puntos Clave](#puntos-clave)
-    3.  [Ventajas y Desventajas](#ventajas-y-desventajas)
-    4.  [Relación de Transmisión](#relacion-de-transmision-1)
-    5.  [Inercia Reflejada](#inercia-reflejada-1)
-    6.  [Torque de Carga Reflejado](#torque-de-carga-reflejado-1)
+    10.1  [Introducción](#introduccion-1)
+    10.2  [Puntos Clave](#puntos-clave)
+    10.3  [Ventajas y Desventajas](#ventajas-y-desventajas)
+    10.4  [Relación de Transmisión](#relacion-de-transmision-1)
+    10.5  [Inercia Reflejada](#inercia-reflejada-1)
+    10.6  [Torque de Carga Reflejado](#torque-de-carga-reflejado-1)
 11. [Conclusiones](#conclusiones)
 12. [Referencias](#referencias)
 
@@ -443,13 +443,13 @@ $$T_{ref\_polea} = T_{carga} \cdot \frac{D_{m}}{D_{d} \cdot \eta} = \frac{T_{car
 
 # 12. Referencias
 
-* Shigley, J. E., Mischke, C. R., & Budynas, R. G. (2014). *Diseño en Ingeniería Mecánica* (9ª ed.). McGraw-Hill.
-* Norton, R. L. (2011). *Diseño de Maquinaria* (4ª ed.). McGraw-Hill.
-* Beer, F. P., & Johnston, E. R. (2010). *Mecánica de Materiales* (6ª ed.). McGraw-Hill.
-* Meriam, J. L., & Kraige, L. G. (2012). *Dinámica* (7ª ed.). Reverté.
-* Palm, W. J. (2014). *System Dynamics*. McGraw-Hill Education.
-* Documentación oficial de MATLAB y Simulink por MathWorks.
-* Manuales de usuario y documentación de Simscape Multibody.
-* Recursos en línea y tutoriales sobre diseño de sistemas de transmisión, engranajes y poleas-correas.
-* Especificaciones de fabricantes de motores y reductores (como Apex Dynamics y Allied Motion Technologies).
+[1] Shigley, J. E., Mischke, C. R., & Budynas, R. G. (2014). *Diseño en Ingeniería Mecánica* (9ª ed.). McGraw-Hill.
+[2] Norton, R. L. (2011). *Diseño de Maquinaria* (4ª ed.). McGraw-Hill.
+[3] Beer, F. P., & Johnston, E. R. (2010). *Mecánica de Materiales* (6ª ed.). McGraw-Hill.
+[4] Meriam, J. L., & Kraige, L. G. (2012). *Dinámica* (7ª ed.). Reverté.
+[5] Palm, W. J. (2014). *System Dynamics*. McGraw-Hill Education.
+[6] Documentación oficial de MATLAB y Simulink por MathWorks.
+[7] Manuales de usuario y documentación de Simscape Multibody.
+[8] Recursos en línea y tutoriales sobre diseño de sistemas de transmisión, engranajes y poleas-correas.
+[9] Especificaciones de fabricantes de motores y reductores (como Apex Dynamics y Allied Motion Technologies).
 
