@@ -262,6 +262,53 @@ Creamos los Bricks Solid que representan físicamente cada engranaje, dándoles 
 
 Puedes ver el funcionamiento de este modelo en el siguiente video: https://youtu.be/SZpUC3Usogc
 
+# 7. Eficiencia en Sistemas de Transmisión
+
+Un sistema **eficiente** es aquel que logra el movimiento deseado con el menor consumo posible de energía. La eficiencia de un sistema de transmisión se ve afectada por varios factores relacionados directamente con su diseño y operación:
+
+* Lubricación adecuada: Una lubricación apropiada de los componentes móviles (engranajes, rodamientos, cadenas) reduce la fricción y, por lo tanto, las pérdidas de energía en forma de calor.
+* Selección de componentes de alta calidad: Utilizar elementos de transmisión (engranajes, poleas, correas, rodamientos) diseñados para una alta eficiencia minimiza las pérdidas inherentes de cada componente.
+* Alineación precisa: Asegurar una correcta alineación entre los diferentes elementos de la transmisión (ejes, engranajes, poleas) reduce la fricción y el desgaste innecesario, mejorando la eficiencia.
+* Mantenimiento regular: Un mantenimiento adecuado, que incluye la limpieza, lubricación y ajuste de los componentes, ayuda a mantener la eficiencia del sistema a lo largo del tiempo.
+* Condiciones de operación: Evitar operar el sistema bajo cargas o velocidades extremas para las que no fue diseñado puede prevenir pérdidas de eficiencia y prolongar la vida útil de los componentes.
+
+La eficiencia ($\eta$) de un sistema de transmisión se define como la relación entre la potencia de salida ($P_{salida}$) y la potencia de entrada ($P_{entrada}$):
+
+$$\eta = \frac{P_{salida}}{P_{entrada}}$$
+
+Lograr una alta eficiencia en el diseño de la transmisión es fundamental para optimizar el consumo energético y el rendimiento general del sistema mecánico.
+
+# 8. Inercia Total en Sistemas de Transmisión
+
+La **inercia total** ($J_{total}$) que enfrenta el motor es la suma de varias componentes:
+
+$$J_{total} = J_{motor} + J_{transmisión} + J_{carga\_reflejada}$$
+
+Donde:
+
+* $J_{motor}$ es la inercia del rotor del motor.
+* $J_{transmisión}$ es la inercia de los elementos de transmisión (engranajes, poleas, etc.) referida al eje del motor.
+* $J_{carga\_reflejada}$ es la inercia de la carga reflejada al eje del motor. Si la relación de transmisión es $N = \frac{\omega_{entrada}}{\omega_{salida}}$, entonces:
+    $$J_{carga\_reflejada} = \frac{J_{carga}}{N^2}$$
+    O, utilizando la notación de la otra imagen donde $N$ podría ser la relación de salida a entrada:
+    $$J_{r} = J_{L} \cdot N^2$$
+    **Nota:** Asegúrate de usar la definición de $N$ consistente con tus apuntes. Si $N = \frac{\omega_{entrada}}{\omega_{salida}}$, la primera fórmula es la correcta para reflejar la inercia al lado de entrada.
+
+La inercia total influye directamente en la aceleración, la estabilidad del sistema y la elección del motor. Un sistema con alta inercia requerirá más torque para lograr la misma aceleración.
+
+# 9. Relación de Inercia en Sistemas de Transmisión
+
+La **relación de inercia** entre la carga reflejada y el motor es clave para el rendimiento:
+
+$$R_i = \frac{J_{carga\_reflejada}}{J_{motor}}$$
+
+* Una relación baja mejora la respuesta, pero puede requerir motores grandes.
+* Una relación alta puede ser útil para movimientos lentos, aunque reduce la eficiencia.
+
+Se busca mantener esta relación dentro de un rango adecuado para lograr un equilibrio entre respuesta y consumo. Generalmente, los fabricantes de motores proporcionan recomendaciones para la relación de inercia óptima según la aplicación.
+
+
+
 ## 7. Transmisión Polea-Correa
 
 Los sistemas de transmisión por polea y correa son una alternativa común a los engranajes, especialmente cuando se requiere transmitir potencia entre ejes que están relativamente lejos o cuando se busca una transmisión más silenciosa y con cierta capacidad de absorción de choques.
