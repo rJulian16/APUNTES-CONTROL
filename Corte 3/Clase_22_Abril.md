@@ -9,7 +9,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 [6. Bibliografía](#6-Bibliografía)
   
 
-## Introducción al Control de Movimiento con Quanser y Simulink
+## 1. Introducción al Control de Movimiento con Quanser y Simulink
 
 El control de movimiento es una disciplina fundamental en la ingeniería de control que se enfoca en regular el comportamiento dinámico de sistemas físicos que requieren movimiento preciso, como motores, robots, vehículos autónomos y actuadores en procesos industriales. En esta etapa del curso, abordaremos los principios y herramientas prácticas para diseñar, simular y validar sistemas de control de movimiento.
 
@@ -24,6 +24,9 @@ La integración con Simulink, un entorno de modelado y simulación basado en blo
 -Validar algoritmos en tiempo real con hardware de Quanser.
 
 -Obtener datos experimentales para análisis y mejora del desempeño.
+
+![image](https://github.com/user-attachments/assets/086eeee5-84d3-488e-800f-9871d47978a1)
+
 
 ## 5. Conclusiones
 
