@@ -29,6 +29,15 @@ La integración con Simulink, un entorno de modelado y simulación basado en blo
 
 Figura 1. Quanser. 
 
+## 2. Quanser
+
+| Command         | Description                                                                    |
+| :-------------- | :----------------------------------------------------------------------------- |
+| `QLabs.register`| Opens the [MathWorks Site License registration page](link-to-mathworks-page). |
+| `QLabs.setup`   | Installs Quanser Interactive Labs. Downloads, if needed.                       |
+| `QLabs.launch`  | Launches Quanser Interactive Labs. Downloads and installs, if needed.          |
+| `QLabs.remove`  | Uninstalls Quanser Interactive Labs and deletes temporary downloaded files.    |
+
 ## 5. Conclusiones
 
 
