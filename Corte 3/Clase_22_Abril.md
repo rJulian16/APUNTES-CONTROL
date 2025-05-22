@@ -31,12 +31,30 @@ Figura 1. Quanser.
 
 ## 2. Quanser
 
-| Command         | Description                                                                    |
-| :-------------- | :----------------------------------------------------------------------------- |
-| `QLabs.register`| Opens the [MathWorks Site License registration page](link-to-mathworks-page). |
-| `QLabs.setup`   | Installs Quanser Interactive Labs. Downloads, if needed.                       |
-| `QLabs.launch`  | Launches Quanser Interactive Labs. Downloads and installs, if needed.          |
-| `QLabs.remove`  | Uninstalls Quanser Interactive Labs and deletes temporary downloaded files.    |
+Quanser es una plataforma de hardware y software especializada en sistemas de control, que permite a estudiantes e investigadores implementar y validar algoritmos de control en tiempo real. Su integración con MATLAB y Simulink proporciona un entorno poderoso para la simulación, análisis y control físico de plantas reales como péndulos, motores DC, servomecanismos, sistemas de levitación magnética, entre otros.
+
+1. Arquitectura general de Quanser
+Quanser trabaja típicamente con tres componentes clave:
+
+Hardware: Incluye plantas físicas (como el QUBE-Servo 2, Rotary Inverted Pendulum, etc.) y la tarjeta de adquisición de datos Quanser QLabs o QPIDe.
+
+Software:
+
+QUARC: Una extensión de Simulink desarrollada por Quanser para generar código en tiempo real y conectarse con el hardware.
+
+QLabs: Plataforma de simulación basada en realidad virtual para experimentos de control sin necesidad del hardware físico.
+
+Controladores: Se pueden diseñar directamente en Simulink usando bloques prediseñados o personalizados.
+
+
+| Comando         | Descripción                                                                                         |
+| :-------------- | :-------------------------------------------------------------------------------------------------- |
+| `QLabs.register`| Abre la página de registro de la [licencia de sitio de MathWorks](link-to-mathworks-page).       |
+| `QLabs.setup`   | Instala Quanser Interactive Labs. Descarga, si es necesario.                                        |
+| `QLabs.launch`  | Inicia Quanser Interactive Labs. Descarga e instala, si es necesario.                               |
+| `QLabs.remove`  | Desinstala Quanser Interactive Labs y elimina los archivos temporales descargados.                  |
+
+Tabla 1. Comandos Quanser
 
 ## 5. Conclusiones
 
