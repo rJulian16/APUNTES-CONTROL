@@ -1,6 +1,6 @@
-# Introducción a Simscape Multibody
+# Control de Movimiento Clase 22 de Abril.
 
-Los software de modelado estructural permiten simular esfuerzos, materiales y comportamiento ante fuerzas, pero no analizan la dinámica del sistema. Aunque generan animaciones basadas en la cinemática, no ofrecen curvas de posición, velocidad o aceleración en función del tiempo. Para ello, se requieren herramientas específicas de simulación dinámica.
+Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasquez Alarcon
 
 ## Índice
 
