@@ -27,6 +27,7 @@ La integración con Simulink, un entorno de modelado y simulación basado en blo
 
 ![image](https://github.com/user-attachments/assets/086eeee5-84d3-488e-800f-9871d47978a1)
 
+Figura 1. Quanser. 
 
 ## 5. Conclusiones
 
