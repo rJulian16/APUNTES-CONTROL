@@ -9,6 +9,9 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 [6. Bibliografía](#6-Bibliografía)
   
 
+## Introducción
+
+
 
 ## 5. Conclusiones
 
