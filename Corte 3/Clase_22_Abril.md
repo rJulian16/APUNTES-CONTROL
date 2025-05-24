@@ -71,7 +71,7 @@ Cuando se ejecuta el comando, aparece una ventana donde el estudiante debe inici
 
 Figura 3. Logueo. 
 
-Una vez que el estudiante inicia sesión correctamente, QLabs muestra las plantas virtuales disponibles según la licencia de la universidad. En nuestro caso, contamos con tres modelos:
+Una vez se inicia sesión correctamente, QLabs muestra las plantas virtuales disponibles según la licencia de la universidad. En nuestro caso, contamos con tres modelos:
 
 1. **Qube 2 – DC Motor**:  
    Esta planta simula un servomotor de corriente continua. Es ideal para aprender los fundamentos del diseño de sistemas de control clásico, como controladores PID y análisis de respuesta temporal. Se trabaja mucho con control de velocidad y posición.
