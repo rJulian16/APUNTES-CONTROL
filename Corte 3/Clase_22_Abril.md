@@ -33,7 +33,7 @@ Figura 1. Quanser.
 
 Quanser es una plataforma de hardware y software especializada en sistemas de control, que permite a estudiantes e investigadores implementar y validar algoritmos de control en tiempo real. Su integración con MATLAB y Simulink proporciona un entorno poderoso para la simulación, análisis y control físico de plantas reales como péndulos, motores DC, servomecanismos, sistemas de levitación magnética, entre otros.
 
-**Arquitectura general de Quanser**
+### 2.1 Arquitectura general de Quanser
 
 Quanser trabaja típicamente con tres componentes clave:
 
@@ -57,7 +57,9 @@ Controladores: Se pueden diseñar directamente en Simulink usando bloques predis
 
 Tabla 1. Comandos Quanser
 
-## 5. Conclusiones
+### 2.2 Software
+
+Antes de comenzar a trabajar con los modelos de Quanser, es necesario iniciar el entorno de simulación virtual proporcionado por QLabs. Este software permite interactuar con plantas simuladas en 3D sin necesidad de tener el hardware físico. Para ello, es importante ejecutar primero el comando qlabs_setup, que configura el entorno y las rutas necesarias. Luego, con el comando qlabs_launch, se abre la interfaz principal de QLabs, donde podremos seleccionar el experimento a utilizar. Esta preparación es esencial para que los bloques de Simulink se conecten correctamente con la planta virtual y podamos comenzar el diseño y validación de nuestros controladores.
 
 
 ## 6. Bibliografía
