@@ -71,6 +71,22 @@ Cuando se ejecuta el comando, aparece una ventana donde el estudiante debe inici
 
 Figura 3. Logueo. 
 
+Una vez que el estudiante inicia sesión correctamente, QLabs muestra las plantas virtuales disponibles según la licencia de la universidad. En nuestro caso, contamos con tres modelos:
+
+1. **Qube 2 – DC Motor**:  
+   Esta planta simula un servomotor de corriente continua. Es ideal para aprender los fundamentos del diseño de sistemas de control clásico, como controladores PID y análisis de respuesta temporal. Se trabaja mucho con control de velocidad y posición.
+
+2. **Aero**:  
+   Representa un sistema aeroespacial compuesto por hélices que giran para simular el comportamiento de un sistema dinámico no lineal y acoplado. Es útil para estudiar temas más avanzados como control multivariable, sistemas acoplados y compensadores.
+
+3. **Ball and Beam**:  
+   Este modelo simula una bola que se mueve sobre una viga controlada por un motor. Es un experimento clásico en control, ideal para aprender sobre estabilidad, retroalimentación y control de sistemas con dinámica más compleja.
+
+Estos modelos permiten practicar en un entorno virtual muy cercano al comportamiento real, lo cual facilita la validación de algoritmos de control antes de aplicarlos a hardware físico.
+
+
+
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
