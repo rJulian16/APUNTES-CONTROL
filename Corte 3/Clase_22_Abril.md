@@ -65,6 +65,12 @@ Antes de comenzar a trabajar con los modelos de Quanser, es necesario iniciar el
 
 Figura 2. Comando. 
 
+Cuando se ejecuta el comando, aparece una ventana donde el estudiante debe iniciar sesión con su correo institucional. Este paso es necesario para acceder a las plantas virtuales que la universidad tiene habilitadas con su licencia. Una vez se completa el inicio de sesión, ya es posible utilizar los modelos de QLabs y comenzar a trabajar con las simulaciones.
+
+![image](https://github.com/user-attachments/assets/dcf37f54-9cc7-4388-b486-265c87a545bd)
+
+Figura 3. Logueo. 
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
