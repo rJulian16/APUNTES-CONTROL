@@ -86,6 +86,11 @@ Una vez se inicia sesión correctamente, QLabs muestra las plantas virtuales dis
 
 Figura 4. Gemelos digitales.
 
+| Modelo                | Sensores principales               | Variables clave                        | Objetivos de control                             |
+| --------------------- | ---------------------------------- | -------------------------------------- | ------------------------------------------------ |
+| **Qube 2 - DC Motor** | Encoder rotacional                 | Velocidad angular, posición del eje    | Control de posición y velocidad del motor DC     |
+| **Aero**              | Encoders en ambos ejes, tacómetros | Ángulo de elevación, ángulo de guiñada | Control de orientación y estabilidad dinámica    |
+| **Ball and Beam**     | Sensor de posición lineal          | Posición de la bola sobre la viga      | Mantener la bola estable en una posición deseada |
 
 
 ## 6. Bibliografía
