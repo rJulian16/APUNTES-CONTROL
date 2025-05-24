@@ -82,8 +82,9 @@ Una vez se inicia sesión correctamente, QLabs muestra las plantas virtuales dis
 3. **Ball and Beam**:  
    Este modelo simula una bola que se mueve sobre una viga controlada por un motor. Es un experimento clásico en control, ideal para aprender sobre estabilidad, retroalimentación y control de sistemas con dinámica más compleja.
 
-Estos modelos permiten practicar en un entorno virtual muy cercano al comportamiento real, lo cual facilita la validación de algoritmos de control antes de aplicarlos a hardware físico.
+![image](https://github.com/user-attachments/assets/25580f43-0ba6-4697-ba22-2a50fc5d27e8)
 
+Figura 4. Gemelos digitales.
 
 
 
