@@ -61,6 +61,9 @@ Tabla 1. Comandos Quanser
 
 Antes de comenzar a trabajar con los modelos de Quanser, es necesario iniciar el entorno de simulación virtual proporcionado por QLabs. Este software permite interactuar con plantas simuladas en 3D sin necesidad de tener el hardware físico. Para ello, es importante ejecutar primero el comando qlabs_setup, que configura el entorno y las rutas necesarias. Luego, con el comando qlabs_launch, se abre la interfaz principal de QLabs, donde podremos seleccionar el experimento a utilizar. Esta preparación es esencial para que los bloques de Simulink se conecten correctamente con la planta virtual y podamos comenzar el diseño y validación de nuestros controladores.
 
+![image](https://github.com/user-attachments/assets/b6a778d3-de34-44df-aa7f-c3cbc0cfa4e6)
+
+Figura 2. Comando. 
 
 ## 6. Bibliografía
 
