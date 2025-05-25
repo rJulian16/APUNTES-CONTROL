@@ -131,6 +131,25 @@ Usaremos un modelo de primer orden del motor:
 
 $$G(s) = \frac{K}{\tau s + 1}$$
 
+Donde K es 0.8 y 𝜏 es 0.05.
+
+K: Es la ganancia estática, o sea, la velocidad angular en estado estable cuando el motor recibe un voltaje constante para el caso de 1 V, k es 0.8.
+
+τ: Es la constante de tiempo, o sea, cuánto tarda el sistema en llegar al 63% de su valor final después de aplicar el escalón.
+En este caso, la curva de respuesta indica que el sistema alcanza el 63% de la velocidad máxima en aproximadamente 0.05 segundos.
+
+Posteriormente se crea un modelo en similunk para ver la respuesta:
+
+![image](https://github.com/user-attachments/assets/f4d25f29-f5b9-49c1-ac5e-c40c62472cf5)
+
+Figura 5. Ejercicio 1 Qube 2.
+
+Donde como respuesta se obtiene:
+
+![image](https://github.com/user-attachments/assets/899be3bf-cd47-421b-b85f-03d7dc345d15)
+
+Figura 6. Ejercicio 1 scope.
+
 
 
 ## 6. Bibliografía
