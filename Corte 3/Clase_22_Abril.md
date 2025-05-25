@@ -264,6 +264,36 @@ Para facilitar la comprensión de las distintas opciones disponibles en el bloqu
 
 Tabla 5. Funciones Read Timebase
 
+### 4.4 Stall Monitor
+
+El Stall Monitor es un bloque especializado que proporciona una forma más directa y estructurada de supervisar el estado del motor en tiempo real. Es especialmente útil para detectar condiciones anormales como bloqueos prolongados o fallas en el sistema de control.
+
+Función principal
+El Stall Monitor observa el comportamiento del motor (como la corriente y la velocidad angular) y genera una señal digital si detecta un bloqueo del motor o una condición insegura.
+
+¿Dónde se encuentra?
+Este bloque se puede encontrar dentro del conjunto de bloques de Quanser QUARC Targets en Simulink. Se utiliza junto con otros bloques como HIL Read Timebase para obtener señales que puedan desencadenar respuestas de seguridad.
+
+Configuración típica:
+Current Threshold: Nivel de corriente que, si se supera, puede indicar un posible bloqueo.
+
+Time Window: Duración durante la cual se evalúa si la condición anómala persiste.
+
+Output Signal: Señal booleana que se activa cuando el bloqueo es detectado.
+
+Ejemplo de uso:
+Puedes conectar la salida del Stall Monitor a:
+
+Un bloque Display para monitoreo visual.
+
+Un bloque Stop Simulation para terminar automáticamente la ejecución.
+
+Un bloque Switch o Enabled Subsystem para desactivar la señal al actuador.
+
+![image](https://github.com/user-attachments/assets/90b7d38c-d4d0-462a-bfc3-45a00de8435c)
+
+Figura 12. Stall Monitor
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
