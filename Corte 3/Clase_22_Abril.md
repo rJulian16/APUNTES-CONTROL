@@ -247,6 +247,18 @@ Generalmente se utiliza para leer la posición y velocidad angular desde los enc
 
 Figura 11. Configuracion Read Timebase
 
+Para facilitar la comprensión de las distintas opciones disponibles en el bloque, a continuación se presenta una tabla con todos los canales que se pueden utilizar, junto con una breve descripción de su función en la simulación con el QUBE-Servo 2.
+
+
+| Categoría           | Canal        | Señal                    | Descripción                                                                 |
+|---------------------|--------------|---------------------------|-----------------------------------------------------------------------------|
+| Analog Channel      | Canal 0      | Motor Current            | Mide la corriente del motor. Útil para monitorear el esfuerzo del actuador. |
+| Encoder Channel     | Encoder 0    | Rotary Encoder           | Mide el ángulo de la base giratoria (eje del motor).                       |
+|                     | Encoder 1    | Pendulum Encoder         | Mide el ángulo del péndulo. Utiliza encoder en cuadratura para más precisión. |
+| Digital Channel     | Canal 0      | Amplifier Fault          | Indica si hay un fallo en el amplificador.                                 |
+|                     | Canal 1      | Motor Stall Detector     | Detecta si el motor está bloqueado (atascado o con sobrecarga).            |
+|                     | Canal 2      | Motor Stall Error        | Señal de error persistente por atasco del motor.                           |
+| Other Channel       | Canal 0      | Tachometer               | Mide la velocidad angular del motor (derivada de la posición).             |
 
 
 ## 6. Bibliografía
