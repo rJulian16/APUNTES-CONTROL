@@ -267,12 +267,10 @@ Si el motor gira a una velocidad angular de $$\( \dot{\theta} = 25.13 \, \text{r
 
 **Datos:**
 
-- \( p = 4 \, \text{rev/m} \)  
-- \( \dot{\theta} = 25.13 \, \text{rad/s} \)
+- $$\( p = 4 \, \text{rev/m} \)$$
+- $$\( \dot{\theta} = 25.13 \, \text{rad/s} \)$$
 
----
-
-**Fórmula:**
+Resultado:
 
 $$
 \frac{\dot{\theta}}{\dot{x}} = 2\pi p
@@ -280,20 +278,14 @@ $$
 \dot{x} = \frac{\dot{\theta}}{2\pi p}
 $$
 
----
-
-**Sustitución:**
-
 $$
 \dot{x} = \frac{25.13}{2\pi \cdot 4} = \frac{25.13}{25.13} = 1 \, \text{m/s}
 $$
 
----
-
-**Resultado:**
 
 $$
 \dot{x} = 1 \, \text{m/s}
 $$
 
+Tuvo una velocidad lineal de $$ 1 m / s$$
 
