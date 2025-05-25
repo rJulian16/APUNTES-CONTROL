@@ -123,6 +123,16 @@ A continuación, se presentan algunos parámetros típicos del QUBE-Servo 2:
 
 Tabla 3. Parametros de Qube 2.
 
+📚Ejercicio 1:
+
+Queremos que el motor DC del QUBE-Servo 2 siga una velocidad angular deseada de forma rápida y precisa. Para esto, se utilizará un controlador PID clásico en un lazo de retroalimentación.
+
+Usaremos un modelo de primer orden del motor:
+
+$$G(s) = \frac{K}{\tau s + 1}$$
+
+
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
