@@ -334,7 +334,7 @@ Se busca determinar:
 
 ¿Cómo varía la corriente y la velocidad angular a lo largo del tiempo, especialmente durante los ciclos de encendido y apagado?
 
-![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/719534f65617f36db628fa891e73b313301e64b6/Corte%203/Imagenes/hola.gif)
+![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/b408610e18b063fb8262e512b139ccfc7dd37481/Corte%203/Imagenes/hola2.gif)
 
 Figura 14. Ejercicio 3 resultados.
 
