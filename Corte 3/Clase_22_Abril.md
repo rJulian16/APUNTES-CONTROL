@@ -154,11 +154,34 @@ Recordar que esta respuesta es sin ninguna perturbacion y sin pendulo, estos y m
 
 ## 4. Simulink
 
-Antes de comenzar a implementar el control sobre el QUBE-Servo 2, es necesario estructurar correctamente el modelo en Simulink para que pueda interactuar con el hardware. Este desarrollo parte de una configuración básica que garantice la comunicación con la planta, la lectura de sensores y el envío de señales de control. A partir de aquí, se incorporan bloques esenciales que permiten construir el lazo de control en tiempo real. El primer paso es establecer la conexión entre el entorno de Simulink y el QUBE-Servo 2 a través del bloque HIL Initialize, que se encarga de activar la tarjeta de interfaz y preparar el sistema para recibir y enviar datos durante la simulación.
+Antes de comenzar a implementar el control sobre el QUBE-Servo 2, es necesario estructurar correctamente el modelo en Simulink para que pueda interactuar con el hardware. Este desarrollo parte de una configuración básica que garantice la comunicación con la planta, la lectura de sensores y el envío de señales de control. A partir de aquí, se incorporan bloques esenciales que permiten construir el lazo de control en tiempo real. 
+
+### 4.1 HIL Initialize
+
+El primer paso es establecer la conexión entre el entorno de Simulink y el QUBE-Servo 2 a través del bloque HIL Initialize, que se encarga de activar la tarjeta de interfaz y preparar el sistema para recibir y enviar datos durante la simulación.
 
 ![image](https://github.com/user-attachments/assets/ccab7348-3ee1-4e23-8817-63c2aeb816d3)
 
 Figura 7. HIL Initialize
+
+#### 4.1.1 Configuracion bloque HIL Initialize
+
+![image](https://github.com/user-attachments/assets/ddf522d7-1d07-4f76-b663-6a60fabf678d)
+
+Figura 8. Configuracion HIL Initialize
+
+| Función                            | Descripción                                                                |
+| ---------------------------------- | -------------------------------------------------------------------------- |
+| Selección del dispositivo          | Permite elegir la tarjeta de adquisición                                   |
+| Inicialización de entradas/salidas | Configura los canales analógicos, digitales y PWM                          |
+| Reset del hardware                 | Reinicia el hardware cuando se inicia o detiene la simulación              |
+| Configuración de reloj             | Define la frecuencia de muestreo y sincronización del hardware             |
+
+Tabla 3. Funciones HIL Initialize
+
+Una primera cosa que se debe tener en cuenta esque vamos a tener en el espacio de Board Identifier dos posibles opciones las cuales colocar, en dado caso que vayamos a usar la planta fisica vamos a dejar ese espacio con un "0" ya que por defecto el saca los datos por el puerto usb, ya si deseamos usar los gemelos digitales tenemos que colocar la siguiente ruta: 
+
+- @tcpip://localhost:18920
 
 ## 6. Bibliografía
 
