@@ -129,6 +129,10 @@ Tabla 2. Comparacion rosca directa vs recirculacion de bolas
 
 ## 3. Backlash
 
+![image](https://github.com/user-attachments/assets/dded1ec3-eeb7-463e-a128-8b413df41879)
+
+Figura 6. Backlash
+
 El backlash, también conocido como juego mecánico o holgura, es el pequeño espacio o movimiento libre entre los dientes de dos elementos engranados, como un tornillo sin fin y una rueda dentada o entre engranajes rectos.
 
 Se debe principalmente a:
