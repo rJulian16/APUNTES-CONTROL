@@ -198,7 +198,22 @@ El bloque HIL Write Analog es fundamental dentro del lazo de control, ya que per
 
 Este bloque se conecta comúnmente a la salida del controlador (por ejemplo, un PID) y actúa como la interfaz que traduce la lógica del modelo a una acción física en la planta.
 
+#### 4.2.1 Configuracion bloque Write Analog
 
+| **Función**                        | **Descripción**                                                                |
+| ---------------------------------- | ------------------------------------------------------------------------------ |
+| Enviar señal de control            | Transmite una señal analógica (como la salida de un PID) hacia el actuador.    |
+| Selección de canal                 | Permite especificar el canal analógico a utilizar (ej. canal 0 para el motor). |
+| Configuración de voltaje de salida | Define el rango de voltaje permitido (ej. ±5V o ±10V según la planta).         |
+| Interfaz hardware-software         | Sirve como puente entre la lógica del modelo y la acción física en el sistema. |
+               
+Para que el bloque HIL Write Analog funcione correctamente, es fundamental que el nombre del dispositivo coincida exactamente con el utilizado en los demás bloques de hardware (como el HIL Initialize o el HIL Read Encoder). Esta coherencia asegura que todos los bloques estén asociados al mismo hardware y se logre una comunicación efectiva.
+
+Además, se debe configurar el canal analógico correspondiente. En este caso, solo se utiliza un canal, que será el encargado de enviar la señal de voltaje al motor del QUBE-Servo 2. Finalmente, es importante ajustar el tiempo de muestreo (sample time) del bloque, el cual debe estar alineado con el definido para el resto del modelo y con la tasa de simulación deseada.
+
+![image](https://github.com/user-attachments/assets/f5f2ad9b-d420-497d-9db9-62ec21da56f3)
+
+Figura 9. Configuracion HIL Write Analog
 
 ## 6. Bibliografía
 
