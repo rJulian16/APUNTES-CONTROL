@@ -139,4 +139,34 @@ $$i = \frac{Z}{n}$$
 - \( Z \): número de dientes de la rueda dentada 
 - \( n \): número de principios o hilos del tornillo (normalmente 1, 2 o más)
 
+📚 Ejercicio 1:
 
+Un motor eléctrico gira a 1500 RPM y está conectado a un sistema tornillo sin fin–rueda dentada.
+El tornillo es mono-hilo (1 entrada) y la rueda dentada tiene 45 dientes.
+¿Cuál será la velocidad de salida (RPM) de la rueda dentada?
+
+**Paso 1:** Calcular la relación de transmisión:
+
+$$i = \frac{Z}{n} = \frac{45}{1} = 45$$
+
+**Paso 2:** Calcular la velocidad de salida:
+
+$$N_{\text{salida}} = \frac{N_{\text{entrada}}}{i} = \frac{1500}{45} = 33.33 \text{ RPM}$$
+
+La rueda dentada girará a **33.33 RPM**.
+
+📚 Ejercicio 2:
+
+Un sistema tornillo sin fin debe reducir la velocidad de un motor de 1800 RPM a una salida de 60 RPM.  
+El tornillo tiene 3 hilos.  
+¿Cuántos dientes debe tener la rueda dentada para lograr esa reducción?
+
+Paso 1: Calcular la relación de transmisión requerida:
+
+$$i = \frac{N_{\text{entrada}}}{N_{\text{salida}}} = \frac{1800}{60} = 30$$
+
+Paso 2: Calcular el número de dientes de la rueda:
+
+$$Z = i \cdot n = 30 \cdot 3 = 90 \text{ dientes}$$
+
+La rueda dentada debe tener 90 dientes.
