@@ -156,7 +156,7 @@ Recordar que esta respuesta es sin ninguna perturbacion y sin pendulo, estos y m
 
 Antes de comenzar a implementar el control sobre el QUBE-Servo 2, es necesario estructurar correctamente el modelo en Simulink para que pueda interactuar con el hardware. Este desarrollo parte de una configuración básica que garantice la comunicación con la planta, la lectura de sensores y el envío de señales de control. A partir de aquí, se incorporan bloques esenciales que permiten construir el lazo de control en tiempo real. El primer paso es establecer la conexión entre el entorno de Simulink y el QUBE-Servo 2 a través del bloque HIL Initialize, que se encarga de activar la tarjeta de interfaz y preparar el sistema para recibir y enviar datos durante la simulación.
 
-![image](https://github.com/user-attachments/assets/a001479a-9269-4761-b1ec-9ab272417d40)
+![image](https://github.com/user-attachments/assets/ccab7348-3ee1-4e23-8817-63c2aeb816d3)
 
 Figura 7. HIL Initialize
 
