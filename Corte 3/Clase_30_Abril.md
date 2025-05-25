@@ -105,6 +105,11 @@ Es un tipo de tornillo guía que utiliza bolas de acero entre el tornillo y la t
 
 - Actuadores lineales rápidos y eficientes
 
+![image](https://github.com/user-attachments/assets/92b9a89e-61cf-4f37-a892-37d524bb153e)
+
+Figura 5. Tornillo sin fin con recirculacion de bolas
+
+
 | Característica             | Rosca Directa (Fricción)    | Recirculación de Bolas         |
 | -------------------------- | --------------------------- | ------------------------------ |
 | **Eficiencia**             | Baja (\~20–40%)             | Alta (\~85–95%)                |
