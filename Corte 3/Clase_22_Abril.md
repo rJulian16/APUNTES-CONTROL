@@ -92,6 +92,21 @@ Figura 4. Gemelos digitales.
 | **Aero**              | Encoders en ambos ejes, tacómetros | Ángulo de elevación, ángulo de guiñada | Control de orientación y estabilidad dinámica    |
 | **Ball and Beam**     | Sensor de posición lineal          | Posición de la bola sobre la viga      | Mantener la bola estable en una posición deseada |
 
+### 2.3 Qube 2 - DC Motor
+
+El QUBE-Servo 2 es una planta didáctica desarrollada por Quanser que permite explorar conceptos de control en sistemas electromecánicos. Está compuesta por:
+
+**Motor DC**: Actúa como actuador principal.
+
+**Cargas intercambiables**: Como el brazo rotatorio y el péndulo invertido.
+
+**Sensores**: Encoders para medir posición y velocidad.
+
+**Interfaz USB**: Para comunicación con el computador mediante QUARC y Simulink.
+
+![image](https://github.com/user-attachments/assets/e4d37ac8-0e78-451d-b4dc-8289e6804c7b)
+
+Figura 5. Qube 2.
 
 ## 6. Bibliografía
 
