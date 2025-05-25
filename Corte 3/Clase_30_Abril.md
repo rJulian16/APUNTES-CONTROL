@@ -289,3 +289,32 @@ $$
 
 Tuvo una velocidad lineal de $$1 m / s$$
 
+📚 Ejercicio 5: Cálculo del cabeceo del tornillo
+
+Una cápsula se desplaza a una velocidad lineal de  
+$$\dot{x} = 0.5 \, \text{m/s}$$  
+cuando el motor gira a una velocidad angular de  
+$$\dot{\theta} = 12.57 \, \text{rad/s}$$.  
+¿Cuál es el **cabeceo** del tornillo guía?
+
+**Datos:**
+
+- $$\dot{x} = 0.5 \, \text{m/s}$$  
+- $$\dot{\theta} = 12.57 \, \text{rad/s}$$
+
+**Relación:**
+
+$$
+\frac{\dot{\theta}}{\dot{x}} = 2\pi p
+\Rightarrow 
+p = \frac{\dot{\theta}}{2\pi \dot{x}}
+$$
+
+$$
+p = \frac{12.57}{2\pi \cdot 0.5} = \frac{12.57}{3.1416} = 4 \, \text{rev/m}
+$$
+
+- Resultado:
+
+El cabeceo del tornillo es de  
+$$p = 4 \, \text{rev/m}$$
