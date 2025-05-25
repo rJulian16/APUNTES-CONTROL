@@ -215,6 +215,9 @@ Además, se debe configurar el canal analógico correspondiente. En este caso, s
 
 Figura 9. Configuracion HIL Write Analog
 
+
+
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
