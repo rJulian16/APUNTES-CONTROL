@@ -240,3 +240,22 @@ $$\text{Avance} = 0.125 \ \text{m/rev} \times 25 = 3.125 \ \text{m}$$
 
 - **Paso (Lead):** \( 0.125 \ \text{m/rev} \)
 - **Avance en 25 revoluciones:** \( 3.125 \ \text{m} \)
+
+
+Las ecuaciones describen la relación entre el desplazamiento angular del tornillo (\( \Delta \theta \)) y el desplazamiento lineal de la cápsula (\( \Delta x \)):
+
+$$\Delta \theta = 2\pi p \Delta x$$
+
+$$\frac{\Delta \theta}{\Delta t} = 2\pi p \frac{\Delta x}{\Delta t}$$
+
+Donde:
+
+- \( \frac{\Delta \theta}{\Delta t} = \dot{\theta} \): **Velocidad angular del motor** (rad/s o rpm).
+- \( \frac{\Delta x}{\Delta t} = \dot{x} \): **Velocidad lineal de la carga** (m/s).
+
+- Relación de transmisión:
+
+$$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
+
+
+
