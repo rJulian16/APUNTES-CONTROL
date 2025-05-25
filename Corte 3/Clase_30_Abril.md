@@ -258,5 +258,42 @@ $$\frac{\Delta x}{\Delta t} = \dot{x} \quad \text{: Velocidad lineal de la carga
 
 $$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
 
+📚 Ejercicio 4: Relación entre velocidad angular y lineal
+
+Un tornillo guía tiene un cabeceo de \( p = 4 \, \text{rev/m} \). 
+Si el motor gira a una velocidad angular de \( \dot{\theta} = 25.13 \, \text{rad/s} \),  
+¿cuál es la velocidad lineal de desplazamiento de la cápsula?
+
+
+**Datos:**
+
+- \( p = 4 \, \text{rev/m} \)  
+- \( \dot{\theta} = 25.13 \, \text{rad/s} \)
+
+---
+
+**Fórmula:**
+
+$$
+\frac{\dot{\theta}}{\dot{x}} = 2\pi p
+\Rightarrow 
+\dot{x} = \frac{\dot{\theta}}{2\pi p}
+$$
+
+---
+
+**Sustitución:**
+
+$$
+\dot{x} = \frac{25.13}{2\pi \cdot 4} = \frac{25.13}{25.13} = 1 \, \text{m/s}
+$$
+
+---
+
+**Resultado:**
+
+$$
+\dot{x} = 1 \, \text{m/s}
+$$
 
 
