@@ -150,6 +150,9 @@ Donde como respuesta se obtiene:
 
 Figura 6. Ejercicio 1 scope.
 
+Recordar que esta respuesta es sin ninguna perturbacion y sin pendulo, estos y mas aspectos ya en proximos ejercicios se deben de tener en cuenta ya que en un sistema, no todo puede salir perfecto y siempre se van a tener que considerar mas aspectos.
+
+
 
 
 ## 6. Bibliografía
