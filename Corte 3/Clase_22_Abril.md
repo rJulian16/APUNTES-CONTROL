@@ -219,6 +219,7 @@ Figura 9. Configuracion HIL Write Analog
 
 Figura 10. Funcionamiento
 
+### 4.3 HIL Read Analog y Read Timebase
 
 ## 6. Bibliografía
 
