@@ -123,7 +123,7 @@ A continuación, se presentan algunos parámetros típicos del QUBE-Servo 2:
 
 Tabla 3. Parametros de Qube 2.
 
-📚Ejemplo 1:
+📚Ejercicio 1:
 
 Queremos que el motor DC del QUBE-Servo 2 siga una velocidad angular deseada de forma rápida y precisa. Para esto, se utilizará un controlador PID clásico en un lazo de retroalimentación.
 
@@ -293,6 +293,29 @@ Un bloque Switch o Enabled Subsystem para desactivar la señal al actuador.
 ![image](https://github.com/user-attachments/assets/90b7d38c-d4d0-462a-bfc3-45a00de8435c)
 
 Figura 12. Stall Monitor
+
+📚Ejercicio 2:
+
+Considere el sistema del Qube 2 de Quanser. Si se aplica una señal de entrada en escalón con amplitud 0.3 al motor del sistema, determine:
+
+- ¿Cuál es la corriente máxima que circula por el motor?
+
+- ¿Cuál es la velocidad angular máxima en radianes por segundo que alcanza el sistema?
+
+Para ellos vamos a realizar el siguiente diagrama de bloques:
+
+![image](https://github.com/user-attachments/assets/a26655af-4132-407e-b3ca-50a6435ba60a)
+
+Figura 13. Bloques ejercicio 2
+
+Con el análisis realizado y al aplicar una señal en forma de escalón de 0.3 al sistema Qube 2, se pudieron obtener estimaciones tanto de la corriente que pasa por el motor como de la velocidad con la que este gira una vez se estabiliza.
+
+Corriente: se calculó un valor aproximado de 0.007 amperios (7 miliamperios).
+Esta cantidad de corriente es muy pequeña, lo cual tiene sentido, ya que el sistema está diseñado para funcionar de manera eficiente y con bajo consumo eléctrico, especialmente en condiciones donde no hay mucha carga o resistencia.
+
+Velocidad angular: el motor alcanza aproximadamente 2.7 radianes por segundo.
+Esto significa que, después de un breve momento inicial, el motor gira de forma estable a esa velocidad. Aunque no es una velocidad muy alta, sí es suficiente para representar un movimiento claro y constante en el sistema. Además, este resultado muestra cómo el sistema encuentra un equilibrio entre la fuerza que entrega el motor y la resistencia que tiene que vencer, como la fricción o la fuerza contraria generada por el mismo giro del eje.
+
 
 ## 6. Bibliografía
 
