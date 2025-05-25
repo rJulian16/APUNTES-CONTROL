@@ -242,16 +242,17 @@ $$\text{Avance} = 0.125 \ \text{m/rev} \times 25 = 3.125 \ \text{m}$$
 - **Avance en 25 revoluciones:** \( 3.125 \ \text{m} \)
 
 
-Las ecuaciones describen la relación entre el desplazamiento angular del tornillo (\( \Delta \theta \)) y el desplazamiento lineal de la cápsula (\( \Delta x \)):
+Las ecuaciones describen la relación entre el desplazamiento angular del tornillo y el desplazamiento lineal de la cápsula:
 
 $$\Delta \theta = 2\pi p \Delta x$$
 
-$$\frac{\Delta \theta}{\Delta t} = 2\pi p \frac{\Delta x}{\Delta t}$$
+$$\frac{\Delta \theta}{\Delta t} = 2\pi}$$
 
 Donde:
 
-- \( \frac{\Delta \theta}{\Delta t} = \dot{\theta} \): **Velocidad angular del motor** (rad/s o rpm).
-- \( \frac{\Delta x}{\Delta t} = \dot{x} \): **Velocidad lineal de la carga** (m/s).
+$$\frac{\Delta \theta}{\Delta t} = \dot{\theta} \quad \text{: Velocidad angular del motor (rad/s o rpm).}$$
+
+$$\frac{\Delta x}{\Delta t} = \dot{x} \quad \text{: Velocidad lineal de la carga (m/s).}$$
 
 - Relación de transmisión:
 
