@@ -136,5 +136,7 @@ $$i = \frac{Z}{n}$$
 **Donde:**
 
 - \( i \): relación de transmisión  
-- \( Z \): número de dientes de la **rueda dentada**  
-- \( n \): número de **principios** o **hilos** del tornillo (normalmente 1, 2 o más)
+- \( Z \): número de dientes de la rueda dentada 
+- \( n \): número de principios o hilos del tornillo (normalmente 1, 2 o más)
+
+
