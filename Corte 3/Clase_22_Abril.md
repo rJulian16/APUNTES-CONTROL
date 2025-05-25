@@ -344,11 +344,34 @@ Durante los intervalos en los que el sistema está activo (cuando el pulso está
 
 En los intervalos en los que la señal cae a cero (pulso en 0V), el sistema detiene su movimiento gradualmente y la corriente disminuye hasta un valor mínimo aproximado de 0.00010 amperios (0.1 mA), reflejando prácticamente un estado de reposo.
 
+![image](https://github.com/user-attachments/assets/3db94404-db84-4386-95ce-854152915bc7)
+
+Figura 15. Corriente del ejercicio 3.
+
 - En cuanto a la velocidad angular del motor, se observó una respuesta típica de encendido y apagado por ciclos:
 
 Durante los periodos en los que el pulso está en 1V, el motor acelera hasta alcanzar una velocidad máxima de aproximadamente 11.15 radianes por segundo.
 
 Al desactivarse la señal (0V), la velocidad angular disminuye progresivamente hasta detenerse casi por completo, como consecuencia de la fricción y la ausencia de torque.
+
+![image](https://github.com/user-attachments/assets/615dc588-d78f-4066-8e8e-f45c926e5860)
+
+Figura 16. velocidad del ejercicio 3.
+
+📚Ejercicio 4:
+
+Como continuación del ejercicio anterior, se propone analizar el comportamiento del encoder del Qube 2, el cual mide la posición angular del eje. ¿Cómo evoluciona esta posición a lo largo del tiempo y qué comportamiento presenta durante los intervalos en los que el motor no recibe señal de entrada?
+
+Para realizar esta observación, se añade una nueva salida en el bloque HIL Read Timebase, seleccionando el encoder 0 como canal de lectura. Esta señal se conecta a un bloque Scope con el fin de visualizar la evolución de la posición angular del eje durante la simulación.
+
+![image](https://github.com/user-attachments/assets/8ab438ee-5981-4eb6-a4f8-ea291ee74a97)
+
+Figura 17. encoder del ejercicio 4.
+
+Se puede observar que el sistema tiene un comportamiento acumulativo, es decir, la posición medida por el encoder va aumentando mientras el motor está en movimiento. Este aumento se detiene durante los momentos en los que el sistema no recibe señal y se queda quieto. En la gráfica, esto se nota porque la curva sube cuando el motor está activo y se mantiene plana cuando está apagado, lo que confirma que la posición depende del tiempo en que el motor está funcionando.
+
+
+
 
 ## 6. Bibliografía
 
