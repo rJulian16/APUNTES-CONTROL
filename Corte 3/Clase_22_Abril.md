@@ -123,7 +123,7 @@ A continuación, se presentan algunos parámetros típicos del QUBE-Servo 2:
 
 Tabla 3. Parametros de Qube 2.
 
-📚Ejercicio 1:
+📚Ejemplo 1:
 
 Queremos que el motor DC del QUBE-Servo 2 siga una velocidad angular deseada de forma rápida y precisa. Para esto, se utilizará un controlador PID clásico en un lazo de retroalimentación.
 
