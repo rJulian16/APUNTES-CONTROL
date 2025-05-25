@@ -177,7 +177,7 @@ El primer paso es establecer la conexión entre el entorno de Simulink y el QUBE
 
 Figura 7. HIL Initialize
 
-#### 4.1.1. Configuracion bloque HIL Initialize
+**Configuracion bloque HIL Initialize**
 
 ![image](https://github.com/user-attachments/assets/ddf522d7-1d07-4f76-b663-6a60fabf678d)
 
@@ -211,7 +211,7 @@ El bloque HIL Write Analog es fundamental dentro del lazo de control, ya que per
 
 Este bloque se conecta comúnmente a la salida del controlador (por ejemplo, un PID) y actúa como la interfaz que traduce la lógica del modelo a una acción física en la planta.
 
-#### 4.2.1. Configuracion bloque Write Analog
+**Configuracion bloque Write Analog**
 
 | **Función**                        | **Descripción**                                                                |
 | ---------------------------------- | ------------------------------------------------------------------------------ |
