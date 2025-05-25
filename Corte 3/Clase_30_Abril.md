@@ -220,7 +220,6 @@ Calcula:
 2. ¿Cuánto avanzará la cápsula si el tornillo gira 25 revoluciones?
 
 - Solucion:
-- 
 Sabemos que:
 
 $$\text{Lead} = \frac{1}{p}$$
