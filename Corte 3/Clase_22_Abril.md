@@ -185,6 +185,9 @@ Una primera cosa que se debe tener en cuenta esque vamos a tener en el espacio d
 
 Una vez se completan las configuraciones principales del modelo, se procede a ejecutar la simulación. Durante este proceso, es importante verificar que la banda superior de la ventana de Simulink se ilumine en color verde, lo cual indica que la comunicación entre Simulink y el hardware de Quanser se ha establecido correctamente. Este color confirma que el modelo está corriendo en tiempo real y que el sistema está listo para interactuar con la planta física.
 
+> 🔎 Nota:
+Si la banda aparece en rojo, significa que ocurrió un error crítico y la simulación no ha iniciado. Si aparece en amarillo, suele indicar advertencias relacionadas con la compilación o la conexión con el hardware. En ambos casos, se recomienda revisar los parámetros del bloque HIL Initialize, la selección del dispositivo y los canales activos.
+
 ![image](https://github.com/user-attachments/assets/a163f038-d65e-4b6b-8b9b-8ccfe00a5273)
 
 Figura 8. Comunicacion activada
