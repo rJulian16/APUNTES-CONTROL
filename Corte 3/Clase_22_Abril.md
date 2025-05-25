@@ -322,7 +322,7 @@ Se desea analizar el comportamiento dinámico del sistema Qube 2 de Quanser cuan
 
 Amplitud: 1 voltio
 
-Periodo total: 10 segundos
+Periodo total: 5 segundos
 
 Ciclo útil (duty cycle): 50%
 
