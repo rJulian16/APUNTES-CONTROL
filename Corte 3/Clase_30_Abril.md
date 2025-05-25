@@ -200,7 +200,7 @@ La rueda dentada debe tener 90 dientes.
 
 Es el número de revoluciones que debe dar el tornillo para que la cápsula (o tuerca) se desplace 1 metro (o 1 pulgada en sistema inglés).
 
-- **Unidad:**  
+- Unidad:
   $$p \ (\text{revoluciones por metro, rev/m})$$
 
 - **Paso(Lead)**
@@ -211,7 +211,29 @@ Es la distancia lineal que avanza la cápsula por cada revolución completa del 
 
 $$\text{Lead} = \frac{1}{p}$$
 
-Donde:  
-- \( \text{Lead} \): paso, en metros/rev (o pulgadas/rev)  
-- \( p \): cabeceo, en rev/m
+📚 Ejercicio 3: Relación entre Cabeceo y Paso
 
+Un tornillo tiene un cabeceo de \( p = 8 \ \text{rev/m} \).  
+Calcula:
+
+1. El paso del tornillo en metros por revolución.  
+2. ¿Cuánto avanzará la cápsula si el tornillo gira 25 revoluciones?
+
+- Solucion:
+- 
+Sabemos que:
+
+$$\text{Lead} = \frac{1}{p}$$
+
+Reemplazando:
+
+$$\text{Lead} = \frac{1}{8} = 0.125 \ \text{m/rev}$$
+
+Multiplicamos el paso por el número de revoluciones:
+
+$$\text{Avance} = \text{Lead} \times \text{revs}$$
+
+$$\text{Avance} = 0.125 \ \text{m/rev} \times 25 = 3.125 \ \text{m}$$
+
+- **Paso (Lead):** \( 0.125 \ \text{m/rev} \)
+- **Avance en 25 revoluciones:** \( 3.125 \ \text{m} \)
