@@ -183,6 +183,12 @@ Una primera cosa que se debe tener en cuenta esque vamos a tener en el espacio d
 
 - @tcpip://localhost:18920
 
+Una vez se completan las configuraciones principales del modelo, se procede a ejecutar la simulación. Durante este proceso, es importante verificar que la banda superior de la ventana de Simulink se ilumine en color verde, lo cual indica que la comunicación entre Simulink y el hardware de Quanser se ha establecido correctamente. Este color confirma que el modelo está corriendo en tiempo real y que el sistema está listo para interactuar con la planta física.
+
+![image](https://github.com/user-attachments/assets/a163f038-d65e-4b6b-8b9b-8ccfe00a5273)
+
+Figura 8. Comunicacion activada
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
