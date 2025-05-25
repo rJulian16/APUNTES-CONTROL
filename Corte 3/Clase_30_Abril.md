@@ -127,7 +127,26 @@ Figura 5. Tornillo sin fin con recirculacion de bolas
 
 Tabla 2. Comparacion rosca directa vs recirculacion de bolas
 
-## 3. Relacion de trasmision basica
+## 3. Backlash
+
+El backlash, también conocido como juego mecánico o holgura, es el pequeño espacio o movimiento libre entre los dientes de dos elementos engranados, como un tornillo sin fin y una rueda dentada o entre engranajes rectos.
+
+Se debe principalmente a:
+
+- Tolerancias de fabricación
+- Necesidad de lubricación entre las superficies  
+- Desgaste natural del sistema con el uso  
+- Evitar que los dientes se bloqueen por expansión térmica o por sobrecarga
+
+| Efecto                  | Descripción                                                                    |
+|-------------------------|-----------------------------------------------------------------------------   |
+| Pérdida de precisión | Especialmente crítico en sistemas de control, CNC, robótica o servoactuadores     |
+| Juego en reversa     | Cuando se invierte el sentido de giro, hay un "retardo" antes del movimiento real |
+| Ruido y vibraciones  | Si es excesivo, puede causar golpeteo entre dientes                               |
+
+Tabla 3. Efectos del backlash
+
+## 4. Relacion de trasmision basica
 
 La relación de transmisión depende del número de hilos (o entradas) del tornillo y del número de dientes de la rueda dentada.
 
@@ -170,3 +189,4 @@ Paso 2: Calcular el número de dientes de la rueda:
 $$Z = i \cdot n = 30 \cdot 3 = 90 \text{ dientes}$$
 
 La rueda dentada debe tener 90 dientes.
+
