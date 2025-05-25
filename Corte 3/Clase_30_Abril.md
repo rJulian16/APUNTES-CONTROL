@@ -76,3 +76,31 @@ Figura 3. Tornillo sin fin con rosca cuadrada
 | **Aplicaciones comunes**     | Equipos de transmisión estándar | Aplicaciones de alta precisión       |
 
 Tabla 1. Comparacion trapezoidal vs cuadrada
+
+#### 2.1.3 Tornillo de rosca directa
+
+**Definición:**
+
+También conocido como tornillo de fricción, es un tornillo guía tradicional en el que la tuerca desliza directamente sobre la rosca del tornillo. El contacto es metal contra metal, sin elementos intermedios.
+
+**Usos comunes:**
+
+- Sistemas simples de posicionamiento
+
+- Ajustes manuales en maquinaria
+
+- Donde se requiere autobloqueo y bajo costo
+
+#### 2.1.4 Tornillo con recirculación de bolas (Ball Screw)
+
+**Definición:**
+
+Es un tipo de tornillo guía que utiliza bolas de acero entre el tornillo y la tuerca. Estas bolas circulan dentro de un canal cerrado (recirculación), lo que reduce la fricción y mejora la eficiencia del sistema.
+
+**Usos comunes:**
+
+- Máquinas CNC y robótica
+
+- Impresoras 3D de alta precisión
+
+- Actuadores lineales rápidos y eficientes
