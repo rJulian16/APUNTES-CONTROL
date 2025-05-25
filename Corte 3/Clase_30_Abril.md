@@ -213,13 +213,13 @@ $$\text{Lead} = \frac{1}{p}$$
 
 📚 Ejercicio 3: Relación entre Cabeceo y Paso
 
-Un tornillo tiene un cabeceo de \( p = 8 \ \text{rev/m} \).  
-Calcula:
+Un tornillo tiene un cabeceo de $$p = 8 rev / m$$. Calcula:
 
 1. El paso del tornillo en metros por revolución.  
 2. ¿Cuánto avanzará la cápsula si el tornillo gira 25 revoluciones?
 
 - Solucion:
+
 Sabemos que:
 
 $$\text{Lead} = \frac{1}{p}$$
