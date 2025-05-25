@@ -126,3 +126,15 @@ Figura 5. Tornillo sin fin con recirculacion de bolas
 | **Usos comunes**           | Sistemas manuales y simples | CNC, robótica, automatización  |
 
 Tabla 2. Comparacion rosca directa vs recirculacion de bolas
+
+## 3. Relacion de trasmision basica
+
+La relación de transmisión depende del número de hilos (o entradas) del tornillo y del número de dientes de la rueda dentada.
+
+$$i = \frac{Z}{n}$$
+
+**Donde:**
+
+- \( i \): relación de transmisión  
+- \( Z \): número de dientes de la **rueda dentada**  
+- \( n \): número de **principios** o **hilos** del tornillo (normalmente 1, 2 o más)
