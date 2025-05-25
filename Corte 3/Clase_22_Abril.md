@@ -92,7 +92,9 @@ Figura 4. Gemelos digitales.
 | **Aero**              | Encoders en ambos ejes, tacómetros | Ángulo de elevación, ángulo de guiñada | Control de orientación y estabilidad dinámica    |
 | **Ball and Beam**     | Sensor de posición lineal          | Posición de la bola sobre la viga      | Mantener la bola estable en una posición deseada |
 
-### 2.3 Qube 2 - DC Motor
+Tabla 2. Comparacion de gemelos digitales.
+
+## 3 Qube 2 - DC Motor
 
 El QUBE-Servo 2 es una planta didáctica desarrollada por Quanser que permite explorar conceptos de control en sistemas electromecánicos. Está compuesta por:
 
@@ -107,6 +109,19 @@ El QUBE-Servo 2 es una planta didáctica desarrollada por Quanser que permite ex
 ![image](https://github.com/user-attachments/assets/e4d37ac8-0e78-451d-b4dc-8289e6804c7b)
 
 Figura 5. Qube 2.
+
+### 3.1 Parametros del sistema
+
+A continuación, se presentan algunos parámetros típicos del QUBE-Servo 2:
+| Parámetro             | Símbolo | Valor Típico         | Unidad  |
+| --------------------- | ------- | -------------------- | ------- |
+| Resistencia del motor | $R$     | 8.4                  | Ω       |
+| Constante de torque   | $K_t$   | 0.042                | Nm/A    |
+| Constante de back-EMF | $K_e$   | 0.042                | V·s/rad |
+| Inercia del rotor     | $J$     | $4.0 \times 10^{-6}$ | kg·m²   |
+| Inductancia del motor | $L$     | 1.16                 | mH      |
+
+Tabla 3. Parametros de Qube 2.
 
 ## 6. Bibliografía
 
