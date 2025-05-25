@@ -215,6 +215,7 @@ Además, se debe configurar el canal analógico correspondiente. En este caso, s
 
 Figura 9. Configuracion HIL Write Analog
 
+Corte 3/Imagenes/hola.gif.gif
 
 
 
