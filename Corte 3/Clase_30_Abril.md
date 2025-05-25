@@ -194,3 +194,24 @@ $$Z = i \cdot n = 30 \cdot 3 = 90 \text{ dientes}$$
 
 La rueda dentada debe tener 90 dientes.
 
+### 4.1 Relacion de trasmision cabeceo-paso
+
+- **Cabeceo(Pitch)**
+
+Es el número de revoluciones que debe dar el tornillo para que la cápsula (o tuerca) se desplace 1 metro (o 1 pulgada en sistema inglés).
+
+- **Unidad:**  
+  $$p \ (\text{revoluciones por metro, rev/m})$$
+
+- **Paso(Lead)**
+
+Es la distancia lineal que avanza la cápsula por cada revolución completa del tornillo.
+
+- Relación entre Paso y Cabeceo:
+
+$$\text{Lead} = \frac{1}{p}$$
+
+Donde:  
+- \( \text{Lead} \): paso, en metros/rev (o pulgadas/rev)  
+- \( p \): cabeceo, en rev/m
+
