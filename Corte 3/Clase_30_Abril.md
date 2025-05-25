@@ -238,15 +238,15 @@ $$\text{Avance} = \text{Lead} \times \text{rev}$$
 
 $$\text{Avance} = 0.125 \ \text{m/rev} \times 25 = 3.125 \ \text{m}$$
 
-- **Paso (Lead):** \( 0.125 \ \text{m/rev} \)
-- **Avance en 25 revoluciones:** \( 3.125 \ \text{m} \)
+- **Paso (Lead):** 0.125 m/rev.
+- **Avance en 25 revoluciones:** 3.125 m.
 
 
 Las ecuaciones describen la relación entre el desplazamiento angular del tornillo y el desplazamiento lineal de la cápsula:
 
 $$\Delta \theta = 2\pi p \Delta x$$
 
-$$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
+$$\frac{\dot{Delta \theta}}{Delta \dot{x}} = 2\pi p$$
 
 Donde:
 
