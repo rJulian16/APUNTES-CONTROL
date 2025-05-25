@@ -207,6 +207,8 @@ Este bloque se conecta comúnmente a la salida del controlador (por ejemplo, un 
 | Configuración de voltaje de salida | Define el rango de voltaje permitido (ej. ±5V o ±10V según la planta).         |
 | Interfaz hardware-software         | Sirve como puente entre la lógica del modelo y la acción física en el sistema. |
                
+Tabla 4. Funciones Write Analog
+
 Para que el bloque HIL Write Analog funcione correctamente, es fundamental que el nombre del dispositivo coincida exactamente con el utilizado en los demás bloques de hardware (como el HIL Initialize o el HIL Read Encoder). Esta coherencia asegura que todos los bloques estén asociados al mismo hardware y se logre una comunicación efectiva.
 
 Además, se debe configurar el canal analógico correspondiente. En este caso, solo se utiliza un canal, que será el encargado de enviar la señal de voltaje al motor del QUBE-Servo 2. Finalmente, es importante ajustar el tiempo de muestreo (sample time) del bloque, el cual debe estar alineado con el definido para el resto del modelo y con la tasa de simulación deseada.
@@ -260,6 +262,7 @@ Para facilitar la comprensión de las distintas opciones disponibles en el bloqu
 |                     | Canal 2      | Motor Stall Error        | Señal de error persistente por atasco del motor.                           |
 | Other Channel       | Canal 0      | Tachometer               | Mide la velocidad angular del motor (derivada de la posición).             |
 
+Tabla 5. Funciones Read Timebase
 
 ## 6. Bibliografía
 
