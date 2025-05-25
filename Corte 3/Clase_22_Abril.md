@@ -152,8 +152,13 @@ Figura 6. Ejercicio 1 scope.
 
 Recordar que esta respuesta es sin ninguna perturbacion y sin pendulo, estos y mas aspectos ya en proximos ejercicios se deben de tener en cuenta ya que en un sistema, no todo puede salir perfecto y siempre se van a tener que considerar mas aspectos.
 
+## 4. Simulink
 
+Antes de comenzar a implementar el control sobre el QUBE-Servo 2, es necesario estructurar correctamente el modelo en Simulink para que pueda interactuar con el hardware. Este desarrollo parte de una configuración básica que garantice la comunicación con la planta, la lectura de sensores y el envío de señales de control. A partir de aquí, se incorporan bloques esenciales que permiten construir el lazo de control en tiempo real. El primer paso es establecer la conexión entre el entorno de Simulink y el QUBE-Servo 2 a través del bloque HIL Initialize, que se encarga de activar la tarjeta de interfaz y preparar el sistema para recibir y enviar datos durante la simulación.
 
+![image](https://github.com/user-attachments/assets/a001479a-9269-4761-b1ec-9ab272417d40)
+
+Figura 7. HIL Initialize
 
 ## 6. Bibliografía
 
