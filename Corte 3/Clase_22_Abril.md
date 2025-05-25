@@ -302,6 +302,8 @@ Un bloque Switch o Enabled Subsystem para desactivar la señal al actuador.
 
 Figura 12. Stall Monitor
 
+## 5. Otros Ejercicios
+
 📚Ejercicio 2:
 
 Considere el sistema del Qube 2 de Quanser. Si se aplica una señal de entrada en escalón con amplitud 0.3 al motor del sistema, determine:
@@ -379,8 +381,35 @@ Figura 17. encoder del ejercicio 4.
 Se puede observar que el sistema tiene un comportamiento acumulativo, es decir, la posición medida por el encoder va aumentando mientras el motor está en movimiento. Este aumento se detiene durante los momentos en los que el sistema no recibe señal y se queda quieto. En la gráfica, esto se nota porque la curva sube cuando el motor está activo y se mantiene plana cuando está apagado, lo que confirma que la posición depende del tiempo en que el motor está funcionando.
 
 
+## 6. Conclusiones
+
+- La integración de hardware Quanser con Simulink y QUARC permite establecer una comunicación en tiempo real mediante protocolos HIL (Hardware-in-the-Loop), lo que posibilita la implementación, simulación y validación simultánea de algoritmos de control directamente en la planta física o en su gemelo digital, minimizando latencias y garantizando que las respuestas del sistema sean coherentes y reproducibles bajo condiciones controladas.
+
+- El uso de QLabs junto con Simulink y QUARC posibilita el diseño, simulación y prueba de diferentes estrategias de control, desde controladores clásicos como PID, hasta controladores más avanzados como LQR, adaptativos y multivariables. Esta flexibilidad permite abordar sistemas con diversas características dinámicas, incluyendo sistemas multivariables acoplados y sistemas no lineales, facilitando la experimentación con diferentes enfoques sin necesidad de reconfigurar el hardware.
+
+- La configuración precisa y correcta de los bloques de hardware en Simulink, especialmente HIL Initialize y HIL Write Analog, es fundamental para establecer un canal estable y de baja latencia entre el controlador implementado y la planta física o virtual. Una configuración incorrecta puede derivar en errores de sincronización, pérdida de datos, señales inconsistentes o comportamiento inestable, comprometiendo la validez de las pruebas de control y la integridad del sistema.
+
+- Los gemelos digitales desarrollados en QLabs proporcionan modelos dinámicos tridimensionales que replican con alta fidelidad el comportamiento físico de la planta, permitiendo a los usuarios realizar ensayos y ajustes de control en un entorno seguro y controlado. Esto reduce el desgaste del hardware real, evita riesgos físicos durante pruebas potencialmente peligrosas y acelera el proceso de desarrollo y validación de estrategias de control.
+
+- La representación del motor DC mediante un modelo de primer orden caracterizado por una ganancia estática y una constante de tiempo ofrece un compromiso adecuado entre simplicidad y precisión para el diseño y ajuste inicial de controladores PID. Sin embargo, para aplicaciones industriales reales, es indispensable extender el modelo para incluir perturbaciones externas, efectos no lineales, fricción variable y cargas cambiantes, a fin de obtener un rendimiento robusto y confiable en condiciones operativas diversas.
+
+- Las herramientas de visualización en Simulink, como los scopes y gráficos en tiempo real, son esenciales para monitorear variables críticas del sistema, incluyendo estados internos y señales de control durante la ejecución de la simulación o del control en hardware. Esto facilita la sintonización iterativa de parámetros, la identificación de comportamientos inesperados y el análisis detallado de la dinámica del sistema, contribuyendo a una mejora continua en el diseño del controlador y la validación experimental.
 
 
-## 6. Bibliografía
+## 7. Bibliografía
 
-[1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
+[1] Quanser Inc., "Quanser QLabs Software," disponible en: https://www.quanser.com/qlabs-software/, consultado el 25 de mayo de 2025.
+
+[2] MathWorks, "Simulink - Simulation and Model-Based Design," disponible en: https://www.mathworks.com/products/simulink.html, consultado el 25 de mayo de 2025.
+
+[3] Quanser Inc., "QUARC Real-Time Control Software," disponible en: https://www.quanser.com/quarc/, consultado el 25 de mayo de 2025.
+
+[4] Quanser Inc., "Hardware-in-the-Loop (HIL) Control with Quanser Systems," disponible en: https://www.quanser.com/hil-control/, consultado el 25 de mayo de 2025.
+
+[5] Quanser Inc., "Digital Twins for Control Education," disponible en: https://www.quanser.com/digital-twins/, consultado el 25 de mayo de 2025.
+
+[6] R. C. Dorf y R. H. Bishop, Modern Control Systems, 13ª ed., Pearson, 2016.
+
+[7] K. Ogata, Modern Control Engineering, 5ª ed., Prentice Hall, 2010.
+
+[8] MathWorks, "Simulink Scopes and Data Visualization," disponible en: https://www.mathworks.com/help/simulink/ug/visualizing-simulation-data.html, consultado el 25 de mayo de 2025.
