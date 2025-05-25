@@ -23,3 +23,56 @@ La rueda dentada o corona: un engranaje circular cuyos dientes encajan con la ro
 Cuando el tornillo gira, su rosca empuja los dientes de la rueda dentada, haciendo que esta gire. A diferencia de los engranajes comunes, en este sistema solo el tornillo puede mover la rueda, pero no al revés, lo que lo hace ideal para aplicaciones donde se requiere autobloqueo (es decir, que el movimiento no se devuelva por sí solo).
 
 ![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/95a886188d245055c909f251f3c0262a91ed5216/Corte%203/Imagenes/tornillo.gif)
+
+Figura 1. Tornillo sin fin
+
+### 2.1 Tipos de Tornillo Guía
+
+En sistemas de transmisión lineal, se utilizan distintos tipos de roscas en los tornillos guía. Los más comunes en aplicaciones mecánicas son:
+
+#### 2.1.1 Tornillo de rosca trapezoidal
+
+**Definición:**
+Tiene una rosca con forma de trapecio. Su diseño permite una buena combinación entre eficiencia y resistencia, lo que lo hace adecuado para cargas moderadas y movimientos repetitivos.
+
+**Usos comunes:**
+
+- Husillos de mesas de máquinas-herramienta
+
+- Prensas mecánicas
+
+- Sistemas donde se necesita autobloqueo
+
+![image](https://github.com/user-attachments/assets/a28ed022-25dd-45fc-b21a-e445c3f58fed)
+
+Figura 2. Tornillo sin fin con rosca trapezoidal
+
+#### 2.1.2 Tornillo de rosca cuadrada
+
+**Definición:**
+Tiene una rosca con forma rectangular (cuadrada), lo que reduce el rozamiento durante el movimiento. Es más eficiente que el trapezoidal pero más difícil de fabricar.
+
+**Usos comunes:**
+
+- Prensas de alta precisión
+
+- Sistemas que requieren alta eficiencia mecánica
+
+- Aplicaciones donde no se necesita autobloqueo
+
+![image](https://github.com/user-attachments/assets/f236ff3a-7840-4beb-9444-8614ecfdff21)
+
+Figura 3. Tornillo sin fin con rosca cuadrada
+
+
+| Característica               | Rosca Trapezoidal               | Rosca Cuadrada                       |
+| ---------------------------- | ------------------------------- | ------------------------------------ |
+| **Forma del perfil**         | Trapecio                        | Cuadrado                             |
+| **Eficiencia mecánica**      | Media (\~30–40%)                | Alta (\~50–70%)                      |
+| **Autobloqueo**              | Sí (en la mayoría de casos)     | No (tiende a revertir el movimiento) |
+| **Facilidad de fabricación** | Alta                            | Baja (requiere más precisión)        |
+| **Resistencia al desgaste**  | Buena                           | Regular                              |
+| **Costo**                    | Menor                           | Mayor                                |
+| **Aplicaciones comunes**     | Equipos de transmisión estándar | Aplicaciones de alta precisión       |
+
+Tabla 1. Comparacion trapezoidal vs cuadrada
