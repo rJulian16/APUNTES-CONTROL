@@ -192,6 +192,14 @@ Si la banda aparece en rojo, significa que ocurrió un error crítico y la simul
 
 Figura 8. Comunicacion activada
 
+### 4.2 HIL Write Analog
+
+El bloque HIL Write Analog es fundamental dentro del lazo de control, ya que permite enviar señales analógicas desde el modelo de Simulink hacia el hardware del QUBE-Servo 2. Estas señales suelen representar los comandos de control, como una señal PWM para manejar el motor.
+
+Este bloque se conecta comúnmente a la salida del controlador (por ejemplo, un PID) y actúa como la interfaz que traduce la lógica del modelo a una acción física en la planta.
+
+
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
