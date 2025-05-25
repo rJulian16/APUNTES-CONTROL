@@ -316,6 +316,27 @@ Esta cantidad de corriente es muy pequeña, lo cual tiene sentido, ya que el sis
 Velocidad angular: el motor alcanza aproximadamente 2.7 radianes por segundo.
 Esto significa que, después de un breve momento inicial, el motor gira de forma estable a esa velocidad. Aunque no es una velocidad muy alta, sí es suficiente para representar un movimiento claro y constante en el sistema. Además, este resultado muestra cómo el sistema encuentra un equilibrio entre la fuerza que entrega el motor y la resistencia que tiene que vencer, como la fricción o la fuerza contraria generada por el mismo giro del eje.
 
+📚Ejercicio 3:
+
+Se desea analizar el comportamiento dinámico del sistema Qube 2 de Quanser cuando se le aplica una señal periódica como entrada. Para ello, se reemplaza la señal de entrada tipo escalón por un generador de pulsos configurado con las siguientes características:
+
+Amplitud: 1 voltio
+
+Periodo total: 10 segundos
+
+Ciclo útil (duty cycle): 50%
+
+Se busca determinar:
+
+¿Cuál es la corriente máxima que circula por el motor durante los intervalos en los que el generador entrega 1V?
+
+¿Cuál es la velocidad angular máxima (en rad/s) que alcanza el motor durante estos periodos activos?
+
+¿Cómo varía la corriente y la velocidad angular a lo largo del tiempo, especialmente durante los ciclos de encendido y apagado?
+
+
+
+
 
 ## 6. Bibliografía
 
