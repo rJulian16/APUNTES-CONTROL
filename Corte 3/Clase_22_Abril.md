@@ -234,6 +234,15 @@ Sample time: Debe coincidir con el tiempo de muestreo general de la simulación.
 
 >💡 Nota: Si no hay sensores analógicos activos en el sistema, este bloque no es necesario.
 
+#### 4.3.2 HIL Read Timebase
+
+El bloque HIL Read Timebase es esencial cuando se trabaja con lectura de encoders y control en tiempo real. Este bloque permite leer datos a intervalos de tiempo precisos, sincronizados con el hardware.
+
+**¿Para qué se usa?**
+Generalmente se utiliza para leer la posición y velocidad angular desde los encoders del QUBE-Servo 2.
+
+
+
 ## 6. Bibliografía
 
 [1] MathWorks, "Simscape Multibody," [En línea]. Disponible: https://la.mathworks.com/products/simscape.html. [Accedido: 06-Mar-2025].
