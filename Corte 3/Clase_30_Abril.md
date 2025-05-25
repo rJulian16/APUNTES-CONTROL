@@ -22,4 +22,4 @@ La rueda dentada o corona: un engranaje circular cuyos dientes encajan con la ro
 
 Cuando el tornillo gira, su rosca empuja los dientes de la rueda dentada, haciendo que esta gire. A diferencia de los engranajes comunes, en este sistema solo el tornillo puede mover la rueda, pero no al revés, lo que lo hace ideal para aplicaciones donde se requiere autobloqueo (es decir, que el movimiento no se devuelva por sí solo).
 
-![image]("https://github.com/rJulian16/APUNTES-CONTROL/blob/9d315384f82544077696760b5ded4976cc334c2d/Corte%203/Imagenes/tornillo.gif)
+![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/95a886188d245055c909f251f3c0262a91ed5216/Corte%203/Imagenes/tornillo.gif)
