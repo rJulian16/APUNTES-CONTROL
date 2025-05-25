@@ -265,7 +265,7 @@ Si el motor gira a una velocidad angular de $$\( \dot{\theta} = 25.13 \, \text{r
 ¿cuál es la velocidad lineal de desplazamiento de la cápsula?
 
 
-**Datos:**
+- Datos:
 
 - $$\( p = 4 \, \text{rev/m} \)$$
 - $$\( \dot{\theta} = 25.13 \, \text{rad/s} \)$$
@@ -292,17 +292,19 @@ Tuvo una velocidad lineal de $$1 m / s$$
 📚 Ejercicio 5: Cálculo del cabeceo del tornillo
 
 Una cápsula se desplaza a una velocidad lineal de  
-$$\dot{x} = 0.5 \, \text{m/s}$$  
+$$\dot{x} = 0.5 \, \text{m/s}$$ 
+
 cuando el motor gira a una velocidad angular de  
 $$\dot{\theta} = 12.57 \, \text{rad/s}$$.  
-¿Cuál es el **cabeceo** del tornillo guía?
 
-**Datos:**
+¿Cuál es el cabeceo del tornillo guía?
+
+- Datos:
 
 - $$\dot{x} = 0.5 \, \text{m/s}$$  
 - $$\dot{\theta} = 12.57 \, \text{rad/s}$$
 
-**Relación:**
+- Solucion:
 
 $$
 \frac{\dot{\theta}}{\dot{x}} = 2\pi p
