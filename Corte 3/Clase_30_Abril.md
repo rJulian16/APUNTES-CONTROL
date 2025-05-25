@@ -260,8 +260,8 @@ $$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
 
 📚 Ejercicio 4: Relación entre velocidad angular y lineal
 
-Un tornillo guía tiene un cabeceo de \( p = 4 \, \text{rev/m} \). 
-Si el motor gira a una velocidad angular de \( \dot{\theta} = 25.13 \, \text{rad/s} \),  
+Un tornillo guía tiene un cabeceo de $$\( p = 4 \, \text{rev/m} \)$$. 
+Si el motor gira a una velocidad angular de $$\( \dot{\theta} = 25.13 \, \text{rad/s} \)$$,  
 ¿cuál es la velocidad lineal de desplazamiento de la cápsula?
 
 
