@@ -284,8 +284,8 @@ $$
 
 
 $$
-\dot{x} = 1 \, \text{m/s}
+\dot{x} = 1 \text{m/s}
 $$
 
-Tuvo una velocidad lineal de $$ 1 m / s$$
+Tuvo una velocidad lineal de $$1 m / s$$
 
