@@ -91,6 +91,10 @@ También conocido como tornillo de fricción, es un tornillo guía tradicional e
 
 - Donde se requiere autobloqueo y bajo costo
 
+![image](https://github.com/user-attachments/assets/cbae456c-809f-4a90-959d-275ddc403f80)
+
+Figura 4. Tornillo sin fin con rosca directa
+
 #### 2.1.4 Tornillo con recirculación de bolas (Ball Screw)
 
 **Definición:**
