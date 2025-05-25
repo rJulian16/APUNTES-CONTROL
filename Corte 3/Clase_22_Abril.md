@@ -241,6 +241,12 @@ El bloque HIL Read Timebase es esencial cuando se trabaja con lectura de encoder
 **¿Para qué se usa?**
 Generalmente se utiliza para leer la posición y velocidad angular desde los encoders del QUBE-Servo 2.
 
+**Configuracion**
+
+![image](https://github.com/user-attachments/assets/26d5a735-fc0a-4058-8630-dd1f08f74369)
+
+Figura 11. Configuracion Read Timebase
+
 
 
 ## 6. Bibliografía
