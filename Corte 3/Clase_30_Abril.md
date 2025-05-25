@@ -104,3 +104,16 @@ Es un tipo de tornillo guía que utiliza bolas de acero entre el tornillo y la t
 - Impresoras 3D de alta precisión
 
 - Actuadores lineales rápidos y eficientes
+
+| Característica             | Rosca Directa (Fricción)    | Recirculación de Bolas         |
+| -------------------------- | --------------------------- | ------------------------------ |
+| **Eficiencia**             | Baja (\~20–40%)             | Alta (\~85–95%)                |
+| **Fricción**               | Alta                        | Muy baja                       |
+| **Velocidad de operación** | Baja                        | Alta                           |
+| **Precisión**              | Media                       | Alta                           |
+| **Autobloqueo**            | Sí                          | No (puede moverse sin control) |
+| **Costo**                  | Bajo                        | Alto                           |
+| **Mantenimiento**          | Bajo                        | Requiere lubricación y cuidado |
+| **Usos comunes**           | Sistemas manuales y simples | CNC, robótica, automatización  |
+
+Tabla 2. Comparacion rosca directa vs recirculacion de bolas
