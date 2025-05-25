@@ -246,7 +246,7 @@ Las ecuaciones describen la relación entre el desplazamiento angular del tornil
 
 $$\Delta \theta = 2\pi p \Delta x$$
 
-$$\frac{\Delta \theta}{\Delta t} = 2\pi}$$
+$$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
 
 Donde:
 
