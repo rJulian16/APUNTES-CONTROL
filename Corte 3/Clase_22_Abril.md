@@ -338,7 +338,17 @@ Se busca determinar:
 
 Figura 14. Ejercicio 3 resultados.
 
+- La corriente medida en el sistema varió de forma cíclica según el estado del pulso de entrada:
 
+Durante los intervalos en los que el sistema está activo (cuando el pulso está en 1V), la corriente alcanzó un valor máximo aproximado de 0.008 amperios (8 mA).
+
+En los intervalos en los que la señal cae a cero (pulso en 0V), el sistema detiene su movimiento gradualmente y la corriente disminuye hasta un valor mínimo aproximado de 0.00010 amperios (0.1 mA), reflejando prácticamente un estado de reposo.
+
+- En cuanto a la velocidad angular del motor, se observó una respuesta típica de encendido y apagado por ciclos:
+
+Durante los periodos en los que el pulso está en 1V, el motor acelera hasta alcanzar una velocidad máxima de aproximadamente 11.15 radianes por segundo.
+
+Al desactivarse la señal (0V), la velocidad angular disminuye progresivamente hasta detenerse casi por completo, como consecuencia de la fricción y la ausencia de torque.
 
 ## 6. Bibliografía
 
