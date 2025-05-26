@@ -535,3 +535,27 @@ $$T_{\text{load-in}} = \frac{F_{ext}}{\eta N_S}$$
 📚 Ejercicio 9 planteado en clase :
 
 Una carga de 50 Kg debe ser posicionado usando un tornillo esferado de acero con 0,14 Kg/cm³ de densidad, 0,182 cm de diámetro, 36 cm de longitud, 0,75 cm/rev de paso y 90% de eficiencia. El carro pesa 0,23 Kg. Calcule la inercia reflejada por la transmisión hacia su eje de entrada.
+
+La inercia total reflejada en el sistema se compone de:
+
+$$\frac{J_{t}^{\text{trans}}}{\eta t} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-in}}$$
+
+Que puede expresarse como:
+
+$$= J_{\text{screw}} + \frac{1}{\eta N_s^2} \left( \frac{W_L + W_C}{g} \right)$$
+
+## Parámetros y Constantes
+
+1. **Aceleración gravitacional**:
+   - Valor mostrado: `386 in/s²` (equivalente a 9.81 m/s² en unidades métricas)
+
+2. **Relación de transmisión (N_s)**:
+   - Fórmula: 
+     $$
+     N_s = 2\pi p
+     $$
+   - Ejemplo de cálculo:
+     $$
+     N_s = 2\pi \times \frac{1}{0.75} \approx 8.38
+     $$
+     *(Para un paso de 0.75 cm/rev)*
