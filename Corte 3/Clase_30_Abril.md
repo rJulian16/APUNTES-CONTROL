@@ -727,19 +727,9 @@ Este tipo de mecanismo es ampliamente utilizado en procesos industriales, logís
 
 El movimiento de la banda está relacionado directamente con el giro de un rodillo motriz, y la velocidad lineal de la banda se puede determinar a partir del radio del rodillo y la velocidad angular del motor:
 
-$$v_{\text{banda}} = r_{\text{rodillo}} \cdot \omega$$
-
-Donde:
-
-- $v_{\text{banda}}$: velocidad lineal de la banda (m/s)  
-- $r_{\text{rodillo}}$: radio del rodillo (m)  
-- $\omega$: velocidad angular del rodillo o motor (rad/s)
-
-- **Relación de transmisión (N)**
-
   $$N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}}$$
 
-- **Velocidad de la banda (V_belt)**
+- Velocidad de la banda (V_belt)
 
   $$V_{\text{belt}} = r_{\text{ip}} \omega_{\text{ip}}$$
     
@@ -747,10 +737,48 @@ Donde:
   - $r_{\text{ip}}$: Radio del tambor motriz [m]  
   - $\omega_{\text{ip}}$: Velocidad angular del tambor [rad/s]  
 
-- **Relación de transmisión banda-tambor (N_BD)**
+  $$N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}$$ 
 
-  $$N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}$$
+
+📚 Ejercicio 12:
+
+Un motor gira a 1750 rpm mueve una banda transportadora mediante un tambor motriz de 15 cm de diámetro. La carga se desplaza a 0.5 m/s. Calcular:  
+
+1. Velocidad angular del tambor ($\omega_{ip}$)  
+2. Relación de transmisión ($N$)  
+3. Fuerza efectiva en la banda si el torque motor es 25 N·m  
+
+**Datos:**  
+- $r_{ip} = 15\,\text{cm}/2 = 0.075\,\text{m}$  
+- $V_{\text{belt}} = 0.5\,\text{m/s}$  
+- $\tau_{\text{motor}} = 25\,\text{N·m}$  
+
+**Procedimiento:**  
+
+- Velocidad angular del tambor ($\omega_{ip}$):**
+
+   $$\omega_{ip} = \frac{V_{\text{belt}}}{r_{ip}} = \frac{0.5}{0.075} \approx 6.67\,\text{rad/s}$$
   
-  *Interpretación*: Relación inversamente proporcional al radio del tambor.
+   Conversión a rpm:
+  
+   $$6.67\,\text{rad/s} \times \frac{60}{2\pi} \approx 63.7\,\text{rpm}$$
 
+- Relación de transmisión ($N$):
+
+   $$   N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}} = \frac{1750}{63.7} \approx 27.5$$
+
+- Fuerza efectiva ($F_{\text{belt}}$):
+
+   - Primero calculamos el torque en el tambor:
+  
+     $$     \tau_{\text{tambor}} = \tau_{\text{motor}} \times \frac{1}{N} = 25 \times \frac{1}{27.5} \approx 0.91\,\text{N·m}$$
+     
+   - Luego la fuerza:
+  
+     $$F_{\text{belt}} = \frac{\tau_{\text{tambor}}}{r_{ip}} = \frac{0.91}{0.075} \approx 12.1\,\text{N}$$
+
+**Resultados:**  
+$\boxed{\omega_{ip} \approx 6.67\,\text{rad/s}}$  
+$\boxed{N \approx 27.5}$  
+$\boxed{F_{\text{belt}} \approx 12.1\,\text{N}}$  
 
