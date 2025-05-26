@@ -32,7 +32,7 @@ Figura 1. Tornillo sin fin Simulink
 
 Figura 2. Tornillo sin fin
 
-### 2.1 Tipos de Tornillo Guía
+### 2.1. Tipos de Tornillo Guía
 
 En sistemas de transmisión lineal, se utilizan distintos tipos de roscas en los tornillos guía. Los más comunes en aplicaciones mecánicas son:
 
