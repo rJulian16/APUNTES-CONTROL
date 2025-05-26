@@ -459,25 +459,21 @@ $$F_{ext} = F_f + F_g + F_p$$
 **Fuerza de fricción ($F_f$):**
 
    $$F_f = \mu (W_L + W_C) \cos \beta$$
-  
    - $\mu$: Coeficiente de fricción
-  
    - $W_L$: Peso de la carga [N]
-  
    - $W_C$: Peso del carro [N]
-     
    - $\beta$: Ángulo de inclinación (0° si horizontal)
 
 **Fuerza gravitacional ($F_g$):**
 
    $$F_g = (W_L + W_C) \sin \beta$$
-   
    - Si $\beta = 0°$ (horizontal): $F_g = 0$
 
 Fuerza aplicada ($F_p$): Fuerza externa adicional (ej: empuje).
 
-- **Fórmula combinada:**
+**Fórmula combinada:**
 $$F_{ext} = F_p + (W_L + W_C) (\sin \beta + \mu \cos \beta)$$
+
 
 **Torque Reflejado en el Motor:**
 
