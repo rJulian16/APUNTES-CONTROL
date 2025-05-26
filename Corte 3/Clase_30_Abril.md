@@ -327,7 +327,7 @@ $$
 El cabeceo del tornillo es de  
 $$p = 4 \, \text{rev/m}$$
 
-## 5. Inersia Reflejada
+## 5. Inercia Reflejada
 
 - Energía Cinética de la Carga Lineal
 La energía cinética ($KE$) de una carga con masa $m$:
@@ -603,7 +603,7 @@ El sistema piñón-cremallera es un mecanismo de transmisión que convierte el m
 
 La relación entre la rotación del piñón y el desplazamiento lineal de la cremallera depende del diámetro primitivo del piñón y del número de dientes, permitiendo un control directo y eficiente del desplazamiento.
 
-## 8.1 Relacion de transmision piñon-cremallera
+### 8.1 Relacion de transmision piñon-cremallera
 
 En un sistema piñón-cremallera, la relación de transmisión ($N$) se define como la razón entre la velocidad angular del piñón (motor) y la velocidad lineal de la cremallera (carga):
 
@@ -630,3 +630,74 @@ Donde:
 Otra forma de expresar la relación de transmisión en este sistema es:
 
 $$N_{\text{rp}} = \frac{1}{r_{\text{piñón}}}$$
+
+📚 Ejercicio 10: Un motor mueve un piñón de radio $r = 0.05 \, \text{m}$ (5 cm).  
+Si el motor gira a una velocidad angular de $\omega = 20 \, \text{rad/s}$,  
+¿cuál es la velocidad lineal de la cremallera?
+
+**Datos:**
+
+- Radio del piñón: $r = 0.05 \, \text{m}$
+- Velocidad angular: $\omega = 20 \, \text{rad/s}$
+
+**Procedimiento:**
+
+La velocidad lineal de la cremallera es:
+
+$$v_{\text{rack}} = r_{\text{piñón}} \cdot \omega_{\text{piñón}}$$
+
+$$v_{\text{rack}} = 0.05 \cdot 20 = 1 \, \text{m/s}$$
+
+**Resultado:**
+
+La cremallera se mueve a una velocidad de:
+
+$$v_{\text{rack}} = 1 \, \text{m/s}$$
+
+### 8.2 Inercia reflejada y torque de carga
+
+**La inercia reflejada del sistema:**
+
+$$J_{\text{ref}}^{\text{trans}} = J_{\text{pinion}} + \frac{1}{\eta N_{\text{RP}}^{2}} \left( \frac{W_{L} + W_{C}}{g} \right)$$
+
+Donde:
+- $J_{\text{pinion}}$: Inercia del piñón [kg·m²]
+- $\eta$: Eficiencia del sistema (ej. 0.9 para 90%)
+- $N_{\text{RP}}$: Relación de transmisión [dientes/m o rad/m]
+- $W_L$, $W_C$: Pesos de carga y carro [N]
+- $g$: Gravedad (9.81 m/s²)
+
+**Torque de Carga Reflejado**
+
+El torque requerido para mover la carga:
+
+$$T_{\text{load} \rightarrow \text{in}} = \frac{F_{\text{ext}}}{\eta N_{\text{RP}}}$$
+
+Con $F_{\text{ext}}$ calculada como:
+
+$$F_{\text{ext}} = \underbrace{\mu (W_L + W_C) \cos \beta}_{F_f} + \underbrace{(W_L + W_C) \sin \beta}_{F_g} + F_p$$
+
+📚 Ejemplo 11 Numérico:
+
+Datos:
+- $W_L = 500\,N$, $W_C = 200\,N$
+- $\mu = 0.2$, $\beta = 10°$
+- $N_{\text{RP}} = 50\, \text{dientes/m}$
+- $\eta = 0.9$
+
+Cálculos:
+
+Fuerza externa:
+
+   $$F_f = 0.2 \times 700 \times \cos 10° ≈ 137.8\,N$$
+   $$F_g = 700 \times \sin 10° ≈ 121.5\,N$$
+   $$F_{\text{ext}} = 137.8 + 121.5 = 259.3\,N \quad (\text{sin } F_p)$$
+
+Torque reflejado:
+
+   $$   T_{\text{load} \rightarrow \text{in}} = \frac{259.3}{0.9 \times 50} ≈ 5.76\,N\cdot m$$
+
+**Observaciones**
+- En sistemas horizontales ($\beta = 0°$), $F_g = 0$
+- La inercia reflejada decrece cuadráticamente con $N_{\text{RP}}$
+- Para altas precisiones, considerar la flexibilidad de la cremallera
