@@ -673,9 +673,9 @@ El torque requerido para mover la carga:
 
 $$T_{\text{load} \rightarrow \text{in}} = \frac{F_{\text{ext}}}{\eta N_{\text{RP}}}$$
 
-Con $F_{\text{ext}}$ calculada como:
 
-$$F_{\text{ext}} = \underbrace{\mu (W_L + W_C) \cos \beta}_{F_f} + \underbrace{(W_L + W_C) \sin \beta}_{F_g} + F_p$$
+
+
 
 📚 Ejemplo 11 Numérico:
 
@@ -696,6 +696,7 @@ Fuerza externa:
 Torque reflejado:
 
    $$   T_{\text{load} \rightarrow \text{in}} = \frac{259.3}{0.9 \times 50} ≈ 5.76\,N\cdot m$$
+
 
 **Observaciones**
 - En sistemas horizontales ($\beta = 0°$), $F_g = 0$
