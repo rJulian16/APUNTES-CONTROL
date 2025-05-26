@@ -33,11 +33,15 @@ no lineales y su facilidad de implementación lo han convertido en una técnica 
 
 >🔑- **Aplicabilidad a sistemas no lineales**: El ADRC no requiere linealizar la planta ni conocer su modelo exacto, lo que lo hace útil en una amplia variedad de sistemas reales con comportamientos complejos.
 
-Ejemplo 1: 
+💡 Ejemplo 1: 
 
 Imaginemos que queremos controlar la velocidad de un pequeño ventilador para que siga una velocidad deseada, por ejemplo, 1500 RPM (revoluciones por minuto).
 
-#### Problema
+![image](https://github.com/user-attachments/assets/06255107-cbbc-40e4-8b59-56030872ae9e)
+
+Figura 1. Ventilador.
+
+**Problema**
 
 En la práctica, el ventilador puede verse afectado por:
 - Cambios de voltaje
@@ -47,7 +51,7 @@ En la práctica, el ventilador puede verse afectado por:
 
 Estos factores hacen que la velocidad no siempre sea constante, incluso si aplicamos la misma señal de control.
 
-#### ¿Cómo ayuda el ADRC?
+**¿Cómo ayuda el ADRC?**
 
 El ADRC actúa en tres pasos:
 
@@ -55,10 +59,7 @@ El ADRC actúa en tres pasos:
 2. **Detecta perturbaciones**: Agrupa todas las causas del error en una sola "perturbación total".
 3. **Compensa**: Ajusta la señal de control automáticamente para cancelar esa perturbación.
 
-#### Resultado
+- **Resultado**
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
-
----
-
 
