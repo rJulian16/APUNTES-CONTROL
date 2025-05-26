@@ -474,6 +474,7 @@ Fuerza aplicada ($F_p$): Fuerza externa adicional (ej: empuje).
 
 
 **Fórmula combinada:**
+
 $$F_{ext} = F_p + (W_L + W_C) (\sin \beta + \mu \cos \beta)$$
 
 
