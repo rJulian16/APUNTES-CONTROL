@@ -503,6 +503,7 @@ Relación tornillo:
    - $p$: Cabeceo del tornillo [rev/m].
 
 - Torque reflejado:
+
 $$T_{\text{load-in}} = \frac{F_{ext}}{\eta N_S}$$
 
 - $\eta$: Eficiencia del sistema (0.7-0.9).
