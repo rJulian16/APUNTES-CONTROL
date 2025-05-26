@@ -735,23 +735,22 @@ Donde:
 - $r_{\text{rodillo}}$: radio del rodillo (m)  
 - $\omega$: velocidad angular del rodillo o motor (rad/s)
 
-- **Relación de transmisión (N)**  
-  $$
-  N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}}
-  $$
+- **Relación de transmisión (N)**
 
-- **Velocidad de la banda (V_belt)**  
-  $$
-  V_{\text{belt}} = r_{\text{ip}} \omega_{\text{ip}}
-  $$  
+  $$N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}}$$
+
+- **Velocidad de la banda (V_belt)**
+
+  $$V_{\text{belt}} = r_{\text{ip}} \omega_{\text{ip}}$$
+    
   Donde:  
   - $r_{\text{ip}}$: Radio del tambor motriz [m]  
   - $\omega_{\text{ip}}$: Velocidad angular del tambor [rad/s]  
 
-- **Relación de transmisión banda-tambor (N_BD)**  
-  $$
-  N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}
-  $$  
+- **Relación de transmisión banda-tambor (N_BD)**
+
+  $$N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}$$
+  
   *Interpretación*: Relación inversamente proporcional al radio del tambor.
 
 
