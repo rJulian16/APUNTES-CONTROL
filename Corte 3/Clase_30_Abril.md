@@ -802,6 +802,6 @@ $\boxed{F_{\text{belt}} \approx 12.1\,\text{N}}$
 
 📚 Ejercicio 13:
 
-  Si $W_L + W_C + W_{\text{belt}}} = 1000\,N$, $\eta=0.9$, $N_{\text{BD}}=2\,m^{-1}$, $F_{\text{ext}}=200\,N$:  
+  Si $W_L + W_C + W_{\text{belt}} = 1000\,N$, $\eta=0.9$, $N_{\text{BD}}=2\,m^{-1}$, $F_{\text{ext}}=200\,N$:  
   - Inercia: $J_{\text{ref}}^{\text{trans}} = 2J_p + \frac{1}{0.9 \times 4}\left(\frac{1000}{9.81}\right) \approx 2J_p + 28.3\,kg\cdot m^2$  
   - Torque: $T_{\text{load-in}} = \frac{200}{0.9 \times 2} \approx 111.1\,N\cdot m$
