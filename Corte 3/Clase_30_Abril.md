@@ -577,6 +577,8 @@ $$J_{ref}^{trans} = 5.42 \times 10^{-8} + \frac{1}{0.9 \times 8.38^2} \left( \fr
 
 $$J_{screw} = \frac{\pi L \rho D^4}{32g}$$
 
+Sustituyendo en la fórmula:
+
 $$\begin{align*}
 I_{screw} &= \frac{\pi \times 0.36 \times 140000 \times (0.00182)^4}{32} \\
 &= \frac{\pi \times 0.36 \times 140000 \times 1.1 \times 10^{-11}}{32} \\
