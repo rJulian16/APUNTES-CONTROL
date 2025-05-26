@@ -704,6 +704,8 @@ Torque reflejado:
 
 ![image](https://github.com/user-attachments/assets/f628c33d-e459-4540-a295-8abef76edcce)
 
-Figura 10. Simulink diagrama de bloques piñon-cremaellera.
+Figura 10. Simulink diagrama de bloques piñon-cremallera.
 
+![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/bfc72f686054baf3264a0fa6d3248ce5825ed75d/Corte%203/Imagenes/hola5.gif)
 
+Figura 11. Simulacion activa piñon-cremallera.
