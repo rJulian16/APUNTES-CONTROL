@@ -737,7 +737,7 @@ El movimiento de la banda está relacionado directamente con el giro de un rodil
   - $r_{\text{ip}}$: Radio del tambor motriz [m]  
   - $\omega_{\text{ip}}$: Velocidad angular del tambor [rad/s]  
 
-  $$N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}$$ 
+  $$N_{\text{BD}} = \frac{1}{r_{\text{ip}}}$$ 
 
 
 📚 Ejercicio 12:
