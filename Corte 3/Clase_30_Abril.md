@@ -544,18 +544,16 @@ Que puede expresarse como:
 
 $$= J_{\text{screw}} + \frac{1}{\eta N_s^2} \left( \frac{W_L + W_C}{g} \right)$$
 
-## Parámetros y Constantes
+- Parámetros y Constantes
 
-1. **Aceleración gravitacional**:
-   - Valor mostrado: `386 in/s²` (equivalente a 9.81 m/s² en unidades métricas)
+Aceleración gravitacional:
+   - Valor mostrado: 386 in/s² (equivalente a 9.81 m/s² en unidades métricas)
 
-2. **Relación de transmisión (N_s)**:
+Relación de transmisión:
+
    - Fórmula: 
-     $$
-     N_s = 2\pi p
-     $$
+     $$N_s = 2\pi p$$
+     
    - Ejemplo de cálculo:
-     $$
-     N_s = 2\pi \times \frac{1}{0.75} \approx 8.38
-     $$
-     *(Para un paso de 0.75 cm/rev)*
+     $$N_s = 2\pi \times \frac{1}{0.75} \approx 8.38$$
+  
