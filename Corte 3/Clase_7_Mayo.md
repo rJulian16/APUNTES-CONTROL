@@ -27,8 +27,6 @@ no lineales y su facilidad de implementación lo han convertido en una técnica 
 
 >🔑- **Función de referencia (tracking)**: Objetivo deseado que debe seguir la salida del sistema. El ADRC busca minimizar el error entre esta referencia y la salida real, compensando perturbaciones y errores de modelado.
 
->🔑- **Robustez**: Propiedad de un sistema de control que le permite mantener un desempeño aceptable aun ante incertidumbres, perturbaciones y variaciones en los parámetros del sistema.
-
 >🔑- **Sintonización simple**: Ventaja del ADRC, ya que permite ajustar los parámetros del controlador de forma más intuitiva y menos dependiente del modelo matemático exacto.
 
 >🔑- **Modelo generalizado de planta**: En ADRC, se considera que todas las dinámicas no conocidas y perturbaciones se agrupan en una sola "perturbación total", que será estimada y compensada activamente.
