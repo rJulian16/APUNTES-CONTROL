@@ -455,7 +455,8 @@ La fuerza externa total ($F_{ext}$) que actúa sobre el sistema se compone de:
 $$F_{ext} = F_f + F_g + F_p$$
 
 - Desglose de componentes:
-Fuerza de fricción ($F_f$):
+
+**Fuerza de fricción ($F_f$):**
 
    $$F_f = \mu (W_L + W_C) \cos \beta$$
   
@@ -467,7 +468,7 @@ Fuerza de fricción ($F_f$):
      
    - $\beta$: Ángulo de inclinación (0° si horizontal)
 
-Fuerza gravitacional ($F_g$):
+**Fuerza gravitacional ($F_g$):**
 
    $$F_g = (W_L + W_C) \sin \beta$$
    
@@ -478,14 +479,14 @@ Fuerza aplicada ($F_p$): Fuerza externa adicional (ej: empuje).
 - **Fórmula combinada:**
 $$F_{ext} = F_p + (W_L + W_C) (\sin \beta + \mu \cos \beta)$$
 
-
--Torque Reflejado en el Motor
+**Torque Reflejado en el Motor:**
 
 El torque requerido ($T_{\text{load-in}}$) para mover la carga se calcula mediante el trabajo realizado:
 
-**- Relación trabajo-torque:**
+   - Relación trabajo-torque:
 
 Trabajo en términos lineales:
+
    $$\text{Work} = F_{ext} \cdot \Delta x$$
    
    - $\Delta x$: Desplazamiento lineal.
@@ -502,7 +503,7 @@ Relación tornillo:
    
    - $p$: Cabeceo del tornillo [rev/m].
 
-- **Torque reflejado:**
+- Torque reflejado:
 $$T_{\text{load-in}} = \frac{F_{ext}}{\eta N_S}$$
 
 - $\eta$: Eficiencia del sistema (0.7-0.9).
