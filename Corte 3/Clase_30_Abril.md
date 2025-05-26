@@ -692,7 +692,7 @@ Fuerza externa:
 
 Torque reflejado:
 
-   $$   T_{\text{load} \rightarrow \text{in}} = \frac{259.3}{0.9 \times 50} ≈ 5.76\,N\cdot m$$
+   $$T_{\text{load} \rightarrow \text{in}} = \frac{259.3}{0.9 \times 50} ≈ 5.76\,N\cdot m$$
 
 
 **Observaciones**
@@ -709,3 +709,34 @@ Figura 10. Simulink diagrama de bloques piñon-cremallera.
 ![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/bfc72f686054baf3264a0fa6d3248ce5825ed75d/Corte%203/Imagenes/hola5.gif)
 
 Figura 11. Simulacion activa piñon-cremallera.
+
+## 9. Banda Transportadora
+
+Una banda transportadora es un sistema mecánico utilizado para mover materiales o cargas de un punto a otro a lo largo de una trayectoria fija. Está compuesta principalmente por una banda flexible , que se desplaza sobre rodillos o poleas impulsadas por un motor.
+
+Este tipo de mecanismo es ampliamente utilizado en procesos industriales, logísticos y de manufactura, permitiendo un transporte continuo, controlado y eficiente.
+
+**Relación de Transmisión y Movimiento**
+
+El movimiento de la banda está relacionado directamente con el giro de un rodillo motriz, y la velocidad lineal de la banda se puede determinar a partir del radio del rodillo y la velocidad angular del motor:
+
+$$v_{\text{banda}} = r_{\text{rodillo}} \cdot \omega$$
+
+Donde:
+
+- $v_{\text{banda}}$: velocidad lineal de la banda (m/s)  
+- $r_{\text{rodillo}}$: radio del rodillo (m)  
+- $\omega$: velocidad angular del rodillo o motor (rad/s)
+
+---
+
+**Aplicaciones Comunes:**
+
+- Sistemas de empaque y ensamblaje industrial  
+- Clasificación y distribución de productos  
+- Líneas de producción en fábricas  
+- Transporte de alimentos o materiales pesados
+
+---
+
+¿Te gustaría que preparemos un ejercicio práctico usando esa fórmula también?
