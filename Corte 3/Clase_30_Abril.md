@@ -674,9 +674,6 @@ El torque requerido para mover la carga:
 $$T_{\text{load} \rightarrow \text{in}} = \frac{F_{\text{ext}}}{\eta N_{\text{RP}}}$$
 
 
-
-
-
 📚 Ejemplo 11 Numérico:
 
 Datos:
@@ -702,3 +699,11 @@ Torque reflejado:
 - En sistemas horizontales ($\beta = 0°$), $F_g = 0$
 - La inercia reflejada decrece cuadráticamente con $N_{\text{RP}}$
 - Para altas precisiones, considerar la flexibilidad de la cremallera
+
+### 8.3 Simulink
+
+![image](https://github.com/user-attachments/assets/f628c33d-e459-4540-a295-8abef76edcce)
+
+Figura 10. Simulink diagrama de bloques piñon-cremaellera.
+
+
