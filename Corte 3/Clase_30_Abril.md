@@ -597,4 +597,36 @@ Figura 8. Tornillo de avance MathWorks
 
 Figura 9. Simulink tornillo.
 
+## 8. Piñon- Cremallera
 
+El sistema piñón-cremallera es un mecanismo de transmisión que convierte el movimiento rotacional de un engranaje (piñón) en movimiento lineal a través de una barra dentada (cremallera). Es ampliamente utilizado en sistemas de dirección de vehículos, máquinas CNC y mecanismos de apertura lineal, gracias a su simplicidad, precisión y capacidad para transmitir fuerza en trayectorias rectas.
+
+La relación entre la rotación del piñón y el desplazamiento lineal de la cremallera depende del diámetro primitivo del piñón y del número de dientes, permitiendo un control directo y eficiente del desplazamiento.
+
+## 8.1 Relacion de transmision piñon-cremallera
+
+En un sistema piñón-cremallera, la relación de transmisión ($N$) se define como la razón entre la velocidad angular del piñón (motor) y la velocidad lineal de la cremallera (carga):
+
+$$N = \frac{\omega_{\text{motor}}}{v_{\text{carga}}}$$
+
+Donde:
+
+- $N$: relación de transmisión  
+- $\omega_{\text{motor}}$: velocidad angular del piñón (rad/s)  
+- $v_{\text{carga}}$: velocidad lineal de la cremallera (m/s)
+
+- Velocidad Lineal de la Cremallera
+
+La velocidad lineal de la cremallera se puede calcular como:
+
+$$v_{\text{rack}} = r_{\text{piñón}} \cdot \omega_{\text{piñón}}$$
+
+Donde:
+
+- $v_{\text{rack}}$: velocidad lineal de la cremallera  
+- $r_{\text{piñón}}$: radio primitivo del piñón (m)  
+- $\omega_{\text{piñón}}$: velocidad angular del piñón (rad/s)
+
+Otra forma de expresar la relación de transmisión en este sistema es:
+
+$$N_{\text{rp}} = \frac{1}{r_{\text{piñón}}}$$
