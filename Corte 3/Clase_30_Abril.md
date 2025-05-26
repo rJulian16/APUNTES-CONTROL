@@ -900,14 +900,16 @@ Un sistema de banda transportadora industrial mueve cajas de 80 kg sobre una pla
 
 [2] Nise, N. S. *Control Systems Engineering*. Wiley, 2019.
 
-[3] Quanser. *QLabs Virtual Experiments – User Guide*. Quanser Inc., 2020.
+[3] Manrique, J. (2024). Apuntes de clase sobre Transmisiones Mecánicas y Dinámica. Universidad XYZ.
 
-[4] Manrique, J. (2024). Apuntes de clase sobre Transmisiones Mecánicas y Dinámica. Universidad XYZ.
+[4] De Silva, C. W. *Mechatronics: An Integrated Approach*. CRC Press, 2005.
 
-[5] De Silva, C. W. *Mechatronics: An Integrated Approach*. CRC Press, 2005.
+[5] “Ball Screws vs Lead Screws.” Thomson Linear, [https://www.thomsonlinear.com](https://www.thomsonlinear.com)
 
-[6] “Ball Screws vs Lead Screws.” Thomson Linear, [https://www.thomsonlinear.com](https://www.thomsonlinear.com)
+[6] Myszka, D. *Machines and Mechanisms: Applied Kinematic Analysis*. Pearson, 2011.
 
-[7] Myszka, D. *Machines and Mechanisms: Applied Kinematic Analysis*. Pearson, 2011.
+[7] MathWorks. (2023). *Simulink Documentation*. Recuperado de: [https://www.mathworks.com/help/simulink](https://www.mathworks.com/help/simulink)
+
+[8] MathWorks. (2023). *MATLAB Documentation*. Recuperado de: [https://www.mathworks.com/help/matlab](https://www.mathworks.com/help/matlab)
 
 
