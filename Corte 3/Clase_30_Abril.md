@@ -355,20 +355,35 @@ $$J_{ref} = \frac{m}{N_S^2}$$
 
 📚 Ejercicio 6:
 
-## Ejercicio 1: Inercia Reflejada
-**Enunciado**:  
-Calcular la inercia reflejada y torque para un tornillo con $p=3\, \text{rev/m}$ y $m=15\, \text{kg}$.  
+- Cálculo de Inercia Reflejada y Torque
 
-**Solución**:  
-1. $J_{\text{ref}} = \frac{15}{(2\pi \times 3)^2} \approx 0.042\, \text{kg·m}^2$  
-2. $\tau = 0.042 \times 2 = 0.084\, \text{N·m}$  
+Un sistema de tornillo sinfín mueve una carga lineal de 15 kg. El tornillo tiene un cabeceo de 3 rev/m.  
+Calcular:  
+1. La inercia reflejada ($J_{\text{ref}}$) vista por el motor.  
+2. Si el motor acelera a 2 rad/s², ¿qué torque se requiere para vencer la inercia de la carga?
 
-## Ejercicio 2: Potencia y Velocidad  
-**Enunciado**:  
-Para un tornillo con $p=4\, \text{rev/m}$ y motor a $60\, \text{rpm}$, calcular $\dot{x}$ y potencia contra fricción ($\mu=0.1$).  
+Procedimiento:
 
-**Solución**:  
-1. $\dot{x} = \frac{6.28}{2\pi \times 4} = 0.25\, \text{m/s}$  
-2. $P = 19.62 \times 0.25 = 4.91\, \text{W}$  
+Partimos de la fórmula de inercia reflejada para un tornillo sinfín:
 
-.
+$$J_{\text{ref}} = \frac{m}{(2\pi p)^2}$$
+
+- Donde:
+  - $m = 15\, \text{kg}$ (masa de la carga)
+  - $p = 3\, \text{rev/m}$ (cabeceo del tornillo)
+
+$$J_{\text{ref}} = \frac{15}{(2\pi \times 3)^2} = \frac{15}{(6.283 \times 3)^2} = \frac{15}{355.3} \approx 0.042\, \text{kg·m}^2$$
+
+$$\tau = J_{\text{ref}} \cdot \alpha$$
+
+- Donde:
+  - $\alpha = 2\, \text{rad/s²}$ (aceleración angular)
+
+Sustituimos $J_{\text{ref}}$:
+
+$$\tau = 0.042 \times 2 = 0.084\, \text{N·m}$$
+
+1. $\boxed{J_{\text{ref}} \approx 0.042\, \text{kg·m}^2}$  
+2. $\boxed{\tau = 0.084\, \text{N·m}}$
+
+
