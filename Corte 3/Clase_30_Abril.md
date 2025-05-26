@@ -716,7 +716,14 @@ Una banda transportadora es un sistema mecánico utilizado para mover materiales
 
 Este tipo de mecanismo es ampliamente utilizado en procesos industriales, logísticos y de manufactura, permitiendo un transporte continuo, controlado y eficiente.
 
-**Relación de Transmisión y Movimiento**
+**Aplicaciones Comunes:**
+
+- Sistemas de empaque y ensamblaje industrial  
+- Clasificación y distribución de productos  
+- Líneas de producción en fábricas  
+- Transporte de alimentos o materiales pesados
+
+### 9.1. Relación de Transmisión y Movimiento
 
 El movimiento de la banda está relacionado directamente con el giro de un rodillo motriz, y la velocidad lineal de la banda se puede determinar a partir del radio del rodillo y la velocidad angular del motor:
 
@@ -728,15 +735,23 @@ Donde:
 - $r_{\text{rodillo}}$: radio del rodillo (m)  
 - $\omega$: velocidad angular del rodillo o motor (rad/s)
 
----
+- **Relación de transmisión (N)**  
+  $$
+  N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}}
+  $$
 
-**Aplicaciones Comunes:**
+- **Velocidad de la banda (V_belt)**  
+  $$
+  V_{\text{belt}} = r_{\text{ip}} \omega_{\text{ip}}
+  $$  
+  Donde:  
+  - $r_{\text{ip}}$: Radio del tambor motriz [m]  
+  - $\omega_{\text{ip}}$: Velocidad angular del tambor [rad/s]  
 
-- Sistemas de empaque y ensamblaje industrial  
-- Clasificación y distribución de productos  
-- Líneas de producción en fábricas  
-- Transporte de alimentos o materiales pesados
+- **Relación de transmisión banda-tambor (N_BD)**  
+  $$
+  N_{\text{BD}} = \frac{1}{r_{\text{ip}}}}
+  $$  
+  *Interpretación*: Relación inversamente proporcional al radio del tambor.
 
----
 
-¿Te gustaría que preparemos un ejercicio práctico usando esa fórmula también?
