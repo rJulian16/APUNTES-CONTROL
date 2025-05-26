@@ -22,9 +22,15 @@ La rueda dentada o corona: un engranaje circular cuyos dientes encajan con la ro
 
 Cuando el tornillo gira, su rosca empuja los dientes de la rueda dentada, haciendo que esta gire. A diferencia de los engranajes comunes, en este sistema solo el tornillo puede mover la rueda, pero no al revés, lo que lo hace ideal para aplicaciones donde se requiere autobloqueo (es decir, que el movimiento no se devuelva por sí solo).
 
-![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/95a886188d245055c909f251f3c0262a91ed5216/Corte%203/Imagenes/tornillo.gif)
+**Simulink**
 
-Figura 1. Tornillo sin fin
+![image](https://github.com/user-attachments/assets/285583e6-1bb1-4c06-b375-c81c2de6e831)
+
+Figura 1. Tornillo sin fin Simulink
+
+
+
+Figura 2. Tornillo sin fin
 
 ### 2.1 Tipos de Tornillo Guía
 
@@ -45,7 +51,7 @@ Tiene una rosca con forma de trapecio. Su diseño permite una buena combinación
 
 ![image](https://github.com/user-attachments/assets/a28ed022-25dd-45fc-b21a-e445c3f58fed)
 
-Figura 2. Tornillo sin fin con rosca trapezoidal
+Figura 3. Tornillo sin fin con rosca trapezoidal
 
 #### 2.1.2 Tornillo de rosca cuadrada
 
@@ -62,7 +68,7 @@ Tiene una rosca con forma rectangular (cuadrada), lo que reduce el rozamiento du
 
 ![image](https://github.com/user-attachments/assets/f236ff3a-7840-4beb-9444-8614ecfdff21)
 
-Figura 3. Tornillo sin fin con rosca cuadrada
+Figura 4. Tornillo sin fin con rosca cuadrada
 
 
 | Característica               | Rosca Trapezoidal               | Rosca Cuadrada                       |
@@ -93,7 +99,7 @@ También conocido como tornillo de fricción, es un tornillo guía tradicional e
 
 ![image](https://github.com/user-attachments/assets/cbae456c-809f-4a90-959d-275ddc403f80)
 
-Figura 4. Tornillo sin fin con rosca directa
+Figura 5. Tornillo sin fin con rosca directa
 
 #### 2.1.4 Tornillo con recirculación de bolas (Ball Screw)
 
@@ -111,7 +117,7 @@ Es un tipo de tornillo guía que utiliza bolas de acero entre el tornillo y la t
 
 ![image](https://github.com/user-attachments/assets/92b9a89e-61cf-4f37-a892-37d524bb153e)
 
-Figura 5. Tornillo sin fin con recirculacion de bolas
+Figura 6. Tornillo sin fin con recirculacion de bolas
 
 
 | Característica             | Rosca Directa (Fricción)    | Recirculación de Bolas         |
@@ -131,7 +137,7 @@ Tabla 2. Comparacion rosca directa vs recirculacion de bolas
 
 ![image](https://github.com/user-attachments/assets/dded1ec3-eeb7-463e-a128-8b413df41879)
 
-Figura 6. Backlash
+Figura 7. Backlash
 
 El backlash, también conocido como juego mecánico o holgura, es el pequeño espacio o movimiento libre entre los dientes de dos elementos engranados, como un tornillo sin fin y una rueda dentada o entre engranajes rectos.
 
