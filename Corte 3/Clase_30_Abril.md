@@ -782,3 +782,31 @@ $\boxed{\omega_{ip} \approx 6.67\,\text{rad/s}}$
 $\boxed{N \approx 27.5}$  
 $\boxed{F_{\text{belt}} \approx 12.1\,\text{N}}$  
 
+### 9.2. Inercia reflejada y torque de carga
+
+- **Inercia reflejada total**:
+
+   $$J_{\text{ref}}^{\text{trans}} = 2J_p + \frac{1}{\eta N_{\text{BD}}^2} \left( \frac{W_L + W_C + W_{\text{belt}}}{g} \right)$$
+   
+   - $J_p$: Inercia de los piñones (IP y LP) [kg·m²]  
+   - $\eta$: Eficiencia del sistema  
+   - $N_{\text{BD}}$: Relación de transmisión banda-tambor ($=\frac{1}{r_{ip}}$)  
+   - $W_L$, $W_C$, $W_{\text{belt}}$: Pesos de carga, carro y banda [N]  
+
+- **Torque de carga reflejado**:
+  
+   $$T_{\text{load-in}} = \frac{F_{\text{ext}}}{\eta N_{\text{BD}}}$$
+  
+   - $F_{\text{ext}} = F_f + F_g + F_p$ (Fuerza externa total)  
+
+- Componentes de fuerza externa:
+- 
+   - Fricción: $F_f = \mu (W_L + W_C + W_{\text{belt}}) \cos \beta$  
+   - Gravedad: $F_g = (W_L + W_C + W_{\text{belt}}}) \sin \beta$  
+   - Externa aplicada: $F_p$ (opcional)  
+
+📚 Ejercicio 13:
+
+  Si $W_L + W_C + W_{\text{belt}}} = 1000\,N$, $\eta=0.9$, $N_{\text{BD}}=2\,m^{-1}$, $F_{\text{ext}}=200\,N$:  
+  - Inercia: $J_{\text{ref}}^{\text{trans}} = 2J_p + \frac{1}{0.9 \times 4}\left(\frac{1000}{9.81}\right) \approx 2J_p + 28.3\,kg\cdot m^2$  
+  - Torque: $T_{\text{load-in}} = \frac{200}{0.9 \times 2} \approx 111.1\,N\cdot m$
