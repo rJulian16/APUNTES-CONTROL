@@ -4,6 +4,31 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 ## Indice
 
+- [1. Introducción](#1-introduccion)
+- [2. Tornillo sin fin](#2-tornillo-sin-fin)
+  - [2.1 Tipos de Tornillo Guía](#21-tipos-de-tornillo-guía)
+    - [2.1.1 Tornillo de rosca trapezoidal](#211-tornillo-de-rosca-trapezoidal)
+    - [2.1.2 Tornillo de rosca cuadrada](#212-tornillo-de-rosca-cuadrada)
+    - [2.1.3 Tornillo de rosca directa](#213-tornillo-de-rosca-directa)
+    - [2.1.4 Tornillo con recirculación de bolas (Ball Screw)](#214-tornillo-con-recirculación-de-bolas-ball-screw)
+- [3. Backlash](#3-backlash)
+- [4. Relación de transmisión básica](#4-relacion-de-transmision-basica)
+  - [4.1 Relación de transmisión cabeceo-paso](#41-relacion-de-transmision-cabeceo-paso)
+- [5. Inercia Reflejada](#5-inercia-reflejada)
+- [6. Inercia reflejada total y torque de carga](#6-inercia-reflejada-total-y-torque-de-carga)
+  - [6.1 Análisis de Inercia Reflejada Total en Sistemas de Tornillo](#61-analisis-de-inercia-reflejada-total-en-sistemas-de-tornillo)
+  - [6.2 Análisis de Torque de Carga en Sistemas de Tornillo](#62-analisis-de-torque-de-carga-en-sistemas-de-tornillo)
+- [7. Simulink Lead-Screw](#7-simulink-lead-screw)
+- [8. Piñón-Cremallera](#8-piñon--cremallera)
+  - [8.1 Relación de transmisión piñón-cremallera](#81-relacion-de-transmision-piñon-cremallera)
+  - [8.2 Inercia reflejada y torque de carga](#82-inercia-reflejada-y-torque-de-carga)
+  - [8.3 Simulink](#83-simulink)
+- [9. Banda Transportadora](#9-banda-transportadora)
+  - [9.1 Relación de Transmisión y Movimiento](#91-relacion-de-transmision-y-movimiento)
+  - [9.2 Inercia reflejada y torque de carga](#92-inercia-reflejada-y-torque-de-carga)
+- [10. Conclusiones](#10-conclusiones)
+- [11. Referencias](#11-referencias)
+
 ## 1. Introduccion 
 
 En el estudio de los sistemas de control de movimiento, los mecanismos de transmisión de potencia y movimiento son fundamentales para transformar la energía generada por un actuador (como un motor) en un desplazamiento útil. A lo largo del semestre, ya hemos explorado diferentes tipos de transmisión, como engranajes, correas y poleas, entendiendo cómo modifican velocidad, fuerza y dirección del movimiento.
