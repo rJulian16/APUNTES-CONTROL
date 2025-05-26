@@ -393,3 +393,86 @@ $$\tau = 0.042 \times 2 = 0.084\, \text{N·m}$$
 2. $\boxed{\tau = 0.084\, \text{N·m}}$
 
 
+# Análisis de Inercia Reflejada Total en Sistemas de Tornillo
+
+## Componentes Clave
+
+### 1. Masas del Sistema
+- **Carga (Load)**: $W_L$ [N]
+- **Carro (Carriage)**: $W_C$ [N]
+- **Masa total equivalente**:
+  $$
+  m = \frac{W_L + W_C}{g}
+  $$
+  donde $g = 9.81\, \text{m/s²}$.
+
+### 2. Inercia Reflejada Total ($J_{\text{total}}$)
+La inercia total tiene tres componentes principales:
+
+$$
+J_{\text{total}} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-in}}
+$$
+
+#### Desglose:
+1. **Inercia del tornillo ($J_{\text{screw}}$)**:
+   - Depende de la geometría y material del tornillo.
+
+2. **Inercia de la carga reflejada**:
+   $$
+   J_{\text{load-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_L}{g} \right)
+   $$
+
+3. **Inercia del carro reflejada**:
+   $$
+   J_{\text{carriage-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_C}{g} \right)
+   $$
+
+#### Fórmula combinada:
+$$
+J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)
+$$
+
+### Parámetros:
+- $\eta$: Eficiencia del sistema (típicamente $0.7$-$0.9$)
+- $N_S$: Relación de transmisión del tornillo ($N_S = 2\pi p$ para cabeceo $p$ en rev/m)
+
+---
+
+## Ejemplo Numérico
+
+**Datos**:
+- Carga $W_L = 500\, \text{N}$
+- Peso del carro $W_C = 300\, \text{N}$
+- Eficiencia $\eta = 0.8$
+- $N_S = 10\, \text{rad/m}$
+- $J_{\text{screw}} = 0.05\, \text{kg·m²}$
+
+**Cálculos**:
+
+1. Masa total:
+   $$
+   m = \frac{500 + 300}{9.81} \approx 81.55\, \text{kg}
+   $$
+
+2. Inercia reflejada de masas:
+   $$
+   J_{\text{load+carriage}} = \frac{1}{0.8 \times 10^2} \times 81.55 \approx 1.02\, \text{kg·m²}
+   $$
+
+3. Inercia total:
+   $$
+   J_{\text{total}} = 0.05 + 1.02 = 1.07\, \text{kg·m²}
+   $$
+
+---
+
+## Tabla Resumen
+
+| Componente | Fórmula |
+|------------|---------|
+| Masa total | $m = \frac{W_L + W_C}{g}$ |
+| Inercia total | $J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)$ |
+| Relación de transmisión | $N_S = 2\pi p$ |
+
+> **Nota**: Para sistemas de alta precisión, considerar también la inercia del acoplamiento motor-tornillo.
+
