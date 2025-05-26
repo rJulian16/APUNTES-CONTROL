@@ -414,19 +414,15 @@ $$J_{\text{total}} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-i
    - Depende de la geometría y material del tornillo.
 
 **Inercia de la carga reflejada**:
-   $$
-   J_{\text{load-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_L}{g} \right)
-   $$
+   $$J_{\text{load-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_L}{g} \right)$$
 
 **Inercia del carro reflejada**:
-   $$
-   J_{\text{carriage-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_C}{g} \right)
-   $$
+   $$J_{\text{carriage-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_C}{g} \right)$$
 
 - Fórmula combinada:
 $$J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)$$
 
-- Parámetros:
+- **Parámetros:**
 - $\eta$: Eficiencia del sistema (típicamente $0.7$-$0.9$)
 - $N_S$: Relación de transmisión del tornillo ($N_S = 2\pi p$ para cabeceo $p$ en rev/m)
 
