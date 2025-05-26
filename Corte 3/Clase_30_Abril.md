@@ -575,7 +575,7 @@ $$J_{ref}^{trans} = 5.42 \times 10^{-8} + \frac{1}{0.9 \times 8.38^2} \left( \fr
 
 - Cálculo de la Inercia del Tornillo ($J_{screw}$)
 
-$$J_{screw} = \frac{\pi L \rho D^4}{32g}$$
+$$J_{screw} = \frac{\pi L \rho D^4}{32}$$
 
 Sustituyendo en la fórmula:
 
