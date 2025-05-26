@@ -850,5 +850,39 @@ Un sistema de banda transportadora industrial mueve cajas de 80 kg sobre una pla
    - Torque total:
       
      $$\tau_{\text{total}} = 51.2 + 7.25 = 58.45\,N·m$$
-     
- 
+
+
+## 10. Conclusiones
+
+- La relación de transmisión en un tornillo sin fin depende del número de hilos del tornillo y del número de dientes de la rueda, permitiendo obtener grandes reducciones en un solo paso, ideal para sistemas de alta carga y baja velocidad.
+
+- El paso (lead) y el cabeceo (pitch) son parámetros clave para comprender el desplazamiento lineal por vuelta del tornillo. Su relación inversa permite transformar movimientos angulares en desplazamientos lineales precisos.
+
+- El husillo de bolas, a diferencia de la rosca directa, reduce la fricción gracias a la recirculación de bolas, mejorando la eficiencia, precisión y vida útil, aunque con mayor costo y complejidad.
+
+- El piñón-cremallera convierte movimiento rotativo en lineal con una relación directa entre la velocidad angular del piñón y la velocidad lineal de la cremallera, siendo ideal para trayectorias largas y repetitivas.
+
+- El concepto de inercia reflejada permite modelar todo el sistema en un único dominio (rotacional o lineal), facilitando el diseño y análisis de controladores en sistemas mecatrónicos.
+
+- En los sistemas con banda transportadora de múltiples rodillos, la velocidad lineal de la banda permanece constante, mientras que las velocidades angulares de los rodillos cambian dependiendo de sus radios, lo que debe considerarse en el diseño y sincronización del sistema.
+
+- A mayor paso de tornillo, menor será la inercia reflejada al eje del motor, lo que puede mejorar la respuesta dinámica del sistema. Sin embargo, esto puede comprometer la precisión en aplicaciones de control fino.
+
+
+## 11. Referencias
+
+[1] Bolton, W. *Mechatronics: Electronic Control Systems in Mechanical and Electrical Engineering*. Pearson Education, 2015.
+
+[2] Nise, N. S. *Control Systems Engineering*. Wiley, 2019.
+
+[3] Quanser. *QLabs Virtual Experiments – User Guide*. Quanser Inc., 2020.
+
+[4] Manrique, J. (2024). Apuntes de clase sobre Transmisiones Mecánicas y Dinámica. Universidad XYZ.
+
+[5] De Silva, C. W. *Mechatronics: An Integrated Approach*. CRC Press, 2005.
+
+[6] “Ball Screws vs Lead Screws.” Thomson Linear, [https://www.thomsonlinear.com](https://www.thomsonlinear.com)
+
+[7] Myszka, D. *Machines and Mechanisms: Applied Kinematic Analysis*. Pearson, 2011.
+
+
