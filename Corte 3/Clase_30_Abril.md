@@ -593,3 +593,8 @@ Este ejemplo hecho por MathWorks modela un tornillo de avance con fricción. Se 
 
 Figura 8. Tornillo de avance MathWorks
 
+![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/0fca4f3639414e008aed8138e8152530c117a97d/Corte%203/Imagenes/hola4.gif)
+
+Figura 9. Simulink tornillo.
+
+
