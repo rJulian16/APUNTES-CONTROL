@@ -799,11 +799,6 @@ $\boxed{F_{\text{belt}} \approx 12.1\,\text{N}}$
   
    - $F_{\text{ext}} = F_f + F_g + F_p$ (Fuerza externa total)  
 
-- Componentes de fuerza externa:
-- 
-   - Fricción: $F_f = \mu (W_L + W_C + W_{\text{belt}}) \cos \beta$  
-   - Gravedad: $F_g = (W_L + W_C + W_{\text{belt}}}) \sin \beta$  
-   - Externa aplicada: $F_p$ (opcional)  
 
 📚 Ejercicio 13:
 
