@@ -353,26 +353,22 @@ O equivalentemente si $N_S = 2\pi p$:
 
 $$J_{ref} = \frac{m}{N_S^2}$$
 
-- Ejemplo Numérico
+📚 Ejercicio 6:
 
-**Datos:**
-- Masa $m = 10\ kg$
-- Cabeceo $p = 2\ rev/m$
+## Ejercicio 1: Inercia Reflejada
+**Enunciado**:  
+Calcular la inercia reflejada y torque para un tornillo con $p=3\, \text{rev/m}$ y $m=15\, \text{kg}$.  
 
-**Cálculo:**
-1. $N_S = 2\pi \times 2 = 4\pi\ rad/m$
-2. $J_{ref} = \frac{10}{(4\pi)^2} \approx 0.063\ kg\cdot m^2$
+**Solución**:  
+1. $J_{\text{ref}} = \frac{15}{(2\pi \times 3)^2} \approx 0.042\, \text{kg·m}^2$  
+2. $\tau = 0.042 \times 2 = 0.084\, \text{N·m}$  
 
-## Aplicaciones
+## Ejercicio 2: Potencia y Velocidad  
+**Enunciado**:  
+Para un tornillo con $p=4\, \text{rev/m}$ y motor a $60\, \text{rpm}$, calcular $\dot{x}$ y potencia contra fricción ($\mu=0.1$).  
 
-- **Modelado Dinámico:** Usar $J_{ref}$ para simular el efecto de carga en el motor
-- **Diseño de Control:** Calcular torque necesario para acelerar la carga
-
-## Tabla Resumen
-
-| Concepto | Ecuación |
-|----------|----------|
-| Relación de transmisión | $\frac{\dot{\theta}}{\dot{x}} = 2\pi p$ |
-| Inercia reflejada | $J_{ref} = \frac{m}{(2\pi p)^2}$ |
+**Solución**:  
+1. $\dot{x} = \frac{6.28}{2\pi \times 4} = 0.25\, \text{m/s}$  
+2. $P = 19.62 \times 0.25 = 4.91\, \text{W}$  
 
 .
