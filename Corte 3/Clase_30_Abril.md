@@ -765,13 +765,13 @@ Un motor gira a 1750 rpm mueve una banda transportadora mediante un tambor motri
 
 - Relación de transmisión ($N$):
 
-   $$   N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}} = \frac{1750}{63.7} \approx 27.5$$
+   $$N = \frac{\text{Velocidad motor}}{\text{Velocidad carga}} = \frac{1750}{63.7} \approx 27.5$$
 
 - Fuerza efectiva ($F_{\text{belt}}$):
 
    - Primero calculamos el torque en el tambor:
   
-     $$     \tau_{\text{tambor}} = \tau_{\text{motor}} \times \frac{1}{N} = 25 \times \frac{1}{27.5} \approx 0.91\,\text{N·m}$$
+     $$\tau_{\text{tambor}} = \tau_{\text{motor}} \times \frac{1}{N} = 25 \times \frac{1}{27.5} \approx 0.91\,\text{N·m}$$
      
    - Luego la fuerza:
   
