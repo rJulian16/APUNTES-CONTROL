@@ -353,6 +353,12 @@ O equivalentemente si $N_S = 2\pi p$:
 
 $$J_{ref} = \frac{m}{N_S^2}$$
 
+- La inercia reflejada representa el efecto de la masa de la carga trasladado al eje del motor, como si ambos estuvieran directamente acoplados.
+
+- Este concepto permite expresar todo el sistema en términos rotacionales, lo que simplifica el análisis dinámico y el diseño de sistemas de control.
+
+- Un tornillo con mayor paso genera una inercia reflejada menor, lo que se traduce en una respuesta más ágil del sistema.
+
 📚 Ejercicio 6:
 
 - Cálculo de Inercia Reflejada y Torque
