@@ -28,7 +28,7 @@ Cuando el tornillo gira, su rosca empuja los dientes de la rueda dentada, hacien
 
 Figura 1. Tornillo sin fin Simulink
 
-
+![image](https://github.com/rJulian16/APUNTES-CONTROL/blob/fa5507616608caa3038b6de0d94c1b95a349c83d/Corte%203/Imagenes/hola3.gif)
 
 Figura 2. Tornillo sin fin
 
