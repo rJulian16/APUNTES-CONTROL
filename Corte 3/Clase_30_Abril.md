@@ -802,6 +802,54 @@ $\boxed{F_{\text{belt}} \approx 12.1\,\text{N}}$
 
 📚 Ejercicio 13:
 
-  Si $W_L + W_C + W_{\text{belt}} = 1000\,N$, $\eta=0.9$, $N_{\text{BD}}=2\,m^{-1}$, $F_{\text{ext}}=200\,N$:  
-  - Inercia: $J_{\text{ref}}^{\text{trans}} = 2J_p + \frac{1}{0.9 \times 4}\left(\frac{1000}{9.81}\right) \approx 2J_p + 28.3\,kg\cdot m^2$  
-  - Torque: $T_{\text{load-in}} = \frac{200}{0.9 \times 2} \approx 111.1\,N\cdot m$
+Un sistema de banda transportadora industrial mueve cajas de 80 kg sobre una plataforma que pesa 20 kg. La banda pesa 15 kg y está accionada por dos piñones idénticos (IP y LP) con inercia de 0.05 kg·m² cada uno. El tambor motriz tiene un radio de 0.1 m y el sistema opera con una eficiencia del 85%. Considerando un coeficiente de fricción de 0.3 y una pendiente de 5°, calcule:  
+
+1. La inercia reflejada total en el eje del motor  
+2. El torque requerido para mover la carga  
+
+
+**Datos:**  
+- Pesos: $W_L = 80\,kg \times 9.81 = 784.8\,N$, $W_C = 20\,kg \times 9.81 = 196.2\,N$, $W_{\text{belt}} = 15\,kg \times 9.81 = 147.15\,N$  
+- $J_p = 0.05\,kg·m²$ (para cada piñón)  
+- $r_{ip} = 0.1\,m$ → $N_{\text{BD}} = \frac{1}{0.1} = 10\,m^{-1}$  
+- $\eta = 0.85$, $\mu = 0.3$, $\beta = 5°$  
+
+**Procedimiento:**  
+
+- Inercia Reflejada Total
+  
+   $$J_{\text{ref}}^{\text{trans}} = 2J_p + \frac{1}{\eta N_{\text{BD}}^2} \left( \frac{W_L + W_C + W_{\text{belt}}}{g} \right)$$  
+
+   $$= 2(0.05) + \frac{1}{0.85 \times 10^2} \left( \frac{784.8 + 196.2 + 147.15}{9.81} \right)$$
+  
+   $$= 0.1 + \frac{1}{85} \times 115 \approx \boxed{1.45\,kg·m²}$$
+
+-Torque de Carga
+
+   - Fuerzas externas:
+     
+     $$F_f = 0.3 \times 1128.15 \times \cos 5° \approx 337.1\,N$$
+      
+     $$F_g = 1128.15 \times \sin 5° \approx 98.3\,N$$
+      
+     $$F_{\text{ext}} = 337.1 + 98.3 = 435.4\,N$$
+     
+   - Torque reflejado:  
+     $$
+     T_{\text{load-in}} = \frac{435.4}{0.85 \times 10} \approx \boxed{51.2\,N·m}  
+     $$
+
+- Potencia del Motor
+
+   - Aceleración angular equivalente ($\alpha$):
+     
+     $$a = r_{ip} \alpha \Rightarrow \alpha = \frac{0.5}{0.1} = 5\,rad/s²$$  
+   - Torque dinámico:
+     
+     $$\tau_{\text{din}} = J_{\text{ref}}^{\text{trans}} \times \alpha = 1.45 \times 5 = 7.25\,N·m$$
+     
+   - Torque total:
+      
+     $$\tau_{\text{total}} = 51.2 + 7.25 = 58.45\,N·m$$
+     
+ 
