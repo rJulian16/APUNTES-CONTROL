@@ -36,7 +36,7 @@ Figura 2. Tornillo sin fin
 
 En sistemas de transmisión lineal, se utilizan distintos tipos de roscas en los tornillos guía. Los más comunes en aplicaciones mecánicas son:
 
-#### 2.1.1 Tornillo de rosca trapezoidal
+#### 2.1.1. Tornillo de rosca trapezoidal
 
 **Definición:**
 Tiene una rosca con forma de trapecio. Su diseño permite una buena combinación entre eficiencia y resistencia, lo que lo hace adecuado para cargas moderadas y movimientos repetitivos.
@@ -53,7 +53,7 @@ Tiene una rosca con forma de trapecio. Su diseño permite una buena combinación
 
 Figura 3. Tornillo sin fin con rosca trapezoidal
 
-#### 2.1.2 Tornillo de rosca cuadrada
+#### 2.1.2. Tornillo de rosca cuadrada
 
 **Definición:**
 Tiene una rosca con forma rectangular (cuadrada), lo que reduce el rozamiento durante el movimiento. Es más eficiente que el trapezoidal pero más difícil de fabricar.
@@ -83,7 +83,7 @@ Figura 4. Tornillo sin fin con rosca cuadrada
 
 Tabla 1. Comparacion trapezoidal vs cuadrada
 
-#### 2.1.3 Tornillo de rosca directa
+#### 2.1.3. Tornillo de rosca directa
 
 **Definición:**
 
@@ -101,7 +101,7 @@ También conocido como tornillo de fricción, es un tornillo guía tradicional e
 
 Figura 5. Tornillo sin fin con rosca directa
 
-#### 2.1.4 Tornillo con recirculación de bolas (Ball Screw)
+#### 2.1.4. Tornillo con recirculación de bolas (Ball Screw)
 
 **Definición:**
 
@@ -200,7 +200,7 @@ $$Z = i \cdot n = 30 \cdot 3 = 90 \text{ dientes}$$
 
 La rueda dentada debe tener 90 dientes.
 
-### 4.1 Relacion de trasmision cabeceo-paso
+### 4.1. Relacion de trasmision cabeceo-paso
 
 - **Cabeceo(Pitch)**
 
@@ -393,7 +393,10 @@ $$\tau = 0.042 \times 2 = 0.084\, \text{N·m}$$
 2. $\boxed{\tau = 0.084\, \text{N·m}}$
 
 
-## 6. Análisis de Inercia Reflejada Total en Sistemas de Tornillo
+
+## 6. Inercia reflejada total y torque de carga
+
+### 6.1. Análisis de Inercia Reflejada Total en Sistemas de Tornillo
 
 -Componentes Clave
 
@@ -443,3 +446,85 @@ Inercia total:
 
 > **Nota**: Para sistemas de alta precisión, considerar también la inercia del acoplamiento motor-tornillo.
 
+### 6.2. Análisis de Torque de Carga en Sistemas de Tornillo
+
+- Componentes de Fuerza Externa
+
+La fuerza externa total ($F_{ext}$) que actúa sobre el sistema se compone de:
+
+$$F_{ext} = F_f + F_g + F_p$$
+
+- Desglose de componentes:
+Fuerza de fricción ($F_f$):
+
+   $$F_f = \mu (W_L + W_C) \cos \beta$$
+  
+   - $\mu$: Coeficiente de fricción
+  
+   - $W_L$: Peso de la carga [N]
+  
+   - $W_C$: Peso del carro [N]
+     
+   - $\beta$: Ángulo de inclinación (0° si horizontal)
+
+Fuerza gravitacional ($F_g$):
+
+   $$F_g = (W_L + W_C) \sin \beta$$
+   
+   - Si $\beta = 0°$ (horizontal): $F_g = 0$
+
+Fuerza aplicada ($F_p$): Fuerza externa adicional (ej: empuje).
+
+- **Fórmula combinada:**
+$$F_{ext} = F_p + (W_L + W_C) (\sin \beta + \mu \cos \beta)$$
+
+
+-Torque Reflejado en el Motor
+
+El torque requerido ($T_{\text{load-in}}$) para mover la carga se calcula mediante el trabajo realizado:
+
+**- Relación trabajo-torque:**
+
+Trabajo en términos lineales:
+   $$\text{Work} = F_{ext} \cdot \Delta x$$
+   
+   - $\Delta x$: Desplazamiento lineal.
+
+Trabajo en términos rotacionales:
+
+   $$\text{Work} = T_{\text{load-in}} \cdot \Delta \theta$$
+   
+   - $\Delta \theta$: Desplazamiento angular.
+
+Relación tornillo:
+
+   $$\Delta x = \frac{\Delta \theta}{2\pi p}$$
+   
+   - $p$: Cabeceo del tornillo [rev/m].
+
+- **Torque reflejado:**
+$$T_{\text{load-in}} = \frac{F_{ext}}{\eta N_S}$$
+
+- $\eta$: Eficiencia del sistema (0.7-0.9).
+
+- $N_S = 2\pi p$: Relación de transmisión.
+
+📚 Ejercicio 8 numerico:
+
+**Datos**:
+- $W_L = 500\, \text{N}$, $W_C = 300\, \text{N}$
+- $\mu = 0.2$, $\beta = 0°$ (horizontal)
+- $p = 5\, \text{rev/m}$, $\eta = 0.85$
+- $F_p = 100\, \text{N}$
+
+**Cálculos**:
+
+**Fuerza externa** ($\beta = 0° \Rightarrow \sin \beta = 0$, $\cos \beta = 1$):
+
+   $$F_{ext} = 100 + (500 + 300)(0 + 0.2 \times 1) = 100 + 160 = 260\, \text{N}$$
+
+**Torque reflejado** ($N_S = 2\pi \times 5 = 31.42\, \text{rad/m}$):
+
+   $$T_{\text{load-in}} = \frac{260}{0.85 \times 31.42} \approx 9.74\, \text{N·m}$$
+
+> **Nota**: Para sistemas verticales ($\beta = 90°$), la fuerza gravitacional domina ($F_g = W_L + W_C$).
