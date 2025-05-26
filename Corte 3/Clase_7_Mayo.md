@@ -63,3 +63,27 @@ El ADRC actúa en tres pasos:
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
 
+## 2. Componentes de un ADRC
+
+El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener el control del sistema, incluso ante perturbaciones o modelos desconocidos:
+
+- **Generador de trayectorias (cinemática y perfiles de movimiento)**
+  
+- **Función**: Estima no solo los estados del sistema (como posición y velocidad), sino también las **perturbaciones totales** (internas y externas).
+- **Importancia**: Permite conocer el comportamiento del sistema en tiempo real sin requerir un modelo exacto.
+- **Ejemplo**: Si el sistema es un ventilador, estima cuán rápido gira y cuánto lo afecta el viento externo.
+
+- **Observador de estado extendido (ESO)**
+  
+- **Función**: Usa la estimación de perturbaciones del ESO para **cancelarlas activamente** en la señal de control.
+- **Importancia**: Permite que el sistema se comporte como si no tuviera perturbaciones.
+- **Ejemplo**: Si el ESO detecta una perturbación que baja la velocidad del ventilador, el controlador la compensa aumentando la señal de control.
+
+- **Controlador proporcional por retroalimentación de estados**
+
+- **Función**: Calcula la señal de control que lleva la salida del sistema a seguir una referencia deseada (por ejemplo, una velocidad o posición).
+- **Importancia**: Puede ser un controlador proporcional o una función no lineal diseñada para mejorar el desempeño.
+- **Ejemplo**: Ajusta el voltaje del ventilador para que mantenga 1500 RPM, incluso si hay perturbaciones.
+
+
+
