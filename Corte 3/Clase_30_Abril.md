@@ -409,24 +409,20 @@ La inercia total tiene tres componentes principales:
 
 $$J_{\text{total}} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-in}}$$
 
-- Desglose:
-**Inercia del tornillo ($J_{\text{screw}}$)**:
+Inercia del tornillo ($J_{\text{screw}}$):
    - Depende de la geometría y material del tornillo.
 
-**Inercia de la carga reflejada**:
+Inercia de la carga reflejada:
    $$J_{\text{load-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_L}{g} \right)$$
 
-**Inercia del carro reflejada**:
+Inercia del carro reflejada:
    $$J_{\text{carriage-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_C}{g} \right)$$
 
-- Fórmula combinada:
+- **Fórmula combinada:**
 $$J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)$$
 
-- **Parámetros:**
-- $\eta$: Eficiencia del sistema (típicamente $0.7$-$0.9$)
-- $N_S$: Relación de transmisión del tornillo ($N_S = 2\pi p$ para cabeceo $p$ en rev/m)
 
-## Ejemplo Numérico
+📚 Ejercicio 7 numerico:
 
 **Datos**:
 - Carga $W_L = 500\, \text{N}$
@@ -436,31 +432,14 @@ $$J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + 
 - $J_{\text{screw}} = 0.05\, \text{kg·m²}$
 
 **Cálculos**:
+Masa total:
+   $$m = \frac{500 + 300}{9.81} \approx 81.55\, \text{kg}$$
 
-1. Masa total:
-   $$
-   m = \frac{500 + 300}{9.81} \approx 81.55\, \text{kg}
-   $$
+Inercia reflejada de masas:
+   $$J_{\text{load+carriage}} = \frac{1}{0.8 \times 10^2} \times 81.55 \approx 1.02\, \text{kg·m²}$$
 
-2. Inercia reflejada de masas:
-   $$
-   J_{\text{load+carriage}} = \frac{1}{0.8 \times 10^2} \times 81.55 \approx 1.02\, \text{kg·m²}
-   $$
-
-3. Inercia total:
-   $$
-   J_{\text{total}} = 0.05 + 1.02 = 1.07\, \text{kg·m²}
-   $$
-
----
-
-## Tabla Resumen
-
-| Componente | Fórmula |
-|------------|---------|
-| Masa total | $m = \frac{W_L + W_C}{g}$ |
-| Inercia total | $J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)$ |
-| Relación de transmisión | $N_S = 2\pi p$ |
+Inercia total:
+   $$J_{\text{total}} = 0.05 + 1.02 = 1.07\, \text{kg·m²}$$
 
 > **Nota**: Para sistemas de alta precisión, considerar también la inercia del acoplamiento motor-tornillo.
 
