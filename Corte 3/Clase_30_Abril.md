@@ -530,3 +530,8 @@ $$T_{\text{load-in}} = \frac{F_{ext}}{\eta N_S}$$
    $$T_{\text{load-in}} = \frac{260}{0.85 \times 31.42} \approx 9.74\, \text{N·m}$$
 
 > **Nota**: Para sistemas verticales ($\beta = 90°$), la fuerza gravitacional domina ($F_g = W_L + W_C$).
+
+
+📚 Ejercicio 9 planteado en clase :
+
+Una carga de 50 Kg debe ser posicionado usando un tornillo esferado de acero con 0,14 Kg/cm³ de densidad, 0,182 cm de diámetro, 36 cm de longitud, 0,75 cm/rev de paso y 90% de eficiencia. El carro pesa 0,23 Kg. Calcule la inercia reflejada por la transmisión hacia su eje de entrada.
