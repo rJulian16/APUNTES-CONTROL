@@ -393,50 +393,42 @@ $$\tau = 0.042 \times 2 = 0.084\, \text{N·m}$$
 2. $\boxed{\tau = 0.084\, \text{N·m}}$
 
 
-# Análisis de Inercia Reflejada Total en Sistemas de Tornillo
+# 6. Análisis de Inercia Reflejada Total en Sistemas de Tornillo
 
-## Componentes Clave
+-Componentes Clave
 
-### 1. Masas del Sistema
-- **Carga (Load)**: $W_L$ [N]
-- **Carro (Carriage)**: $W_C$ [N]
-- **Masa total equivalente**:
-  $$
-  m = \frac{W_L + W_C}{g}
-  $$
+- Masas del Sistema
+- Carga (Load): $W_L$ [N]
+- Carro (Carriage): $W_C$ [N]
+- Masa total equivalente:
+  $$m = \frac{W_L + W_C}{g}$$
   donde $g = 9.81\, \text{m/s²}$.
 
-### 2. Inercia Reflejada Total ($J_{\text{total}}$)
+- Inercia Reflejada Total ($J_{\text{total}}$)
 La inercia total tiene tres componentes principales:
 
-$$
-J_{\text{total}} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-in}}
-$$
+$$J_{\text{total}} = J_{\text{screw}} + J_{\text{load-in}} + J_{\text{carriage-in}}$$
 
-#### Desglose:
-1. **Inercia del tornillo ($J_{\text{screw}}$)**:
+- Desglose:
+**Inercia del tornillo ($J_{\text{screw}}$)**:
    - Depende de la geometría y material del tornillo.
 
-2. **Inercia de la carga reflejada**:
+**Inercia de la carga reflejada**:
    $$
    J_{\text{load-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_L}{g} \right)
    $$
 
-3. **Inercia del carro reflejada**:
+**Inercia del carro reflejada**:
    $$
    J_{\text{carriage-in}} = \frac{1}{\eta N_S^2} \left( \frac{W_C}{g} \right)
    $$
 
-#### Fórmula combinada:
-$$
-J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)
-$$
+- Fórmula combinada:
+$$J_{\text{total}} = J_{\text{screw}} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)$$
 
-### Parámetros:
+- Parámetros:
 - $\eta$: Eficiencia del sistema (típicamente $0.7$-$0.9$)
 - $N_S$: Relación de transmisión del tornillo ($N_S = 2\pi p$ para cabeceo $p$ en rev/m)
-
----
 
 ## Ejemplo Numérico
 
