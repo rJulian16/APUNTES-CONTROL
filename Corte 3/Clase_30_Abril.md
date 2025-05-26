@@ -584,3 +584,12 @@ I_{screw} &= \frac{\pi \times 0.36 \times 140000 \times (0.00182)^4}{32} \\
 &= \frac{\pi \times 0.36 \times 140000 \times 1.1 \times 10^{-11}}{32} \\
 &= 5.42 \times 10^{-8}\, \text{kg·m}^2
 \end{align*}$$
+
+## 7. Simulink Lead-Screw
+
+Este ejemplo hecho por MathWorks modela un tornillo de avance con fricción. Se mide la fuerza de restricción en el tornillo de avance y se utiliza para calcular el par de fricción dentro del mismo. Se utiliza un modelo de fricción continua de deslizamiento a tirones para determinar el coeficiente de fricción basado en la velocidad de rotación relativa de las dos piezas conectadas por el tornillo de avance.
+
+![image](https://github.com/user-attachments/assets/16d99c99-d84e-4d48-b1de-8c311900f69b)
+
+Figura 8. Tornillo de avance MathWorks
+
