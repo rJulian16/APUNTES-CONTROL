@@ -326,3 +326,59 @@ $$
 
 El cabeceo del tornillo es de  
 $$p = 4 \, \text{rev/m}$$
+
+## 5. Inersia Reflejada
+
+### 1. Energía Cinética de la Carga Lineal
+La energía cinética ($KE$) de una carga con masa $m$:
+
+$$KE = \frac{1}{2} m \dot{x}^2$$
+
+*(Nota: La imagen mostraba $x^2$ pero es correcto $\dot{x}^2$)*
+
+### 2. Relación de Transmisión
+Para un tornillo sinfín con cabeceo $p$ [rev/m]:
+
+$$\frac{\dot{\theta}}{\dot{x}} = 2\pi p$$
+
+### 3. Energía Cinética en Términos Angulares
+Sustituyendo $\dot{x} = \frac{\dot{\theta}}{2\pi p}$:
+
+$$KE = \frac{1}{2} \frac{m}{(2\pi p)^2} \dot{\theta}^2$$
+
+### 4. Inercia Reflejada ($J_{ref}$)
+Igualando con $KE = \frac{1}{2} J_{ref} \dot{\theta}^2$:
+
+$$J_{ref} = \frac{m}{(2\pi p)^2}$$
+
+O equivalentemente si $N_S = 2\pi p$:
+
+$$J_{ref} = \frac{m}{N_S^2}$$
+
+## Ejemplo Numérico
+
+**Datos:**
+- Masa $m = 10\ kg$
+- Cabeceo $p = 2\ rev/m$
+
+**Cálculo:**
+1. $N_S = 2\pi \times 2 = 4\pi\ rad/m$
+2. $J_{ref} = \frac{10}{(4\pi)^2} \approx 0.063\ kg\cdot m^2$
+
+## Aplicaciones
+
+- **Modelado Dinámico:** Usar $J_{ref}$ para simular el efecto de carga en el motor
+- **Diseño de Control:** Calcular torque necesario para acelerar la carga
+
+## Tabla Resumen
+
+| Concepto | Ecuación |
+|----------|----------|
+| Relación de transmisión | $\frac{\dot{\theta}}{\dot{x}} = 2\pi p$ |
+| Inercia reflejada | $J_{ref} = \frac{m}{(2\pi p)^2}$ |
+
+## Errores Comunes
+1. Confundir $x$ con $\dot{x}$ en energía cinética
+2. Usar unidades incorrectas para $p$ (debe ser en rev/m)
+
+> **Nota:** Para implementación en Simulink, puede usarse esta inercia equivalente en el modelo del motor.
