@@ -393,7 +393,7 @@ $$\tau = 0.042 \times 2 = 0.084\, \text{N·m}$$
 2. $\boxed{\tau = 0.084\, \text{N·m}}$
 
 
-# 6. Análisis de Inercia Reflejada Total en Sistemas de Tornillo
+## 6. Análisis de Inercia Reflejada Total en Sistemas de Tornillo
 
 -Componentes Clave
 
