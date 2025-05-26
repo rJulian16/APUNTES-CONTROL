@@ -469,10 +469,13 @@ $$F_{ext} = F_f + F_g + F_p$$
    $$F_g = (W_L + W_C) \sin \beta$$
    - Si $\beta = 0°$ (horizontal): $F_g = 0$
 
+
 Fuerza aplicada ($F_p$): Fuerza externa adicional (ej: empuje).
+
 
 **Fórmula combinada:**
 $$F_{ext} = F_p + (W_L + W_C) (\sin \beta + \mu \cos \beta)$$
+
 
 
 **Torque Reflejado en el Motor:**
