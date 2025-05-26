@@ -551,9 +551,52 @@ Aceleración gravitacional:
 
 Relación de transmisión:
 
-   - Fórmula: 
+   - Fórmula:
+
      $$N_s = 2\pi p$$
      
-   - Ejemplo de cálculo:
      $$N_s = 2\pi \times \frac{1}{0.75} \approx 8.38$$
   
+## Fórmula General de Inercia Reflejada
+
+La inercia total reflejada ($J_{ref}^{trans}$) se calcula como:
+
+$$
+J_{ref}^{trans} = J_{screw} + \frac{1}{\eta N_S^2} \left( \frac{W_L + W_C}{g} \right)
+$$
+
+## Ejemplo Numérico
+
+Para los valores dados:
+- $J_{screw} = 5.42 \times 10^{-8}\, \text{kg·m}^2$
+- $\eta = 0.9$ (90% de eficiencia)
+- $N_S = 8.38$
+- $W_L = 50\, \text{kg}$
+- $W_C = 0.23\, \text{kg}$
+- $g = 9.89\, \text{m/s}^2$
+
+El cálculo resulta:
+
+$$
+J_{ref}^{trans} = 5.42 \times 10^{-8} + \frac{1}{0.9 \times 8.38^2} \left( \frac{50 + 0.23}{9.89} \right) \approx 8.1\, \text{kg·m}^2
+$$
+
+## Cálculo de la Inercia del Tornillo ($J_{screw}$)
+
+Para un tornillo modelado como cilindro alargado:
+
+### En Sistema Internacional (SI):
+$$
+J_{screw} = \frac{\pi L \rho D^4}{32g}
+$$
+
+### En Sistema Inglés:
+$$
+J_{screw} = \frac{\pi L \rho D^4}{32}
+$$
+
+Donde:
+- $L$: Longitud del tornillo
+- $\rho$: Densidad del material
+- $D$: Diámetro del tornillo
+- $g$: Aceleración gravitacional (solo en SI)
