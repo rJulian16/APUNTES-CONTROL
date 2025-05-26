@@ -834,10 +834,9 @@ Un sistema de banda transportadora industrial mueve cajas de 80 kg sobre una pla
       
      $$F_{\text{ext}} = 337.1 + 98.3 = 435.4\,N$$
      
-   - Torque reflejado:  
-     $$
-     T_{\text{load-in}} = \frac{435.4}{0.85 \times 10} \approx \boxed{51.2\,N·m}  
-     $$
+   - Torque reflejado:
+       
+     $$T_{\text{load-in}} = \frac{435.4}{0.85 \times 10} \approx \boxed{51.2\,N·m}$$
 
 - Potencia del Motor
 
