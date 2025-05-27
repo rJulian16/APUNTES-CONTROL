@@ -86,4 +86,12 @@ El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener 
 - **Ejemplo**: Ajusta el voltaje del ventilador para que mantenga 1500 RPM, incluso si hay perturbaciones.
 
 
+| Componente                        | Función principal                                                             | Ejemplo / Aplicación                                   |
+|----------------------------------|-------------------------------------------------------------------------------|--------------------------------------------------------|
+| Generador de trayectorias        | Define la referencia o perfil de movimiento deseado                           | Mantener una velocidad de 1500 RPM en un ventilador     |
+| Observador de Estado Extendido (ESO) | Estima en tiempo real los estados del sistema y la perturbación total       | Detectar cambios de fricción o carga en un motor       |
+| Controlador por retroalimentación | Calcula la señal de control para seguir la trayectoria y compensar perturbaciones | Ajustar el voltaje del motor para mantener la velocidad deseada |
+| Perturbación total estimada      | Combinación de efectos no modelados, errores de parámetros y perturbaciones externas | Viento que frena el ventilador o variaciones de tensión |
+| Robustez                         | Alta, ya que no depende de un modelo exacto y compensa perturbaciones        | El sistema sigue funcionando correctamente con condiciones cambiantes |
+
 
