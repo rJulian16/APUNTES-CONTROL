@@ -161,6 +161,25 @@ En sistemas no lineales como el tanque de agua con área variable $$A(h)$$, se p
 - **Parte no lineal**: términos como $$\sqrt{h}$$
 
 Esta separación permite implementar estrategias como ADRC que:
+
 - Considera las no linealidades como perturbaciones estimables
 - Las compensa activamente
 - Simplifica el diseño del controlador al evitar el modelado explícito de todas las dinámicas complejas
+
+## 3. NADRC: Nonlinear Active Disturbance Rejection Control
+
+El NADRC (Nonlinear Active Disturbance Rejection Control) es una extensión del ADRC tradicional que introduce funciones no lineales en el diseño del observador y del controlador, con el objetivo de mejorar el rendimiento dinámico del sistema, especialmente en presencia de ruidos o perturbaciones abruptas.
+
+A diferencia del ADRC lineal, el NADRC no utiliza funciones proporcionales lineales para estimar errores ni para calcular la señal de control. En su lugar, emplea funciones no lineales suavizadas (como el signo, sat, o funciones tipo fal) que mejoran la precisión en regiones cercanas al equilibrio y al mismo tiempo suavizan la respuesta ante perturbaciones grandes.
+
+### Características Principales del NADRC
+
+| Característica                            | Descripción                                                                 |
+|------------------------------------------|-----------------------------------------------------------------------------|
+| Estimación no lineal                     | Utiliza funciones no lineales como `fal()` para mejorar la estimación del error y la perturbación. |
+| Mejor rechazo al ruido                   | Las funciones no lineales suavizan la acción del observador ante señales ruidosas. |
+| Alta precisión en zona cercana al cero   | Ajuste fino del comportamiento del sistema cuando el error es pequeño.     |
+| Mayor robustez frente a no linealidades  | Se adapta mejor a dinámicas no lineales que el ADRC lineal.                |
+| Controlador no lineal                    | Reemplaza las leyes de control proporcionales clásicas por funciones no lineales. |
+| Parametrización flexible                 | Los parámetros α y δ permiten personalizar la respuesta del sistema.       |
+
