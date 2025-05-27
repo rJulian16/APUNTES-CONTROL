@@ -125,6 +125,8 @@ $$h = Ku + h$$
 
 - Sistema No Lineal (Caso de Estudio: Tanque de Agua Irregular)
 
+Ejercicio 2: 
+
 **Descripción del Sistema**
 
 - **Entrada (u)**: Flujo de entrada al tanque
