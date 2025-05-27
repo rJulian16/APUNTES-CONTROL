@@ -114,3 +114,41 @@ El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener 
 | Robustez                         | Alta, ya que no depende de un modelo exacto y compensa perturbaciones        | El sistema sigue funcionando correctamente con condiciones cambiantes |
 
 Tabla 2. Caracteristicas ADRC
+
+![image](https://github.com/user-attachments/assets/05a3b9fd-ede4-4a2c-a880-5755e1e49bc2)
+
+Figura 2. Sistemas lineales y no lineales
+
+- Modelo Lineal de Referencia
+  
+$$h = Ku + h$$
+
+- Sistema No Lineal (Caso de Estudio: Tanque de Agua Irregular)
+
+**Descripción del Sistema**
+
+- **Entrada (u)**: Flujo de entrada al tanque
+- **Salida (h)**: Altura del líquido en el tanque
+- **Característica no lineal**: Área transversal variable $A(h)$ y flujo de salida $a\sqrt{2gh}$
+
+- Ecuación Fundamental
+  
+$$\frac{d}{dt} \left( \int_{0}^{h} A(h)dh \right) = u - a\sqrt{2gh}$$
+
+- Ecuación diferencial:
+  
+$$A(h)\dot{h} = u - a\sqrt{2gh}$$
+
+- Forma despejada para la dinámica:
+  
+$$\dot{h} = \frac{1}{A(h)}u - \frac{a\sqrt{2gh}}{A(h)}$$
+
+- Representación de estado:
+  
+$$h = \frac{1}{A(h)}u - \frac{a\sqrt{2gh}}{A(h)}$$
+
+- **Estrategia de Control**
+  
+1. **Parte Lineal**: $ \frac{1}{A(h)}u $
+2. **Parte No Lineal**: $ \frac{a\sqrt{2gh}}{A(h)} $
+
