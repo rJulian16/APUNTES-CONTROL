@@ -149,6 +149,6 @@ $$h = \frac{1}{A(h)}u - \frac{a\sqrt{2gh}}{A(h)}$$
 
 - **Estrategia de Control**
   
-1. **Parte Lineal**: $ \frac{1}{A(h)}u $
-2. **Parte No Lineal**: $ \frac{a\sqrt{2gh}}{A(h)} $
+1. **Parte Lineal**: $\frac{1}{A(h)}u$
+2. **Parte No Lineal**: $\frac{a\sqrt{2gh}}{A(h)}$
 
