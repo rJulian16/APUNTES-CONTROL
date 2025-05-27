@@ -220,3 +220,33 @@ Perturbación total ($f$):
 - Mayor precisión en sistemas fuertemente no lineales
 - Mejor rechazo de perturbaciones de alta frecuencia
 - Adaptabilidad a cambios bruscos en dinámicas
+
+
+- sustituyendo f en espacio de estados:
+
+$$\begin{cases} 
+\dot{x}_1 = x_2 \\ 
+\dot{x}_2 = f + b_{0}u \\ 
+y = x_1 
+\end{cases}$$
+
+
+- Tratamiento de la perturbación $f$ (desconocida) como estado adicional $x_3$
+
+Modelo extendido (3er orden):
+
+$$\begin{cases} 
+\dot{x}_1 = x_2 \\ 
+\dot{x}_2 = x_3 + b_{0}u \\ 
+\dot{x}_3 = h \quad \text{(Dinámica de la perturbación)} \\ 
+y = x_1 
+\end{cases}$$
+
+- $x_3$ absorbe todas las no linealidades/incertidumbres ($f$)
+- Permite diseñar como si fuera un sistema lineal canónico
+
+- Ventajas:
+
+   - No requiere conocimiento exacto de $f$
+   - Rechazo automático de perturbaciones
+   - Estructura uniforme para diversos sistemas no lineales
