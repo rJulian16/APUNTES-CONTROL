@@ -63,6 +63,21 @@ El ADRC actúa en tres pasos:
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
 
+**Comparación entre ADRC, PID y LQR**
+
+| Característica                          | ADRC (Control por Rechazo Activo de Perturbaciones) | PID (Proporcional-Integral-Derivativo) | LQR (Regulador Cuadrático Lineal)     |
+|----------------------------------------|-----------------------------------------------------|----------------------------------------|----------------------------------------|
+| Requiere modelo exacto del sistema     | No                                                  | No                                     | Sí                                     |
+| Manejo explícito de perturbaciones     | Sí (mediante observador)                            | No                                     | No (solo implícito)                    |
+| Observador de estados incluido         | Sí (ESO)                                            | No                                     | Sí                                     |
+| Facilidad de implementación            | Moderada                                            | Alta                                   | Baja                                   |
+| Adaptabilidad a sistemas no lineales   | Alta                                                | Limitada                               | Baja (requiere linealización)          |
+| Robustez ante incertidumbres           | Alta                                                | Media                                  | Baja                                   |
+| Tipo de control                        | No lineal (dependiendo del diseño)                  | Lineal                                 | Lineal                                 |
+| Aplicaciones comunes                   | Sistemas con incertidumbre, sistemas no modelados   | Procesos industriales, automatización  | Robótica, aeronáutica, sistemas bien modelados |
+
+
+
 ## 2. Componentes de un ADRC
 
 El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener el control del sistema, incluso ante perturbaciones o modelos desconocidos:
