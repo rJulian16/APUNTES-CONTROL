@@ -172,7 +172,7 @@ El NADRC (Nonlinear Active Disturbance Rejection Control) es una extensión del 
 
 A diferencia del ADRC lineal, el NADRC no utiliza funciones proporcionales lineales para estimar errores ni para calcular la señal de control. En su lugar, emplea funciones no lineales suavizadas (como el signo, sat, o funciones tipo fal) que mejoran la precisión en regiones cercanas al equilibrio y al mismo tiempo suavizan la respuesta ante perturbaciones grandes.
 
-### 3.1 Características Principales del NADRC
+### 3.1. Características Principales del NADRC
 
 | Característica                            | Descripción                                                                 |
 |------------------------------------------|-----------------------------------------------------------------------------|
@@ -253,3 +253,5 @@ $$
    - No requiere conocimiento exacto de $f$
    - Rechazo automático de perturbaciones
    - Estructura uniforme para diversos sistemas no lineales
+
+### 3.2. Observador de estados extendido (ESO)
