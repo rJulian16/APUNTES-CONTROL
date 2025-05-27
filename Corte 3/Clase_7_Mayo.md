@@ -194,3 +194,29 @@ $$\begin{cases}
 \dot{x}_2 = -a_0x_1 - a_1x_2 + bu + w \\ 
 y = x_1 
 \end{cases}$$
+
+- Término de perturbación generalizada ($f$):
+  
+$$f = -a_0x_1 - a_1x_2 + (b - b_0)u + w$$
+
+- Componentes Clave
+
+Perturbación total ($f$):
+   - Agrupa:
+     - No linealidades internas ($-a_0x_1 - a_1x_2$)
+     - Incertidumbre paramétrica ($(b-b_0)u$)
+     - Perturbaciones externas ($w$)
+
+ Observador no lineal extendido (ESO):
+   - Reconstruye $f$ en tiempo real sin requerir su forma explícita
+
+ Ley de control:
+   - Combina:
+     - Acción de control lineal ($b_0u$)
+     - Compensación no lineal ($-f_{estimada}$)
+
+**Ventajas vs ADRC Lineal**
+
+- Mayor precisión en sistemas fuertemente no lineales
+- Mejor rechazo de perturbaciones de alta frecuencia
+- Adaptabilidad a cambios bruscos en dinámicas
