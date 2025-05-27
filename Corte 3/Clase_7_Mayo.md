@@ -183,3 +183,14 @@ A diferencia del ADRC lineal, el NADRC no utiliza funciones proporcionales linea
 | Controlador no lineal                    | Reemplaza las leyes de control proporcionales clásicas por funciones no lineales. |
 | Parametrización flexible                 | Los parámetros α y δ permiten personalizar la respuesta del sistema.       |
 
+- Forma general de segundo orden:
+
+$$\ddot{y} = -a_1\dot{y} - a_2y + bu$$
+
+- Representación en espacio de estados:
+  
+$$\begin{cases} 
+\dot{x}_1 = x_2 \\ 
+\dot{x}_2 = -a_0x_1 - a_1x_2 + bu + w \\ 
+y = x_1 
+\end{cases}$$
