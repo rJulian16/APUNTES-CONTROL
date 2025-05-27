@@ -80,6 +80,10 @@ Tabla 1. Comparacion entre PID, ADRC y LQR
 
 ## 2. Componentes de un ADRC
 
+![image](https://github.com/user-attachments/assets/835f6a16-0d39-4486-b1b2-a7208d01140b)
+
+Figura 2. Componentes de un ADRC.
+
 El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener el control del sistema, incluso ante perturbaciones o modelos desconocidos:
 
 **Generador de trayectorias (cinemática y perfiles de movimiento)**
