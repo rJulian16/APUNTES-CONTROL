@@ -224,12 +224,7 @@ Perturbación total ($f$):
 
 - sustituyendo f en espacio de estados:
 
-$$\begin{cases} 
-\dot{x}_1 = x_2 \\ 
-\dot{x}_2 = f + b_{0}u \\ 
-y = x_1 
-\end{cases}$$
-
+$$\begin{cases} \dot{x}_1 = x_2 \\ \dot{x}_2 = f + b_{0}u \\ y = x_1 \end{cases}$$
 
 - Tratamiento de la perturbación $f$ (desconocida) como estado adicional $x_3$
 
