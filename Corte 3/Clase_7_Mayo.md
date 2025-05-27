@@ -224,22 +224,26 @@ Perturbación total ($f$):
 
 - sustituyendo f en espacio de estados:
 
-$$\begin{cases} 
-\dot{x}_1 = x_2 \\ 
-\dot{x}_2 = f + b_{0}u \\ 
-y = x_1 
-\end{cases}$$
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = f + b_0 u \\
+y = x_1
+\end{cases}
+$$
 
 - Tratamiento de la perturbación $f$ (desconocida) como estado adicional $x_3$
 
 Modelo extendido (3er orden):
 
-$$\begin{cases} 
-\dot{x}_1 = x_2 \\ 
-\dot{x}_2 = x_3 + b_{0}u \\ 
-\dot{x}_3 = h \quad \text{(Dinámica de la perturbación)} \\ 
-y = x_1 
-\end{cases}$$
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = x_3 + b_0 u \\
+\dot{x}_3 = h \\
+y = x_1
+\end{cases}
+$$
 
 - $x_3$ absorbe todas las no linealidades/incertidumbres ($f$)
 - Permite diseñar como si fuera un sistema lineal canónico
