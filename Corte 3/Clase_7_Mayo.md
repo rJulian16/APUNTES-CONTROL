@@ -115,6 +115,8 @@ El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener 
 
 Tabla 2. Caracteristicas ADRC
 
+📚 Ejercicio 2 propuesto en clase: 
+
 ![image](https://github.com/user-attachments/assets/05a3b9fd-ede4-4a2c-a880-5755e1e49bc2)
 
 Figura 2. Sistemas lineales y no lineales
@@ -124,8 +126,6 @@ Figura 2. Sistemas lineales y no lineales
 $$h = Ku + h$$
 
 - Sistema No Lineal (Caso de Estudio: Tanque de Agua Irregular)
-
-Ejercicio 2: 
 
 **Descripción del Sistema**
 
