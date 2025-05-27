@@ -63,7 +63,7 @@ El ADRC actúa en tres pasos:
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
 
-**Comparación entre ADRC, PID y LQR**
+### 1.1. Comparación entre ADRC, PID y LQR
 
 | Característica                          | ADRC (Control por Rechazo Activo de Perturbaciones) | PID (Proporcional-Integral-Derivativo) | LQR (Regulador Cuadrático Lineal)     |
 |----------------------------------------|-----------------------------------------------------|----------------------------------------|----------------------------------------|
@@ -76,7 +76,7 @@ Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener 
 | Tipo de control                        | No lineal (dependiendo del diseño)                  | Lineal                                 | Lineal                                 |
 | Aplicaciones comunes                   | Sistemas con incertidumbre, sistemas no modelados   | Procesos industriales, automatización  | Robótica, aeronáutica, sistemas bien modelados |
 
-
+Tabla 1. Comparacion entre PID, ADRC y LQR
 
 ## 2. Componentes de un ADRC
 
@@ -109,4 +109,4 @@ El ADRC se basa en tres bloques fundamentales que trabajan juntos para mantener 
 | Perturbación total estimada      | Combinación de efectos no modelados, errores de parámetros y perturbaciones externas | Viento que frena el ventilador o variaciones de tensión |
 | Robustez                         | Alta, ya que no depende de un modelo exacto y compensa perturbaciones        | El sistema sigue funcionando correctamente con condiciones cambiantes |
 
-
+Tabla 2. Caracteristicas ADRC
