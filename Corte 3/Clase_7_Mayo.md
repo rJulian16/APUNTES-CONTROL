@@ -152,3 +152,13 @@ $$h = \frac{1}{A(h)}u - \frac{a\sqrt{2gh}}{A(h)}$$
 1. **Parte Lineal**: $\frac{1}{A(h)}u$
 2. **Parte No Lineal**: $\frac{a\sqrt{2gh}}{A(h)}$
 
+
+En sistemas no lineales como el tanque de agua con área variable $$A(h)$$, se puede separar el comportamiento en:
+
+- **Parte lineal**: entrada controlable $$u$$
+- **Parte no lineal**: términos como $$\sqrt{h}$$
+
+Esta separación permite implementar estrategias como **ADRC** (*Active Disturbance Rejection Control*), que:
+- Considera las no linealidades como perturbaciones estimables
+- Las compensa activamente
+- Simplifica el diseño del controlador al evitar el modelado explícito de todas las dinámicas complejas
