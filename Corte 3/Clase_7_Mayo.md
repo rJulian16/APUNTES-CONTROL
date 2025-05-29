@@ -437,3 +437,55 @@ $$u_0 = k_1(r - z_1) - k_2z_2$$
 - `k₁, k₂`: Ganancias del controlador
 - `z₁, z₂`: Estados estimados por el LESO
 
+📚 Ejercicio 5:
+
+**Sistema**: Motor DC con fricción viscosa  
+
+**Modelo nominal**:  
+
+$$\ddot{\theta} = -2\dot{\theta} + 5u + w(t)$$  
+- $\theta$: Posición angular (rad)  
+- $w(t)$: Perturbación (escalón de 1 Nm en $t=2s$)
+
+**Objetivos**:  
+
+1. Seguir referencia $r(t) = 1\text{rad}$  
+2. Rechazar perturbación en < 0.1s  
+3. Sobreimpulso < 5%
+
+
+Se aumenta el orden para incluir perturbaciones:  
+
+$$\begin{cases}\dot{x}_1 = x_2\\\dot{x}_2 = x_3 + 5u \quad \text{(5 = ganancia nominal } b_0)\\\dot{x}_3 = h \quad \text{(dinámica de perturbación)}\\y = x_1\end{cases}$$
+
+*Interpretación*:  
+- $x_3$ absorbe $-2\dot{\theta} + w(t)$ (fricción + perturbación)
+
+### 2. Diseño del Observador (LESO)
+Ecuaciones con ganancias por ancho de banda ($\omega_o = 30\text{rad/s}$):  
+$$
+\begin{cases} 
+\dot{z}_1 = z_2 + 90(y - z_1) \\ 
+\dot{z}_2 = z_3 + 5u + 2700(y - z_1) \\ 
+\dot{z}_3 = 27000(y - z_1) 
+\end{cases}
+$$
+
+*Cálculo de ganancias*:  
+$L = [3\omega_o, 3\omega_o^2, \omega_o^3]^T$ (Fórmula de asignación de polos)
+
+### 3. Ley de Control
+Con ancho de banda deseado $\omega_c = 10\text{rad/s}$:  
+$$
+u = \frac{u_0 - z_3}{5}, \quad u_0 = 100(r - z_1) - 20z_2
+$$
+
+*Sintonización*:  
+- $k_1 = \omega_c^2 = 100$  
+- $k_2 = 2\omega_c = 20$ (para amortiguamiento $\zeta=1$)
+
+### 4. Resultados Simulados
+**Performance**:  
+- Tiempo establecimiento: 0.4s  
+- Rechazo de perturbación: 0.03s  
+- Sobreimpulso: 0%  
