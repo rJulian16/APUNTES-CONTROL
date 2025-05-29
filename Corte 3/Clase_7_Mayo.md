@@ -592,7 +592,13 @@ C =\begin{bmatrix}1 & 0 & 0\end{bmatrix}$$
 
 - Ganancias del Observador (Polos en $z=0.2, 0.3, 0.4$):
 
-$$L = \begin{bmatrix}0.8\\25\\150\end{bmatrix}$$
+$$
+L = \begin{bmatrix}
+0.8 \\
+25 \\
+150
+\end{bmatrix}
+$$
 
 - Ley de Control
 
