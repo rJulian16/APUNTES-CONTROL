@@ -255,3 +255,20 @@ $$
    - Estructura uniforme para diversos sistemas no lineales
 
 ### 3.2. Observador de estados extendido (ESO)
+
+$$
+\begin{cases}
+\dot{z}_1 = z_2 - \beta_1 \gamma_1(e) \\
+\dot{z}_2 = z_3 + b_0 u - \beta_2 \gamma_2(e) \\
+\dot{z}_3 = - \beta_3 \gamma_3(e) \\
+e = z_1 - y
+\end{cases}
+$$
+
+Donde:
+
+- $$\( \beta_i \)$$: ganancias del observador
+  
+- $$\( \gamma_i(e) \)$$: funcion modelo
+  
+- $$\( e \)$$: error de estimación
