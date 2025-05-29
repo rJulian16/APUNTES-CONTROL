@@ -306,12 +306,12 @@ donde \(w(t)=0.5\sin(t)\) es una perturbación.
 **Solución**:  
 
 - Modelo extendido:
-  
-   $$\begin{cases} 
-   \dot{x}_1 = x_2 \\ 
-   \dot{x}_2 = x_3 + 3u \\ 
-   \dot{x}_3 = h 
-   \end{cases}$$
+
+  $$\begin{cases} 
+  \dot{x}_1 = x_2\\ 
+  \dot{x}_2 = x_3 + 3u\\ 
+  \dot{x}_3 = h 
+  \end{cases}$$
   
    Donde \(x_3\) agrupa \(-2y|\dot{y}| + w(t)\).
 
