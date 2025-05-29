@@ -308,9 +308,11 @@ donde \(w(t)=0.5\sin(t)\) es una perturbación.
 - Modelo extendido:
 
 $$\begin{cases}
-\dot{x}_1 = x_2 \\dot{x}_2 = x_3 + 3u \dot{x}_3 = hend {cases}$$
+\dot{x}_1 = x_2 \\dot{x}_2 = x_3 + 3u \dot{x}_3 =\end{cases}$$
 
    Donde \(x_3\) agrupa \(-2y|\dot{y}| + w(t)\).
+
+
 
 - Observador:
   
