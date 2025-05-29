@@ -292,6 +292,39 @@ y = x_1
    - $y_i(e)$ proveen convergencia rápida sin oscilaciones
    - Ejemplo común: Funciones sigmoideas o de saturación
 
+📚 Ejercicio 3:
+
+Un sistema hidráulico tiene dinámica:  
+
+$$\ddot{y} = -2y|\dot{y}| + 3u + w(t)$$ 
+
+donde \(w(t)=0.5\sin(t)\) es una perturbación.  
+
+- Diseñe un NADRC con \(b_0=3\)  
+- Simule la respuesta para \(r(t)=5\)  
+
+**Solución**:  
+
+- Modelo extendido:
+  
+   $$\begin{cases} 
+   \dot{x}_1 = x_2 \\ 
+   \dot{x}_2 = x_3 + 3u \\ 
+   \dot{x}_3 = h 
+   \end{cases}$$
+  
+   Donde \(x_3\) agrupa \(-2y|\dot{y}| + w(t)\).
+
+- Observador:
+  
+   $$\dot{z}_3 = -100e \quad \text{(Ganancia alta)}$$
+
+- Control:
+  
+   $$u = \frac{u_0 - z_3}{3}, \quad u_0 = -4z_1 -4z_2$$
+
+**Resultado**: Error en estado estable < 2% en 1.5 seg.
+
 ### 3.3. NADRC - Implementacion No Lineal con Funcion fal()
 
 - Ley de Control No Lineal
@@ -329,3 +362,64 @@ $$\text{fal}(\overline{\epsilon}, \alpha_i, \delta) =
 - Rechazo de ruido: La zona lineal amortigua oscilaciones por mediciones ruidosas
   
 - Sintonización: Las ganancias $\beta_i$ del observador y $k_i$ del controlador deben coordinarse
+
+
+## 4. LADRC - Control Activo de Perturbaciones Lienal
+
+Técnica de control que observa y cancela perturbaciones en tiempo real sin requerir un modelo preciso del sistema.
+
+- Dos Componentes Esenciales:
+
+Observador Lineal (LESO):  
+   - Estimación de estados y perturbaciones  
+   - "Sistema inmunológico" del controlador  
+
+Control Lineal Simple:  
+   - Ley de control tipo PD  
+   - Cancelación automática de perturbaciones  
+
+**Ecuaciones del observador**:
+
+$$\begin{cases} 
+\dot{z}_1 = z_2 + L_1e \\ 
+\dot{z}_2 = z_3 + b_0u + L_2e \\ 
+\dot{z}_3 = L_3e \\ 
+e = y - z_1 
+\end{cases}$$
+
+Donde:
+- `z₁, z₂`: Estados estimados del sistema (posición y velocidad)
+- `z₃`: Estado extendido que estima la perturbación total
+- `L₁, L₂, L₃`: Ganancias del observador lineal
+- `e`: Error de estimación (salida real vs. estimada)
+- `b₀`: Valor nominal de la ganancia de control
+- `u`: Señal de control aplicada
+
+**Modelo Extendido del Sistema**
+
+Este modelo extendido convierte el sistema real (con perturbaciones/no-linealidades) en una *cadena de integradores* + un término unificado de perturbación (`x₃`)
+
+Ecuaciones de estado:
+
+$$\begin{cases} 
+\dot{x}_1 = x_2 \\ 
+\dot{x}_2 = x_3 + b_0u \\ 
+\dot{x}_3 = h \\ 
+y = x_1 
+\end{cases}$$
+
+*Donde*:
+- `x₁, x₂`: Estados físicos del sistema (posición y velocidad)
+- `x₃`: Perturbación generalizada (incluye no-linealidades y perturbaciones externas)
+- `h`: Dinámica de la perturbación (desconocida pero acotada)
+- `y`: Salida medida del sistema
+
+**Ley de Control Lineal**
+
+$$u_0 = k_1(r - z_1) - k_2z_2$$
+
+- `u₀`: Señal de control generada
+- `r`: Referencia o setpoint deseado
+- `k₁, k₂`: Ganancias del controlador
+- `z₁, z₂`: Estados estimados por el LESO
+
