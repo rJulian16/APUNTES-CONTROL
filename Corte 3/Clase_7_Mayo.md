@@ -437,6 +437,15 @@ $$u_0 = k_1(r - z_1) - k_2z_2$$
 - `k₁, k₂`: Ganancias del controlador
 - `z₁, z₂`: Estados estimados por el LESO
 
+### 4.1. Planteamiento L-ADRC
+
+La formula general de la dinamica del sistema se representa como:
+
+$$
+y^{(n)}(t) = \kappa(x) u(t) + \xi(t)
+$$
+
+
 📚 Ejercicio 5:
 
 **Sistema**: Motor DC con fricción viscosa  
