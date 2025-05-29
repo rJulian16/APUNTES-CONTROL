@@ -452,6 +452,10 @@ $$
 
 📚 Ejercicio 5:
 
+![image](https://github.com/user-attachments/assets/830ed361-f263-4fd8-a013-b4fd8344f66d)
+
+Figura 5. Motor DC
+
 **Sistema**: Motor DC con fricción viscosa  
 
 **Modelo nominal**:  
