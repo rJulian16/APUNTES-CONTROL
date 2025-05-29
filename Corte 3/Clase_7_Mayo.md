@@ -272,3 +272,20 @@ Donde:
 - $$\( \gamma_i(e) \)$$: funcion modelo
   
 - $$\( e \)$$: error de estimación
+
+- Ley de Control NADRC
+  
+$$u = \frac{u_0 - z_3}{b_0}$$
+
+- Sistema Controlado Resultante
+- 
+$$\begin{cases} 
+\dot{x}_1 = x_2 \\ 
+\dot{x}_2 = u_0 \quad \text{(Comportamiento integrador)} \\ 
+y = x_1 
+\end{cases}$$
+
+   - La perturbación $f$ es cancelada exactamente cuando $z_3 \approx f$
+   - El sistema original no lineal se reduce a una doble integración
+   - $y_i(e)$ proveen convergencia rápida sin oscilaciones
+   - Ejemplo común: Funciones sigmoideas o de saturación
