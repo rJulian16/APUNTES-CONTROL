@@ -370,11 +370,7 @@ Mismo sistema del ejercicio 3 pero hora con:
 
 - Función fal():  
 
-   $$\text{fal}(e,0.5,0.1) = 
-   \begin{cases} 
-   e/0.1^{0.5}, & |e|≤0.1 \\ 
-   |e|^{0.5}\text{sign}(e), & |e|>0.1 
-   \end{cases}$$
+$$\text{fal}(e,0.5,0.1) =\begin{cases}    e/0.1^{0.5}, & |e|≤0.1\\  |e|^{0.5}\text{sign}(e), & |e|>0.1\end{cases}$$
 
 - Control no lineal:
   
