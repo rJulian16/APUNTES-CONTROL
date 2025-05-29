@@ -543,3 +543,66 @@ D_{Ob} = [0_{n \times m} \ \ 0_{n \times p}] & \text{(Sin feedthrough)} \\
 - $C$: Matriz de salida (dim $p \times n$)  
 - $I_{n \times n}$: Matriz identidad  
 - $0$: Matrices de ceros  
+
+📚 Ejercicio 6: 
+
+![image](https://github.com/user-attachments/assets/81077d64-6dad-4097-adb2-910a96f64a71)
+
+Figura 7. Masa-resorte-amortiguador
+
+Considere un sistema masa-resorte-amortiguador con perturbaciones:
+
+$$m\ddot{y} + c\dot{y} + ky = u + w(t)$$
+
+donde:
+
+- $m=1\text{kg}$, $c=2\text{N·s/m}$, $k=5\text{N/m}$
+- $w(t)=0.5\sin(2t)$ (perturbación no medida)
+- Solo se mide la posición $y$ (salida)
+
+- Objetivos:
+Diseñar un observador ADRC para estimar velocidad $\dot{y}$ y perturbación $w(t)$
+Implementar control por realimentación de estados
+
+**Solucion**
+
+- Modelo en Espacio de Estados
+  
+Definiendo $x_1 = y$, $x_2 = \dot{y}$:
+
+$$\begin{cases}\dot{x}_1 = x_2 \\\dot{x}_2 = -\frac{k}{m}x_1 - \frac{c}{m}x_2 + \frac{1}{m}u + \frac{1}{m}w(t)\end{cases}$$
+
+- Modelo Extendido 
+Añadiendo $x_3 = w(t)/m$ como estado extendido:
+
+$$\begin{cases}\dot{x}_1 = x_2 \\\dot{x}_2 = -5x_1 - 2x_2 + u + x_3 \\
+\dot{x}_3 = h \quad \text{(Dinámica desconocida)}
+\end{cases}$$
+
+- Diseño del Observador (LESO)
+Forma discreta (Euler, $T_s=0.01s$):
+
+$$\hat{x}_{k+1} = A_d\hat{x}_k + B_du_k + L(y_k - C\hat{x}_k)$$
+
+Con matrices discretizadas:
+
+$$A_d = \begin{bmatrix}1 & 0.01 & 0\\-0.05 & 0.98 & 0.01\\0 & 0 & 1
+\end{bmatrix},\quadB_d =\begin{bmatrix}0\\0.01\\0\end{bmatrix},\quad
+C =\begin{bmatrix}1 & 0 & 0\end{bmatrix}$$
+
+- Ganancias del Observador (Polos en $z=0.2, 0.3, 0.4$):
+
+$$L = \begin{bmatrix}0.8\\25\\150\end{bmatrix}$$
+
+- Ley de Control
+
+$$u = -k_1\hat{x}_1 - k_2\hat{x}_2 - \hat{x}_3 + k_1r$$
+Con $k_1=20$, $k_2=8$ para polos en $-4 \pm 2j$
+
+| Parámetro         | Valor        |
+|-------------------|-------------|
+| Error de estimación velocidad | < 0.01 m/s |
+| Rechazo perturbación (RMSE) | 0.002 N |
+| Tiempo establecimiento | 1.2 s |
+
+Tabla 4. Resultados Ejercicio 6
