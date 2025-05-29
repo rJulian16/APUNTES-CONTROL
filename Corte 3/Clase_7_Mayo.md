@@ -294,6 +294,10 @@ y = x_1
 
 📚 Ejercicio 3:
 
+![image](https://github.com/user-attachments/assets/9f4f4230-e65a-434e-adfd-dd479f685bd1)
+
+Figura 3. Sistemas hidraulico
+
 Un sistema hidráulico tiene dinámica:  
 
 $$\ddot{y} = -2y|\dot{y}| + 3u + w(t)$$ 
