@@ -470,7 +470,8 @@ $$\begin{cases}\dot{x}_1 = x_2\\\dot{x}_2 = x_3 + 5u \quad \text{(5 = ganancia n
 *Interpretación*:  
 - $x_3$ absorbe $-2\dot{\theta} + w(t)$ (fricción + perturbación)
 
-### 2. Diseño del Observador (LESO)
+- Diseño del Observador (LESO)
+  
 Ecuaciones con ganancias por ancho de banda ($\omega_o = 30\text{rad/s}$): 
 
 $$\begin{cases}\dot{z}_1 = z_2 + 90(y - z_1)\\\dot{z}_2 = z_3 + 5u + 2700(y - z_1) \\\dot{z}_3 = 27000(y - z_1)\end{cases}$$
@@ -478,7 +479,8 @@ $$\begin{cases}\dot{z}_1 = z_2 + 90(y - z_1)\\\dot{z}_2 = z_3 + 5u + 2700(y - z_
 *Cálculo de ganancias*:  
 $L = [3\omega_o, 3\omega_o^2, \omega_o^3]^T$ (Fórmula de asignación de polos)
 
-### 3. Ley de Control
+- Ley de Control
+  
 Con ancho de banda deseado $\omega_c = 10\text{rad/s}$:  
 
 $$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
@@ -492,3 +494,44 @@ $$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
 - Tiempo establecimiento: 0.4s  
 - Rechazo de perturbación: 0.03s  
 - Sobreimpulso: 0%  
+
+### 5. ADRC - Observador de estados
+
+- Ecuación de Estado del Sistema
+
+$$X_{k+1} = A \cdot X_k + B \cdot u_k$$
+
+Describe cómo evolucionan los estados internos del sistema en función de su dinámica natural ($A$) y las señales de control aplicadas ($u_k$).
+
+Donde:
+
+- $X_k$: Vector de estados en el instante $k$ (dim $n \times 1$)  
+- $A$: Matriz de dinámica del sistema (dim $n \times n$)  
+- $B$: Matriz de entrada de control (dim $n \times m$)  
+- $u_k$: Vector de entradas de control (dim $m \times 1$)
+
+**Ecuación del Observador**
+
+$$\hat{x}_{k+1} = A \cdot \hat{x}_k + B \cdot u_k + L \cdot (y_k - \hat{y}_k)$$
+
+Donde:
+
+- $\hat{x}_k$: Estimación de los estados (dim $n \times 1$)  
+- $L$: Matriz de ganancia del observador (dim $n \times p$)  
+- $y_k$: Salida medida del sistema (dim $p \times 1$)  
+- $\hat{y}_k$: Salida estimada ($\hat{y}_k = C \cdot \hat{x}_k$)
+
+**Matrices del Observador**
+
+$$\begin{array}{lcl}
+A_{Ob} = A - L \cdot C & \text{(Dinámica del observador)} \\ 
+B_{Ob} = [B \ \ L] & \text{(Entradas combinadas)} \\ 
+C_{Ob} = I_{n \times n} & \text{(Salida = estados estimados)} \\ 
+D_{Ob} = [0_{n \times m} \ \ 0_{n \times p}] & \text{(Sin feedthrough)} \\ 
+\end{array}$$
+
+- Variables:
+- 
+- $C$: Matriz de salida (dim $p \times n$)  
+- $I_{n \times n}$: Matriz identidad  
+- $0$: Matrices de ceros  
