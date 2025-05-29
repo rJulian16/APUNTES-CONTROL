@@ -310,10 +310,6 @@ donde \(w(t)=0.5\sin(t)\) es una perturbación.
 $$\begin{cases}
 \dot{x}_1 = x_2 \\dot{x}_2 = x_3 + 3u \dot{x}_3 = h\end{cases}$$
 
-   Donde \(x_3\) agrupa \(-2y|\dot{y}| + w(t)\).
-
-
-
 - Observador:
   
    $$\dot{z}_3 = -100e \quad \text{(Ganancia alta)}$$
@@ -362,6 +358,29 @@ $$\text{fal}(\overline{\epsilon}, \alpha_i, \delta) =
   
 - Sintonización: Las ganancias $\beta_i$ del observador y $k_i$ del controlador deben coordinarse
 
+📚 Ejercicio 4:
+
+Mismo sistema del ejercicio 3 pero hora con:
+
+- No linealidad fuerte en sensor: \(y_{med} = y + 0.1y^3\)  
+- Requiere controlador no lineal robusto.
+
+
+**Solución**:  
+
+- Función fal():  
+
+   $$\text{fal}(e,0.5,0.1) = 
+   \begin{cases} 
+   e/0.1^{0.5}, & |e|≤0.1 \\ 
+   |e|^{0.5}\text{sign}(e), & |e|>0.1 
+   \end{cases}$$
+
+- Control no lineal:
+  
+   $$u_0 = 8\text{fal}(r-z_1) + 5\text{fal}(-z_2)$$
+
+**Resultado**: Rechaza ruido no lineal manteniendo error < 1%
 
 ## 4. LADRC - Control Activo de Perturbaciones Lienal
 
