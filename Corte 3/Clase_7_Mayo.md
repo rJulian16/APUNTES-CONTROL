@@ -183,6 +183,8 @@ A diferencia del ADRC lineal, el NADRC no utiliza funciones proporcionales linea
 | Controlador no lineal                    | Reemplaza las leyes de control proporcionales clásicas por funciones no lineales. |
 | Parametrización flexible                 | Los parámetros α y δ permiten personalizar la respuesta del sistema.       |
 
+Tabla 3. Caracteristicas NADRC
+
 - Forma general de segundo orden:
 
 $$\ddot{y} = -a_1\dot{y} - a_2y + bu$$
@@ -289,3 +291,41 @@ y = x_1
    - El sistema original no lineal se reduce a una doble integración
    - $y_i(e)$ proveen convergencia rápida sin oscilaciones
    - Ejemplo común: Funciones sigmoideas o de saturación
+
+### 3.3. NADRC - Implementacion No Lineal con Funcion fal()
+
+- Ley de Control No Lineal
+  
+La acción de control $u_0$ se construye mediante funciones no lineales:
+
+$$u_0 = k_1 \text{fal}(r_1 - z_1, \alpha_1, \delta) + k_2 \text{fal}(r_2 - z_2, \alpha_2, \delta)$$
+
+| Variable | Descripción clave               | Rol en el control                  |
+|----------|---------------------------------|------------------------------------|
+| `u₀`     | Señal de control base           | Salida del controlador no lineal   |
+| `k₁,k₂`  | Ganancias de realimentación     | Ajustan velocidad/amortiguamiento  |
+| `fal()`  | Función no lineal adaptativa    | Combina lineal/no-lineal           |
+| `r₁,r₂`  | Referencias de estado           | Valores deseados (setpoints)       |
+| `z₁,z₂`  | Estados estimados               | Salidas del observador ESO         |
+| `α₁,α₂`  | Exponentes no lineales          | Controlan curvatura de respuesta   |
+| `δ`      | Umbral de linealidad           | Define zona de transición suave    |
+
+Tabla 4. Variables
+
+- Función No Lineal $\text{fal}(\cdot)$
+- 
+Definición por partes:
+
+$$\text{fal}(\overline{\epsilon}, \alpha_i, \delta) =
+\begin{cases} 
+\frac{\overline{\epsilon}}{\delta^{1-\alpha_i}}, & |\overline{\epsilon}| \leq \delta \\
+|\overline{\epsilon}|^{\alpha_i} \text{sign}(\overline{\epsilon}), & |\overline{\epsilon}| > \delta
+\end{cases}$$
+
+- **Características de Diseño**
+  
+- Comportamiento adaptativo: Suave cerca del punto de operación ($|\overline{\epsilon}| \leq \delta$), más agresivo en régimen transitorio ($|\overline{\epsilon}| > \delta$)
+  
+- Rechazo de ruido: La zona lineal amortigua oscilaciones por mediciones ruidosas
+  
+- Sintonización: Las ganancias $\beta_i$ del observador y $k_i$ del controlador deben coordinarse
