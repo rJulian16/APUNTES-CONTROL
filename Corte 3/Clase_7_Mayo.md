@@ -456,7 +456,7 @@ $$\ddot{\theta} = -2\dot{\theta} + 5u + w(t)$$
 
 Se aumenta el orden para incluir perturbaciones:  
 
-$$\begin{cases}\dot{x}_1 = x_2\\\dot{x}_2 = x_3 + 5u \quad \text{(5 = ganancia nominal } b_0)\\\dot{x}_3 = h \quad \text{(dinámica de perturbación)}\\y = x_1\end{cases}$$
+$$\begin{cases}\dot{x}_1 = x_2\\\dot{x}_2 = x_3 + 5u \quad \text{(5 = ganancia nominal } b_0)\\\dot{x}_3 = h \quad \text{(dinámica de perturbación)}\ \y = x_1\end{cases}$$
 
 *Interpretación*:  
 - $x_3$ absorbe $-2\dot{\theta} + w(t)$ (fricción + perturbación)
