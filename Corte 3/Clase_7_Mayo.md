@@ -586,9 +586,21 @@ $$\hat{x}_{k+1} = A_d\hat{x}_k + B_du_k + L(y_k - C\hat{x}_k)$$
 
 Con matrices discretizadas:
 
-$$A_d = \begin{bmatrix}1 & 0.01 & 0\\-0.05 & 0.98 & 0.01\\0 & 0 & 1
-\end{bmatrix},\quadB_d =\begin{bmatrix}0\\0.01\\0\end{bmatrix},\quad
-C =\begin{bmatrix}1 & 0 & 0\end{bmatrix}$$
+$$
+A_d = \begin{bmatrix}
+1 & 0.01 & 0 \\
+-0.05 & 0.98 & 0.01 \\
+0 & 0 & 1
+\end{bmatrix}, \quad
+B_d = \begin{bmatrix}
+0 \\
+0.01 \\
+0
+\end{bmatrix}, \quad
+C = \begin{bmatrix}
+1 & 0 & 0
+\end{bmatrix}
+$$
 
 - Ganancias del Observador (Polos en $z=0.2, 0.3, 0.4$):
 
