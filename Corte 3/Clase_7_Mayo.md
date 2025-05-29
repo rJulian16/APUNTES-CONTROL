@@ -119,7 +119,7 @@ Tabla 2. Caracteristicas ADRC
 
 ![image](https://github.com/user-attachments/assets/05a3b9fd-ede4-4a2c-a880-5755e1e49bc2)
 
-Figura 2. Sistemas lineales y no lineales
+Figura 3. Sistemas lineales y no lineales
 
 - Modelo Lineal de Referencia
   
