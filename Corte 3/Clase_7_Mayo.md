@@ -462,23 +462,17 @@ $$\begin{cases}\dot{x}_1 = x_2\\\dot{x}_2 = x_3 + 5u \quad \text{(5 = ganancia n
 - $x_3$ absorbe $-2\dot{\theta} + w(t)$ (fricción + perturbación)
 
 ### 2. Diseño del Observador (LESO)
-Ecuaciones con ganancias por ancho de banda ($\omega_o = 30\text{rad/s}$):  
-$$
-\begin{cases} 
-\dot{z}_1 = z_2 + 90(y - z_1) \\ 
-\dot{z}_2 = z_3 + 5u + 2700(y - z_1) \\ 
-\dot{z}_3 = 27000(y - z_1) 
-\end{cases}
-$$
+Ecuaciones con ganancias por ancho de banda ($\omega_o = 30\text{rad/s}$): 
+
+$$\begin{cases}\dot{z}_1 = z_2 + 90(y - z_1)\\\dot{z}_2 = z_3 + 5u + 2700(y - z_1) \\\dot{z}_3 = 27000(y - z_1)\end{cases}$$
 
 *Cálculo de ganancias*:  
 $L = [3\omega_o, 3\omega_o^2, \omega_o^3]^T$ (Fórmula de asignación de polos)
 
 ### 3. Ley de Control
 Con ancho de banda deseado $\omega_c = 10\text{rad/s}$:  
-$$
-u = \frac{u_0 - z_3}{5}, \quad u_0 = 100(r - z_1) - 20z_2
-$$
+
+$$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
 
 *Sintonización*:  
 - $k_1 = \omega_c^2 = 100$  
