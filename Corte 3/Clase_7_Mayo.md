@@ -478,8 +478,8 @@ $$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
 - $k_1 = \omega_c^2 = 100$  
 - $k_2 = 2\omega_c = 20$ (para amortiguamiento $\zeta=1$)
 
-### 4. Resultados Simulados
-**Performance**:  
+**Resultados**:
+
 - Tiempo establecimiento: 0.4s  
 - Rechazo de perturbación: 0.03s  
 - Sobreimpulso: 0%  
