@@ -738,26 +738,8 @@ $$e_y = y - \hat{y}$$
 
 - **Observador Extendido (Luenberger)**
 
-$$
-\begin{bmatrix}
-\hat{x}_1(k+1) \\ 
-\hat{x}_2(k+1) \\ 
-\vdots \\ 
-\hat{x}_{n+m}(k+1)
-\end{bmatrix}
-= 
-A_{ext} 
-\begin{bmatrix}
-\hat{x}_1(k) \\ 
-\hat{x}_2(k) \\ 
-\vdots \\ 
-\hat{x}_{n+m}(k)
-\end{bmatrix}
-+ 
-B_{ext} u(k)
-+
-L e_y(k)
-$$
+$$\begin{bmatrix}\hat{x}_1(k+1)\\\hat{x}_2(k+1) \\ 
+\vdots\\\hat{x}_{n+m}(k+1)\end{bmatrix}=A_{ext}\begin{bmatrix}\hat{x}_1(k)\\\hat{x}_2(k)\\\vdots\\\hat{x}_{n+m}(k)\end{bmatrix}+B_{ext} u(k)+L e_y(k)$$
 
 Donde:  
 - $A_{ext}$: Matriz extendida 
