@@ -844,41 +844,8 @@ $$u(t) - Ky(t) - B\dot{y}(t) = M\ddot{y}(t)$$
 
 - Despejar la máxima derivada
 
-$$\ddot{y} = \frac{1}{M}u - \frac{K}{M}y - \frac{B}{M}\dot{y}$$
+$$\ddot{y} = \underbrace{\frac{1}{M}u}_{\text{Control}} - \underbrace{\left(\frac{K}{M}y + \frac{B}{M}\dot{y}\right)}_{\text{Dinámica interna}} + \underbrace{\frac{w(t)}{M}}_{\text{Perturbación}}$$
 
-- Definicion de Estados
 
-$x_1 = y$ 
-$x_2 = \dot{y}$ 
-$x_3 = \xi$ 
 
-- Modelo Extendido:
-
-El sistema extendido queda:
-
-$$\begin{cases}
-\dot{x}_1 = x_2 \\
-\dot{x}_2 = \frac{1}{M}u + x_3 \\
-\dot{x}_3 = h(t) \approx 0
-\end{cases}$$
-
-- Diseño del Observador (ESO)
-
-El observador estima los tres estados:
-
-$$\begin{cases}
-\dot{\hat{x}}_1 = \hat{x}_2 + l_1(y - \hat{x}_1) \\
-\dot{\hat{x}}_2 = \frac{1}{M}u + \hat{x}_3 + l_2(y - \hat{x}_1) \\
-\dot{\hat{x}}_3 = l_3(y - \hat{x}_1)
-\end{cases}$$
-
-- Control con compensacion
-
-La ley de control es:
-
-$$u = M(u_0 - \hat{x}_3)$$
-
-donde $u_0$ es un control PD:
-
-$$u_0 = K_p(r - \hat{x}_1) + K_d(-\hat{x}_2)$$
 
