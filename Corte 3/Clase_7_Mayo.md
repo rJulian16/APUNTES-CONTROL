@@ -503,7 +503,7 @@ $$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
 - Rechazo de perturbación: 0.03s  
 - Sobreimpulso: 0%  
 
-### 5. ADRC - Observador de estados
+## 5. ADRC - Observador de estados
 
 - Ecuación de Estado del Sistema
 
@@ -624,3 +624,64 @@ Con $k_1=20$, $k_2=8$ para polos en $-4 \pm 2j$
 | Tiempo establecimiento | 1.2 s |
 
 Tabla 4. Resultados Ejercicio 6
+
+## 6. ADRC: Estimación de Perturbaciones
+
+Para un sistema discreto lineal con perturbaciones externas:
+
+$$\begin{cases} 
+x_{k+1} = A \cdot x_k + B \cdot u_k + F \cdot d_k \\ 
+y_k = C \cdot x_k 
+\end{cases}$$
+
+Donde:
+
+- $x_k$: Vector de estados en el instante $k$ (dimensión $n \times 1$)
+- $u_k$: Señal de control (dimensión $m \times 1$)
+- $d_k$: Perturbación externa (dimensión $p \times 1$)
+- $A$, $B$, $C$, $F$: Matrices del sistema con dimensiones consistentes
+
+- Extensión del Modelo para Estimación
+
+Si la perturbación es constante o varía lentamente ($d_{k+1} \approx d_k$), se puede modelar como estado extendido:
+
+$$
+\begin{bmatrix}
+x_{k+1} \\
+d_{k+1}
+\end{bmatrix} =
+\underbrace{
+\begin{bmatrix}
+A & F \\
+0 & I
+\end{bmatrix}
+}_{A_{\text{ext}}}
+\begin{bmatrix}
+x_k \\
+d_k
+\end{bmatrix} +
+\underbrace{
+\begin{bmatrix}
+B \\
+0
+\end{bmatrix}
+}_{B_{\text{ext}}}
+u_k
+$$
+
+- Nuevas variables:
+- 
+- $A_{\text{ext}}$: Matriz aumentada (dimensión $(n+p) \times (n+p)$)
+- $B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
+
+- Diseño del Observador extendido:
+
+El observador estima conjuntamente estados y perturbaciones:
+
+$$
+\begin{cases}
+\hat{x}_{\text{ext},k+1} = A_{\text{ext}} \hat{x}_{\text{ext},k} + B_{\text{ext}} u_k + L (y_k - C_{\text{ext}} \hat{x}_{\text{ext},k}) \\
+C_{\text{ext}} = [C \quad 0] \quad \text{(Solo se mide $x_k$)}
+\end{cases}
+$$
+
