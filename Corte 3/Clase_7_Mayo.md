@@ -4,18 +4,19 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 ## Indice
 
-1. [Control por Rechazo Activo de Perturbaciones (ADRC)](#control-por-rechazo-activo-de-perturbaciones)  
-   1.1 [Comparación entre ADRC, PID y LQR](#comparacion-entre-adrc-pid-y-lqr)  
-2. [Componentes de un ADRC](#componentes-de-un-adrc)  
-3. [NADRC: Nonlinear Active Disturbance Rejection Control](#nadrc-nonlinear-active-disturbance-rejection-control)  
-   3.1 [Características Principales del NADRC](#caracteristicas-principales-del-nadrc)  
-   3.2 [Observador de estados extendido (ESO)](#observador-de-estados-extendido-eso)  
-   3.3 [NADRC - Implementacion No Lineal con Funcion fal()](#nadrc---implementacion-no-lineal-con-funcion-fal)  
-4. [LADRC - Control Activo de Perturbaciones Lineal](#ladrc---control-activo-de-perturbaciones-lineal)  
-5. [ADRC - Observador de estados](#adrc---observador-de-estados)  
-6. [ADRC: Estimación de Perturbaciones](#adrc-estimacion-de-perturbaciones)  
-7. [Conclusiones](#conclusiones)  
-8. [Referencias](#referencias)
+- [1. Control por Rechazo Activo de Perturbaciones (ADRC)](#1-control-por-rechazo-activo-de-perturbaciones-adrc)
+  - [1.1 Comparación entre ADRC, PID y LQR](#11-comparacion-entre-adrc-pid-y-lqr)
+- [2. Componentes de un ADRC](#2-componentes-de-un-adrc)
+- [3. NADRC: Nonlinear Active Disturbance Rejection Control](#3-nadrc-nonlinear-active-disturbance-rejection-control)
+  - [3.1 Características Principales del NADRC](#31-caracteristicas-principales-del-nadrc)
+  - [3.2 Observador de estados extendido (ESO)](#32-observador-de-estados-extendido-eso)
+  - [3.3 NADRC - Implementacion No Lineal con Funcion fal()](#33-nadrc---implementacion-no-lineal-con-funcion-fal)
+- [4. LADRC - Control Activo de Perturbaciones Lineal](#4-ladrc---control-activo-de-perturbaciones-lineal)
+- [5. ADRC - Observador de estados](#5-adrc---observador-de-estados)
+- [6. ADRC: Estimación de Perturbaciones](#6-adrc-estimacion-de-perturbaciones)
+- [7. Conclusiones](#7-conclusiones)
+- [8. Referencias](#8-referencias)
+
 
 ## 1. Control por Rechazo Activo de Perturbaciones
 
