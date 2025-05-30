@@ -4,21 +4,21 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 ## Indice
 
-- [1. Control por Rechazo Activo de Perturbaciones (ADRC)](#1-control-por-rechazo-activo-de-perturbaciones)
-  - [1.1 Comparación entre ADRC, PID y LQR](#11-comparacion-entre-adrc-pid-y-lqr)
+- [1. Control por Rechazo Activo de Perturbaciones (ADRC)](#1-control-por-rechazo-activo-de-perturbaciones-adrc)
+  - [1.1 Comparacion entre ADRC, PID y LQR](#11-comparacion-entre-adrc-pid-y-lqr)
 - [2. Componentes de un ADRC](#2-componentes-de-un-adrc)
 - [3. NADRC: Nonlinear Active Disturbance Rejection Control](#3-nadrc-nonlinear-active-disturbance-rejection-control)
-  - [3.1 Características Principales del NADRC](#31-caracteristicas-principales-del-nadrc)
+  - [3.1 Caracteristicas Principales del NADRC](#31-caracteristicas-principales-del-nadrc)
   - [3.2 Observador de estados extendido (ESO)](#32-observador-de-estados-extendido-eso)
   - [3.3 NADRC - Implementacion No Lineal con Funcion fal()](#33-nadrc---implementacion-no-lineal-con-funcion-fal)
 - [4. LADRC - Control Activo de Perturbaciones Lineal](#4-ladrc---control-activo-de-perturbaciones-lineal)
 - [5. ADRC - Observador de estados](#5-adrc---observador-de-estados)
-- [6. ADRC: Estimación de Perturbaciones](#6-adrc-estimacion-de-perturbaciones)
+- [6. ADRC: Estimacion de Perturbaciones](#6-adrc-estimacion-de-perturbaciones)
 - [7. Conclusiones](#7-conclusiones)
 - [8. Referencias](#8-referencias)
 
 
-## 1. Control por Rechazo Activo de Perturbaciones
+## 1. Control por Rechazo Activo de Perturbaciones (ADRC)
 
 El Control por Rechazo Activo de Perturbaciones (ADRC, por sus siglas en inglés) es una estrategia de control moderna que se caracteriza 
 por su capacidad para enfrentar incertidumbres del sistema y perturbaciones externas de manera efectiva, sin requerir un modelo exacto 
@@ -77,7 +77,7 @@ El ADRC actúa en tres pasos:
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
 
-### 1.1 Comparación entre ADRC, PID y LQR
+### 1.1. Comparación entre ADRC, PID y LQR
 
 | Característica                          | ADRC (Control por Rechazo Activo de Perturbaciones) | PID (Proporcional-Integral-Derivativo) | LQR (Regulador Cuadrático Lineal)     |
 |----------------------------------------|-----------------------------------------------------|----------------------------------------|----------------------------------------|
