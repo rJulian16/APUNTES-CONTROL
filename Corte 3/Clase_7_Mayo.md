@@ -632,6 +632,10 @@ Tabla 4. Resultados Ejercicio 6
 
 ## 6. ADRC: Estimación de Perturbaciones
 
+![image](https://github.com/user-attachments/assets/8252e4e7-6bc1-45e3-b109-c931d4140041)
+
+Figura 9. Esquema estimacion de perturbaciones ADRC
+
 Para un sistema discreto lineal con perturbaciones externas:
 
 $$\begin{cases} 
