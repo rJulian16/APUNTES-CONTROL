@@ -791,3 +791,21 @@ $$\det(sI - (A_{ext} - LC_{ext}))$$
 
 sea un polinomio de Hurwitz con polos deseados (ej: $s=-5$, $s=-6$).
 
+Al restar las ecuaciones del sistema real y del observador, se obtiene la dinámica del error de estimación:
+
+$$e_{y}^{(n+m)} + \lambda_{n+m-1} e_{y}^{(n+m-1)} + \ldots + \lambda_0 e_y = \xi^{(m)}(t)$$
+
+El comportamiento del error está gobernado por:
+
+$$p(s) = s^{n+m} + \lambda_{n+m-1}s^{n+m-1} + \ldots + \lambda_0$$
+
+- Criterio de Hurwitz
+
+Los coeficientes $\lambda_i$ deben escogerse para que:
+
+Todos los términos del polinomio sean positivos
+Las raíces tengan parte real negativa (polos en el semiplano izquierdo)  
+
+Esto garantiza que el error de estimación:  
+- Converja exponencialmente a cero  
+- Sea estable frente a perturbaciones  
