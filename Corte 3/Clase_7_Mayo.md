@@ -1110,13 +1110,14 @@ De este análisis se puede afirmar que, aunque el controlador PID (Figura 13) of
 
 [5] “Introduction to Active Disturbance Rejection Control (ADRC).” MathWorks, https://www.mathworks.com/help/control/ug/active-disturbance-rejection-control.html
 
-[6] Zheng, Q. & Gao, Z. (2010). ["An Energy Saving, Factory-Validated Digital ADRC Controller"](https://ieeexplore.ieee.org/document/5482993).
+[6] Zheng, Q. & Gao, Z. (2010). An Energy Saving, Factory-Validated Digital ADRC Controller. *IEEE Transactions on Industrial Electronics*, vol. 57, no. 5, pp. 1786–1792. https://ieeexplore.ieee.org/document/5482993
 
-[7] Miklosovic, R. et al. (2004). ["Robust Discrete-Time ADRC with Current Estimation"](https://ieeexplore.ieee.org/document/1380386).
+[7] Miklosovic, R., Gao, Z., and Zhou, S. (2004). Robust Discrete-Time ADRC with Current Estimation. *IEEE Transactions on Industrial Electronics*, vol. 51, no. 2, pp. 404–413. https://ieeexplore.ieee.org/document/1380386
 
-[8] Herbst, G. (2013). ["Practical ADRC: Tuning and Applications"](https://www.sciencedirect.com/science/article/pii/S2405896316300361).
+[8] Herbst, G. (2013). Practical ADRC: Tuning and Applications. *Annual Reviews in Control*, vol. 37, no. 1, pp. 48–57. https://www.sciencedirect.com/science/article/pii/S2405896316300361
 
-[9] Texas Instruments (2018). ["Implementing ADRC on C2000 Microcontrollers"](https://www.ti.com/lit/an/sprac70/sprac70.pdf)
+[9] Texas Instruments (2018). Implementing ADRC on C2000 Microcontrollers. Application Report SPRAC70, Texas Instruments. https://www.ti.com/lit/an/sprac70/sprac70.pdf
+
 
 
 
