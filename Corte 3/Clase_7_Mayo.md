@@ -12,10 +12,12 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
   - [3.2 Observador de estados extendido (ESO)](#32-observador-de-estados-extendido-eso)
   - [3.3 NADRC - Implementacion No Lineal con Funcion fal()](#33-nadrc---implementacion-no-lineal-con-funcion-fal)
 - [4. LADRC - Control Activo de Perturbaciones Lineal](#4-ladrc---control-activo-de-perturbaciones-lineal)
+  - [4.1 Planteamiento L-ADRC](#41-planteamiento-l-adrc)
 - [5. ADRC - Observador de estados](#5-adrc---observador-de-estados)
 - [6. ADRC: Estimacion de Perturbaciones](#6-adrc-estimacion-de-perturbaciones)
 - [7. Conclusiones](#7-conclusiones)
 - [8. Referencias](#8-referencias)
+
 
 
 ## 1. Control por Rechazo Activo de Perturbaciones (ADRC)
