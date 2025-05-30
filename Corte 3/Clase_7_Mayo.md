@@ -832,10 +832,9 @@ Fig 10. Ejercicio 7 planteado en clase
 Sistema:
 
 Masa (m) unida a un resorte y amortiguador, con:
-- Fuerza de control: $u(t)$ [N]
-- Fuerza del resorte: $F_k = Ky(t)$ [N] (K: constante del resorte)
-- Fuerza de amortiguamiento: $F_B = B\dot{y}(t)$ [N] (B: coeficiente de fricción)
-- Aceleración: $a = \ddot{y}(t)$ [m/s²]
+- Fuerza de control: $u(t)$ = m * a
+- Fuerza del resorte: $F_k = K * x$ (K: constante del resorte)
+- Fuerza de amortiguamiento: $F_B = B\dot{y}(t)$ 
 
 Ecuación de la dinamica del sistema:
 
