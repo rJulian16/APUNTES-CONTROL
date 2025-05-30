@@ -1020,8 +1020,10 @@ $$
 \end{aligned}
 $$
 
+La perturbación estimada también puede representarse con:
 
-
-
+$$
+\varepsilon \approx e^{(4)} + \lambda_3 e^{(3)} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e
+$$
 
 
