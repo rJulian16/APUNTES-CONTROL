@@ -834,7 +834,7 @@ Sistema:
 Masa (m) unida a un resorte y amortiguador, con:
 - Fuerza de control: $u(t)$ = m * a
 - Fuerza del resorte: $F_k = K * x$ (K: constante del resorte)
-- Fuerza de amortiguamiento: $F_B = B\dot{y}(t)$ 
+- Fuerza de amortiguamiento: $F_B = B* dx/ dt $ 
 
 Ecuación de la dinamica del sistema:
 
