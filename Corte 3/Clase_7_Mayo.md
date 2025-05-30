@@ -1038,7 +1038,7 @@ Durante la clase, se analizó el comportamiento del observador bajo estas condic
 
 ![image](https://github.com/user-attachments/assets/05997239-cfe5-4d11-8c7a-e1f40b6b75c6)
 
-Fig 11. Scope matlab observador 
+Fig 11. Scope matlab observador del ejercicio en clase
 
 Ahora para poder cerrar el lazo se plantea la siguiente ley de control 
 
@@ -1058,13 +1058,22 @@ $$
 P_{e_y}(s) = s^2 + k_1 s + k_0
 $$
 
-Con ayuda de MATLAB y la función `poly`, es posible obtener las ganancias necesarias para el diseño del controlador. En este caso, se ubicaron dos polos deseados en \( -15 \), lo que permite determinar el polinomio característico asociado al sistema. A partir de dicho polinomio, se calcularon las ganancias del controlador, obteniendo como resultado:
-\( k_1 = 1 \)  
-\( k_2 = 30 \)  
-\( k_3 = 225 \)
+Con ayuda de MATLAB y la función `poly`, es posible obtener las ganancias necesarias para el diseño del controlador. En este caso, se ubicaron dos polos deseados en \( -15 \), lo que permite determinar el polinomio característico asociado al sistema. A partir de dicho polinomio, se calcularon las ganancias del controlador, obteniendo como resultado: 1, 30 y 225.
 
-Estas ganancias garantizan un comportamiento dinámico acorde con la ubicación deseada de los polos y una respuesta rápida del sistema.
+![image](https://github.com/user-attachments/assets/f0953cad-8583-42f7-bcea-d8dc7e7e03df)
 
+Fig 12. Controlador Ejercicio en clase
 
+Gracias a esta implementacion se pudo observar las diferencias entre un PID y un ADRC donde se puede ver con clara diferencia la exactitud y efectividad de ADRC vs PID:
+
+![image](https://github.com/user-attachments/assets/7fe089cc-4301-46f9-8493-339239bcf229)
+
+Fig 13. Prueba de desempeño PID
+
+![image](https://github.com/user-attachments/assets/698dde73-8d5d-463b-bae9-7b3c82af1acb)
+
+Fig 14. Prueba de desempeño ADRC
+
+De este análisis se puede afirmar que, aunque el controlador PID (Figura 13) ofrece una solución rápida, presenta ciertas desventajas: puede mostrar lentitud en la estabilización, así como oscilaciones durante la respuesta transitoria. En contraste, el controlador ADRC (Figura 14) demuestra un rendimiento superior. Al observar la gráfica correspondiente, se aprecia que prácticamente no hay diferencia visible entre la señal de entrada y la señal de salida, lo que indica un seguimiento preciso y una gran robustez ante perturbaciones.
 
 
