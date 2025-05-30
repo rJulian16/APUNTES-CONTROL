@@ -738,12 +738,50 @@ $$e_y = y - \hat{y}$$
 
 - **Observador Extendido (Luenberger)**
 
-$$
-\begin{bmatrix}\hat{x}_1(k+1)\\\hat{x}_2(k+1)\\\vdots\\\hat{x}_{n+m}(k+1)\end{bmatrix}=
-A_{ext}\begin{bmatrix}\hat{x}_1(k)\\\hat{x}_2(k)\\\vdots\\\hat{x}_{n+m}(k)\end{bmatrix}+
-B_{ext}u(k)+
-Le_y(k)
-$$
+$${\begin{pmatrix*}[r]
+{{x_{1}}^{\wedge }}^{\cdot }\\
+{{x_{2}}^{\wedge }}^{\cdot }\\
+\cdot\\
+{{x_{n-1}}^{\wedge }}^{\cdot }\\
+{{x_{n}}^{\wedge }}^{\cdot }\\
+\cdot\\
+{{x_{n+m-1}}^{\wedge }}^{\cdot }\\
+{{x_{n+m}}^{\wedge }}^{\cdot }
+\end{pmatrix*}} = {\begin{pmatrix*}[r]
+O_{n + m \cdot 1} & I_{n + m - 1 \cdot n + m - 1}\\
+0 & O_{1 \cdot n + m - 1}
+\end{pmatrix*}}{\begin{pmatrix*}[r]
+{x_{1}}^{\wedge }\\
+{x_{2}}^{\wedge }\\
+\cdot\\
+{x_{n}}^{\wedge }\\
+{\xi_{1}}^{\wedge }\\
+\cdot\\
+{\xi^{\wedge }}^{(m-2)}\\
+{\xi^{\wedge }}^{(m-1)}\\
+\end{pmatrix*}} + {\begin{pmatrix*}[r]
+0\\
+0\\
+\cdot\\
+0\\
+1\\
+\cdot\\
+0\\
+0\\
+\end{pmatrix*}}u + {\begin{pmatrix*}[r]
+\lambda_{n + m - 1}\\
+\lambda_{n + m - 2}\\
+\cdot\\
+\lambda_{m + 1}\\
+\lambda_{m}\\
+\cdot\\
+\lambda_{1}\\
+\lambda_{0}\\
+\end{pmatrix*}} {\epsilon_{y}}^{\wedge}(t)$$
+
+$$Y^{\wedge} = {\begin{pmatrix*}[r]
+1 & 0 & 0 & \cdot & \cdot & \cdot & 0
+\end{pmatrix*}}{X_{\xi}}^{\wedge}$$
 
 Donde:  
 - $A_{ext}$: Matriz extendida 
