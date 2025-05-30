@@ -4,7 +4,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 ## Indice
 
-1. [Control por Rechazo Activo de Perturbaciones (ADRC)](#control-por-rechazo-activo-de-perturbaciones-adrc)  
+1. [Control por Rechazo Activo de Perturbaciones (ADRC)](#control-por-rechazo-activo-de-perturbaciones)  
    1.1 [Comparación entre ADRC, PID y LQR](#comparacion-entre-adrc-pid-y-lqr)  
 2. [Componentes de un ADRC](#componentes-de-un-adrc)  
 3. [NADRC: Nonlinear Active Disturbance Rejection Control](#nadrc-nonlinear-active-disturbance-rejection-control)  
@@ -17,7 +17,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 7. [Conclusiones](#conclusiones)  
 8. [Referencias](#referencias)
 
-## 1.Control por Rechazo Activo de Perturbaciones (ADRC)
+## 1. Control por Rechazo Activo de Perturbaciones
 
 El Control por Rechazo Activo de Perturbaciones (ADRC, por sus siglas en inglés) es una estrategia de control moderna que se caracteriza 
 por su capacidad para enfrentar incertidumbres del sistema y perturbaciones externas de manera efectiva, sin requerir un modelo exacto 
