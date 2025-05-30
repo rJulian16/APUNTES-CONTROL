@@ -665,8 +665,8 @@ $$
 
 - Nuevas variables:
 
-$A_{\text{ext}}$: Matriz aumentada (dimensión $(n+p) \times n+p$)
+$A_{\text{ext}}$: Matriz aumentada
 
-$B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
+$B_{\text{ext}}$: Matriz de entrada extendida 
 
 
