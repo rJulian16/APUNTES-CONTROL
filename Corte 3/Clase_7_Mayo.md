@@ -842,4 +842,7 @@ $$u(t) - Ky(t) - B\dot{y}(t) = M\ddot{y}(t)$$
 
 - **Solucion**
 
+- Despejar la máxima derivada
+
+$$\ddot{y}(t) = \frac{u(t)}{M} - \frac{K}{M}y(t) - \frac{B}{M}\dot{y}(t)$$
 
