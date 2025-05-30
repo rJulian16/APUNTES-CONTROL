@@ -669,13 +669,4 @@ $A_{\text{ext}}$: Matriz aumentada (dimensión $(n+p) \times (n+p)$)
 
 $B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
 
-- Diseño del Observador extendido:
 
-El observador estima conjuntamente estados y perturbaciones:
-
-$$
-\begin{cases}
-\hat{x}_{e,k+1} = A_e \hat{x}_{e,k} + B_e u_k + L (y_k - C_e \hat{x}_{e,k}) \\
-C_e = [C \ 0]
-\end{cases}
-$$
