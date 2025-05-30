@@ -1076,4 +1076,26 @@ Fig 14. Prueba de desempeño ADRC
 
 De este análisis se puede afirmar que, aunque el controlador PID (Figura 13) ofrece una solución rápida, presenta ciertas desventajas: puede mostrar lentitud en la estabilización, así como oscilaciones durante la respuesta transitoria. En contraste, el controlador ADRC (Figura 14) demuestra un rendimiento superior. Al observar la gráfica correspondiente, se aprecia que prácticamente no hay diferencia visible entre la señal de entrada y la señal de salida, lo que indica un seguimiento preciso y una gran robustez ante perturbaciones.
 
+## 7. Conclusiones
+
+-El ADRC se basa en estimar y cancelar activamente todas las incertidumbres del sistema, lo que permite un control robusto sin depender de modelos precisos. Esta filosofía lo hace ideal para entornos dinámicos e inciertos.
+
+-El observador extendido (ESO) es esencial para estimar tanto estados como perturbaciones en tiempo real. Su desempeño depende de la correcta ubicación de los polos, que deben equilibrar rapidez y sensibilidad al ruido.
+
+-En aplicaciones prácticas, como sistemas masa-resorte, se agrega un estado para representar perturbaciones. Las ganancias del observador se definen en función del ancho de banda deseado, y se recomienda que el observador sea varias veces más rápido que la dinámica del sistema.
+
+-Frente al PID, el ADRC ofrece mayor robustez y mejor rechazo de perturbaciones, aunque con una complejidad mayor debido al observador. Requiere menos conocimiento del modelo, lo que lo hace más adaptable.
+
+-Se recomienda usar LADRC en sistemas lineales y NADRC en sistemas no lineales. Es clave verificar estabilidad (matriz Hurwitz), iniciar con $ω_o = 5-10ω_c$ y realizar simulaciones antes de aplicar en la práctica.
+
+- El ADRC puede implementarse en sistemas con parámetros inciertos o dinámicas parcialmente conocidas, reduciendo la necesidad de una identificación precisa del modelo.
+
+- La selección del ancho de banda del observador (\( \omega_o \)) y del controlador (\( \omega_c \)) es crítica. Un observador muy rápido puede amplificar el ruido, mientras que uno lento puede tardar en estimar perturbaciones. Se requiere un equilibrio cuidadoso según las condiciones del sistema.
+
+- El diseño del observador y del controlador puede hacerse de forma parcialmente independiente, lo que facilita el ajuste de la velocidad de estimación y la dinámica de control sin que uno afecte directamente al otro.
+
+- El ADRC, especialmente en su versión no lineal (NADRC), puede adaptarse mejor a sistemas con saturaciones, fricción u otras restricciones físicas que afectan el comportamiento del sistema.
+
+- Aunque más complejo, el ADRC es aplicable a sistemas multientrada-multisalida. Esto puede requerir estrategias de control desacopladas o múltiples observadores, pero extiende su utilidad a una mayor gama de aplicaciones.
+
 
