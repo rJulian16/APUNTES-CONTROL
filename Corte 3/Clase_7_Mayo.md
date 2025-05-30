@@ -506,6 +506,10 @@ $$u =\frac{u_0 - z_3}{5},\quad u_0 = 100(r - z_1) - 20z_2$$
 
 ## 5. ADRC - Observador de estados
 
+![image](https://github.com/user-attachments/assets/c1b9397c-6dcd-452b-8f05-ea15e8dc9fd4)
+
+Figura 7. Observador ADRC
+
 - Ecuación de Estado del Sistema
 
 $$X_{k+1} = A \cdot X_k + B \cdot u_k$$
@@ -549,7 +553,7 @@ D_{Ob} = [0_{n \times m} \ \ 0_{n \times p}] & \text{(Sin feedthrough)} \\
 
 ![image](https://github.com/user-attachments/assets/81077d64-6dad-4097-adb2-910a96f64a71)
 
-Figura 7. Masa-resorte-amortiguador
+Figura 8. Masa-resorte-amortiguador
 
 Considere un sistema masa-resorte-amortiguador con perturbaciones:
 
