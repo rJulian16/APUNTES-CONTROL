@@ -77,7 +77,7 @@ El ADRC actúa en tres pasos:
 
 Aunque haya viento, polvo o cambios en el voltaje, el ADRC es capaz de mantener la velocidad cerca del valor deseado (por ejemplo, 1500 RPM), sin saber exactamente qué está fallando.
 
-### 1.1. Comparación entre ADRC, PID y LQR
+### 1.1 Comparación entre ADRC, PID y LQR
 
 | Característica                          | ADRC (Control por Rechazo Activo de Perturbaciones) | PID (Proporcional-Integral-Derivativo) | LQR (Regulador Cuadrático Lineal)     |
 |----------------------------------------|-----------------------------------------------------|----------------------------------------|----------------------------------------|
