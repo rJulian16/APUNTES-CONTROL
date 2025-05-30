@@ -1001,7 +1001,7 @@ $$
 \end{aligned}
 $$
 
-- Dinamica del error
+- Estructura del Observador con el error retroalimentado
 
 Se define el error de estimación como:
 
@@ -1009,7 +1009,7 @@ $$
 e_1 = y - \hat{x}_1
 $$
 
-Ecuacion del observador:
+Ecuacion del observador extendido:
 
 $$
 \begin{aligned}
@@ -1024,6 +1024,12 @@ La perturbación estimada también puede representarse con:
 
 $$
 \varepsilon \approx e^{(4)} + \lambda_3 e^{(3)} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e
+$$
+
+Donde Con el ESO estimando $\hat{x}_3 \approx \varepsilon(t)$, el control se define como:
+
+$$
+u = \frac{1}{K} \left(u_0 - \hat{x}_3 \right)
 $$
 
 
