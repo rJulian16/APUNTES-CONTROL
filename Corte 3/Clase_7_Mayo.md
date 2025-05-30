@@ -678,4 +678,45 @@ $A_{\text{ext}}$: Matriz aumentada
 
 $B_{\text{ext}}$: Matriz de entrada extendida 
 
+### 6.1. Representacion en Espacio de Estados
 
+Formulacion General del sistema:
+
+La dinámica del sistema se describe mediante:
+
+$$y^{(n)}(t) = u(t) + \xi(t)$$
+
+donde:
+
+- $y^{(n)}(t)$: n-ésima derivada de la salida
+- $u(t)$: Señal de control
+- $\xi(t)$: Perturbación total (incluye no-linealidades y perturbaciones externas)
+
+- Modelo en espacio de estados
+
+Vector de Estados:
+
+Definiendo los estados como derivadas sucesivas:
+
+$$x(t) = \begin{bmatrix} x_1 \\ x_2 \\ \vdots \\ x_n \end{bmatrix} = \begin{bmatrix} y \\ \dot{y} \\ \vdots \\ y^{(n-1)} \end{bmatrix}$$
+
+Ecuacion de estado:
+
+$$
+\dot{x}(t) = A x(t) + B(u(t) + \xi(t))
+$$
+
+Con matrices:
+
+$$A = \begin{bmatrix}
+0 & 1 & 0 & \cdots & 0 \\
+0 & 0 & 1 & \cdots & 0 \\
+\vdots & \vdots & \ddots & \ddots & \vdots \\
+0 & 0 & \cdots & 0 & 1 \\
+0 & 0 & \cdots & 0 & 0
+\end{bmatrix}, \quad
+B = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \\ 1 \end{bmatrix}$$
+
+Ecuacion de salida:
+
+$$y(t) = C x(t) = \begin{bmatrix} 1 & 0 & \cdots & 0 \end{bmatrix} x(t)$$
