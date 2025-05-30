@@ -673,5 +673,7 @@ $B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
 
 El observador estima conjuntamente estados y perturbaciones:
 
-
+$$
+\hat{x}_{\text{ext},k+1} = A_{\text{ext}} \hat{x}_{\text{ext},k} + B_{\text{ext}} u_k + L (y_k - C_{\text{ext}} \hat{x}_{\text{ext},k}), \quad C_{\text{ext}} = [C \ 0] \ \text{(Solo mide $x_k$)}
+$$
 
