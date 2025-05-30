@@ -646,23 +646,6 @@ Donde:
 Si la perturbación es constante o varía lentamente ($d_{k+1} \approx d_k$), se puede modelar como estado extendido:
 
 $$
-\begin{bmatrix}x_{k+1}\\d_{k+1}\end{bmatrix}=
-\underbrace{\begin{bmatrix}A&F\\0&I\end{bmatrix}}_{A_{\text{ext}}}
-\begin{bmatrix}x_k\\d_k\end{bmatrix}+
-\underbrace{\begin{bmatrix}B\\0\end{bmatrix}}_{B_{\text{ext}}}u_k
-$$
-
-- Nuevas variables:
-
-$A_{\text{ext}}$: Matriz aumentada (dimensión $(n+p) \times (n+p)$)
-
-$B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
-
-- Diseño del Observador extendido:
-
-El observador estima conjuntamente estados y perturbaciones:
-
-$$
 x_a(k+1) = \begin{bmatrix} x(k+1) \\ d(k+1) \end{bmatrix} =
 \begin{bmatrix}
 A & F \\
@@ -679,4 +662,16 @@ $$
 $$
 y(k) = \begin{bmatrix} C & 0 \end{bmatrix} x_a(k)
 $$
+
+- Nuevas variables:
+
+$A_{\text{ext}}$: Matriz aumentada (dimensión $(n+p) \times (n+p)$)
+
+$B_{\text{ext}}$: Matriz de entrada extendida (dimensión $(n+p) \times m$)
+
+- Diseño del Observador extendido:
+
+El observador estima conjuntamente estados y perturbaciones:
+
+
 
