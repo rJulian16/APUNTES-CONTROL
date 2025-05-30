@@ -1088,15 +1088,15 @@ De este análisis se puede afirmar que, aunque el controlador PID (Figura 13) of
 
 -Se recomienda usar LADRC en sistemas lineales y NADRC en sistemas no lineales. Es clave verificar estabilidad (matriz Hurwitz), iniciar con $ω_o = 5-10ω_c$ y realizar simulaciones antes de aplicar en la práctica.
 
-- El ADRC puede implementarse en sistemas con parámetros inciertos o dinámicas parcialmente conocidas, reduciendo la necesidad de una identificación precisa del modelo.
+-El ADRC puede implementarse en sistemas con parámetros inciertos o dinámicas parcialmente conocidas, reduciendo la necesidad de una identificación precisa del modelo.
 
-- La selección del ancho de banda del observador (\( \omega_o \)) y del controlador (\( \omega_c \)) es crítica. Un observador muy rápido puede amplificar el ruido, mientras que uno lento puede tardar en estimar perturbaciones. Se requiere un equilibrio cuidadoso según las condiciones del sistema.
+-La selección del ancho de banda del observador (\( \omega_o \)) y del controlador (\( \omega_c \)) es crítica. Un observador muy rápido puede amplificar el ruido, mientras que uno lento puede tardar en estimar perturbaciones. Se requiere un equilibrio cuidadoso según las condiciones del sistema.
 
-- El diseño del observador y del controlador puede hacerse de forma parcialmente independiente, lo que facilita el ajuste de la velocidad de estimación y la dinámica de control sin que uno afecte directamente al otro.
+-El diseño del observador y del controlador puede hacerse de forma parcialmente independiente, lo que facilita el ajuste de la velocidad de estimación y la dinámica de control sin que uno afecte directamente al otro.
 
-- El ADRC, especialmente en su versión no lineal (NADRC), puede adaptarse mejor a sistemas con saturaciones, fricción u otras restricciones físicas que afectan el comportamiento del sistema.
+-El ADRC, especialmente en su versión no lineal (NADRC), puede adaptarse mejor a sistemas con saturaciones, fricción u otras restricciones físicas que afectan el comportamiento del sistema.
 
-- Aunque más complejo, el ADRC es aplicable a sistemas multientrada-multisalida. Esto puede requerir estrategias de control desacopladas o múltiples observadores, pero extiende su utilidad a una mayor gama de aplicaciones.
+-Aunque más complejo, el ADRC es aplicable a sistemas multientrada-multisalida. Esto puede requerir estrategias de control desacopladas o múltiples observadores, pero extiende su utilidad a una mayor gama de aplicaciones.
 
 ## 8. Referencias 
 
