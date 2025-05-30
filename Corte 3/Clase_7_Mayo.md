@@ -720,3 +720,54 @@ B = \begin{bmatrix} 0 \\ 0 \\ \vdots \\ 0 \\ 1 \end{bmatrix}$$
 Ecuacion de salida:
 
 $$y(t) = C x(t) = \begin{bmatrix} 1 & 0 & \cdots & 0 \end{bmatrix} x(t)$$
+
+### 6.2. ADRC con Observador de Luenberger y Polinomio de Hurwitz
+
+**Observador de Luenberger**:  
+Es un estimador que usa:  
+- El modelo matemático del sistema  
+- Las mediciones reales  
+- Un término de corrección basado en el error
+
+**Polinomio de Hurwitz**:  
+Garantiza que el observador sea estable (que las estimaciones converjan). Todos sus polos deben tener parte real negativa.
+
+- **Error de Estimación**
+
+$$e_y = y - \hat{y}$$
+
+- **Observador Extendido (Luenberger)**
+
+$$
+\begin{bmatrix}
+\hat{x}_1(k+1) \\ 
+\hat{x}_2(k+1) \\ 
+\vdots \\ 
+\hat{x}_{n+m}(k+1)
+\end{bmatrix}
+= 
+A_{ext} 
+\begin{bmatrix}
+\hat{x}_1(k) \\ 
+\hat{x}_2(k) \\ 
+\vdots \\ 
+\hat{x}_{n+m}(k)
+\end{bmatrix}
++ 
+B_{ext} u(k)
++
+L e_y(k)
+$$
+
+Donde:  
+- $A_{ext}$: Matriz extendida 
+- $B_{ext}$: Matriz de entrada extendida  
+- $L$: Vector de ganancias
+
+- **Diseño de Ganancias (Hurwitz)**
+Las ganancias $L$ se calculan para que:
+
+$$\det(sI - (A_{ext} - LC_{ext}))$$  
+
+sea un polinomio de Hurwitz con polos deseados (ej: $s=-5$, $s=-6$).
+
