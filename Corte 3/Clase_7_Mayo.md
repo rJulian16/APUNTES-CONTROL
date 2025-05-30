@@ -1020,11 +1020,13 @@ $$
 \end{aligned}
 $$
 
-La perturbación estimada también puede representarse con:
+La perturbación estimada también puede representarse como :
 
 $$
 \varepsilon \approx e^{(4)} + \lambda_3 e^{(3)} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e
 $$
+
+donde estamos igualandolo a la segunda derivida de \varepsilon
 
 Donde Con el ESO estimando $\hat{x}_3 \approx \varepsilon(t)$, el control se define como:
 
