@@ -783,10 +783,6 @@ $$Y^{\wedge} = {\begin{pmatrix*}[r]
 1 & 0 & 0 & \cdot & \cdot & \cdot & 0
 \end{pmatrix*}}{X_{\xi}}^{\wedge}$$
 
-Donde:  
-- $A_{ext}$: Matriz extendida 
-- $B_{ext}$: Matriz de entrada extendida  
-- $L$: Vector de ganancias
 
 - **Diseño de Ganancias (Hurwitz)**
 Las ganancias $L$ se calculan para que:
