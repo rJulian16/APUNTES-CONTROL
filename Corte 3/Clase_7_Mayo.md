@@ -852,14 +852,176 @@ $$
 
 - $x_1 = y$ (posición)
 - $x_2 = \dot{y}$ (velocidad)
-- $x_3 = f_{total} = -\frac{K}{M}x_1 - \frac{B}{M}x_2 + \frac{w(t)}{M}$ 
 
 - Ecuaciones de estado
 
 $$
+\dot{x}_1 = \dot{y} = x_2
+$$
+
+$$
+\dot{x}_2 = \ddot{y} = \frac{1}{M} \left( u(t) - Kx_1 - Bx_2 \right)
+$$
+
+Entonces el sistema queda expresado de la siguiente manera:
+
+$$
 \begin{cases}
-\dot{x}_1 = x_2 \\
-\dot{x}_2 = x_3 + \frac{1}{M}u \\
-\dot{x}_3 = h(t) \approx 0 
+\dot{x}_1 = x_2 \\\\
+\dot{x}_2 = \frac{1}{M} \left( u(t) - Kx_1 - Bx_2 \right)
 \end{cases}
 $$
+
+y entonces:
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \\\\
+\dot{x}_2 &= \frac{1}{M} u(t) - \frac{K}{M} x_1 - \frac{B}{M} x_2
+\end{aligned}
+$$
+
+- Forma Matricial
+
+$$
+\dot{X}(t) = A X(t) + B u(t)
+$$
+
+$$
+X(t) = \begin{bmatrix} x_1 \\\\ x_2 \end{bmatrix}
+$$
+
+Y esto concluye con que las matrices del sistema son:
+
+$$
+A = \begin{bmatrix}
+0 & 1 \\\\
+-\frac{K}{M} & -\frac{B}{M}
+\end{bmatrix},
+\quad
+B = \begin{bmatrix}
+0 \\\\
+\frac{1}{M}
+\end{bmatrix}
+$$
+
+- Ecuacion de salida
+
+Teniendo en cuenta que $y(t) = x_1$ :
+
+$$
+y(t) = C X(t) + D u(t)
+$$
+
+$$
+C = \begin{bmatrix} 1 & 0 \end{bmatrix}, \quad D = \begin{bmatrix} 0 \end{bmatrix}
+$$
+
+Y el sistema completo queda de la siguiente manera:
+
+$$
+\begin{aligned}
+\dot{X}(t) &= A X(t) + B u(t) \\\\
+y(t) &= C X(t)
+\end{aligned}
+$$
+
+- ADRC
+
+En base a:
+
+$$
+\ddot{y}(t) = \frac{1}{M} u(t) - \frac{K}{M} y(t) - \frac{B}{M} \dot{y}(t)
+$$
+
+y teniendo en cuenta que vamos a desear llevar la ecuacion a una forma mas generica como:
+
+$$
+y^{(n)} = K u + \varepsilon(t)
+$$
+
+- ESO Modelo extendido
+
+- $x_1 = y$
+- $x_2 = \dot{y}$
+- $x_3 \approx \varepsilon(t)$
+
+Ecuacion:
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \\\\
+\dot{x}_2 &= K u + x_3 \\\\
+\dot{x}_3 &= 0
+\end{aligned}
+$$
+
+- Orden 4
+
+En dado caso que se quiera modelar el cambio de la perturbacion se puede obtener lo siguiente:
+
+$$
+\dot{x}_3 = x_4 \quad \text{y} \quad \dot{x}_4 = 0
+$$
+
+Una vez se tiene la estimacion 
+
+$$\hat{x}_3 \approx \varepsilon(t)$$
+
+se puede compensar en el control
+
+$$
+u(t) = \frac{1}{K} \left( u_0(t) - \hat{x}_3 \right)
+$$
+
+- Modelo extendido del sistema
+
+- $x_1 = y$ (posición)
+- $x_2 = \dot{y}$ (velocidad)
+- $x_3 \approx \varepsilon(t)$ (perturbación total)
+- $x_4 = \dot{\varepsilon}(t)$ (derivada de la perturbación)
+
+$$
+\begin{aligned}
+\dot{x}_1 &= x_2 \quad \text{(posición)} \\\\
+\dot{x}_2 &= K u + x_3 \quad \text{(aceleración con perturbación)} \\\\
+\dot{x}_3 &= x_4 \quad \text{(evolución de la perturbación)} \\\\
+\dot{x}_4 &= \ddot{\varepsilon} \approx 0 \quad \text{(se suele asumir constante)}
+\end{aligned}
+$$
+
+- Punto de vista del Observador
+
+$$
+\begin{aligned}
+\hat{x}_1 &\approx x_1 \quad \text{(posición)} \\\\
+\hat{x}_2 &\approx x_2 \quad \text{(velocidad)} \\\\
+\hat{x}_3 &\approx \varepsilon(t) \quad \text{(perturbación)} \\\\
+\hat{x}_4 &\approx \dot{\varepsilon}(t) \quad \text{(derivada de la perturbación)}
+\end{aligned}
+$$
+
+- Dinamica del error
+
+Se define el error de estimación como:
+
+$$
+e_1 = y - \hat{x}_1
+$$
+
+Ecuacion del observador:
+
+$$
+\begin{aligned}
+\dot{\hat{x}}_1 &= \hat{x}_2 + \lambda_3 e_1 \\\\
+\dot{\hat{x}}_2 &= K u + \hat{x}_3 + \lambda_2 e_1 \\\\
+\dot{\hat{x}}_3 &= \hat{x}_4 + \lambda_1 e_1 \\\\
+\dot{\hat{x}}_4 &= 0 + \lambda_0 e_1
+\end{aligned}
+$$
+
+
+
+
+
+
