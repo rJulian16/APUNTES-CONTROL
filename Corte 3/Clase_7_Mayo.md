@@ -809,3 +809,16 @@ Las raíces tengan parte real negativa (polos en el semiplano izquierdo)
 Esto garantiza que el error de estimación:  
 - Converja exponencialmente a cero  
 - Sea estable frente a perturbaciones  
+
+El ADRC trata las perturbaciones como una función matemática que cambia con el tiempo, más un pequeño error residual.
+
+La perturbación total se expresa como:
+
+$$\xi(t) = \underbrace{k_0 + k_1 t + k_2 t^2 + \cdots + k_m t^m}_{\text{Parte modelada}} + \underbrace{r(t)}_{\text{Error residual}}$$
+
+Donde:
+
+- $k_0$: Valor constante de la perturbación
+- $k_1 t$: Componente que crece linealmente con el tiempo
+- $k_2 t^2$: Componente cuadrática (aceleración)
+- $r(t)$: Lo que no podemos modelar
