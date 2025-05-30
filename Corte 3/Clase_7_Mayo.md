@@ -80,7 +80,8 @@ Tabla 1. Comparacion entre PID, ADRC y LQR
 
 ## 2. Componentes de un ADRC
 
-![image](https://github.com/user-attachments/assets/835f6a16-0d39-4486-b1b2-a7208d01140b)
+![image](https://github.com/user-attachments/assets/be264c8f-8559-462e-bfc8-581abcf2b2a2)
+
 
 Figura 2. Componentes de un ADRC.
 
