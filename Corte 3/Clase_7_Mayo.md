@@ -4,7 +4,7 @@ Julian Stiven Redondo Chacon & Sebastian Cifuentes Alfonso & David Esteban Vasqu
 
 ## Indice
 
-- [1. Control por Rechazo Activo de Perturbaciones (ADRC)](#1-control-por-rechazo-activo-de-perturbaciones-adrc)
+- [1. Control por Rechazo Activo de Perturbaciones (ADRC)](#1-control-por-rechazo-activo-de-perturbaciones)
   - [1.1 Comparación entre ADRC, PID y LQR](#11-comparacion-entre-adrc-pid-y-lqr)
 - [2. Componentes de un ADRC](#2-componentes-de-un-adrc)
 - [3. NADRC: Nonlinear Active Disturbance Rejection Control](#3-nadrc-nonlinear-active-disturbance-rejection-control)
