@@ -844,8 +844,22 @@ $$u(t) - Ky(t) - B\dot{y}(t) = M\ddot{y}(t)$$
 
 - Despejar la máxima derivada
 
-$$\ddot{y} = \underbrace{\frac{1}{M}u}_{\text{Control}} - \underbrace{\left(\frac{K}{M}y + \frac{B}{M}\dot{y}\right)}_{\text{Dinámica interna}} + \underbrace{\frac{w(t)}{M}}_{\text{Perturbación}}$$
+$$
+\ddot{y}(t) = \frac{1}{M} \left[ u(t) - Ky(t) - B\dot{y}(t) \right]
+$$
 
+- Definir Varibales de estado
 
+- $x_1 = y$ (posición)
+- $x_2 = \dot{y}$ (velocidad)
+- $x_3 = f_{total} = -\frac{K}{M}x_1 - \frac{B}{M}x_2 + \frac{w(t)}{M}$ 
 
+- Ecuaciones de estado
 
+$$
+\begin{cases}
+\dot{x}_1 = x_2 \\
+\dot{x}_2 = x_3 + \frac{1}{M}u \\
+\dot{x}_3 = h(t) \approx 0 
+\end{cases}
+$$
