@@ -814,7 +814,7 @@ El ADRC trata las perturbaciones como una función matemática que cambia con el
 
 La perturbación total se expresa como:
 
-$$\xi(t)=\underbrace{k_0 + k_1 t + k_2 t^2 + \cdots + k_m t^m}_{\text{Parte modelada}} +\underbrace{r(t)}_{\text{Error residual}}$$
+$$\xi(t)=\underbrace{k_0+k_1 t+ k_2 t^2 +\cdots + k_m t^m}_{\text{Parte modelada}}+\underbrace{r(t)}_{\text{Error residual}}$$
 
 Donde:
 
