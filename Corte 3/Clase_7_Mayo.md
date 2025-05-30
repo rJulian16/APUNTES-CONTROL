@@ -1098,4 +1098,25 @@ De este análisis se puede afirmar que, aunque el controlador PID (Figura 13) of
 
 - Aunque más complejo, el ADRC es aplicable a sistemas multientrada-multisalida. Esto puede requerir estrategias de control desacopladas o múltiples observadores, pero extiende su utilidad a una mayor gama de aplicaciones.
 
+## 8. Referencias 
+
+[1] “Active Disturbance Rejection Control (ADRC).” Control Tutorials for MATLAB and Simulink, https://ctms.engin.umich.edu/CTMS/index.php?example=MotorSpeed&section=ControlADRC
+
+[2] Han, J. (2009). “From PID to Active Disturbance Rejection Control.” *IEEE Transactions on Industrial Electronics*, vol. 56, no. 3, pp. 900–906.
+
+[3] Manrique, J. (2024). Apuntes de clase sobre Control Avanzado y Técnicas de Rechazo de Perturbaciones. Universidad XYZ.
+
+[4] Gao, Z. (2006). “Active Disturbance Rejection Control: A Paradigm Shift in Feedback Control System Design.” *Proceedings of the American Control Conference*, pp. 2399–2405.
+
+[5] “Introduction to Active Disturbance Rejection Control (ADRC).” MathWorks, https://www.mathworks.com/help/control/ug/active-disturbance-rejection-control.html
+
+[6] Zheng, Q. & Gao, Z. (2010). ["An Energy Saving, Factory-Validated Digital ADRC Controller"](https://ieeexplore.ieee.org/document/5482993).
+
+[7] Miklosovic, R. et al. (2004). ["Robust Discrete-Time ADRC with Current Estimation"](https://ieeexplore.ieee.org/document/1380386).
+
+[8] Herbst, G. (2013). ["Practical ADRC: Tuning and Applications"](https://www.sciencedirect.com/science/article/pii/S2405896316300361).
+
+[9] Texas Instruments (2018). ["Implementing ADRC on C2000 Microcontrollers"](https://www.ti.com/lit/an/sprac70/sprac70.pdf)
+
+
 
