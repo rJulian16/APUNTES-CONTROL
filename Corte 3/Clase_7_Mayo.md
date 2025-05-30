@@ -645,29 +645,10 @@ Donde:
 
 Si la perturbación es constante o varía lentamente ($d_{k+1} \approx d_k$), se puede modelar como estado extendido:
 
-$$
-\begin{bmatrix}
-x_{k+1} \\
-d_{k+1}
-\end{bmatrix} =
-\underbrace{
-\begin{bmatrix}
-A & F \\
-0 & I
-\end{bmatrix}
-}_{A_{\text{ext}}}
-\begin{bmatrix}
-x_k \\
-d_k
-\end{bmatrix} +
-\underbrace{
-\begin{bmatrix}
-B \\
-0
-\end{bmatrix}
-}_{B_{\text{ext}}}
-u_k
-$$
+$$\begin{bmatrix}x_{k+1}\\d_{k+1}\end{bmatrix} =\underbrace{\begin{bmatrix}
+A & F\\0 & I\end{bmatrix}}_{A_{\text{ext}}}\begin{bmatrix}x_k\\d_k
+\end{bmatrix} +\underbrace{\begin{bmatrix}B\\0\end{bmatrix}}_{B_{\text{ext}}}
+u_k$$
 
 - Nuevas variables:
 
