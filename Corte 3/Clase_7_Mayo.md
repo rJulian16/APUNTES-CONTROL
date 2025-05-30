@@ -1026,13 +1026,45 @@ $$
 \varepsilon \approx e^{(4)} + \lambda_3 e^{(3)} + \lambda_2 \ddot{e} + \lambda_1 \dot{e} + \lambda_0 e
 $$
 
-donde estamos igualandolo a la segunda derivida de \varepsilon
+donde estamos igualandolo a la segunda derivida de ε
 
-Donde Con el ESO estimando $\hat{x}_3 \approx \varepsilon(t)$, el control se define como:
+Tomando como datos del sistema los valores \( K = 0.5 \), \( B = 0.2 \) y \( M = 0.5 \), y asumiendo una ubicación deseada de los polos en \( -100 \) (cuatro veces, lo que implica un sistema de cuarto orden), se diseñó un observador de estado extendido (ESO) para un controlador ADRC. A partir de esta ubicación de polos, se calcularon las ganancias del observador, obteniendo los valores:  
+- \( \beta_1 = 400 \)  
+- \( \beta_2 = 60\,000 \)  
+- \( \beta_3 = 4\,000\,000 \)  
+- \( \beta_4 = 100\,000\,000 \)
+
+Durante la clase, se analizó el comportamiento del observador bajo estas condiciones, destacando su rapidez de convergencia y su capacidad para estimar las perturbaciones totales del sistema en tiempo real.
+
+![image](https://github.com/user-attachments/assets/05997239-cfe5-4d11-8c7a-e1f40b6b75c6)
+
+Fig 11. Scope matlab observador 
+
+Ahora para poder cerrar el lazo se plantea la siguiente ley de control 
 
 $$
-u = \frac{1}{K} \left(u_0 - \hat{x}_3 \right)
+u = \frac{1}{k} \left( y^{(n)*} - k_1 (\dot{\hat{y}} - \dot{y}^*) - k_0 (\hat{y} - y^*) - \hat{\varepsilon} \right)
 $$
+
+Donde el polinomio careacterisitco para el error de seguimiento $$\( e_y = y - y^* \)$$ es:
+
+$$
+P_{e_y}(s) = s^n + k_{n-1}s^{n-1} + \cdots + k_1 s + k_0
+$$
+
+Para este caso que nuestro sistema es de segundo orden:
+
+$$
+P_{e_y}(s) = s^2 + k_1 s + k_0
+$$
+
+Con ayuda de MATLAB y la función `poly`, es posible obtener las ganancias necesarias para el diseño del controlador. En este caso, se ubicaron dos polos deseados en \( -15 \), lo que permite determinar el polinomio característico asociado al sistema. A partir de dicho polinomio, se calcularon las ganancias del controlador, obteniendo como resultado:
+\( k_1 = 1 \)  
+\( k_2 = 30 \)  
+\( k_3 = 225 \)
+
+Estas ganancias garantizan un comportamiento dinámico acorde con la ubicación deseada de los polos y una respuesta rápida del sistema.
+
 
 
 
