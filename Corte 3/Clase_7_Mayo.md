@@ -822,3 +822,25 @@ Donde:
 - $k_1 t$: Componente que crece linealmente con el tiempo
 - $k_2 t^2$: Componente cuadrática (aceleración)
 - $r(t)$: Lo que no podemos modelar
+
+📚 Ejercicio 7 planteado en clase:
+
+![image](https://github.com/user-attachments/assets/40073f0e-06a9-46d0-9020-6186e02c7913)
+
+Fig 10. Ejercicio 7 planteado en clase
+
+Sistema:
+
+Masa (m) unida a un resorte y amortiguador, con:
+- Fuerza de control: $u(t)$ [N]
+- Fuerza del resorte: $F_k = Ky(t)$ [N] (K: constante del resorte)
+- Fuerza de amortiguamiento: $F_B = B\dot{y}(t)$ [N] (B: coeficiente de fricción)
+- Aceleración: $a = \ddot{y}(t)$ [m/s²]
+
+Ecuación de la dinamica del sistema:
+
+$$u(t) - Ky(t) - B\dot{y}(t) = M\ddot{y}(t)$$
+
+- **Solucion**
+
+
